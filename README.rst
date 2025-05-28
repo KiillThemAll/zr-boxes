@@ -60,3 +60,22 @@ Boxes.py comes with Sphinx based documentation for usage, installation
 and development.
 
 The rendered version can be viewed at <https://florianfesti.github.io/boxes/html/index.html>.
+
+
+Local debug on Windows
+----------------------
+
+1. **(Optional) Install pstoedit for dxf output**:
+```
+winget install pstoedit
+```
+Add C:\Program Files\pstoedit to path
+
+2. **Install python packages and start server**:
+```
+python -m venv .\virtual_environment
+.\virtual_environment\Scripts\activate
+pip install -r requirements.txt
+pip install -r requirements_dev.txt
+python .\boxes\scripts\boxes_server.py
+```

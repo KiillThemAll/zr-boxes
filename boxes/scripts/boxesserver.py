@@ -241,10 +241,11 @@ class BServer:
     {self.genHTMLCSS()}
     {self.genHTMLJS()}
 </head>
-<body onload="initArgsPage({len(box.argparser._action_groups) - 3})">
+<body class="dark-theme" onload="initArgsPage({len(box.argparser._action_groups) - 3})">
 
 <div class="argumentcontainer">
 <div style="float: left;">
+<!--<a href="https://tridecagram.ru/factory/laser-cutting/boxes/{langparam}"><h1>{_("Boxes.py")}</h1></a>-->
 <a href="./{langparam}"><h1>{_("Boxes.py")}</h1></a>
 </div>
 <div style="width: 120px; float: right;">
@@ -286,8 +287,9 @@ class BServer:
 <p>
     <button name="render" value="1" formtarget="_blank">{_("Generate")}</button>
     <button name="render" value="2" formtarget="_self">{_("Download")}</button>
-    <button name="render" value="0" formtarget="_self">{_("Save to URL")}</button>
-    <button name="render" value="3" formtarget="_blank">{_("QR Code")}</button>
+    <button id="order-product-btn" type="button">{_("Order product")}</button>
+    <!--<button name="render" value="0" formtarget="_self">{_("Save to URL")}</button>
+    <button name="render" value="3" formtarget="_blank">{_("QR Code")}</button>-->
 </p>
 </form>
 </div>
@@ -342,7 +344,7 @@ class BServer:
     {self.genHTMLCSS()}
     {self.genHTMLJS()}
 </head>
-<body onload="initPage()">
+<body class="dark-theme" onload="initPage()">
 <div class="container">
 <div style="width: 75%; float: left;">
 {self.genPagePartHeader(lang)}
@@ -474,13 +476,13 @@ class BServer:
 
     def genLinks(self, lang, preview=False):
         _ = lang.gettext
-        links = [("https://florianfesti.github.io/boxes/html/usermanual.html", _("Help")),
-                 ("https://hackaday.io/project/10649-boxespy", _("Home Page")),
-                 ("https://florianfesti.github.io/boxes/html/index.html", _("Documentation")),
-                 ("https://github.com/florianfesti/boxes", _("Sources"))]
-        if self.legal_url:
-            links.append((self.legal_url, _("Legal")))
-        links.append(("https://florianfesti.github.io/boxes/html/give_back.html", _("Give Back")))
+        links = [("https://tridecagram.ru/factory/", _("Home Page")),
+                 ("https://tridecagram.ru/factory/laser-cutting/boxes-manual/", _("Help"))]
+                 #("https://florianfesti.github.io/boxes/html/index.html", _("Documentation")),
+                 #("https://github.com/florianfesti/boxes", _("Sources"))]
+        #if self.legal_url:
+        #    links.append((self.legal_url, _("Legal")))
+        #links.append(("https://florianfesti.github.io/boxes/html/give_back.html", _("Give Back")))
 
         result = [f'  <li><a href="{url}" target="_blank" rel="noopener">{txt}</a></li>\n' for url, txt in links]
 
@@ -500,7 +502,7 @@ class BServer:
   {self.genHTMLMeta()}
   <meta name="robots" content="noindex">
 </head>
-<body>
+<body class="dark-theme">
 <h1>{_("An error occurred!")}</h1>
 """
         for s in str(e).split("\n"):
@@ -588,7 +590,7 @@ class BServer:
     {self.genHTMLCSS()}
     {self.genHTMLJS()}
 </head>
-<body onload="initPage()">
+<body class="dark-theme" onload="initPage()">
 <div class="container">
 <div style="width: 75%; float: left;">
 {self.genPagePartHeader(lang)}
@@ -709,7 +711,19 @@ class BServer:
             start_response(status, http_headers)
             qrcode = get_qrcode(box.metadata["url_short"], qr_format)
             return (qrcode,)
-
+        
+        # --- Order product: render=5 ---
+        if render == "5":
+            extension = box.format
+            if extension == "svg_Ponoko":
+                extension = "svg"
+            http_headers = [("Content-type", "application/dxf"),
+                            ("Content-Disposition", f'attachment; filename="{box.__class__.__name__}.dxf"'),
+                            ("Access-Control-Allow-Origin", "*")]
+            start_response(status, http_headers)
+            return environ['wsgi.file_wrapper'](data, 512 * 1024)
+        
+        # --- Download drawing: render=2 ---
         if box.format != "svg" or render == "2":
             extension = box.format
             if extension == "svg_Ponoko":

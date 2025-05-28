@@ -16,7 +16,8 @@ boxes.egg-info/
 documentation/src/generators.inc
 *.ipynb_checkpoints
 venv/
-.vscode/
 tracker.log
 *.isorted
 .DS_Store
+virtual_environment
+boxes/__pycache__

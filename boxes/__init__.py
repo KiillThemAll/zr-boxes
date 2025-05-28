@@ -365,12 +365,14 @@ class Boxes:
         defaultgroup.add_argument(
             "--tabs", action="store", type=float, default=0.0,
             help="width of tabs holding the parts in place (in mm)(not supported everywhere) [\U0001F6C8](https://florianfesti.github.io/boxes/html/usermanual.html#tabs)")
-        defaultgroup.add_argument(
-            "--qr_code", action="store", type=boolarg, default=False,
-            help="Add a QR Code with link or command line to the generated output")
-        defaultgroup.add_argument(
-            "--debug", action="store", type=boolarg, default=False,
-            help="print surrounding boxes for some structures [\U0001F6C8](https://florianfesti.github.io/boxes/html/usermanual.html#debug)")
+        # defaultgroup.add_argument(
+        #     "--qr_code", action="store", type=boolarg, default=False,
+        #     help="Add a QR Code with link or command line to the generated output")
+        self.qr_code = False
+        # defaultgroup.add_argument(
+        #     "--debug", action="store", type=boolarg, default=False,
+        #     help="print surrounding boxes for some structures [\U0001F6C8](https://florianfesti.github.io/boxes/html/usermanual.html#debug)")
+        self.debug = False
         defaultgroup.add_argument(
             "--labels", action="store", type=boolarg, default=True,
             help="label the parts (where available)")
@@ -430,7 +432,7 @@ class Boxes:
             self.set_source_color(Color.BLUE)
         else:
             self.ctx.set_line_width(max(2 * self.burn, 0.05))
-            self.set_source_color(Color.BLACK)
+            self.set_source_color(Color.OUTER_CUT)
 
         self.spacing = 2 * self.burn + 0.5 * self.thickness
         self.set_font("sans-serif")

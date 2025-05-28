@@ -1,4 +1,3 @@
-
 /*** Thumbnails ******************************************/
 
 function showThumbnail(img_link) {
@@ -99,10 +98,85 @@ function initArgsPage(num_hide = null) {
     initPage(num_hide);
     const i = document.querySelectorAll("td > input, td > select, td > textarea");
     for (let el of i) {
-	el.addEventListener("change", refreshPreview);
+        el.addEventListener("change", refreshPreview);
     }
     refreshPreview();
     document.getElementById("preview_chk").addEventListener("change", togglePreview);
+    initOrderProductButton();
+}
+
+const DEBUG = false;
+
+const receiverUrl = DEBUG ? '127.0.0.1:80' : 'https://factory.tridecagram.ru';
+const apiUrl = DEBUG ? 'http://127.0.0.1:10330/v1/files' : 'https://api.tridecagram.ru:10330/v1/files';
+
+const fileNameBase = 'boxespy';
+
+function initOrderProductButton() {
+    const orderBtn = document.getElementById('order-product-btn');
+    if (!orderBtn) return;
+    orderBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        const form = document.getElementById('arguments');
+        const formData = new FormData(form);
+        formData.set('render', '5');
+        const params = new URLSearchParams();
+        for (let pair of formData.entries()) {
+            params.append(pair[0], pair[1]);
+        }
+        fetch(window.location.pathname + '?' + params.toString(), {
+            method: 'GET',
+        })
+        .then(function(response) {
+            if (!response.ok) throw new Error('Network response was not ok');
+            return response.blob();
+        })
+        .then(function(blob) {
+            // Step 1: GET uploadUrl from API with body
+            const fileName = fileNameBase + '-' + Date.now().toString() + '-' + Math.floor(Math.random() * 9999).toString();
+            fetch(apiUrl, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ fileName })
+            })
+            .then(res => res.json())
+            .then(data => {
+                if (data.response === 'ok' && data.uploadUrl) {
+                    // Step 2: PUT the DXF file to uploadUrl
+                    fetch(data.uploadUrl, {
+                        method: 'PUT',
+                        headers: {
+                            'Content-Type': 'application/dxf',
+                        },
+                        body: blob
+                    })
+                    .then(putRes => {
+                        if (putRes.ok) {
+                            // Add fileName as query param to receiverUrl
+                            const url = new URL(receiverUrl);
+                            url.searchParams.set('fileName', fileName);
+                            window.open(url.toString(), '_blank');
+                        } else {
+                            alert('Failed to upload DXF to uploadUrl');
+                        }
+                    })
+                    .catch(err => {
+                        alert('Failed to upload DXF: ' + err);
+                    });
+                } else {
+                    alert('Failed to get uploadUrl: ' + (data.errorText || 'Unknown error'));
+                }
+            })
+            .catch(err => {
+                alert('Failed to get uploadUrl: ' + err);
+            });
+        })
+        .catch(function(err) {
+            alert('Failed to order product: ' + err);
+        });
+    });
 }
 
 /*** Preview ****************************************/
