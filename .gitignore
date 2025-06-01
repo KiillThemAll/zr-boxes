@@ -21,3 +21,4 @@ tracker.log
 .DS_Store
 virtual_environment
 boxes/__pycache__
+Session.vim

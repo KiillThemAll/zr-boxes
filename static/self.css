@@ -1,34 +1,12 @@
 @import 'fonts.css';
 @import 'normalize.css';
 
-:root {
-    --main-color: #2b9e72;
-    --secondary-color: #eeeeee;
-    --hover-button-color: #268f67;
-    --main-text-color: #282728;
-    --input-background: white;
-    --footer-background: #d2d2d2;
-}
-
-.dark-theme {
-    --secondary-color: #000000;
-    --main-background-side-page:#22272e;
-    --main-text-color: white;
-    --input-background: #212121;
-    --footer-background: #000000;
-}
-
-.dark-theme .theme-switcher__img::after {
-    background-image: url('./img/sun.svg');
-    background-size: 90%;
-}
-
 html,
 button,
 input,
 select,
 textarea {
-    /* color: #222; */
+    color: #222;
 }
 
 html {
@@ -38,27 +16,22 @@ html {
 
 a {
     text-decoration: none;
-    /* color: #5F584A; */
-
-    color: white;
+    color: #5F584A;
 }
 
 .menu li {
-    /* color: #666; */
+    color: #666;
     list-style-type: none;
 }
 
 li a, a h1 {
     text-decoration: none;
-    /* color: #333; */
+    color: #333;
 }
 
 
 body {
     min-width: 996px;
-
-    color: var(--main-text-color);
-    background-color: var(--main-background-side-page);
 }
 
 h1 {
@@ -106,9 +79,7 @@ table tr p {
 /* Container */
 
 .argumentcontainer {
-    border: 2px solid var(--main-color);
-
-    /* background-color: #FFF8EA; */
+    background-color: #FFF8EA;
     margin-top: 20px;
     margin-bottom: 40px;
     float: left;
@@ -122,9 +93,7 @@ table tr p {
 }
 
 .container {
-    border: 2px solid var(--main-color);
-
-    /*background-color: #FFF8EA;*/
+    background-color: #FFF8EA;
     margin-top: 20px;
     margin-bottom: 40px;
     margin-left: auto;
@@ -199,7 +168,7 @@ video {
 }
 
 .linkbar ul li a {
-    /* color: #555; */
+    color: #555;
     margin-right: 10px;
 }
 
@@ -231,7 +200,7 @@ img[id|=sample] {
     display: none;
     font-size: 1.8em;
     font-weight: bold;
-    /* color: #333; */
+    color: #333;
     margin-left: 10px;
 }
 

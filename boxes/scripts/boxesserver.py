@@ -257,6 +257,7 @@ class BServer:
 <div class="linkbar">
 <ul>
 {self.genLinks(lang, True)}
+{self.getThemeSwitcher()}
 </ul>
 </div>
 <hr>
@@ -415,10 +416,16 @@ class BServer:
         return s
 
     def genHTMLCSS(self) -> str:
-        return f'<link rel="stylesheet" href="{self.static_url}/self.css">'
+        url = self.static_url
+        selfCss = f'<link rel="stylesheet" href="{url}/self.css">'
+        localCss = f'<link rel="stylesheet" href="{url}/local.css">'
+        return selfCss + '\n' + localCss 
 
     def genHTMLJS(self) -> str:
-        return f'<script src="{self.static_url}/self.js"></script>'
+        url = self.static_url
+        selfJs = f'<script src="{url}/self.js"></script>'
+        localJs = f'<script src="{url}/local.js"></script>'
+        return selfJs + '\n' + localJs 
 
     def genHTMLLanguageSelection(self, lang) -> str:
         """Generates a dropdown selection for the language change."""
@@ -469,6 +476,7 @@ class BServer:
 <ul>
 {self.genLinks(lang)}
   <li class="right">\U0001f50d <input autocomplete="off" type="search" oninput="filterSearchItems();" name="search" id="search" placeholder="Search"></li>
+{self.getThemeSwitcher()}
 </ul>
 </div>
 <hr/>
@@ -491,6 +499,19 @@ class BServer:
 
         result.append(f'  <li class="right">{self.genHTMLLanguageSelection(lang)}  </li>\n')
         return "".join(result)
+
+    def getHTMLThemeSwitcher(self) -> str:
+        return f"""
+<div class="theme-switcher">
+  <div class="theme-switcher__img">
+    <svg class="sun-icon theme-switcher__img"></svg>
+    <svg class="moon-icon theme-switcher__img"  style="display: none"></svg>
+  </div>
+  <div class="theme-switcher__text">Светлая тема</div>
+</div>
+"""
+    def getThemeSwitcher(self):
+        return f'<li class="right">{self.getHTMLThemeSwitcher()}</li>\n'
 
     def genPageError(self, name, e, lang) -> list[bytes]:
         """Generates a error page."""
