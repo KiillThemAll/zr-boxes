@@ -105,7 +105,7 @@ function initArgsPage(num_hide = null) {
     initOrderProductButton();
 }
 
-const DEBUG = false;
+const DEBUG = true;
 
 const receiverUrl = DEBUG ? '127.0.0.1:80' : 'https://factory.tridecagram.ru';
 const apiUrl = DEBUG ? 'http://127.0.0.1:10330/v1/files' : 'https://api.tridecagram.ru:10330/v1/files';
@@ -135,7 +135,7 @@ function initOrderProductButton() {
             // Step 1: GET uploadUrl from API with body
             const fileName = fileNameBase + '-' + Date.now().toString() + '-' + Math.floor(Math.random() * 9999).toString();
             fetch(apiUrl, {
-                method: 'GET',
+                method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },

@@ -714,11 +714,9 @@ class BServer:
         
         # --- Order product: render=5 ---
         if render == "5":
-            extension = box.format
-            if extension == "svg_Ponoko":
-                extension = "svg"
-            http_headers = [("Content-type", "application/dxf"),
-                            ("Content-Disposition", f'attachment; filename="{box.__class__.__name__}.dxf"'),
+            extension = "svg"
+            http_headers = [("Content-type", "image/svg+xml"),
+                            ("Content-Disposition", f'attachment; filename="{box.__class__.__name__}.svg"'),
                             ("Access-Control-Allow-Origin", "*")]
             start_response(status, http_headers)
             return environ['wsgi.file_wrapper'](data, 512 * 1024)
