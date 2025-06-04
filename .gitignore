@@ -21,4 +21,5 @@ tracker.log
 .DS_Store
 virtual_environment
 boxes/__pycache__
+static/node_modules
 Session.vim

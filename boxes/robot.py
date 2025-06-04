@@ -27,7 +27,7 @@ class RobotArg:
             ("""<option value="%s"%s>%s %s</option>""" %
              (name, ' selected="selected"' if name == default else "",
               name, descr) for name, descr in self.robotarms))
-        return f"""<select name="{name}" size="1">\n{options}</select>\n"""
+        return f"""<select class="combobox" name="{name}" size="1">\n{options}</select>\n"""
 
 
 class _RobotArm:

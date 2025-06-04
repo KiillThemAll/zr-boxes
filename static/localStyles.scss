@@ -29,9 +29,16 @@
   }
 
  @media (hover: hover) {
-  .button--bold:hover,
-  .link-button--bold:hover{
-    background-color: rgba(255, 255, 255, 0.1);
+    .button--bold:hover,
+    .link-button--bold:hover{
+      background-color: rgba(255, 255, 255, 0.1);
+    } 
+  }
+
+  .gallery, .gallery_missing{
+    a {
+      color: var(--main-text-color);
+    }
   }
 }
 
@@ -52,9 +59,23 @@
   }
 }
 
+.linkbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.push-right{
+  margin-left: auto;
 }
 
 /* global styles */
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
 .html-scrollbar-light{
   scrollbar-color: initial;
 }
@@ -74,6 +95,17 @@ body {
   padding: 0;
   min-height: 100vh;
   color: var(--main-text-color);
+  background-color: var(--main-background-side-page);
+}
+
+.argumentcontainer {
+    border: 2px solid var(--main-color);
+    background-color: initial;
+}
+
+.container {
+    border: 2px solid var(--main-color);
+    background-color: initial;
 }
 
 h1, h2, h4, h5, h6, ul, ol, a {
@@ -167,6 +199,17 @@ a.lk-button{
     }
   }
 
+}
+
+@mixin link {
+  color: var(--main-color);
+  text-decoration: none;
+
+  @media (hover: hover) {
+    &:hover {
+      color: var(--hover-button-color);
+    }
+  }
 }
 
 .button--bold {
@@ -357,6 +400,7 @@ span[data-descr] {
     font-weight: 500;
     text-align: center;
     text-transform: none;
+    color: var(--main-text-color);
   }
 
   .moon-icon {
@@ -369,6 +413,7 @@ span[data-descr] {
     background-image: url('./img/sun.svg');
   }
 }
+
 
 /* mobile menu */
 
@@ -461,5 +506,50 @@ span[data-descr] {
 li:has(.checkbox-container) { 
   .checkbox-container{
     display: table-cell
+  }
+
+} 
+
+select {
+  width: max-content;
+  margin: 15px 15px 15px 0;
+}
+
+select option {
+  max-width: 600;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+.linkbar ul li.right {
+  display: flex;
+  .theme-switcher{
+    margin-bottom: 10px;
+  }
+  div {
+    align-self: center;
+  }
+}
+
+a {
+  @include link;
+}
+
+.linkbar ul li a {
+  @include link;
+}
+
+.menu {
+  .thumbnail {
+    color: var(--main-text-color);
+    a {
+      @include link;
+    }
+  }
+}
+
+td {
+  .combobox, .input-base{
+    margin: auto;
   }
 }

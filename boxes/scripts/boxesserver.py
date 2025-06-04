@@ -209,9 +209,9 @@ class BServer:
                 """    <option value="%s"%s>%s</option>""" %
                 (e, ' selected="selected"' if (e == (default or a.default)) or (str(e) == str(default or a.default)) else "",
                  _(e)) for e in a.choices)
-            input = """<select name="{}" id="{}" aria-labeledby="{} {}" size="1">\n{}</select>\n""".format(name, name, name + "_id", name + "_description", options)
+            input = """<select class="combobox" name="{}" id="{}" aria-labeledby="{} {}" size="1">\n{}</select>\n""".format(name, name, name + "_id", name + "_description", options)
         else:
-            input = """<input name="%s" id="%s" aria-labeledby="%s %s" type="text" value="%s">""" % \
+            input = """<input class="input-base" name="%s" id="%s" aria-labeledby="%s %s" type="text" value="%s">""" % \
                     (name, name, name + "_id", name + "_description", default or a.default)
 
         return row % input
@@ -257,7 +257,6 @@ class BServer:
 <div class="linkbar">
 <ul>
 {self.genLinks(lang, True)}
-{self.getThemeSwitcher()}
 </ul>
 </div>
 <hr>
@@ -441,7 +440,7 @@ class BServer:
 
         return """
         <form>
-            <select name="language" onchange='if(this.value != \"""" + current_language + """\") { this.form.submit(); }'>
+            <select class="combobox" name="language" onchange='if(this.value != \"""" + current_language + """\") { this.form.submit(); }'>
 """ + html_option + """
             </select>
         </form>
@@ -475,8 +474,7 @@ class BServer:
 <div class="linkbar">
 <ul>
 {self.genLinks(lang)}
-  <li class="right">\U0001f50d <input autocomplete="off" type="search" oninput="filterSearchItems();" name="search" id="search" placeholder="Search"></li>
-{self.getThemeSwitcher()}
+  <li class="right"><div style="margin-bottom: 10px;">\U0001f50d</div><input class="input-base" autocomplete="off" type="search" oninput="filterSearchItems();" name="search" id="search" placeholder="Search"></li>
 </ul>
 </div>
 <hr/>
@@ -494,10 +492,12 @@ class BServer:
 
         result = [f'  <li><a href="{url}" target="_blank" rel="noopener">{txt}</a></li>\n' for url, txt in links]
 
-        if preview:
-            result.append(f'    <li class="right">{_("Preview")} <input id="preview_chk" type="checkbox" checked="checked"> </li>\n')
+        result.append(self.getThemeSwitcher());
 
         result.append(f'  <li class="right">{self.genHTMLLanguageSelection(lang)}  </li>\n')
+
+        if preview:
+            result.append(f'    <li class="right">{_("Preview")} <input id="preview_chk" type="checkbox" checked="checked"> </li>\n')
         return "".join(result)
 
     def getHTMLThemeSwitcher(self) -> str:
@@ -511,7 +511,7 @@ class BServer:
 </div>
 """
     def getThemeSwitcher(self):
-        return f'<li class="right">{self.getHTMLThemeSwitcher()}</li>\n'
+        return f'<li class="right push-right">{self.getHTMLThemeSwitcher()}</li>\n'
 
     def genPageError(self, name, e, lang) -> list[bytes]:
         """Generates a error page."""
