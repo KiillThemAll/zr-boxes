@@ -209,9 +209,9 @@ class BServer:
                 """    <option value="%s"%s>%s</option>""" %
                 (e, ' selected="selected"' if (e == (default or a.default)) or (str(e) == str(default or a.default)) else "",
                  _(e)) for e in a.choices)
-            input = """<select name="{}" id="{}" aria-labeledby="{} {}" size="1">\n{}</select>\n""".format(name, name, name + "_id", name + "_description", options)
+            input = """<select class="combobox" name="{}" id="{}" aria-labeledby="{} {}" size="1">\n{}</select>\n""".format(name, name, name + "_id", name + "_description", options)
         else:
-            input = """<input name="%s" id="%s" aria-labeledby="%s %s" type="text" value="%s">""" % \
+            input = """<input class="input-base" name="%s" id="%s" aria-labeledby="%s %s" type="text" value="%s">""" % \
                     (name, name, name + "_id", name + "_description", default or a.default)
 
         return row % input
@@ -246,7 +246,7 @@ class BServer:
 <div class="argumentcontainer">
 <div style="float: left;">
 <!--<a href="https://tridecagram.ru/factory/laser-cutting/boxes/{langparam}"><h1>{_("Boxes.py")}</h1></a>-->
-<a href="./{langparam}"><h1>{_("Boxes.py")}</h1></a>
+<h1><a href="./{langparam}">{_("Boxes.py")}</a></h1>
 </div>
 <div style="width: 120px; float: right;">
 <img alt="self-Logo" src="{self.static_url}/boxes-logo.svg" width="120">
@@ -285,11 +285,11 @@ class BServer:
 <input type="hidden" name="language" id="language" value="{lang_name}">
 
 <p>
-    <button name="render" value="1" formtarget="_blank">{_("Generate")}</button>
-    <button name="render" value="2" formtarget="_self">{_("Download")}</button>
-    <button id="order-product-btn" type="button">{_("Order product")}</button>
+    <button class="link-button" name="render" value="1" formtarget="_blank">{_("Generate")}</button>
+    <button class="link-button" name="render" value="2" formtarget="_self">{_("Download")}</button>
+    <button class="link-button" id="order-product-btn" type="button">{_("Order product")}</button>
     <!--<button name="render" value="0" formtarget="_self">{_("Save to URL")}</button>
-    <button name="render" value="3" formtarget="_blank">{_("QR Code")}</button>-->
+    <button class="link-button" name="render" value="3" formtarget="_blank">{_("QR Code")}</button>-->
 </p>
 </form>
 </div>
@@ -349,8 +349,8 @@ class BServer:
 <div style="width: 75%; float: left;">
 {self.genPagePartHeader(lang)}
 <div class="modenav">
-<span class="modebutton"><a href="Gallery">{_("Gallery")}</a></span>
-<span class="modebutton modeactive">{_("Menu")}</span>
+<button class="link-button" onclick="window.location = 'Gallery'">{_("Gallery")}</button>
+<button class="link-button--bold">{_("Menu")}</button>
 </div>
 <br>
 <div class="menu" style="width: 100%">
@@ -415,10 +415,16 @@ class BServer:
         return s
 
     def genHTMLCSS(self) -> str:
-        return f'<link rel="stylesheet" href="{self.static_url}/self.css">'
+        url = self.static_url
+        selfCss = f'<link rel="stylesheet" href="{url}/self.css">'
+        localCss = f'<link rel="stylesheet" href="{url}/local.css">'
+        return selfCss + '\n' + localCss 
 
     def genHTMLJS(self) -> str:
-        return f'<script src="{self.static_url}/self.js"></script>'
+        url = self.static_url
+        selfJs = f'<script src="{url}/self.js"></script>'
+        localJs = f'<script src="{url}/local.js"></script>'
+        return selfJs + '\n' + localJs 
 
     def genHTMLLanguageSelection(self, lang) -> str:
         """Generates a dropdown selection for the language change."""
@@ -434,7 +440,7 @@ class BServer:
 
         return """
         <form>
-            <select name="language" onchange='if(this.value != \"""" + current_language + """\") { this.form.submit(); }'>
+            <select class="combobox" name="language" onchange='if(this.value != \"""" + current_language + """\") { this.form.submit(); }'>
 """ + html_option + """
             </select>
         </form>
@@ -468,7 +474,7 @@ class BServer:
 <div class="linkbar">
 <ul>
 {self.genLinks(lang)}
-  <li class="right">\U0001f50d <input autocomplete="off" type="search" oninput="filterSearchItems();" name="search" id="search" placeholder="Search"></li>
+  <li class="right"><div style="margin-bottom: 10px;">\U0001f50d</div><input class="input-base" autocomplete="off" type="search" oninput="filterSearchItems();" name="search" id="search" placeholder="Search"></li>
 </ul>
 </div>
 <hr/>
@@ -484,13 +490,28 @@ class BServer:
         #    links.append((self.legal_url, _("Legal")))
         #links.append(("https://florianfesti.github.io/boxes/html/give_back.html", _("Give Back")))
 
-        result = [f'  <li><a href="{url}" target="_blank" rel="noopener">{txt}</a></li>\n' for url, txt in links]
+        result = [f'  <li {f"class=""last-visible"""if idx ==len(links) else f""} ><a href="{url}" target="_blank" rel="noopener">{txt}</a></li>\n' for idx, [url, txt] in enumerate(links, 1)]
 
-        if preview:
-            result.append(f'    <li class="right">{_("Preview")} <input id="preview_chk" type="checkbox" checked="checked"> </li>\n')
+        result.append(self.getThemeSwitcher());
 
         result.append(f'  <li class="right">{self.genHTMLLanguageSelection(lang)}  </li>\n')
+
+        if preview:
+            result.append(f'    <li class="right"><div class="vertical-centred">Preview<input id="preview_chk" type="checkbox" checked="checked"></div></li>\n')
         return "".join(result)
+
+    def getHTMLThemeSwitcher(self) -> str:
+        return f"""
+<div class="theme-switcher">
+  <div class="theme-switcher__img">
+    <svg class="sun-icon theme-switcher__img"></svg>
+    <svg class="moon-icon theme-switcher__img"  style="display: none"></svg>
+  </div>
+  <div class="theme-switcher__text">Светлая тема</div>
+</div>
+"""
+    def getThemeSwitcher(self):
+        return f'<li class="right push-right">{self.getHTMLThemeSwitcher()}</li>\n'
 
     def genPageError(self, name, e, lang) -> list[bytes]:
         """Generates a error page."""
@@ -595,8 +616,8 @@ class BServer:
 <div style="width: 75%; float: left;">
 {self.genPagePartHeader(lang)}
 <div class="modenav">
-<span class="modebutton modeactive">{_("Gallery")}</span>
-<span class="modebutton"><a href="Menu">{_("Menu")}</a></span>
+<button class="link-button--bold">{_("Gallery")}</button>
+<button class="link-button" onclick="window.location = 'Menu'">{_("Menu")}</button>
 </div>
 """]
         for nr, group in enumerate(self.groups):
