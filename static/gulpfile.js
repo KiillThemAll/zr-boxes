@@ -14,12 +14,9 @@ function localGeneratorScss() {
 };
 
 const buildMinifiedAssets = gulp.series(
-  localGeneratorScss,
+  localGeneratorScss
 );
 
-// gulp.task('minify_files', buildMinifiedAssets);
-
-// ctrl+shift+b - task is only for debugging - resulting files are not being gzipped
 gulp.task('watch_files', function(cb) {
   buildMinifiedAssets(function () {
     // Start watchers after initial minify build

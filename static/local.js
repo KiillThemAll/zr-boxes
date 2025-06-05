@@ -1,5 +1,10 @@
-const dTC = "theme=dark; path=/;domain=.tridecagram.ru;max-age=31536000;secure;samesite=none;partitioned";
-const lTC = "theme=light; path=/;domain=.tridecagram.ru;max-age=31536000;secure;samesite=none;partitioned";
+const LOCAL_DEBUG = true;
+
+const dTC = "theme=dark; path=/;" + (LOCAL_DEBUG ? "" : "domain=.tridecagram.ru;") + "max-age=31536000;secure;samesite=none;partitioned";
+const lTC = "theme=light; path=/;" + (LOCAL_DEBUG ? "" : "domain=.tridecagram.ru;") + "max-age=31536000;secure;samesite=none;partitioned";
+
+// const dTC = "theme=dark; path=/;domain=.tridecagram.ru;max-age=31536000;secure;samesite=none;partitioned";
+// const lTC = "theme=light; path=/;domain=.tridecagram.ru;max-age=31536000;secure;samesite=none;partitioned";
 
 addEventListener("DOMContentLoaded", () => {
   const html = document.documentElement;

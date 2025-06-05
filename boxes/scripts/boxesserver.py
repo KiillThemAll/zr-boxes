@@ -246,7 +246,7 @@ class BServer:
 <div class="argumentcontainer">
 <div style="float: left;">
 <!--<a href="https://tridecagram.ru/factory/laser-cutting/boxes/{langparam}"><h1>{_("Boxes.py")}</h1></a>-->
-<a href="./{langparam}"><h1>{_("Boxes.py")}</h1></a>
+<h1><a href="./{langparam}">{_("Boxes.py")}</a></h1>
 </div>
 <div style="width: 120px; float: right;">
 <img alt="self-Logo" src="{self.static_url}/boxes-logo.svg" width="120">
@@ -285,11 +285,11 @@ class BServer:
 <input type="hidden" name="language" id="language" value="{lang_name}">
 
 <p>
-    <button name="render" value="1" formtarget="_blank">{_("Generate")}</button>
-    <button name="render" value="2" formtarget="_self">{_("Download")}</button>
-    <button id="order-product-btn" type="button">{_("Order product")}</button>
+    <button class="link-button" name="render" value="1" formtarget="_blank">{_("Generate")}</button>
+    <button class="link-button" name="render" value="2" formtarget="_self">{_("Download")}</button>
+    <button class="link-button" id="order-product-btn" type="button">{_("Order product")}</button>
     <!--<button name="render" value="0" formtarget="_self">{_("Save to URL")}</button>
-    <button name="render" value="3" formtarget="_blank">{_("QR Code")}</button>-->
+    <button class="link-button" name="render" value="3" formtarget="_blank">{_("QR Code")}</button>-->
 </p>
 </form>
 </div>
@@ -349,8 +349,8 @@ class BServer:
 <div style="width: 75%; float: left;">
 {self.genPagePartHeader(lang)}
 <div class="modenav">
-<span class="modebutton"><a href="Gallery">{_("Gallery")}</a></span>
-<span class="modebutton modeactive">{_("Menu")}</span>
+<button class="link-button" onclick="window.location = 'Gallery'">{_("Gallery")}</button>
+<button class="link-button--bold">{_("Menu")}</button>
 </div>
 <br>
 <div class="menu" style="width: 100%">
@@ -490,14 +490,14 @@ class BServer:
         #    links.append((self.legal_url, _("Legal")))
         #links.append(("https://florianfesti.github.io/boxes/html/give_back.html", _("Give Back")))
 
-        result = [f'  <li><a href="{url}" target="_blank" rel="noopener">{txt}</a></li>\n' for url, txt in links]
+        result = [f'  <li {f"class=""last-visible"""if idx ==len(links) else f""} ><a href="{url}" target="_blank" rel="noopener">{txt}</a></li>\n' for idx, [url, txt] in enumerate(links, 1)]
 
         result.append(self.getThemeSwitcher());
 
         result.append(f'  <li class="right">{self.genHTMLLanguageSelection(lang)}  </li>\n')
 
         if preview:
-            result.append(f'    <li class="right">{_("Preview")} <input id="preview_chk" type="checkbox" checked="checked"> </li>\n')
+            result.append(f'    <li class="right"><div class="vertical-centred">Preview<input id="preview_chk" type="checkbox" checked="checked"></div></li>\n')
         return "".join(result)
 
     def getHTMLThemeSwitcher(self) -> str:
@@ -616,8 +616,8 @@ class BServer:
 <div style="width: 75%; float: left;">
 {self.genPagePartHeader(lang)}
 <div class="modenav">
-<span class="modebutton modeactive">{_("Gallery")}</span>
-<span class="modebutton"><a href="Menu">{_("Menu")}</a></span>
+<button class="link-button--bold">{_("Gallery")}</button>
+<button class="link-button" onclick="window.location = 'Menu'">{_("Menu")}</button>
 </div>
 """]
         for nr, group in enumerate(self.groups):
