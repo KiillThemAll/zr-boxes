@@ -2,6 +2,7 @@
 *.plt
 *.svg
 !examples/*.svg
+!static/img/*.svg
 *.dxf
 *.pyc
 *.pwj

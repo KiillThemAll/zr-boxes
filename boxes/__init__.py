@@ -249,8 +249,8 @@ class BoolArg:
     def html(self, name, default, _):
         if isinstance(default, (str)):
             default = self(default)
-        return """<input name="%s" type="hidden" value="0">
-<input name="%s" id="%s" aria-labeledby="%s %s" type="checkbox" value="1"%s>""" % \
+        return """<div style="display: flex;"><input name="%s" type="hidden" value="0">
+<input name="%s" id="%s" aria-labeledby="%s %s" type="checkbox" value="1"%s></div>""" % \
             (name, name, name, name+"_id", name+"_description",' checked="checked"' if default else "")
 
 boolarg = BoolArg()

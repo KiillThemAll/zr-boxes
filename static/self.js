@@ -121,7 +121,10 @@ function initOrderProductButton() {
         const formData = new FormData(form);
         formData.set('render', '5');
         const params = new URLSearchParams();
+        let length = 0;
+        let thickness = 0; 
         for (let pair of formData.entries()) {
+            if(pair[0] === 'format') pair[1] = 'svg';
             params.append(pair[0], pair[1]);
         }
         fetch(window.location.pathname + '?' + params.toString(), {
@@ -129,6 +132,7 @@ function initOrderProductButton() {
         })
         .then(function(response) {
             if (!response.ok) throw new Error('Network response was not ok');
+            [length, thickness] = response.headers.get('X-lenght-thickness').split(';')
             return response.blob();
         })
         .then(function(blob) {
@@ -144,11 +148,11 @@ function initOrderProductButton() {
             .then(res => res.json())
             .then(data => {
                 if (data.response === 'ok' && data.uploadUrl) {
-                    // Step 2: PUT the DXF file to uploadUrl
+                    // Step 2: PUT the SVG file to uploadUrl
                     fetch(data.uploadUrl, {
                         method: 'PUT',
                         headers: {
-                            'Content-Type': 'application/dxf',
+                            'Content-Type': 'image/svg+xml; charset=utf-8',
                         },
                         body: blob
                     })
@@ -156,14 +160,17 @@ function initOrderProductButton() {
                         if (putRes.ok) {
                             // Add fileName as query param to receiverUrl
                             const url = new URL(receiverUrl);
+                            // in camal? not in snake?
                             url.searchParams.set('fileName', fileName);
+                            url.searchParams.set('meters', length);
+                            url.searchParams.set('thickness_01mm', thickness*10)
                             window.open(url.toString(), '_blank');
                         } else {
-                            alert('Failed to upload DXF to uploadUrl');
+                            alert('Failed to upload SVG to uploadUrl');
                         }
                     })
                     .catch(err => {
-                        alert('Failed to upload DXF: ' + err);
+                        alert('Failed to upload SVG: ' + err);
                     });
                 } else {
                     alert('Failed to get uploadUrl: ' + (data.errorText || 'Unknown error'));

@@ -30,6 +30,7 @@ import traceback
 from typing import Any, NoReturn
 from urllib.parse import quote, unquote_plus
 from wsgiref.simple_server import make_server
+import math
 
 import markdown  # type: ignore
 import qrcode
@@ -287,6 +288,7 @@ class BServer:
 <p>
     <button class="link-button" name="render" value="1" formtarget="_blank">{_("Generate")}</button>
     <button class="link-button" name="render" value="2" formtarget="_self">{_("Download")}</button>
+    <!--need add info about svg format will be default no matter what format user select when ordering-->
     <button class="link-button" id="order-product-btn" type="button">{_("Order product")}</button>
     <!--<button name="render" value="0" formtarget="_self">{_("Save to URL")}</button>
     <button class="link-button" name="render" value="3" formtarget="_blank">{_("QR Code")}</button>-->
@@ -474,7 +476,7 @@ class BServer:
 <div class="linkbar">
 <ul>
 {self.genLinks(lang)}
-  <li class="right"><div style="margin-bottom: 10px;">\U0001f50d</div><input class="input-base" autocomplete="off" type="search" oninput="filterSearchItems();" name="search" id="search" placeholder="Search"></li>
+  <li class="right"><input class="input-base" autocomplete="off" type="search" oninput="filterSearchItems();" name="search" id="search" placeholder="\U0001f50dSearch"></li>
 </ul>
 </div>
 <hr/>
@@ -497,7 +499,7 @@ class BServer:
         result.append(f'  <li class="right">{self.genHTMLLanguageSelection(lang)}  </li>\n')
 
         if preview:
-            result.append(f'    <li class="right"><div class="vertical-centred">Preview<input id="preview_chk" type="checkbox" checked="checked"></div></li>\n')
+            result.append(f'    <li class="right"><div class="vertical-centred">Preview<input style="margin-left: 5px;" id="preview_chk" type="checkbox" checked="checked"></div></li>\n')
         return "".join(result)
 
     def getHTMLThemeSwitcher(self) -> str:
@@ -644,6 +646,77 @@ class BServer:
         self._cache[("Gallery", lang_name)] = [s.encode("utf-8") for s in result]
         return self._cache[("Gallery", lang_name)]
 
+    def pathSVGCalc2(self, svg_data):
+        """Calculate total length of SVG paths"""
+        import re
+        
+        # Decode bytes to string if needed
+        def parse_path_data(d):
+            commands = []
+            current = []
+            for token in re.findall(r'[A-Za-z]|[-+]?\d*\.?\d+', d):
+                if token.isalpha():
+                    if current:
+                        commands.append(current)
+                        current = []
+                    current = [token]
+                else:
+                    current.append(float(token))
+            if current:
+                commands.append(current)
+            return commands
+
+        def calculate_path_length(commands):
+            length = 0
+            x, y = 0, 0
+            for cmd in commands:
+                if not cmd:
+                    continue
+                c = cmd[0]
+                if c == 'M':
+                    x, y = cmd[1], cmd[2]
+                elif c == 'L':
+                    x2, y2 = cmd[1], cmd[2]
+                    length += math.sqrt((x2-x)**2 + (y2-y)**2)
+                    x, y = x2, y2
+                elif c == 'H':
+                    x2 = cmd[1]
+                    length += abs(x2-x)
+                    x = x2
+                elif c == 'V':
+                    y2 = cmd[1]
+                    length += abs(y2-y)
+                    y = y2
+                elif c == 'C':
+                    x1, y1, x2, y2, x3, y3 = cmd[1:]
+                    # Approximate cubic bezier with line segments
+                    steps = 10
+                    for i in range(steps):
+                        t1 = i / steps
+                        t2 = (i + 1) / steps
+                        x1_ = (1-t1)**3 * x + 3*(1-t1)**2*t1*x1 + 3*(1-t1)*t1**2*x2 + t1**3*x3
+                        y1_ = (1-t1)**3 * y + 3*(1-t1)**2*t1*y1 + 3*(1-t1)*t1**2*y2 + t1**3*y3
+                        x2_ = (1-t2)**3 * x + 3*(1-t2)**2*t2*x1 + 3*(1-t2)*t2**2*x2 + t2**3*x3
+                        y2_ = (1-t2)**3 * y + 3*(1-t2)**2*t2*y1 + 3*(1-t2)*t2**2*y2 + t2**3*y3
+                        length += math.sqrt((x2_-x1_)**2 + (y2_-y1_)**2)
+                    x, y = x3, y3
+                elif c == 'Z':
+                    # Close path - calculate distance to start
+                    if commands and commands[0][0] == 'M':
+                        x2, y2 = commands[0][1], commands[0][2]
+                        length += math.sqrt((x2-x)**2 + (y2-y)**2)
+                        x, y = x2, y2
+            return length
+
+        total_length = 0
+        # Find all path elements
+        path_pattern = r'<path[^>]*d="([^"]*)"'
+        for match in re.finditer(path_pattern, svg_data):
+            path_data = match.group(1)
+            commands = parse_path_data(path_data)
+            total_length += calculate_path_length(commands)
+        return total_length
+
     def serve(self, environ, start_response):
         # serve favicon from static for generated SVGs
         if environ["PATH_INFO"] == "favicon.ico":
@@ -657,9 +730,12 @@ class BServer:
         name = environ["PATH_INFO"][1:]
         args = [unquote_plus(arg) for arg in environ.get('QUERY_STRING', '').split("&")]
         render = "0"
+        thickness = 0;
         for arg in args:
             if arg.startswith("render="):
                 render = arg[len("render="):]
+            if arg.startswith("thickness="):
+                thickness = float(arg[len("thickness="):])
 
         if not self.legal_url:
             if (environ.get('HTTP_HOST', '') == "boxes.hackerspace-bamberg.de" or
@@ -735,12 +811,15 @@ class BServer:
         
         # --- Order product: render=5 ---
         if render == "5":
-            extension = box.format
-            if extension == "svg_Ponoko":
-                extension = "svg"
+            # Calculate SVG path length if it's an SVG
+            svg_data = data.read()
+            total_length= self.pathSVGCalc2(svg_data.decode('utf-8'))
+            data = io.BytesIO(svg_data)
+            # --- to order we save only in svg
             http_headers = [("Content-type", "application/dxf"),
-                            ("Content-Disposition", f'attachment; filename="{box.__class__.__name__}.dxf"'),
-                            ("Access-Control-Allow-Origin", "*")]
+                            ("Content-Disposition", f'attachment; filename="{box.__class__.__name__}.svg"'),
+                            ("Access-Control-Allow-Origin", "*"),
+                            ("X-lenght-thickness", f"{math.ceil(total_length)}; {thickness}")]
             start_response(status, http_headers)
             return environ['wsgi.file_wrapper'](data, 512 * 1024)
         
