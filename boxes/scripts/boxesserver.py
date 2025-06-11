@@ -288,7 +288,6 @@ class BServer:
 <p>
     <button class="link-button" name="render" value="1" formtarget="_blank">{_("Generate")}</button>
     <button class="link-button" name="render" value="2" formtarget="_self">{_("Download")}</button>
-    <!--need add info about svg format will be default no matter what format user select when ordering-->
     <button class="link-button" id="order-product-btn" type="button">{_("Order product")}</button>
     <!--<button name="render" value="0" formtarget="_self">{_("Save to URL")}</button>
     <button class="link-button" name="render" value="3" formtarget="_blank">{_("QR Code")}</button>-->
@@ -646,7 +645,7 @@ class BServer:
         self._cache[("Gallery", lang_name)] = [s.encode("utf-8") for s in result]
         return self._cache[("Gallery", lang_name)]
 
-    def pathSVGCalc2(self, svg_data):
+    def pathSVGCalc(self, svg_data):
         """Calculate total length of SVG paths"""
         import re
         
@@ -813,13 +812,13 @@ class BServer:
         if render == "5":
             # Calculate SVG path length if it's an SVG
             svg_data = data.read()
-            total_length= self.pathSVGCalc2(svg_data.decode('utf-8'))
+            total_length= self.pathSVGCalc(svg_data.decode('utf-8'))
             data = io.BytesIO(svg_data)
             # --- to order we save only in svg
             http_headers = [("Content-type", "application/dxf"),
                             ("Content-Disposition", f'attachment; filename="{box.__class__.__name__}.svg"'),
                             ("Access-Control-Allow-Origin", "*"),
-                            ("X-lenght-thickness", f"{math.ceil(total_length)}; {thickness}")]
+                            ("X-Order-Parameters", f"{math.ceil(total_length)}; {thickness}")]
             start_response(status, http_headers)
             return environ['wsgi.file_wrapper'](data, 512 * 1024)
         

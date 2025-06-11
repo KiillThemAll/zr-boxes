@@ -124,7 +124,13 @@ function initOrderProductButton() {
         let length = 0;
         let thickness = 0; 
         for (let pair of formData.entries()) {
+            console.log(pair, 'lol');
             if(pair[0] === 'format') pair[1] = 'svg';
+            if(pair[0] === 'reference') pair[1] = '0.0';
+            // there are some args, that duplicated
+            if(pair[0] === 'qr_code') pair[1] = '0';
+            if(pair[0] === 'debug') pair[1] = '0';
+            if(pair[0] === 'labels') pair[1] = '0';
             params.append(pair[0], pair[1]);
         }
         fetch(window.location.pathname + '?' + params.toString(), {
@@ -132,7 +138,7 @@ function initOrderProductButton() {
         })
         .then(function(response) {
             if (!response.ok) throw new Error('Network response was not ok');
-            [length, thickness] = response.headers.get('X-lenght-thickness').split(';')
+            [length, thickness] = response.headers.get('X-Order-Parameters').split(';')
             return response.blob();
         })
         .then(function(blob) {
@@ -160,8 +166,7 @@ function initOrderProductButton() {
                         if (putRes.ok) {
                             // Add fileName as query param to receiverUrl
                             const url = new URL(receiverUrl);
-                            // in camal? not in snake?
-                            url.searchParams.set('fileName', fileName);
+                            url.searchParams.set('file_name', fileName);
                             url.searchParams.set('meters', length);
                             url.searchParams.set('thickness_01mm', thickness*10)
                             window.open(url.toString(), '_blank');

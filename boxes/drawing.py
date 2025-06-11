@@ -429,9 +429,6 @@ class SVGSurface(Surface):
     def _add_metadata(self, root) -> None:
         md = self.metadata
 
-        title = "{group} - {name}".format(**md)
-        creation_date: str = md["creation_date"].strftime("%Y-%m-%d %H:%M:%S")
-
         # Add Inkscape style rdf meta data
         root.set("xmlns:dc", "http://purl.org/dc/elements/1.1/")
         root.set("xmlns:cc", "http://creativecommons.org/ns#")
@@ -442,47 +439,25 @@ class SVGSurface(Surface):
         w = ET.SubElement(r, 'cc:Work')
         w.text = '\n'
 
-        self._addTag(w, 'dc:title', title)
+        # Add only the requested metadata fields
+        self._addTag(w, 'dc:title', md["name"])
         if not md["reproducible"]:
+            creation_date: str = md["creation_date"].strftime("%Y-%m-%d %H:%M:%S")
             self._addTag(w, 'dc:date', creation_date)
 
         if "url" in md and md["url"]:
             self._addTag(w, 'dc:source', md["url"])
-            self._addTag(w, 'dc:source', md["url_short"])
-        else:
-            self._addTag(w, 'dc:source', md["cli"])
-
-        desc = md["short_description"] or ""
-        if "description" in md and md["description"]:
-            desc += "\n\n" + md["description"]
-        desc += "\n\nCreated with Boxes.py (https://boxes.hackerspace-bamberg.de/)\n"
-        desc += "Command line: %s\n" % md["cli"]
-        desc += "Command line short: %s\n" % md["cli_short"]
-        if md["url"]:
-            desc += "Url: %s\n" % md["url"]
-            desc += "Url short: %s\n" % md["url_short"]
-            desc += "SettingsUrl: %s\n" % md["url"].replace("&render=1", "")
-            desc += "SettingsUrl short: %s\n" % md["url_short"].replace("&render=1", "")
-        self._addTag(w, 'dc:description', desc)
 
         # title
         self._addTag(root, "title", md["name"], True)
 
-        # Add XML comment
-        txt = """\n{name} - {short_description}\n""".format(**md)
-        if md["description"]:
-            txt += """\n\n{description}\n\n""".format(**md)
-        txt += """\nCreated with Boxes.py (https://boxes.hackerspace-bamberg.de/)\n"""
+        # Add XML comment with minimal info
+        txt = f"\n{md['name']}\n"
         if not md["reproducible"]:
-            txt += f"""Creation date: {creation_date}\n"""
-
-        txt += "Command line (remove spaces between dashes): %s\n" % md["cli_short"]
-
+            creation_date: str = md["creation_date"].strftime("%Y-%m-%d %H:%M:%S")
+            txt += f"Creation date: {creation_date}\n"
         if md["url"]:
-            txt += "Url: %s\n" % md["url"]
-            txt += "Url short: %s\n" % md["url_short"]
-            txt += "SettingsUrl: %s\n" % md["url"].replace("&render=1", "")
-            txt += "SettingsUrl short: %s\n" % md["url_short"].replace("&render=1", "")
+            txt += f"Url: {md['url']}\n"
         m = ET.Comment(txt.replace("--", "- -").replace("--", "- -")) # ----
         m.tail = '\n'
         root.insert(0, m)
@@ -613,28 +588,28 @@ class PSSurface(Surface):
         md = self.metadata
 
         desc = ""
-        desc += "%%Title: Boxes.py - {group} - {name}\n".format(**md)
+        # desc += "%%Title: Boxes.py - {group} - {name}\n".format(**md)
         if not md["reproducible"]:
             desc += f'%%CreationDate: {md["creation_date"].strftime("%Y-%m-%d %H:%M:%S")}\n'
-        desc += f'%%Keywords: boxes.py, laser, laser cutter\n'
-        desc += f'%%Creator: {md.get("url") or md["cli"]}\n'
-        desc += "%%CreatedBy: Boxes.py (https://boxes.hackerspace-bamberg.de/)\n"
-        for line in (md["short_description"] or "").split("\n"):
-            desc += "%% %s\n" % line
-        desc += "%\n"
-        if "description" in md and md["description"]:
-            desc += "%\n"
-            for line in md["description"].split("\n"):
-                desc += "%% %s\n" % line
-            desc += "%\n"
-
-        desc += "%% Command line: %s\n" % md["cli"]
-        desc += "%% Command line short: %s\n" % md["cli_short"]
+        # desc += f'%%Keywords: boxes.py, laser, laser cutter\n'
+        # desc += f'%%Creator: {md.get("url") or md["cli"]}\n'
+        # desc += "%%CreatedBy: Boxes.py (https://boxes.hackerspace-bamberg.de/)\n"
+        # for line in (md["short_description"] or "").split("\n"):
+        #     desc += "%% %s\n" % line
+        # desc += "%\n"
+        # if "description" in md and md["description"]:
+        #     desc += "%\n"
+        #     for line in md["description"].split("\n"):
+        #         desc += "%% %s\n" % line
+        #     desc += "%\n"
+        #
+        # desc += "%% Command line: %s\n" % md["cli"]
+        # desc += "%% Command line short: %s\n" % md["cli_short"]
         if md["url"]:
             desc += f'%%Url: {md["url"]}\n'
-            desc += f'%%Url short: {md["url_short"]}\n'
-            desc += f'%%SettingsUrl: {md["url"].replace("&render=1", "")}\n'
-            desc += f'%%SettingsUrl short: {md["url_short"].replace("&render=1", "")}\n'
+            # desc += f'%%Url short: {md["url_short"]}\n'
+            # desc += f'%%SettingsUrl: {md["url"].replace("&render=1", "")}\n'
+            # desc += f'%%SettingsUrl short: {md["url_short"].replace("&render=1", "")}\n'
         return desc
 
     def finish(self, inner_corners="loop"):
