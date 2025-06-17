@@ -333,24 +333,26 @@ class Boxes:
         short_description: str = ""
         if self.__doc__:
             short_description = inspect.cleandoc(self.__doc__)
-        # self.metadata = {
-        #     "name": self.__class__.__name__,
-        #     "short_description": short_description,
-        #     "description": self.description,
-        #     "group": self.ui_group,
-        #     "url": "",
-        #     "url_short": "",
-        #     "cli": "",
-        #     "cli_short": "",
-        #     "creation_date": datetime.datetime.now(),
-        #     "reproducible": False,  # If True output does not contain variable content like creation date.
-        # }
-        self.metadata = {
-            "name": self.__class__.__name__,
-            "url_short": "",
-            "creation_date": datetime.datetime.now(),
-            "reproducible": False,  # If True output does not contain variable content like creation date.
-        }
+        if(self.formats == 'svg'):
+            self.metadata = {
+                "name": self.__class__.__name__,
+                "url_short": "",
+                "creation_date": datetime.datetime.now(),
+                "reproducible": False,  # If True output does not contain variable content like creation date.
+            }
+        else:
+            self.metadata = {
+                "name": self.__class__.__name__,
+                "short_description": short_description,
+                "description": self.description,
+                "group": self.ui_group,
+                "url": "",
+                "url_short": "",
+                "cli": "",
+                "cli_short": "",
+                "creation_date": datetime.datetime.now(),
+                "reproducible": False,  # If True output does not contain variable content like creation date.
+            }
 
         # Dummy attribute for static analytic tools. Will be overwritten by `argparser` at runtime.
         self.thickness: float = 0.0
