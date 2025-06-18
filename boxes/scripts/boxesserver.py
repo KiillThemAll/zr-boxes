@@ -819,6 +819,7 @@ class BServer:
                             ("Content-Disposition", f'attachment; filename="{box.__class__.__name__}.svg"'),
                             ("Access-Control-Allow-Origin", "*"),
                             ("X-Order-Parameters", f"{math.ceil(total_length)}; {thickness}")]
+
             start_response(status, http_headers)
             return environ['wsgi.file_wrapper'](data, 512 * 1024)
         
