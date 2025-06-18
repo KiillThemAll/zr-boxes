@@ -230,7 +230,7 @@ class ArgparseEdgeType:
             """<option value="%s"%s>%s</option>""" %
              (e, ' selected="selected"' if e == default else "",
               translate("{} {}".format(e, self.names.get(e, "")))) for e in self.edges)
-        return """<select name="{}" id="{}" aria-labeledby="{} {}" size="1">\n{}</select>\n""".format(name,  name, name+"_id", name+"_description", options)
+        return """<select class="combobox" name="{}" id="{}" aria-labeledby="{} {}" size="1">\n{}</select>\n""".format(name,  name, name+"_id", name+"_description", options)
 
     def inx(self, name, viewname, arg):
         return ('        <param name="%s" type="optiongroup" appearance="combo" gui-text="%s" gui-description=%s>\n' %
@@ -249,8 +249,8 @@ class BoolArg:
     def html(self, name, default, _):
         if isinstance(default, (str)):
             default = self(default)
-        return """<input name="%s" type="hidden" value="0">
-<input name="%s" id="%s" aria-labeledby="%s %s" type="checkbox" value="1"%s>""" % \
+        return """<div style="display: flex;"><input name="%s" type="hidden" value="0">
+<input name="%s" id="%s" aria-labeledby="%s %s" type="checkbox" value="1"%s></div>""" % \
             (name, name, name, name+"_id", name+"_description",' checked="checked"' if default else "")
 
 boolarg = BoolArg()
@@ -333,18 +333,26 @@ class Boxes:
         short_description: str = ""
         if self.__doc__:
             short_description = inspect.cleandoc(self.__doc__)
-        self.metadata = {
-            "name": self.__class__.__name__,
-            "short_description": short_description,
-            "description": self.description,
-            "group": self.ui_group,
-            "url": "",
-            "url_short": "",
-            "cli": "",
-            "cli_short": "",
-            "creation_date": datetime.datetime.now(),
-            "reproducible": False,  # If True output does not contain variable content like creation date.
-        }
+        if(self.formats == 'svg'):
+            self.metadata = {
+                "name": self.__class__.__name__,
+                "url_short": "",
+                "creation_date": datetime.datetime.now(),
+                "reproducible": False,  # If True output does not contain variable content like creation date.
+            }
+        else:
+            self.metadata = {
+                "name": self.__class__.__name__,
+                "short_description": short_description,
+                "description": self.description,
+                "group": self.ui_group,
+                "url": "",
+                "url_short": "",
+                "cli": "",
+                "cli_short": "",
+                "creation_date": datetime.datetime.now(),
+                "reproducible": False,  # If True output does not contain variable content like creation date.
+            }
 
         # Dummy attribute for static analytic tools. Will be overwritten by `argparser` at runtime.
         self.thickness: float = 0.0

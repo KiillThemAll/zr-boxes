@@ -30,6 +30,7 @@ import traceback
 from typing import Any, NoReturn
 from urllib.parse import quote, unquote_plus
 from wsgiref.simple_server import make_server
+import math
 
 import markdown  # type: ignore
 import qrcode
@@ -209,9 +210,9 @@ class BServer:
                 """    <option value="%s"%s>%s</option>""" %
                 (e, ' selected="selected"' if (e == (default or a.default)) or (str(e) == str(default or a.default)) else "",
                  _(e)) for e in a.choices)
-            input = """<select name="{}" id="{}" aria-labeledby="{} {}" size="1">\n{}</select>\n""".format(name, name, name + "_id", name + "_description", options)
+            input = """<select class="combobox" name="{}" id="{}" aria-labeledby="{} {}" size="1">\n{}</select>\n""".format(name, name, name + "_id", name + "_description", options)
         else:
-            input = """<input name="%s" id="%s" aria-labeledby="%s %s" type="text" value="%s">""" % \
+            input = """<input class="input-base" name="%s" id="%s" aria-labeledby="%s %s" type="text" value="%s">""" % \
                     (name, name, name + "_id", name + "_description", default or a.default)
 
         return row % input
@@ -246,7 +247,7 @@ class BServer:
 <div class="argumentcontainer">
 <div style="float: left;">
 <!--<a href="https://tridecagram.ru/factory/laser-cutting/boxes/{langparam}"><h1>{_("Boxes.py")}</h1></a>-->
-<a href="./{langparam}"><h1>{_("Boxes.py")}</h1></a>
+<h1><a href="./{langparam}">{_("Boxes.py")}</a></h1>
 </div>
 <div style="width: 120px; float: right;">
 <img alt="self-Logo" src="{self.static_url}/boxes-logo.svg" width="120">
@@ -285,11 +286,11 @@ class BServer:
 <input type="hidden" name="language" id="language" value="{lang_name}">
 
 <p>
-    <button name="render" value="1" formtarget="_blank">{_("Generate")}</button>
-    <button name="render" value="2" formtarget="_self">{_("Download")}</button>
-    <button id="order-product-btn" type="button">{_("Order product")}</button>
+    <button class="link-button" name="render" value="1" formtarget="_blank">{_("Generate")}</button>
+    <button class="link-button" name="render" value="2" formtarget="_self">{_("Download")}</button>
+    <button class="link-button" id="order-product-btn" type="button">{_("Order product")}</button>
     <!--<button name="render" value="0" formtarget="_self">{_("Save to URL")}</button>
-    <button name="render" value="3" formtarget="_blank">{_("QR Code")}</button>-->
+    <button class="link-button" name="render" value="3" formtarget="_blank">{_("QR Code")}</button>-->
 </p>
 </form>
 </div>
@@ -349,8 +350,8 @@ class BServer:
 <div style="width: 75%; float: left;">
 {self.genPagePartHeader(lang)}
 <div class="modenav">
-<span class="modebutton"><a href="Gallery">{_("Gallery")}</a></span>
-<span class="modebutton modeactive">{_("Menu")}</span>
+<button class="link-button" onclick="window.location = 'Gallery'">{_("Gallery")}</button>
+<button class="link-button--bold">{_("Menu")}</button>
 </div>
 <br>
 <div class="menu" style="width: 100%">
@@ -415,10 +416,16 @@ class BServer:
         return s
 
     def genHTMLCSS(self) -> str:
-        return f'<link rel="stylesheet" href="{self.static_url}/self.css">'
+        url = self.static_url
+        selfCss = f'<link rel="stylesheet" href="{url}/self.css">'
+        localCss = f'<link rel="stylesheet" href="{url}/local.css">'
+        return selfCss + '\n' + localCss 
 
     def genHTMLJS(self) -> str:
-        return f'<script src="{self.static_url}/self.js"></script>'
+        url = self.static_url
+        selfJs = f'<script src="{url}/self.js"></script>'
+        localJs = f'<script src="{url}/local.js"></script>'
+        return selfJs + '\n' + localJs 
 
     def genHTMLLanguageSelection(self, lang) -> str:
         """Generates a dropdown selection for the language change."""
@@ -434,7 +441,7 @@ class BServer:
 
         return """
         <form>
-            <select name="language" onchange='if(this.value != \"""" + current_language + """\") { this.form.submit(); }'>
+            <select class="combobox" name="language" onchange='if(this.value != \"""" + current_language + """\") { this.form.submit(); }'>
 """ + html_option + """
             </select>
         </form>
@@ -468,7 +475,7 @@ class BServer:
 <div class="linkbar">
 <ul>
 {self.genLinks(lang)}
-  <li class="right">\U0001f50d <input autocomplete="off" type="search" oninput="filterSearchItems();" name="search" id="search" placeholder="Search"></li>
+  <li class="right"><input class="input-base" autocomplete="off" type="search" oninput="filterSearchItems();" name="search" id="search" placeholder="\U0001f50dSearch"></li>
 </ul>
 </div>
 <hr/>
@@ -484,13 +491,28 @@ class BServer:
         #    links.append((self.legal_url, _("Legal")))
         #links.append(("https://florianfesti.github.io/boxes/html/give_back.html", _("Give Back")))
 
-        result = [f'  <li><a href="{url}" target="_blank" rel="noopener">{txt}</a></li>\n' for url, txt in links]
+        result = [f'  <li {f"class=""last-visible"""if idx ==len(links) else f""} ><a href="{url}" target="_blank" rel="noopener">{txt}</a></li>\n' for idx, [url, txt] in enumerate(links, 1)]
 
-        if preview:
-            result.append(f'    <li class="right">{_("Preview")} <input id="preview_chk" type="checkbox" checked="checked"> </li>\n')
+        result.append(self.getThemeSwitcher());
 
         result.append(f'  <li class="right">{self.genHTMLLanguageSelection(lang)}  </li>\n')
+
+        if preview:
+            result.append(f'    <li class="right"><div class="vertical-centred">Preview<input style="margin-left: 5px;" id="preview_chk" type="checkbox" checked="checked"></div></li>\n')
         return "".join(result)
+
+    def getHTMLThemeSwitcher(self) -> str:
+        return f"""
+<div class="theme-switcher">
+  <div class="theme-switcher__img">
+    <svg class="sun-icon theme-switcher__img"></svg>
+    <svg class="moon-icon theme-switcher__img"  style="display: none"></svg>
+  </div>
+  <div class="theme-switcher__text">Светлая тема</div>
+</div>
+"""
+    def getThemeSwitcher(self):
+        return f'<li class="right push-right">{self.getHTMLThemeSwitcher()}</li>\n'
 
     def genPageError(self, name, e, lang) -> list[bytes]:
         """Generates a error page."""
@@ -595,8 +617,8 @@ class BServer:
 <div style="width: 75%; float: left;">
 {self.genPagePartHeader(lang)}
 <div class="modenav">
-<span class="modebutton modeactive">{_("Gallery")}</span>
-<span class="modebutton"><a href="Menu">{_("Menu")}</a></span>
+<button class="link-button--bold">{_("Gallery")}</button>
+<button class="link-button" onclick="window.location = 'Menu'">{_("Menu")}</button>
 </div>
 """]
         for nr, group in enumerate(self.groups):
@@ -623,6 +645,77 @@ class BServer:
         self._cache[("Gallery", lang_name)] = [s.encode("utf-8") for s in result]
         return self._cache[("Gallery", lang_name)]
 
+    def pathSVGCalc(self, svg_data):
+        """Calculate total length of SVG paths"""
+        import re
+        
+        # Decode bytes to string if needed
+        def parse_path_data(d):
+            commands = []
+            current = []
+            for token in re.findall(r'[A-Za-z]|[-+]?\d*\.?\d+', d):
+                if token.isalpha():
+                    if current:
+                        commands.append(current)
+                        current = []
+                    current = [token]
+                else:
+                    current.append(float(token))
+            if current:
+                commands.append(current)
+            return commands
+
+        def calculate_path_length(commands):
+            length = 0
+            x, y = 0, 0
+            for cmd in commands:
+                if not cmd:
+                    continue
+                c = cmd[0]
+                if c == 'M':
+                    x, y = cmd[1], cmd[2]
+                elif c == 'L':
+                    x2, y2 = cmd[1], cmd[2]
+                    length += math.sqrt((x2-x)**2 + (y2-y)**2)
+                    x, y = x2, y2
+                elif c == 'H':
+                    x2 = cmd[1]
+                    length += abs(x2-x)
+                    x = x2
+                elif c == 'V':
+                    y2 = cmd[1]
+                    length += abs(y2-y)
+                    y = y2
+                elif c == 'C':
+                    x1, y1, x2, y2, x3, y3 = cmd[1:]
+                    # Approximate cubic bezier with line segments
+                    steps = 10
+                    for i in range(steps):
+                        t1 = i / steps
+                        t2 = (i + 1) / steps
+                        x1_ = (1-t1)**3 * x + 3*(1-t1)**2*t1*x1 + 3*(1-t1)*t1**2*x2 + t1**3*x3
+                        y1_ = (1-t1)**3 * y + 3*(1-t1)**2*t1*y1 + 3*(1-t1)*t1**2*y2 + t1**3*y3
+                        x2_ = (1-t2)**3 * x + 3*(1-t2)**2*t2*x1 + 3*(1-t2)*t2**2*x2 + t2**3*x3
+                        y2_ = (1-t2)**3 * y + 3*(1-t2)**2*t2*y1 + 3*(1-t2)*t2**2*y2 + t2**3*y3
+                        length += math.sqrt((x2_-x1_)**2 + (y2_-y1_)**2)
+                    x, y = x3, y3
+                elif c == 'Z':
+                    # Close path - calculate distance to start
+                    if commands and commands[0][0] == 'M':
+                        x2, y2 = commands[0][1], commands[0][2]
+                        length += math.sqrt((x2-x)**2 + (y2-y)**2)
+                        x, y = x2, y2
+            return length
+
+        total_length = 0
+        # Find all path elements
+        path_pattern = r'<path[^>]*d="([^"]*)"'
+        for match in re.finditer(path_pattern, svg_data):
+            path_data = match.group(1)
+            commands = parse_path_data(path_data)
+            total_length += calculate_path_length(commands)
+        return total_length
+
     def serve(self, environ, start_response):
         # serve favicon from static for generated SVGs
         if environ["PATH_INFO"] == "favicon.ico":
@@ -636,9 +729,12 @@ class BServer:
         name = environ["PATH_INFO"][1:]
         args = [unquote_plus(arg) for arg in environ.get('QUERY_STRING', '').split("&")]
         render = "0"
+        thickness = 0;
         for arg in args:
             if arg.startswith("render="):
                 render = arg[len("render="):]
+            if arg.startswith("thickness="):
+                thickness = float(arg[len("thickness="):])
 
         if not self.legal_url:
             if (environ.get('HTTP_HOST', '') == "boxes.hackerspace-bamberg.de" or
@@ -714,10 +810,16 @@ class BServer:
         
         # --- Order product: render=5 ---
         if render == "5":
-            extension = "svg"
-            http_headers = [("Content-type", "image/svg+xml"),
+            # Calculate SVG path length if it's an SVG
+            svg_data = data.read()
+            total_length= self.pathSVGCalc(svg_data.decode('utf-8'))
+            data = io.BytesIO(svg_data)
+            # --- to order we save only in svg
+            http_headers = [("Content-type", "application/dxf"),
                             ("Content-Disposition", f'attachment; filename="{box.__class__.__name__}.svg"'),
-                            ("Access-Control-Allow-Origin", "*")]
+                            ("Access-Control-Allow-Origin", "*"),
+                            ("X-Order-Parameters", f"{math.ceil(total_length)}; {thickness}")]
+
             start_response(status, http_headers)
             return environ['wsgi.file_wrapper'](data, 512 * 1024)
         

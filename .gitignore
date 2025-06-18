@@ -2,6 +2,7 @@
 *.plt
 *.svg
 !examples/*.svg
+!static/img/*.svg
 *.dxf
 *.pyc
 *.pwj
@@ -21,3 +22,5 @@ tracker.log
 .DS_Store
 virtual_environment
 boxes/__pycache__
+static/node_modules
+Session.vim

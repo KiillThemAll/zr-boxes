@@ -1,0 +1,15 @@
+{
+  "version": "0.0.1",
+  "tasks": [
+    {
+      "label": "Scss watch",
+      "type": "shell",
+      "command": "node ./node_modules/gulp/bin/gulp.js watch_files",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}

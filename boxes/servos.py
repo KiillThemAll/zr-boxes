@@ -63,7 +63,7 @@ class ServoArg:
 
     def html(self, name: str, default: str, translate) -> str:
         options = "\n".join("""<option value="{}"{}>{}</option>""".format(name, ' selected="selected"' if name == default else "", name) for name in self.servos)
-        return f"""<select name="{name}" size="1">\n{options}</select>\n"""
+        return f"""<select class="combobox" name="{name}" size="1">\n{options}</select>\n"""
 
 
 class Servo:
