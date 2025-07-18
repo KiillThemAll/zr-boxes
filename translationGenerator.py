@@ -1,103 +1,124 @@
 import csv
+import re
 
-def escape_po_string(s):
-    """
-    Escape a string for .po format:
-    - Backslashes as \\
-    - Double quotes as \"
-    - Newlines as \n (but only as actual newlines in .po, not as literal \n)
-    """
-    # .po files use real newlines, not \n, so don't replace \n with \\n
-    # Only escape backslashes and double quotes
-    return s.replace('\\', '\\\\').replace('"', '\\"')
-
-def main():
-    po_path = 'po/ru.po'
-    csv_path = 'boxes_translated-mix.csv'
-
-    # Read translations from CSV into a dict: msgid -> msgstr
+def load_csv_translations(csv_path, multiline=False):
     translations = {}
-    with open(csv_path, encoding='utf-8') as csvfile:
-        reader = csv.DictReader(csvfile)
-        lol = 10
+    with open(csv_path, encoding='utf-8') as f:
+        reader = csv.reader(f)
         for row in reader:
-            msgid = row['msgid'].strip()
-            msgstr = row['msgstr'].strip()
-            if msgid:
+            if not row or len(row) < 2:
+                continue
+            msgid = row[0]
+            msgstr = row[1]
+            if multiline:
                 translations[msgid] = msgstr
-            else print(msgid)
+            else:
+                translations[msgid] = msgstr
+    return translations
 
-    # Read the .po file lines
+def find_multiline_match(po_msgid, multiline_dict):
+    for csv_msgid, csv_msgstr in multiline_dict.items():
+        candidate = csv_msgid.replace('^_^', '')
+        if candidate.strip() == po_msgid.strip():
+            return csv_msgstr
+    return None
+
+def update_po_file_inplace(po_path, single_dict, multiline_dict):
+
     with open(po_path, encoding='utf-8') as f:
         lines = f.readlines()
 
-    # Only update msgstr sections, do not touch msgid sections
     new_lines = []
     i = 0
     while i < len(lines):
         line = lines[i]
+        # Only alter msgstr lines, leave everything else untouched
         if line.startswith('msgid '):
-            # Copy msgid and any multiline msgid lines as is
-            msgid_lines = [line]
-            j = i + 1
-            while j < len(lines) and lines[j].startswith('"') and not lines[j].startswith('msgstr'):
-                msgid_lines.append(lines[j])
-                j += 1
-            new_lines.extend(msgid_lines)
-            # Now at msgstr line (or not)
-            if j < len(lines) and lines[j].startswith('msgstr'):
-                # Reconstruct full msgid for lookup
-                msgid_full = ""
-                for l in msgid_lines:
-                    if l.startswith('msgid '):
-                        part = l[len('msgid '):].strip()
-                        if part.startswith('"') and part.endswith('"'):
-                            part = part[1:-1]
-                        msgid_full += part
-                    elif l.startswith('"') and l.rstrip().endswith('"'):
-                        msgid_full += l.strip()[1:-1]
-                # If translation exists, replace msgstr, else keep as is
-                if msgid_full in translations:
-                    new_msgstr = translations[msgid_full]
-                    # Write msgstr in the same multiline style as msgid if msgid was multiline or translation contains newlines
-                    if len(msgid_lines) > 1 or '\n' in new_msgstr:
-                        new_lines.append('msgstr ""\n')
-                        # If multiline msgid, try to match line lengths
-                        if len(msgid_lines) > 1:
-                            msgid_line_lengths = []
-                            for l in msgid_lines:
-                                if l.startswith('msgid '):
-                                    part = l[len('msgid '):].strip()
-                                    if part.startswith('"') and part.endswith('"'):
-                                        part = part[1:-1]
-                                    msgid_line_lengths.append(len(part))
-                                elif l.startswith('"') and l.rstrip().endswith('"'):
-                                    msgid_line_lengths.append(len(l.strip()[1:-1]))
-                            idx = 0
-                            for length in msgid_line_lengths:
-                                part = new_msgstr[idx:idx+length]
-                                new_lines.append(f'"{escape_po_string(part)}"\n')
-                                idx += length
-                            if idx < len(new_msgstr):
-                                # Add any remaining part
-                                new_lines.append(f'"{escape_po_string(new_msgstr[idx:])}"\n')
+            msgid_match = re.match(r'msgid\s+"(.*)"', line)
+            if msgid_match:
+                msgid_val = msgid_match.group(1)
+                if msgid_val == '':
+                    # Multiline msgid
+                    msgid_val = ''
+                    msgid_block_lines = []
+                    msgid_block_lines.append(line)  # msgid ""\n
+                    i += 1
+                    msgid_lines = []
+                    # Collect all msgid quoted lines (as in original)
+                    while i < len(lines):
+                        l = lines[i]
+                        if l.startswith('"') and l.rstrip().endswith('"'):
+                            msgid_block_lines.append(l)
+                            msgid_lines.append(l.strip()[1:-1])
+                            i += 1
                         else:
-                            # Fallback: split by newlines in translation
-                            for l in new_msgstr.split('\n'):
-                                new_lines.append(f'"{escape_po_string(l)}"\n')
+                            break
+                    msgid_val = ''.join(msgid_lines)
+                    translation = find_multiline_match(msgid_val, multiline_dict)
+                    # Write msgid block as in original, unmodified
+                    for l in msgid_block_lines:
+                        new_lines.append(l)
+                    # Now, alter only msgstr part
+                    if i < len(lines) and lines[i].startswith('msgstr'):
+                        # Write msgstr header
+                        new_lines.append('msgstr ""\n')
+                        i += 1
+                        # Skip all following quoted lines (original msgstr)
+                        while i < len(lines) and lines[i].startswith('"'):
+                            i += 1
+                        if translation is not None:
+                            translation_lines = translation.split('^_^')
+                            for t in translation_lines:
+                                # for l in re.findall(r'.{1,80}', t):
+                                #     # Always add \n at the end of each line for multiline
+                                new_lines.append(f'"{t}"\n')
+                        # else: leave msgstr "" (already written)
                     else:
-                        new_lines.append(f'msgstr "{escape_po_string(new_msgstr)}"\n')
+                        # If no msgstr found, just add empty msgstr
+                        new_lines.append('msgstr ""\n')
+                    continue
                 else:
-                    new_lines.append(lines[j])
-                i = j + 1
-                continue
-        else:
-            new_lines.append(line)
+                    # Single line msgid
+                    translation = single_dict.get(msgid_val)
+                    if translation is None:
+                        translation = find_multiline_match(msgid_val, multiline_dict)
+                    new_lines.append(line)
+                    i += 1
+                    # Only alter msgstr part
+                    if i < len(lines) and lines[i].startswith('msgstr'):
+                        if translation is not None:
+                            if '^_^' in translation:
+                                translation_lines = translation.split('^_^')
+                                new_lines.append('msgstr ""\n')
+                                for t in translation_lines:
+                                    # for l in re.findall(r'.{1,80}', t):
+                                    new_lines.append(f'"{t}"\n')
+                            else:
+                                new_lines.append(f'msgstr "{translation}"\n')
+                            i += 1
+                            # Skip any original quoted msgstr lines
+                            while i < len(lines) and lines[i].startswith('"'):
+                                i += 1
+                        else:
+                            # No translation, leave msgstr as empty
+                            new_lines.append('msgstr ""\n')
+                            i += 1
+                            while i < len(lines) and lines[i].startswith('"'):
+                                i += 1
+                    continue
+        # For all other lines (not msgid/msgstr), just copy
+        new_lines.append(line)
         i += 1
 
-    # Write back to the .po file (or to a new file)
     with open(po_path, 'w', encoding='utf-8') as f:
         f.writelines(new_lines)
 
 if __name__ == '__main__':
-    main()
+    single_csv = 'boxes_translated-mix.csv'
+    multiline_csv = 'boxes_multiline_translated.csv'
+    po_file = 'po/ru.po'
+
+    single_dict = load_csv_translations(single_csv, multiline=False)
+    multiline_dict = load_csv_translations(multiline_csv, multiline=True)
+
+    update_po_file_inplace(po_file, single_dict, multiline_dict)

@@ -56,10 +56,10 @@ Click on (bottom side),Защелка (нижняя сторона)
 c Click on (bottom side),c Защелка (нижняя сторона)
 Click on (top),Защелка (верх)
 C Click on (top),C Защелка (верх)
-Dove Tail Joint,Соединение "ласточкин хвост"
-d Dove Tail Joint,d Соединение "ласточкин хвост"
-Dove Tail Joint (opposing side),Соединение "ласточкин хвост" (противоположная сторона)
-D Dove Tail Joint (opposing side),D Соединение "ласточкин хвост" (противоположная сторона)
+Dove Tail Joint,Соединение 'ласточкин хвост'
+d Dove Tail Joint,d Соединение 'ласточкин хвост'
+Dove Tail Joint (opposing side),Соединение 'ласточкин хвост' (противоположная сторона)
+D Dove Tail Joint (opposing side),D Соединение 'ласточкин хвост' (противоположная сторона)
 Flex cut,Гибкий разрез
 X Flex cut,X Гибкий разрез
 Rack (and pinion) Edge,Зубчатый край (реечный)
@@ -292,7 +292,7 @@ fans_bottom,вентиляторы снизу
 number of fans on the bottom side (-1 for maximal number),количество вентиляторов снизу (-1 для максимального количества)
 screw_holes,винтовые отверстия
 diameter of the holes for screwing in the fans (in mm),диаметр отверстий для привинчивания вентиляторов (в мм)
-Settings for Dove Tail Joints,Настройки соединений типа ласточкин хвост
+Settings for Dove Tail Joints,Настройки соединений типа 'ласточкин хвост'
 how much should fingers widen (-80 to 80),насколько должны расширяться пальцы (-80 до 80)
 how far the dove tails stick out of/into the edge (multiples of thickness),насколько далеко ласточкины хвосты выступают из/в край (кратно толщине)
 radius,радиус
@@ -770,7 +770,7 @@ width of the viewing slot as part of total width (0 for closed front),ширин
 bottomheight,высота_основания
 height underneath the dispenser (in mm),высота под диспенсером (в мм)
 sideedges,боковые_края
-edges used for holding the front panels and back,края, используемые для удержания передних панелей и задней части
+edges used for holding the front panels and back,"края, используемые для удержания передних панелей и задней части"
 Display,Дисплей
 Display for flyers or leaflets,дисплей для флаеров или листовок
 Display Settings,Настройки дисплея
@@ -1036,9 +1036,9 @@ if magnet hole offset from pitch corners.  Typical is 7.75.,смещение о�
 pad_radius,радиус_накладки
 "The corner radius for each grid opening.  Typical is 0.8,","Радиус угла для каждого отверстия сетки. Обычно 0.8,"
 panel_x,панель_x
-the maximum sized panel that can be cut in x direction,максимальный размер панели, которую можно вырезать в направлении x
+the maximum sized panel that can be cut in x direction,"максимальный размер панели, которую можно вырезать в направлении x"
 panel_y,панель_y
-the maximum sized panel that can be cut in y direction,максимальный размер панели, которую можно вырезать в направлении y
+the maximum sized panel that can be cut in y direction,"максимальный размер панели, которую можно вырезать в направлении y"
 GridfinityTrayLayout,МакетЛоткаGridfinity
 A Gridfinity Tray Generator based on TrayLayout,Генератор лотка Gridfinity на основе TrayLayout
 "\nThis is a general purpose gridfinity tray generator.  You can create\nsomewhat arbitrarily shaped trays, or just do nothing for simple grid\nshaped trays.\n\nThe dimensions are automatically calculated to fit perfectly into a\ngridfinity grid (like the GridfinityBase, or any other Gridfinity\nbased base).\n\nEdit the layout text graphics to adjust your tray.\nYou can replace the hyphens and vertical bars representing the walls\nwith a space character to remove the walls.  You can replace the space\ncharacters representing the floor by a \""X\"" to remove the floor for\nthis compartment.\n","\nЭто универсальный генератор лотков gridfinity. Вы можете создавать\nлотки произвольной формы или просто ничего не делать для простых\nлотков в форме сетки.\n\nРазмеры автоматически рассчитываются для идеального размещения в\nсетке gridfinity (как GridfinityBase или любое другое основание\nна базе Gridfinity).\n\nИзмените текстовую графику макета для настройки лотка.\nВы можете заменить дефисы и вертикальные полосы, представляющие стены,\nна пробел, чтобы убрать стены. Вы можете заменить пробелы,\nпредставляющие пол, на \""X\"", чтобы убрать пол для этого отсека.\n"
@@ -1334,8 +1334,8 @@ netusb_z,Высота отверстия под сетевой/USB разъем 
 height of the net/usb hole mm,Высота отверстия под сетевой/USB разъем (мм)
 netusb_x,Ширина отверстия под сетевой/USB разъем (мм)
 width of the net/usb hole in mm,Ширина отверстия под сетевой/USB разъем (мм)
-stable,"Сделать отверстия для установки штифта 1/4\" в основании и наверху"
-"draw some holes to put a 1/4\"" dowel through at the base and top","Сделать отверстия для установки штифта 1/4\" в основании и наверху"
+stable,стабильно
+"draw some holes to put a 1/4\"" dowel through at the base and top","Сделать отверстия для установки штифта 1/4\"" в основании и наверху"
 switch,"Добавляет дополнительный вертикальный сегмент для фиксации переключателя, лучше всего работает с --stable"
 "adds an additional vertical segment to hold the switch in place, works best w/ --stable","Добавляет дополнительный вертикальный сегмент для фиксации переключателя, лучше всего работает с --stable"
 NemaMount,Кронштейн для крепления двигателя Nema
@@ -1458,9 +1458,9 @@ additional_bottom,Дополнительное дно/пол с отверсти
 Additional bottom/floor with holes the paintcans go through,Дополнительное дно/пол с отверстиями для банок
 additional_top,Дополнительный верх/пол с отверстиями для банок
 Additional top/floor with holes the paintcans go through,Дополнительный верх/пол с отверстиями для банок
-hexpattern,Использовать шестиугольное расположение отверстий вместо ортогонального
+hexpattern,шестигранный шаблон
 Use hexagonal arrangement for the holes instead of orthogonal,Использовать шестиугольное расположение отверстий вместо ортогонального
-drawer,Создать выдвижной ящик вместо этого
+drawer,ящик
 Create a stackable drawer instead,Создать выдвижной ящик вместо этого
 PaperBox,Бумажная коробка с крышкой
 "\nBox made of paper, with lid.\n","Коробка из бумаги с крышкой."
@@ -1472,16 +1472,16 @@ automatic,автоматический
 widebox,широкая коробка
 tuckbox,tuckbox
 lid_height,Высота крышки
-Height of the lid (part which goes inside the box),Высота крышки (часть, которая входит внутрь коробки)
+Height of the lid (part which goes inside the box),"Высота крышки (часть, которая входит внутрь коробки)"
 lid_radius,Радиус крышки
 "Angle, in radius, of the round corner of the lid","Угол (в радианах) закругленного угла крышки"
 lid_sides,Ширина двух сторон, на которые надевается крышка
-Width of the two sides upon which goes the lid,Ширина двух сторон, на которые надевается крышка
+Width of the two sides upon which goes the lid,"Ширина двух сторон, на которые надевается крышка"
 Margin for the glued sides,Запас для склеиваемых сторон
 mark_length,Длина внешней линии сгиба
 Length of the folding outside mark,Длина внешней линии сгиба
 tab_angle_rad,Угол (в радианах) сторон, которые склеиваются внутри коробки
-Angle (in radian) of the sides which are to be glued inside the box,Угол (в радианах) сторон, которые склеиваются внутри коробки
+Angle (in radian) of the sides which are to be glued inside the box,"Угол (в радианах) сторон, которые склеиваются внутри коробки"
 finger_hole_diameter,Диаметр отверстия для захвата крышки
 Diameter of the hole to help catch the lid,Диаметр отверстия для захвата крышки
 PhoneHolder,Подставка для смартфона
@@ -1500,29 +1500,29 @@ tab_size,Длина выступов, удерживающих телефон
 Length of the tabs holding the phone,Длина выступов, удерживающих телефон
 bottom_support_spacing,"Расстояние между двумя нижними опорами"
 "Spacing between the two bottom support. Choose a value big enough for the charging cable, without getting in the way of other ports.","Расстояние между двумя нижними опорами. Выберите достаточно большое значение для кабеля зарядки, чтобы не мешать другим портам."
-PhotoFrame,Фоторамка из 3 слоев с пазом сверху для вставки паспарту/акрила/стекла после склейки
+PhotoFrame,Фоторамка
 \n3-layer photo frame with a slot at the top to slide matboard/acrylic/glass over the photo after glue-up.\n,Фоторамка из 3 слоев с пазом сверху для вставки паспарту/акрила/стекла после склейки
 "\n3-layer photo frame.\n\nSelected excellent features:\n\n* easy to change the photo after glue-up, without disassembling the frame\n* calculates the ideal matting size for your photo based on ancient Greek mathematics\n* can make the frame in one piece or split into 4 pieces to save material\n* can make a frame to fit the piece of glass/acrylic you already have\n* adds a hole for hanging the frame on the wall\n\nFeatures available in the mysterious future:\n\n* rounded corners\n* a stand on the back to display the frame on a table\n\n## How to frame things like a pro\n\nThere are 1 or 2 things that you can't change when framing: the size of the artwork\nand the size of the glass. So we generate everything else to fit those measurements.\n\nSet `x` and `y` to the dimensions of the actual artwork.\n\n* If your photo has a border, measure inside it.\n* If your photo does not have a border, still measure the actual artwork. Don't reduce the dimensions to allow for mounting. We do that separately.\n\nA real pro measures the photo, calculates the matting, and cuts the glass to fit the matting.\nWe will assume that you are not in fact a real pro, and can't be trusted with a glass cutter.\nSo measure your glass and we'll calculate the matting to suit it. If you aren't using glass,\nwe'll calculate the matting size based on \""golden ratio of areas\"" like the pros do. Everyone\nwill think your frame is perfect, but they won't know why.\n\nMatting is just cardboard. Its jobs are to keep the glass off the photo, provide a clean border around the artwork,\nand make the whole thing look fancy. You can attach the photo to the matting or to the back of the frame.\nEither way, the matting conceals all sorts of sins like bad cuts, glue marks, or mounting with blue painter's tape.\nMatting also lets you reuse the frame for different sized photos. Just generate a new mat with the same glass dimensions.\n\nThe hole in the matting is smaller than the photo. This is so the photo doesn't fall out.\nEven if your photo has a border, the hole needs to be a bit smaller than the photo,\nor you will struggle to line up the photo without the edges showing.\nRecommended overlaps are given in the settings. Don't worry about \""losing\"" too much of the photo.\nThe matting will make the photo look bigger and more important. There's never anything\ninteresting in the last 2mm of a photo anyway.\n","3-слойная фоторамка.\n\nВыдающиеся особенности:\n\n* легко менять фото после склейки, не разбирая рамку\n* рассчитывает идеальный размер паспарту по древнегреческой математике\n* можно сделать рамку цельной или из 4 частей для экономии материала\n* можно сделать рамку под имеющееся стекло/акрил\n* добавляет отверстие для подвешивания на стену\n\nВ будущем появятся:\n\n* скругленные углы\n* подставка сзади для размещения на столе\n\n## Как оформить как профессионал\n\nЕсть 1-2 вещи, которые нельзя изменить при оформлении: размер изображения и размер стекла. Всё остальное подгоняется под эти размеры.\n\nУстановите `x` и `y` равными размерам изображения.\n\n* Если у фото есть рамка, измеряйте внутри неё.\n* Если нет — измеряйте само изображение. Не уменьшайте размеры для крепления — это делается отдельно.\n\nПрофи измеряет фото, рассчитывает паспарту и режет стекло под него. Мы предполагаем, что вы не профи и не доверяете себе стеклорезу. Поэтому измерьте стекло, а мы рассчитаем паспарту под него. Если стекла нет — рассчитаем по «золотому сечению площадей», как у профи. Все будут думать, что ваша рамка идеальна, но не поймут почему.\n\nПаспарту — это просто картон. Его задачи: не дать стеклу касаться фото, создать чистую рамку вокруг изображения и сделать всё красивым. Фото можно приклеить к паспарту или к задней части рамки. В любом случае паспарту скрывает огрехи: кривые резы, следы клея, малярный скотч. Паспарту позволяет использовать рамку для фото разного размера — просто вырежьте новое паспарту под то же стекло.\n\nОтверстие в паспарту меньше фото, чтобы оно не выпадало. Даже если у фото есть рамка, отверстие должно быть чуть меньше, иначе сложно выровнять фото без видимых краёв. Рекомендуемые перекрытия указаны в настройках. Не переживайте, что «теряете» часть фото — паспарту визуально увеличивает изображение. В последних 2 мм фото всё равно ничего интересного нет."
 PhotoFrame Settings,Настройки PhotoFrame
 "Width of the photo, not including any border","Ширина фотографии, не включая рамку"
 "Height of the photo, not including any border","Высота фотографии, не включая рамку"
-golden_mat,Использовать золотое сечение для расчёта ширины паспарту
+golden_mat,золотой коврик
 Use golden ratio to calculate matting width,Использовать золотое сечение для расчёта ширины паспарту
-matting_w,Ширина паспарту по бокам фото
+matting_w,матирование_w
 Width of the matting border around the sides of the photo,Ширина паспарту по бокам фото
-matting_h,Ширина паспарту сверху/снизу фото
+matting_h,матирование_h
 Width of the matting border around top/bottom of the photo,Ширина паспарту сверху/снизу фото
-matting_overlap,Перекрытие паспарту на фото
+matting_overlap,матирование_перекрытие
 "Matting overlap of the photo, e.g. 2mm if photo has border, 5mm if not","Перекрытие паспарту на фото, например 2 мм если есть рамка, 5 мм если нет"
-glass_w,Ширина стекла или акрила
+glass_w,стекло_w
 Width of the pre-cut glass or acrylic,Ширина стекла или акрила
-glass_h,Высота стекла или акрила
+glass_h,стекло_h
 Height of the pre-cut glass or acrylic,Высота стекла или акрила
-frame_w,Ширина рамки вокруг паспарту
+frame_w,рамка_w
 Width of the frame border around the matting,Ширина рамки вокруг паспарту
-guide_fudge,Запас в пазу для облегчения вставки паспарту/стекла
+guide_fudge,руководство_помадка
 Clearance in the guide pocket to help slide the matting/glass in,Запас в пазу для облегчения вставки паспарту/стекла
-frame_overlap,Перекрытие рамки для удержания паспарту/стекла
+frame_overlap,рамбка_перекрытие
 Frame overlap to hold the matting/glass in place,Перекрытие рамки для удержания паспарту/стекла
 split_front,Разделить переднюю часть на тонкие прямоугольники для экономии материала
 Split front into thin rectangles to save material,Разделить переднюю часть на тонкие прямоугольники для экономии материала
@@ -1790,7 +1790,7 @@ casejoinery,соединение корпуса
 whether or not to join sides to front plate (disable if doing manual joins on fancy wood),соединять ли боковины с передней панелью (отключите для ручной сборки на красивом дереве)
 Shoe,Коробка в форме ботинка
 Shoe shaped box,Коробка в форме ботинка
-Shoe shaped box with flat sides and rounded top.\n    Works best if flex if under slight compression.\n    Make sure that the following conditions are met:\n    y > tophole + r + fronttop;\n    height > frontheight., "Коробка в форме ботинка с плоскими боками и скругленным верхом.\n    Лучше всего работает, если немного сжата.\n    Убедитесь, что выполнены следующие условия:\n    y > tophole + r + fronttop;\n    height > frontheight."
+Shoe shaped box with flat sides and rounded top.\n    Works best if flex if under slight compression.\n    Make sure that the following conditions are met:\n    y > tophole + r + fronttop;\n    height > frontheight.,"Коробка в форме ботинка с плоскими боками и скругленным верхом.\n    Лучше всего работает, если немного сжата.\n    Убедитесь, что выполнены следующие условия:\n    y > tophole + r + fronttop;\n    height > frontheight."
 Shoe Settings,Настройки Shoe
 width of the shoe,ширина ботинка
 length front to back,длина от носка до пятки

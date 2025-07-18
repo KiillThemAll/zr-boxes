@@ -23,20 +23,20 @@ while i < len(lines):
             while i < len(lines):
                 l = lines[i].strip()
                 if l.startswith('"') and l.endswith('"'):
-                    msgid_lines.append(l[1:-1] + '%$$%')
+                    msgid_lines.append(l[1:-1] + '^_^')
                     i += 1
                 else:
                     break
-            # Remove the last '%$$%' as per instruction
+            # Remove the last '^_^' as per instruction
             if msgid_lines:
-                msgid_lines[-1] = msgid_lines[-1][:-5] if msgid_lines[-1].endswith('%$$%') else msgid_lines[-1]
+                msgid_lines[-1] = msgid_lines[-1][:-4] if msgid_lines[-1].endswith('^_^') else msgid_lines[-1]
             msgid = ''.join(msgid_lines)
             msgids.append(msgid)
             continue
-        # else:
-        #     m = msgid_pattern.match(line)
-        #     if m:
-        #         msgids.append(m.group(1))
+        else:
+            m = msgid_pattern.match(line)
+            if m:
+                msgids.append(m.group(1))
     i += 1
 
 with open(output_file, "w", newline='', encoding="utf-8") as csvfile:
