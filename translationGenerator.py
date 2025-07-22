@@ -34,6 +34,15 @@ def update_po_file_inplace(po_path, single_dict, multiline_dict):
         line = lines[i]
         # Only alter msgstr lines, leave everything else untouched
         if line.startswith('msgid '):
+            # Check for '#. parameter name' in the comment line above
+            is_parameter_name = False
+            if i > 2:
+                prev_line = lines[i-1]
+                if prev_line.startswith('#: '):
+                    prev_line = lines[i-2]
+                if prev_line.startswith('#. parameter name'):
+                    is_parameter_name = True
+
             msgid_match = re.match(r'msgid\s+"(.*)"', line)
             if msgid_match:
                 msgid_val = msgid_match.group(1)
@@ -61,21 +70,37 @@ def update_po_file_inplace(po_path, single_dict, multiline_dict):
                     # Now, alter only msgstr part
                     if i < len(lines) and lines[i].startswith('msgstr'):
                         # Write msgstr header
-                        new_lines.append('msgstr ""\n')
-                        i += 1
-                        # Skip all following quoted lines (original msgstr)
-                        while i < len(lines) and lines[i].startswith('"'):
+                        if is_parameter_name:
+                            new_lines.append('msgstr ""\n')
                             i += 1
-                        if translation is not None:
-                            translation_lines = translation.split('^_^')
-                            for t in translation_lines:
-                                # for l in re.findall(r'.{1,80}', t):
-                                #     # Always add \n at the end of each line for multiline
+                            # Skip all following quoted lines (original msgstr)
+                            while i < len(lines) and lines[i].startswith('"'):
+                                i += 1
+                            # Write the msgid value as msgstr, split by ^_^ if multiline
+                            msgid_parts = msgid_val.split('^_^')
+                            for t in msgid_parts:
                                 new_lines.append(f'"{t}"\n')
+                        else:
+                            new_lines.append('msgstr ""\n')
+                            i += 1
+                            # Skip all following quoted lines (original msgstr)
+                            while i < len(lines) and lines[i].startswith('"'):
+                                i += 1
+                            if translation is not None:
+                                translation_lines = translation.split('^_^')
+                                for t in translation_lines:
+                                    new_lines.append(f'"{t}"\n')
                         # else: leave msgstr "" (already written)
                     else:
                         # If no msgstr found, just add empty msgstr
-                        new_lines.append('msgstr ""\n')
+                        if is_parameter_name:
+                            new_lines.append('msgstr ""\n')
+                            # Write the msgid value as msgstr, split by ^_^ if multiline
+                            msgid_parts = msgid_val.split('^_^')
+                            for t in msgid_parts:
+                                new_lines.append(f'"{t}"\n')
+                        else:
+                            new_lines.append('msgstr ""\n')
                     continue
                 else:
                     # Single line msgid
@@ -86,12 +111,17 @@ def update_po_file_inplace(po_path, single_dict, multiline_dict):
                     i += 1
                     # Only alter msgstr part
                     if i < len(lines) and lines[i].startswith('msgstr'):
-                        if translation is not None:
+                        if is_parameter_name:
+                            new_lines.append(f'msgstr "{msgid_val}"\n')
+                            i += 1
+                            # Skip any original quoted msgstr lines
+                            while i < len(lines) and lines[i].startswith('"'):
+                                i += 1
+                        elif translation is not None:
                             if '^_^' in translation:
                                 translation_lines = translation.split('^_^')
                                 new_lines.append('msgstr ""\n')
                                 for t in translation_lines:
-                                    # for l in re.findall(r'.{1,80}', t):
                                     new_lines.append(f'"{t}"\n')
                             else:
                                 new_lines.append(f'msgstr "{translation}"\n')

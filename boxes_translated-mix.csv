@@ -726,12 +726,12 @@ finger_joints_on_lid,пальцевые_соединения_на_крышке
 whether to include finger joints on the edge with the lid,включать ли пальцевые соединения на краю с крышкой
 hinge_strength,прочность_петли
 pin_height,высота_штифта
-radius of the disc rotating in the hinge (multiples of thickness),радиус диска, вращающегося в петле (кратно толщине)
+radius of the disc rotating in the hinge (multiples of thickness),"радиус диска, вращающегося в петле (кратно толщине)"
 DiceTower,Башня для кубиков
 Tool for fairly rolling dice,инструмент для честного броска кубиков
 Feel free to add a shallow ABox as a container for catching the dice so they don't scatter across the table.\n\nYou can also configure the DiceTower and change the number and angle of the ramps.\n,"Не стесняйтесь добавить неглубокую коробку как контейнер для ловли кубиков, чтобы они не разлетались по столу.\n\nВы также можете настроить башню для кубиков и изменить количество и угол пандусов.\n"
 DiceTower Settings,Настройки башни для кубиков
-width of the tower (side where the dice fall out),ширина башни (сторона, где выпадают кубики)
+width of the tower (side where the dice fall out),"ширина башни (сторона, где выпадают кубики)"
 depth of the tower,глубина башни
 height of the tower,высота башни
 include bottom piece,включить нижнюю часть
@@ -1342,12 +1342,12 @@ NemaMount,Кронштейн для крепления двигателя Nema
 Mounting bracket for a Nema motor,Кронштейн для крепления двигателя Nema
 NemaMount Settings,Настройки крепления Nema
 Nema size of the motor,Размер двигателя Nema
-NemaPattern,Крепежные отверстия для двигателя Nema
+NemaPattern,Шаблон Nema
 Mounting holes for a Nema motor,Крепежные отверстия для двигателя Nema
 NemaPattern Settings,Настройки крепежного шаблона Nema
-screwholes,Размер отверстий под винты (мм) - 0 для размера по умолчанию
+screwholes,отверстия для винтов
 Size of the screw holes in mm - 0 for default size,Размер отверстий под винты (мм) - 0 для размера по умолчанию
-NightLightBox,Простая декоративная лампа с креативно вырезанными пластинами
+NightLightBox,Коробка ночник
 Simple decorative lamp with creatively laser cut plates,Простая декоративная лампа с креативно вырезанными пластинами
 This is a simple light box with a closed compartment for electronics and the backlighting.,Это простая световая коробка с закрытым отсеком для электроники и подсветки.
 NightLightBox Settings,Настройки светового короба
@@ -1355,24 +1355,24 @@ BoxStyle,Стиль коробки
 minimalist,минималистичный
 large face,большая лицевая панель
 extra customizable face,дополнительная настраиваемая лицевая панель
-PlateVisibleWidth,Ширина окна на передней панели (мм)
+PlateVisibleWidth,Ширина передней панели 
 width of the window in the front panel in mm,Ширина окна на передней панели (мм)
-PlateVisibleHeight,Высота окна на передней панели (мм)
+PlateVisibleHeight,Высота передней панели
 height of the window in the front panel in mm,Высота окна на передней панели (мм)
-WoodPlatesCount,Количество декоративных деревянных пластин
+WoodPlatesCount,Количество деревянных пластин
 Number of decorative wood plates,Количество декоративных деревянных пластин
-WoodPlateThickness,Толщина деревянных пластин (мм)
+WoodPlateThickness,Толщина деревянных пластин
 Thickness of the wood plates in mm,Толщина деревянных пластин (мм)
-DiffuserPlateThickness,Толщина акриловой пластины-рассеивателя (мм)
+DiffuserPlateThickness,Толщина пластины-рассеивателя
 Thickness of the background acrylic diffuser plate in mm,Толщина акриловой пластины-рассеивателя (мм)
 BackgroundDepth,Глубина зоны для электроники и светодиодов (мм)
 Depth of the background zone for the electronics and LEDs in mm,Глубина зоны для электроники и светодиодов (мм)
-InterPlateSpacing,Расстояние между декоративными пластинами (мм)
+InterPlateSpacing,Расстояние между пластинами
 Space between the decorative plates in mm,Расстояние между декоративными пластинами (мм)
 Margin for moving parts in mm,Запас для подвижных частей (мм)
 Night lightbox diffuser plate lock to prevent unwanted access to the electronics,Замок для пластины-рассеивателя для предотвращения несанкционированного доступа к электронике
-DiffuserPlateTLockScrewDiameter,Диаметр отверстия под винт замка пластины-рассеивателя (мм)
-Diameter of the background acrylic diffuser plate locking screw hole in mm,Диаметр отверстия под винт замка пластины-рассеивателя (мм)
+DiffuserPlateTLockScrewDiameter,Диаметр отверстия под винт замка пластины-рассеивателя
+Diameter of the background acrylic diffuser plate locking screw hole in mm,Длина винта, фиксирующего заднюю рассеивающую акриловую пластину, в миллиметрах
 DiffuserPlateTLockScrewLength,Длина винта замка пластины-рассеивателя (мм)
 Length of the background acrylic diffuser plate locking screw in mm,Длина винта замка пластины-рассеивателя (мм)
 DiffuserPlateTLockNutThickness,Толщина гайки замка пластины-рассеивателя (мм)
@@ -1382,14 +1382,14 @@ Width of the background acrylic diffuser plate locking nut in mm,Ширина г
 "Night lightbox options for the back side (holes for connectors, marking)","Опции светового короба для задней стороны (отверстия для разъемов, маркировка)"
 BackExtraHoles,Дополнительные отверстия
 "extra holes for connectors or buttons ; enter one line per hole ; first parameter chould be R for rectangle or C for circle ; then X and Y position for the center of the hole, and then the X and Y size of the rectangle or the circle diameter, all in mm ; parameters should be separated by spaces","дополнительные отверстия для разъемов или кнопок; введите одну строку на отверстие; первый параметр — R (прямоугольник) или C (круг); затем X и Y — координаты центра отверстия, затем размеры прямоугольника по X и Y или диаметр круга, все в мм; параметры разделяйте пробелами"
-NotesHolder,"Коробка для хранения стопки бумаги, подставок и т.д."
+NotesHolder,Держатель для заметок
 "Box for holding a stack of paper, coasters etc","Коробка для хранения стопки бумаги, подставок и т.д."
 If the feet of the `Stackable` `bottom_edge`\ndon't fit on the front (and back) walls you can make them smaller by\nreducing `width` and/or increasing `angle` in the `Settings for\nStackable Edges`. Reducing the `opening` will also give more space for\nthe feet.,"Если ножки `Stackable` `bottom_edge` не помещаются на передней (и задней) стенках, вы можете сделать их меньше, уменьшив `width` и/или увеличив `angle` в `Settings for Stackable Edges`. Уменьшение `opening` также даст больше места для ножек."
 NotesHolder Settings,Настройки держателя для заметок
 percent of front (or back) that's open,процент открытой передней (или задней) части
 back_openings,отверстия на задней стороне
 "have openings on the back side, too","отверстия на задней стороне тоже"
-OpenBox,Коробка с открытым верхом и передней частью
+OpenBox,Открытая коробка
 Box with top and front open,Коробка с открытым верхом и передней частью
 OpenBox Settings,Настройки открытого короба
 edgetype,тип края
@@ -1426,10 +1426,10 @@ mmHg,мм рт. ст.
 mmH2O,мм вод. ст.
 stopped,Закрытая труба
 pipe is closed at the top,труба закрыта сверху
-OttoBody,Otto LC — лазерный корпус для Otto DIY — корпус
+OttoBody,Тело Otto
 Otto LC - a laser cut chassis for Otto DIY - body,Otto LC — лазерный корпус для Otto DIY — корпус
 OttoBody Settings,Настройки OttoBody
-OttoLegs,Otto LC — лазерный корпус для Otto DIY — ноги
+OttoLegs,Ноги Otto
 Otto LC - a laser cut chassis for Otto DIY - legs,Otto LC — лазерный корпус для Otto DIY — ноги
 OttoLegs Settings,Настройки OttoLegs
 anklebolt1,диаметр отверстия для болта лодыжки — со стороны стопы
@@ -1438,7 +1438,7 @@ anklebolt2,диаметр отверстия для болта лодыжки �
 diameter for hole for ankle bolts - leg side,диаметр отверстия для болта лодыжки — со стороны ноги
 length,длина ног
 length of legs (34mm min),длина ног (минимум 34 мм)
-OttoSoles,Пенные подошвы для Otto bot
+OttoSoles,Подошвы Otto
 Foam soles for the OttO bot,Пенные подошвы для Otto bot
 OttoSoles Settings,Настройки OttoSoles
 width of sole stripe,ширина полоски подошвы
@@ -1462,7 +1462,7 @@ hexpattern,шестигранный шаблон
 Use hexagonal arrangement for the holes instead of orthogonal,Использовать шестиугольное расположение отверстий вместо ортогонального
 drawer,ящик
 Create a stackable drawer instead,Создать выдвижной ящик вместо этого
-PaperBox,Бумажная коробка с крышкой
+PaperBox,Бумажная коробка
 "\nBox made of paper, with lid.\n","Коробка из бумаги с крышкой."
 "\nThis box is made of paper.\n\nThere is marks in the \""outside leftover paper\"" to help see where to fold\n(cutting with tabs helps use them). The cut is very precise, and could be too tight if misaligned when glued. A plywood box (such as a simple TypeTray) of the same size is a great guide during folding and gluing. Just fold the box against it. Accurate quick and easy.\n\nA paper creaser (or bone folder) is also useful.\n","Эта коробка сделана из бумаги.\n\nНа «внешней оставшейся бумаге» есть метки, которые помогают увидеть, где сгибать (надрезы с язычками помогают их использовать). Рез делается очень точно, и может быть слишком тугим, если при склеивании детали смещены. Коробка из фанеры (например, простая TypeTray) такого же размера — отличный шаблон для сгибания и склеивания. Просто сгибайте коробку по ней. Быстро, точно и удобно.\n\nТакже полезен биговщик (или костяная палочка)."
 PaperBox Settings,Настройки PaperBox
@@ -1526,7 +1526,7 @@ frame_overlap,рамбка_перекрытие
 Frame overlap to hold the matting/glass in place,Перекрытие рамки для удержания паспарту/стекла
 split_front,Разделить переднюю часть на тонкие прямоугольники для экономии материала
 Split front into thin rectangles to save material,Разделить переднюю часть на тонкие прямоугольники для экономии материала
-PirateChest,Сундук с многоугольной крышкой на петлях
+PirateChest,Пиратский сундук
 Box with polygon lid with chest hinges.,Сундук с многоугольной крышкой на петлях
 "Do not assemble sides before attaching the lid!\n    Hinge of the lid has to be placed first because it is impossible\n    to get it in position without removing the side wall. The lid can\n    be a bit tricky to assemble. Keep track of how the parts fit together.\n    Part with label \""lid back\"" is placed in the hinges","Не собирайте боковые стенки до установки крышки!\n    Петля крышки должна быть установлена первой, иначе невозможно\n    поставить её без снятия боковой стенки. Крышку собирать немного сложно, следите за тем, как детали соединяются.\n    Деталь с надписью «lid back» вставляется в петли."
 PirateChest Settings,Настройки PirateChest
@@ -1544,7 +1544,7 @@ bottom_holes,Диаметр нижних отверстий для винтов 
 Diameter of the screw holes in the bottom of the pusher - where the screws hold,Диаметр нижних отверстий для винтов в толкателе (куда крепятся винты)
 grip_holes,Диаметр отверстий для винтов при нулевой длине ручки
 Diameter of the screw holes for zero griplength,Диаметр отверстий для винтов при нулевой длине ручки
-Planetary,Планетарная передача с возможностью нескольких одинаковых ступеней
+Planetary,Планетарная передача
 Planetary Gear with possibly multiple identical stages,Планетарная передача с возможностью нескольких одинаковых ступеней
 Planetary Settings,Настройки Planetary
 sunteeth,Число зубьев солнечной шестерни
@@ -1556,7 +1556,7 @@ limit the number of planets (0 for as much as fit),Ограничение чис
 deltateeth,Включить второе кольцо с заданной разницей к основному
 enable secondary ring with given delta to the ring gear,Включить второе кольцо с заданной разницей к основному
 modulus of the theeth in mm,Модуль зубьев в мм
-Planetary2,Планетарная передача с уравновешенной силой (ещё не работает корректно)
+Planetary2,Планетарная передача 2 
 Balanced force Difference Planetary Gear (not yet working properly),Планетарная передача с уравновешенной силой (ещё не работает корректно)
 Still has issues. The middle planetary gears set must not have a mashing sun gear as it can't be a proper gear set.,Пока есть проблемы. Средний комплект планетарных шестерён не должен иметь зацепляющуюся солнечную шестерню, иначе это не будет правильная передача.
 Planetary2 Settings,Настройки Planetary2
@@ -1582,8 +1582,8 @@ screw2,диаметр верхней части отверстия под вин
 diameter of upper part of the screw hole,диаметр верхней части отверстия под винт
 pinsize,диаметр установочных штифтов
 diameter of alignment pins,диаметр установочных штифтов
-Platonic,Генератор платоновых тел
-Platonic solids generator,Генератор платоновых тел
+Platonic,Правильный многогранник
+Platonic solids generator,Генератор правильных многогранников
 ![Icosahedron](static/samples/Platonic-Icosahedron.jpg)\n,![Икосаэдр](static/samples/Platonic-Icosahedron.jpg)
 Platonic Settings,Настройки Platonic
 type,тип платонова тела
@@ -1593,7 +1593,7 @@ cube,куб
 octahedron,октаэдр
 dodecahedron,додекаэдр
 icosahedro,икосаэдр
-PoleHook,Крючок для шеста или трубы для крепления к другому шесту
+PoleHook,Трубодержатель
 Hook for pole like things to be clamped to another pole,Крючок для шеста или трубы для крепления к другому шесту
 PoleHook Settings,Настройки PoleHook
 diameter of the thing to hook,диаметр предмета для захвата
@@ -1605,7 +1605,7 @@ screwheadheight,высота головки винта
 height of the screw head in mm,высота головки винта в мм
 pin,штифт
 diameter of the pin in mm,диаметр штифта в мм
-Pulley,Шкивы для зубчатых ремней разных профилей
+Pulley,Шкивы
 Timing belt pulleys for different profiles,Шкивы для зубчатых ремней разных профилей
 Pulley Settings,Настройки шкива
 teeth,зубья
@@ -1664,11 +1664,11 @@ modulus of the gear (in mm),модуль шестерни (в мм)
 Profile shift,смещение профиля
 Settings for GrippingEdge,Настройки захватной кромки
 extend outward the straight edge,вынести прямую кромку наружу
-"\""wave\"" or \""bumps\""","\"волна\" или \"бугры\""
+"\""wave\"" or \""bumps\""","\""волна\"" или \""бугры\"""
 wave,волна
 bumps,бугры
 depth of the grooves,глубина канавок
-RegularBox,Обычная коробка с многоугольным основанием
+RegularBox,Обычная коробка
 Box with regular polygon as base,Коробка с правильным многоугольником в основании
 "For short side walls that don't fit a connecting finger reduce *surroundingspaces* and *finger* in the Finger Joint Settings.\n\nThe lids needs to be glued. For the bayonet lid all outside rings attach to the bottom, all inside rings to the top.\n","Для коротких боковых стенок, в которые не помещается соединительный палец, уменьшите *surroundingspaces* и *finger* в настройках Finger Joint.\n\nКрышки нужно приклеивать. Для байонетной крышки все внешние кольца крепятся к низу, все внутренние — к верху.\n"
 RegularBox Settings,Настройки RegularBox
@@ -1681,12 +1681,12 @@ round lid,круглая крышка
 bayonet mount,байонетное крепление
 diameter of the alignment pins for bayonet lid,диаметр штифтов для байонетной крышки
 style of the bottom and bottom lid,стиль дна и нижней крышки
-RegularStarBox,Коробка-звезда с многоугольным основанием
+RegularStarBox,Коробка-звезда
 Regular polygon boxes that form a star when closed,Многоугольные коробки, которые образуют звезду при закрытии
 ![Open box](static/samples/RegularStarBox-2.jpg),![Открытая коробка](static/samples/RegularStarBox-2.jpg)
 RegularStarBox Settings,Настройки RegularStarBox
 inner radius if the box (center to corners),внутренний радиус коробки (от центра до углов)
-RobotArm,Сегменты роботизированной руки с сервоприводом
+RobotArm,Роботизированная конечность 
 Segments of servo powered robot arm,Сегменты роботизированной руки с сервоприводом
 RobotArm Settings,Настройки RobotArm
 type1,тип сегмента руки
@@ -1730,7 +1730,7 @@ diameter of the axle in mm including play,диаметр оси в мм с уч�
 diameter of mounting holes in mm,диаметр монтажных отверстий в мм
 one_piece,единая деталь
 have a continuous back plate instead of two separate holders,сплошная задняя пластина вместо двух отдельных держателей
-Rotary,Ротационная насадка для гравировки цилиндрических объектов
+Rotary,Ротор
 Rotary Attachment for engraving cylindrical objects in a laser cutter,Ротационная насадка для гравировки цилиндрических объектов на лазерном станке
 Rotary Settings,Настройки Rotary
 outer diameter of the wheels (including O rings),внешний диаметр колес (включая O-кольца)
@@ -1743,7 +1743,7 @@ beamwidth,ширина профиля (алюминиевого), соединя
 width of the (aluminium) profile connecting the parts,ширина (алюминиевого) профиля, соединяющего части
 beamheight,высота профиля (алюминиевого), соединяющего части
 height of the (aluminium) profile connecting the parts,высота (алюминиевого) профиля, соединяющего части
-RoundedBox,Коробка с вертикальными скругленными ребрами
+RoundedBox,Скругленная коробка
 Box with vertical edges rounded,Коробка с вертикальными скругленными ребрами
 \nDefault: edge_style = f Finger Joint:\n![Finger Joint](static/samples/RoundedBox-2.jpg)\n\nAlternative: edge_style = h Edge (parallel Finger Joint Holes):\n![Finger Joint Holes](static/samples/RoundedBox-3.jpg)\n\nWith lid:\n,"По умолчанию: edge_style = f Finger Joint:\n![Finger Joint](static/samples/RoundedBox-2.jpg)\n\nАльтернатива: edge_style = h Edge (параллельные отверстия Finger Joint):\n![Finger Joint Holes](static/samples/RoundedBox-3.jpg)\n\nС крышкой:\n"
 RoundedBox Settings,Настройки RoundedBox
@@ -1751,14 +1751,14 @@ wallpieces,количество частей внешней стенки
 number of pieces for outer wall,количество частей внешней стенки
 edge_style,тип кромки
 edge type for top and bottom edges,тип кромки для верхнего и нижнего краев
-RoundedRegularBox,Коробка с многоугольным основанием и скругленными вертикальными ребрами
+RoundedRegularBox,Простая коробка с округлениями
 Regular polygone box with vertical edges rounded,Коробка с многоугольным основанием и скругленными вертикальными ребрами
 \n![Lids off](static/samples/RoundedRegularBox2.jpg)\n,"\n![Крышки сняты](static/samples/RoundedRegularBox2.jpg)\n"
 RoundedRegularBox Settings,Настройки RoundedRegularBox
 inner_size,диаметр внутреннего круга в мм
 diameter of the inner circle in mm,диаметр внутреннего круга в мм
 number of pieces for outer wall (0 for one per side),количество частей внешней стенки (0 — по одной на сторону)
-RoyalGame,Королевская игра Ур
+RoyalGame,Королевская игра
 The Royal Game of Ur,Королевская игра Ур
 Most of the blue lines need to be engraved by cutting with high speed and low power. But there are three blue holes that actually need to be cut: The grip hole in the lid and two tiny rectangles on the top and bottom for the lid to grip into.\n\n![Lid Details](static/samples/RoyalGame-2.jpg)\n\n![All pieces](static/samples/RoyalGame-3.jpg)\n\n,"Большинство синих линий нужно гравировать, вырезая на высокой скорости и низкой мощности. Но есть три синих отверстия, которые действительно нужно вырезать: отверстие для захвата в крышке и два маленьких прямоугольника сверху и снизу, чтобы крышка могла зацепиться.\n\n![Детали крышки](static/samples/RoyalGame-2.jpg)\n\n![Все детали](static/samples/RoyalGame-3.jpg)\n\n"
 RoyalGame Settings,Настройки RoyalGame
@@ -2016,7 +2016,7 @@ vertical spacing of slots middle to middle (in mm),вертикальное ра
 hook_extra_height,дополнительная высота крючка
 space surrounding connectors (multiples of thickness),пространство вокруг разъемов (в кратных толщине)
 Settings for DinRailEdges,Настройки DinRailEdges
-"\""stud\"" or \""none\""","\"штифт\" или \"нет\""
+"\""stud\"" or \""none\""","\""штифт\"" или \""нет\"""
 Settings for FrenchCleatEdges,Настройки FrenchCleatEdges
 angle of the cut (0 for horizontal),угол среза (0 — горизонтально)
 "\""stud\"" to brace against the wall, \""hook\"" for attaching to a second cleat or \""none\"" for just straight","\"штифт\" для упора в стену, \"крюк\" для крепления ко второму клину или \"нет\" — просто прямо"
@@ -2093,7 +2093,7 @@ WallPlaneHolder Settings,Настройки WallPlaneHolder
 width of the plane,ширина рубанка
 length of the plane,длина рубанка
 hold_length,длина держателя
-length of the part holding the plane over the front,длина части, удерживающей рубанок спереди
+length of the part holding the plane over the front,"длина части, удерживающей рубанок спереди"
 height of the front of plane,высота передней части рубанка
 WallPliersHolder,Держатель для пассатижей на стену
 Bar to hang pliers on,Планка для подвешивания пассатижей
@@ -2124,12 +2124,12 @@ tool_width,ширина инструмента
 overall width for the tools,общая ширина для инструментов
 radius of the slots at the front,радиус пазов спереди
 WallStackableBin,Настенный штабелируемый контейнер
-A wall-mounted bin that can stack or hang from a wall.,Настенный контейнер, который можно штабелировать или вешать на стену
+A wall-mounted bin that can stack or hang from a wall.,"Настенный контейнер, который можно штабелировать или вешать на стену"
 "\n####Features:\n- Configurable dimensions (width, height, depth)\n- Adjustable front slope angle for easy access\n- Optional label area on front face\n- Stackable design with interlocking geometry\n- Multiple wall mounting options\n\n####Stacking Compatibility:\nThe stacking mechanism requires careful consideration of wall mounting types.\nBins using \""plain\"" wall mounts can stack on bins with other mount types.\nNote: Using the \""outside\"" dimension option is generally not compatible with stacking.\n\n####Assembly Notes:\n1. The generator produces three pieces with angled finger joints.\nBottom panel, sloped front panel and label panel (if enabled).\n2. Joint lengths vary to accommodate the slope angles\n3. Orient pieces as shown in the generated layout to assemble correctly.\n","\"\n####Особенности:\n- Настраиваемые размеры (ширина, высота, глубина)\n- Регулируемый угол наклона передней части для легкого доступа\n- Необязательная область для этикетки на передней панели\n- Штабелируемая конструкция с зацеплением\n- Несколько вариантов крепления к стене\n\n####Совместимость штабелирования:\nМеханизм штабелирования требует учета типа настенного крепления.\nКонтейнеры с креплением \"plain\" можно ставить на контейнеры с другими типами креплений.\nПримечание: использование опции \"outside\" обычно несовместимо со штабелированием.\n\n####Примечания по сборке:\n1. Генератор создает три детали с угловыми шипами.\nНижняя панель, наклонная передняя панель и панель для этикетки (если включено).\n2. Длина соединений варьируется для учета углов наклона\n3. Собирайте детали согласно схеме на раскладке.\n\""
 WallStackableBin Settings,Настройки WallStackableBin
 angle of the bottom slope,угол наклона дна
 label_height,высота этикетки
-fraction of bin height covered with label (if label is enabled),доля высоты контейнера, занимаемая этикеткой (если включено)
+fraction of bin height covered with label (if label is enabled),"доля высоты контейнера, занимаемая этикеткой (если включено)"
 WallStairs,Настенные ступени для инструментов
 Platforms in different heights e.g. for screw drivers,Платформы разной высоты, например, для отверток
 You are supposed to add holes or slots to the stair tops yourself using Inkscape or another vector drawing or CAD program.\n\nsh gives height of the stairs from front to back. Note that the overall width and height is bigger than the nominal values as walls and the protrusions are not included in the measurements.\n,"Вам нужно самостоятельно добавить отверстия или пазы на верхней части ступеней с помощью Inkscape или другой программы для векторной графики или CAD.\n\nsh задает высоту ступеней спереди назад. Обратите внимание, что общая ширина и высота больше номинальных значений, так как стенки и выступы не включены в размеры.\n"
@@ -2168,7 +2168,7 @@ which of the honey comb walls to add,какие стенки сот добави
 minimal,минимально
 no_verticals,без вертикалей
 ZBeam,Z-образная балка (или U-балка)
-Z-Beam (or U-Beam): three pieces joined at right angles,Z-образная (или U-образная) балка: три детали, соединенные под прямым углом
+Z-Beam (or U-Beam): three pieces joined at right angles,"Z-образная (или U-образная) балка: три детали, соединенные под прямым углом"
 "\nWith the \""flanged_ubeam\"" option, there is a fourth piece the length of \""y\"".\n![U-Beam with flange](static/samples/ZBeam-flanged-ubeam.jpg)\n","\"\nС опцией \"flanged_ubeam\" добавляется четвертая деталь длиной \"y\".\n![U-образная балка с фланцем](static/samples/ZBeam-flanged-ubeam.jpg)\n\""
 ZBeam Settings,Настройки ZBeam
 flanged_ubeam,фланцевый U-образный профиль
