@@ -1208,7 +1208,7 @@ msgstr "люфт при надевании крышки (если примени
 #. name of box generator
 #: boxes/generators/abox.py
 msgid "ABox"
-msgstr "Простая коробка"
+msgstr "Коробка"
 
 #. description of ABox
 #: boxes/generators/abox.py
@@ -1230,7 +1230,7 @@ msgstr "Настройки простой коробки"
 #. name of box generator
 #: boxes/generators/agricolainsert.py
 msgid "AgricolaInsert"
-msgstr "Органайзер для Agricola"
+msgstr "Органайзер для настольных игр "
 
 #. description of AgricolaInsert
 #: boxes/generators/agricolainsert.py
@@ -1656,15 +1656,15 @@ msgstr "от одной середины ласточкиного хвоста �
 #. name of box generator
 #: boxes/generators/alledges.py
 msgid "AllEdges"
-msgstr "Все края"
+msgstr "Все крепления "
 
 #. description of AllEdges
 #: boxes/generators/alledges.py
 msgid "Showing all edge types"
-msgstr "Показ всех типов краев"
+msgstr "Показ всех типов крепления "
 
 msgid "AllEdges Settings"
-msgstr "Настройки всех краев"
+msgstr "Настройки всех креплений"
 
 msgid "Settings for HandleEdge"
 msgstr "Настройки края с ручкой"
@@ -1722,7 +1722,7 @@ msgstr "расширить ручку вдоль длины края (кратн
 #. name of box generator
 #: boxes/generators/angledbox.py
 msgid "AngledBox"
-msgstr "Угловая коробка"
+msgstr "Скругленная коробка"
 
 #. description of AngledBox
 #: boxes/generators/angledbox.py
@@ -1730,7 +1730,7 @@ msgid "Box with both ends cornered"
 msgstr "Коробка с обоими концами под углом"
 
 msgid "AngledBox Settings"
-msgstr "Настройки угловой коробки"
+msgstr "Настройки скругленной коробки"
 
 #. parameter name
 #: boxes/generators/angledbox.py
@@ -1788,7 +1788,7 @@ msgstr "Угол реза"
 #. name of box generator
 #: boxes/generators/arcade.py
 msgid "Arcade"
-msgstr "Аркада"
+msgstr "Аркадный автомат"
 
 #. description of Arcade
 #: boxes/generators/arcade.py
@@ -1816,7 +1816,7 @@ msgstr "keyboard_depth"
 #. name of box generator
 #: boxes/generators/atreus21.py
 msgid "Atreus21"
-msgstr "Atreus21"
+msgstr "Клавиатура atreus"
 
 #. description of Atreus21
 #: boxes/generators/atreus21.py
@@ -1940,12 +1940,12 @@ msgstr "Настройки коробки на основании"
 #. name of box generator
 #: boxes/generators/bayonetbox.py
 msgid "BayonetBox"
-msgstr "Штыковая коробка"
+msgstr "Коробка с байонетным замком"
 
 #. description of BayonetBox
 #: boxes/generators/bayonetbox.py
 msgid "Round box made from layers with twist on top"
-msgstr "Круглая коробка сделанная из слоев с поворотом сверху"
+msgstr "Круглая коробка сделанная из слоев с байонетным замком с верху"
 
 #. long description of BayonetBox in markdown
 #: boxes/generators/bayonetbox.py
@@ -2303,12 +2303,12 @@ msgstr "радиус углов"
 #. name of box generator
 #: boxes/generators/brick_sorter.py
 msgid "BrickSorter"
-msgstr "Сортировщик кирпичей"
+msgstr "Сепаратор кирпичиков"
 
 #. description of BrickSorter
 #: boxes/generators/brick_sorter.py
 msgid "Stackable nestable sorting sieve for bricks"
-msgstr "Штабелируемое складное сортировочное сито для кирпичей"
+msgstr "Вкладываемый многоуровневый сепаратор для кирпичиков"
 
 #. long description of BrickSorter in markdown
 #: boxes/generators/brick_sorter.py
@@ -3273,15 +3273,15 @@ msgstr "Угол под которым будет наклонена монет�
 #. name of box generator
 #: boxes/generators/typetray.py
 msgid "TypeTray"
-msgstr "Лоток для шрифта"
+msgstr "Ящик с отделениями"
 
 #. description of TypeTray
 #: boxes/generators/typetray.py
 msgid "Type tray - allows only continuous walls"
-msgstr "Лоток для шрифта - позволяет только непрерывные стены"
+msgstr "Ящик с отделениями - позволяет только непрерывные стены"
 
 msgid "TypeTray Settings"
-msgstr "Настройки лотка для шрифта"
+msgstr "Настройки ящика с отделениями"
 
 #. parameter name
 #: boxes/generators/typetray.py
@@ -3768,7 +3768,7 @@ msgstr "rounded"
 #. help for parameter rounded
 #: boxes/generators/concaveknob.py
 msgid "Amount of circumference used for non convex parts"
-msgstr "количество окружности"
+msgstr "количество окружности, используемое для невыпуклых частей"
 
 #. help for parameter angle
 #: boxes/generators/concaveknob.py
@@ -4049,7 +4049,7 @@ msgstr "label"
 #. help for parameter label
 #: boxes/generators/desksign.py
 msgid "optional text to engrave (leave blank to omit)"
-msgstr "необязательный текст для гравировки (оставьте пустым"
+msgstr "необязательный текст для гравировки (оставьте пустым, чтобы пропустить)"
 
 #. parameter name
 #: boxes/generators/desksign.py
@@ -4245,7 +4245,7 @@ msgstr "Коробка для DIN-рейки"
 #. description of DinRailBox
 #: boxes/generators/dinrailbox.py
 msgid "Box for DIN rail used in electrical junction boxes"
-msgstr "коробка для DIN-рейки"
+msgstr "коробка для DIN-рейки, используемой в электрических распределительных коробках"
 
 msgid "DinRailBox Settings"
 msgstr "Настройки коробки для DIN-рейки"
@@ -4331,7 +4331,7 @@ msgstr "disc_outset"
 #. help for parameter disc_outset
 #: boxes/generators/discrack.py
 msgid "Additional space kept between the disks and the outbox of the rack"
-msgstr "дополнительное пространство"
+msgstr "дополнительное пространство, оставляемое между дисками и внешней частью стойки"
 
 #. help for parameter angle
 #: boxes/generators/discrack.py
@@ -4403,12 +4403,12 @@ msgstr "края, используемые для удержания перед�
 #. name of box generator
 #: boxes/generators/display.py
 msgid "Display"
-msgstr "Дисплей"
+msgstr "Стойка"
 
 #. description of Display
 #: boxes/generators/display.py
 msgid "Display for flyers or leaflets"
-msgstr "дисплей для флаеров или листовок"
+msgstr "Стойка для флаеров или листовок"
 
 msgid "Display Settings"
 msgstr "Настройки дисплея"
@@ -5954,7 +5954,7 @@ msgstr "количество этапов в редукторе"
 #. name of box generator
 #: boxes/generators/gridfinitybase.py
 msgid "GridfinityBase"
-msgstr "ОснованиеGridfinity"
+msgstr "Основание Gridfinity"
 
 #. description of GridfinityBase
 #: boxes/generators/gridfinitybase.py
@@ -6129,7 +6129,7 @@ msgstr "максимальный размер панели, которую мо�
 #. name of box generator
 #: boxes/generators/gridfinitytraylayout.py
 msgid "GridfinityTrayLayout"
-msgstr "МакетЛоткаGridfinity"
+msgstr "Макет лотка Gridfinity"
 
 #. description of GridfinityTrayLayout
 #: boxes/generators/gridfinitytraylayout.py
@@ -6254,7 +6254,7 @@ msgstr "генерировать накладки для использован�
 #. name of box generator
 #: boxes/generators/gridfinitydrillbox.py
 msgid "GridfinityDrillBox"
-msgstr "КоробкаДляСверлGridfinity"
+msgstr "Коробка для сверл Gridfinity"
 
 #. description of GridfinityDrillBox
 #: boxes/generators/gridfinitydrillbox.py
@@ -6276,7 +6276,7 @@ msgstr "Настройки коробки для сверл Gridfinity"
 #. name of box generator
 #: boxes/generators/traylayout.py
 msgid "TrayLayout"
-msgstr "МакетЛотка"
+msgstr "Макет лотка"
 
 #. description of TrayLayout
 #: boxes/generators/traylayout.py
@@ -6308,7 +6308,7 @@ msgstr "Настройки макета лотка"
 #. name of box generator
 #: boxes/generators/halfbox.py
 msgid "HalfBox"
-msgstr "ПолуКоробка"
+msgstr "Полукоробка"
 
 #. description of HalfBox
 #: boxes/generators/halfbox.py
@@ -6398,7 +6398,7 @@ msgstr "создать прочную конструкцию (например, 
 #. name of box generator
 #: boxes/generators/heart.py
 msgid "HeartBox"
-msgstr "КоробкаСердце"
+msgstr "Коробка-сердце"
 
 #. description of HeartBox
 #: boxes/generators/heart.py
@@ -6421,12 +6421,12 @@ msgstr "крышка"
 #. name of box generator
 #: boxes/generators/hingebox.py
 msgid "HingeBox"
-msgstr "КоробкаСПетлями"
+msgstr "Коробка с петлями"
 
 #. description of HingeBox
 #: boxes/generators/hingebox.py
 msgid "Box with lid attached by cabinet hinges"
-msgstr "Коробка с крышкой"
+msgstr "Коробка с крышкой, прикрепленной мебельными петлями"
 
 #. long description of HingeBox in markdown
 #: boxes/generators/hingebox.py
@@ -6465,7 +6465,7 @@ msgstr "разделить крышку в направлении y (мм)"
 #. name of box generator
 #: boxes/generators/hobbycase.py
 msgid "HobbyCase"
-msgstr "КейсДляХобби"
+msgstr "Кейс для хобби"
 
 #. description of HobbyCase
 #: boxes/generators/hobbycase.py
@@ -6554,7 +6554,7 @@ msgstr "shelves_n"
 #. help for parameter shelves_n
 #: boxes/generators/hobbycase.py
 msgid "How many shelves should each column have eg. 2:3:2. Use integers only!"
-msgstr "Сколько полок должно быть в каждом столбце"
+msgstr "Сколько полок должно быть в каждом столбце, например, 2:3:2. Используйте только целые числа!"
 
 #. parameter name
 #: boxes/generators/hobbycase.py
@@ -6564,7 +6564,7 @@ msgstr "add_rails"
 #. help for parameter add_rails
 #: boxes/generators/hobbycase.py
 msgid "Should rails be generated for slots unpopulated by shelves?"
-msgstr "Должны ли направляющие генерироваться для слотов"
+msgstr "Должны ли направляющие генерироваться для слотов, не заполненных полками?"
 
 #. parameter name
 #: boxes/generators/hobbycase.py
@@ -6589,7 +6589,7 @@ msgstr "Должны ли внутренние разделители и пол�
 #. name of box generator
 #: boxes/generators/holepattern.py
 msgid "HolePattern"
-msgstr "ШаблонОтверстий"
+msgstr "Шаблон отверстий"
 
 #. description of HolePattern
 #: boxes/generators/holepattern.py
@@ -6670,7 +6670,7 @@ msgstr "угол опоры снизу"
 #. name of box generator
 #: boxes/generators/integratedhingebox.py
 msgid "IntegratedHingeBox"
-msgstr "КоробкаСВстроеннымиПетлями"
+msgstr "Коробка с встроенными петлями"
 
 #. description of IntegratedHingeBox
 #: boxes/generators/integratedhingebox.py
@@ -6683,7 +6683,7 @@ msgstr "Настройки коробки со встроенными петля
 #. name of box generator
 #: boxes/generators/jointpanel.py
 msgid "JointPanel"
-msgstr "СоединительнаяПанель"
+msgstr "Соединяемая панель"
 
 #. description of JointPanel
 #: boxes/generators/jointpanel.py
@@ -6754,7 +6754,7 @@ msgstr "separate"
 #. help for parameter separate
 #: boxes/generators/jointpanel.py
 msgid "draw pieces apart so they can be cut to form a large sheet"
-msgstr "нарисовать детали отдельно"
+msgstr "нарисовать детали отдельно, чтобы их можно было вырезать для формирования большого листа"
 
 #. name of box generator
 #: boxes/generators/kamishibai.py
@@ -7282,7 +7282,7 @@ msgstr ""
 #. name of box generator
 #: boxes/generators/keyholder.py
 msgid "KeyHolder"
-msgstr "ДержательКлюча"
+msgstr "Ключница"
 
 #. description of KeyHolder
 #: boxes/generators/keyholder.py
@@ -7396,7 +7396,7 @@ msgstr "Добавить монтажные отверстия"
 #. name of box generator
 #: boxes/generators/keypad.py
 msgid "Keypad"
-msgstr "Генератор клавиатур с механическими переключателями"
+msgstr "Keypad"
 
 #. description of Keypad
 #: boxes/generators/keypad.py
@@ -7455,7 +7455,7 @@ msgstr ""
 #. name of box generator
 #: boxes/generators/laptopstand.py
 msgid "LaptopStand"
-msgstr "Простая Х-образная подставка для ноутбука под углом"
+msgstr "Подставка для ноутбука"
 
 #. description of LaptopStand
 #: boxes/generators/laptopstand.py
@@ -7517,7 +7517,7 @@ msgstr "желаемая толщина поддерживающего края"
 #. name of box generator
 #: boxes/generators/laserclamp.py
 msgid "LaserClamp"
-msgstr "Зажим для фиксации материала на столе с ножами"
+msgstr "Зажим"
 
 #. description of LaserClamp
 #: boxes/generators/laserclamp.py
@@ -7573,7 +7573,7 @@ msgstr "дополнительная высота для более плавно
 #. name of box generator
 #: boxes/generators/laserholdfast.py
 msgid "LaserHoldfast"
-msgstr "Зажим для сотовых столов лазерных резаков"
+msgstr "Зажим для сотовых столов"
 
 #. description of LaserHoldfast
 #: boxes/generators/laserholdfast.py
@@ -7606,7 +7606,7 @@ msgstr "ширина стержня"
 #. name of box generator
 #: boxes/generators/lbeam.py
 msgid "LBeam"
-msgstr "Простая L-образная балка: две детали соединены под прямым углом"
+msgstr "L-образная балка"
 
 #. description of LBeam
 #: boxes/generators/lbeam.py
@@ -7619,7 +7619,7 @@ msgstr "Настройки L-образной балки"
 #. name of box generator
 #: boxes/generators/magazinefile.py
 msgid "MagazineFile"
-msgstr "Открытый лоток для журналов"
+msgstr "Лоток для журналов"
 
 #. description of MagazineFile
 #: boxes/generators/magazinefile.py
@@ -7632,7 +7632,7 @@ msgstr "Настройки лотка для журналов"
 #. name of box generator
 #: boxes/generators/makitapowersupply.py
 msgid "MakitaPowerSupply"
-msgstr "Лабораторный блок питания на аккумуляторе Makita 18В или ноутбучном БП"
+msgstr "Лабораторный блок питания"
 
 #. description of MakitaPowerSupply
 #: boxes/generators/makitapowersupply.py
@@ -7706,7 +7706,7 @@ msgstr "usb-c"
 #. name of box generator
 #: boxes/generators/matrix.py
 msgid "Matrix"
-msgstr "Корпус для матрицы WS2812b"
+msgstr "Корпус для матрицы"
 
 #. description of Matrix
 #: boxes/generators/matrix.py
@@ -7934,7 +7934,7 @@ msgstr "Количество модулей по оси Y"
 #. name of box generator
 #: boxes/generators/microrack.py
 msgid "SBCMicroRack"
-msgstr "Сборные стойки для одноплатных компьютеров типа Raspberry Pi"
+msgstr "Стойки для Raspberry Pi"
 
 #. description of SBCMicroRack
 #: boxes/generators/microrack.py
@@ -8071,7 +8071,7 @@ msgstr ""
 #. name of box generator
 #: boxes/generators/nemamount.py
 msgid "NemaMount"
-msgstr "Кронштейн для крепления двигателя Nema"
+msgstr "Кронштейн для Nema"
 
 #. description of NemaMount
 #: boxes/generators/nemamount.py
@@ -8366,7 +8366,7 @@ msgstr "тип края"
 #. name of box generator
 #: boxes/generators/organpipe.py
 msgid "OrganPipe"
-msgstr "Прямоугольная органная труба на основе pipecalc"
+msgstr "Труба органа"
 
 #. description of OrganPipe
 #: boxes/generators/organpipe.py
@@ -8617,7 +8617,7 @@ msgstr "количество подошв"
 #. name of box generator
 #: boxes/generators/paintbox.py
 msgid "PaintStorage"
-msgstr "Многоярусное хранилище для краски или других вещей"
+msgstr "Хранилище для красок"
 
 #. description of PaintStorage
 #: boxes/generators/paintbox.py
@@ -8923,7 +8923,7 @@ msgstr "tab_size"
 #. help for parameter tab_size
 #: boxes/generators/phoneholder.py
 msgid "Length of the tabs holding the phone"
-msgstr "Длина выступов"
+msgstr "Длина выступов, удерживающих телефон"
 
 #. parameter name
 #: boxes/generators/phoneholder.py
@@ -9210,7 +9210,7 @@ msgstr "Количество сторон крышки. n ≥ 3"
 #. name of box generator
 #: boxes/generators/pizzashovel.py
 msgid "PizzaShovel"
-msgstr "Лопатка для пиццы с конвейерной лентой"
+msgstr "Лопатка для пиццы"
 
 #. description of PizzaShovel
 #: boxes/generators/pizzashovel.py
@@ -9346,7 +9346,7 @@ msgstr "Модуль зубьев в мм"
 #. name of box generator
 #: boxes/generators/planetary2.py
 msgid "Planetary2"
-msgstr "Планетарная передача 2 "
+msgstr "Планетарная передача 2"
 
 #. description of Planetary2
 #: boxes/generators/planetary2.py
@@ -9617,7 +9617,7 @@ msgstr "insideout"
 #. help for parameter insideout
 #: boxes/generators/pulley.py
 msgid "create a ring gear with the belt being pushed against from within"
-msgstr "создать внутреннее зубчатое колесо"
+msgstr "создать внутреннее зубчатое колесо, прижимая ремень изнутри"
 
 #. help for parameter top
 #: boxes/generators/pulley.py
@@ -9658,7 +9658,7 @@ msgstr "Настройки Rack10Box"
 #. name of box generator
 #: boxes/generators/rack19halfwidth.py
 msgid "Rack19HalfWidth"
-msgstr "Половина ширины 19-дюймовой стойки для музыкального оборудования"
+msgstr "Rack19HalfWidth"
 
 #. description of Rack19HalfWidth
 #: boxes/generators/rack19halfwidth.py
@@ -9968,7 +9968,7 @@ msgstr "Коробка-звезда"
 #. description of RegularStarBox
 #: boxes/generators/regularstarbox.py
 msgid "Regular polygon boxes that form a star when closed"
-msgstr "Многоугольные коробки"
+msgstr "Многоугольные коробки, которые образуют звезду при закрытии"
 
 #. long description of RegularStarBox in markdown
 #: boxes/generators/regularstarbox.py
@@ -9986,7 +9986,7 @@ msgstr "внутренний радиус коробки (от центра до
 #. name of box generator
 #: boxes/generators/robotarm.py
 msgid "RobotArm"
-msgstr "Роботизированная конечность "
+msgstr "Роботизированная конечность"
 
 #. description of RobotArm
 #: boxes/generators/robotarm.py
@@ -10149,7 +10149,7 @@ msgstr "length5"
 #. name of box generator
 #: boxes/generators/rollholder.py
 msgid "RollHolder"
-msgstr "Держатель для кухонных или других рулонов"
+msgstr "Держатель для рулонов"
 
 #. description of RollHolder
 #: boxes/generators/rollholder.py
@@ -10250,7 +10250,7 @@ msgstr "beamwidth"
 #. help for parameter beamwidth
 #: boxes/generators/rotary.py
 msgid "width of the (aluminium) profile connecting the parts"
-msgstr "ширина (алюминиевого) профиля"
+msgstr "ширина (алюминиевого) профиля, соединяющего части"
 
 #. parameter name
 #: boxes/generators/rotary.py
@@ -10260,7 +10260,7 @@ msgstr "beamheight"
 #. help for parameter beamheight
 #: boxes/generators/rotary.py
 msgid "height of the (aluminium) profile connecting the parts"
-msgstr "высота (алюминиевого) профиля"
+msgstr "высота (алюминиевого) профиля, соединяющего части"
 
 #. name of box generator
 #: boxes/generators/roundedbox.py
@@ -10431,12 +10431,12 @@ msgstr "высота разделительных стенок в мм"
 #. name of box generator
 #: boxes/generators/sevensegmentclock.py
 msgid "SevenSegmentClock"
-msgstr "Семисегментные часы на LED-ленте"
+msgstr "Семисегментные часы"
 
 #. description of SevenSegmentClock
 #: boxes/generators/sevensegmentclock.py
 msgid "Seven segment clock build with LED stripe"
-msgstr "Семисегментные часы"
+msgstr "Семисегментные часы, собранные на LED-ленте"
 
 #. long description of SevenSegmentClock in markdown
 #: boxes/generators/sevensegmentclock.py
@@ -10466,12 +10466,12 @@ msgstr "Настройки SevenSegmentClock"
 #. help for parameter height
 #: boxes/generators/sevensegmentclock.py
 msgid "height of the front panel (with walls if outside is selected) in mm"
-msgstr "высота передней панели (со стенками"
+msgstr "высота передней панели (со стенками, если выбрано outside) в мм"
 
 #. help for parameter h
 #: boxes/generators/sevensegmentclock.py
 msgid "depth (with walls if outside is selected) in mm"
-msgstr "глубина (со стенками"
+msgstr "глубина (со стенками, если выбрано outside) в мм"
 
 #. name of box generator
 #: boxes/generators/shadowbox.py
@@ -10481,7 +10481,7 @@ msgstr "Шэдоубокс / Лайтбокс"
 #. description of Shadowbox
 #: boxes/generators/shadowbox.py
 msgid "The frame and spacers necessary to display a shadowbox / lightbox."
-msgstr "Рамка и прокладки"
+msgstr "Рамка и прокладки, необходимые для демонстрации шэдоубокса / лайтбокса."
 
 #. long description of Shadowbox in markdown
 #: boxes/generators/shadowbox.py
@@ -10904,7 +10904,7 @@ msgstr "Настраиваемая перфорированная панель �
 #. description of SkadisBoard
 #: boxes/generators/skadis.py
 msgid "Customizable Ikea like pegboard"
-msgstr "Настраиваемая перфорированная панель"
+msgstr "Настраиваемая перфорированная панель, похожая на Ikea"
 
 #. long description of SkadisBoard in markdown
 #: boxes/generators/skadis.py
@@ -10935,7 +10935,7 @@ msgstr "Настройки SkadisBoard"
 #. help for parameter columns
 #: boxes/generators/skadis.py
 msgid "Number of holes left to right counting both even and odd rows"
-msgstr "Количество отверстий слева направо"
+msgstr "Количество отверстий слева направо, считая чётные и нечётные ряды"
 
 #. help for parameter rows
 #: boxes/generators/skadis.py
@@ -10950,7 +10950,7 @@ msgstr "Лоток с наклонной стенкой"
 #. description of SlantedTray
 #: boxes/generators/slantedtray.py
 msgid "One row tray with high back wall and low front wall"
-msgstr "Лоток с одним рядом"
+msgstr "Лоток с одним рядом, высокой задней и низкой передней стенкой"
 
 #. long description of SlantedTray in markdown
 #: boxes/generators/slantedtray.py
@@ -11070,7 +11070,7 @@ msgstr "hole_radius"
 #. name of box generator
 #: boxes/generators/smallpartstray.py
 msgid "SmallPartsTray"
-msgstr "Лоток для мелких деталей с наклонными стенками"
+msgstr "Лоток для мелких деталей"
 
 #. description of SmallPartsTray
 #: boxes/generators/smallpartstray.py
@@ -11118,7 +11118,7 @@ msgstr "вертикальная стенка у наклонной части"
 #. name of box generator
 #: boxes/generators/smallpartstray2.py
 msgid "SmallPartsTray2"
-msgstr "Лоток типа Tray с наклоном к передней части"
+msgstr "Лоток для мелких деталей 2"
 
 #. description of SmallPartsTray2
 #: boxes/generators/smallpartstray2.py
@@ -11170,7 +11170,7 @@ msgstr "диаметр банок для специй"
 #. help for parameter height
 #: boxes/generators/spicesrack.py
 msgid "height of the cans that needs to be supported"
-msgstr "высота банок"
+msgstr "высота банок, которую нужно поддерживать"
 
 #. help for parameter space
 #: boxes/generators/spicesrack.py
@@ -11210,7 +11210,7 @@ msgstr "разместить опоры в отверстиях (проверь�
 #. help for parameter feet
 #: boxes/generators/spicesrack.py
 msgid "add feet so the rack can stand on the ground"
-msgstr "добавить ножки"
+msgstr "добавить ножки, чтобы полка стояла на полу"
 
 #. name of box generator
 #: boxes/generators/spool.py
@@ -11296,7 +11296,7 @@ msgstr "ширина окружающей стенки в мм"
 #. name of box generator
 #: boxes/generators/stackablebin.py
 msgid "StackableBin"
-msgstr "Штабелируемый контейнер на основе bintray"
+msgstr "Штабелируемый контейнер"
 
 #. description of StackableBin
 #: boxes/generators/stackablebin.py
@@ -11314,12 +11314,12 @@ msgstr "глубина контейнера"
 #. name of box generator
 #: boxes/generators/storagerack.py
 msgid "StorageRack"
-msgstr "Стеллаж для хранения коробок и лотков с собственным дном"
+msgstr "Стеллаж для хранения"
 
 #. description of StorageRack
 #: boxes/generators/storagerack.py
 msgid "StorageRack to store boxes and trays which have their own floor"
-msgstr "Стеллаж для хранения коробок и лотков"
+msgstr "Стеллаж для хранения коробок и лотков, у которых есть собственное дно"
 
 #. long description of StorageRack in markdown
 #: boxes/generators/storagerack.py
@@ -11351,7 +11351,7 @@ msgstr "глубина стеллажа"
 #. name of box generator
 #: boxes/generators/storageshelf.py
 msgid "StorageShelf"
-msgstr "Полка для хранения Typetray"
+msgstr "Полка для хранения"
 
 #. description of StorageShelf
 #: boxes/generators/storageshelf.py
@@ -11477,7 +11477,7 @@ msgstr "располагать лампы вертикально (или ряд�
 #. name of box generator
 #: boxes/generators/trayinsert.py
 msgid "TrayInsert"
-msgstr "Вкладыш для лотка без дна и внешних стенок — только сплошные перегородки"
+msgstr "Вкладыш для лотка"
 
 #. description of TrayInsert
 #: boxes/generators/trayinsert.py
@@ -11557,17 +11557,17 @@ msgstr "Настройки TrayInsert"
 #. help for parameter x
 #: boxes/generators/trayinsert.py
 msgid "X dimension of tray/box that this fits into"
-msgstr "Размер X лотка/коробки"
+msgstr "Размер X лотка/коробки, в который это вставляется"
 
 #. help for parameter y
 #: boxes/generators/trayinsert.py
 msgid "Y dimension of tray/box that this fits into.  "
-msgstr "Размер Y лотка/коробки"
+msgstr "Размер Y лотка/коробки, в который это вставляется"
 
 #. name of box generator
 #: boxes/generators/trianglelamp.py
 msgid "TriangleLamp"
-msgstr "Треугольная светодиодная лампа"
+msgstr "Треугольная лампа"
 
 #. description of TriangleLamp
 #: boxes/generators/trianglelamp.py
@@ -11654,7 +11654,7 @@ msgstr "Настройки TwoPiece"
 #. name of box generator
 #: boxes/generators/ubox.py
 msgid "UBox"
-msgstr "Коробка с различными вариантами исполнения и крышками"
+msgstr "UBox"
 
 #. description of UBox
 #: boxes/generators/ubox.py
@@ -11730,7 +11730,7 @@ msgstr "add_lid"
 #. help for parameter add_lid
 #: boxes/generators/unevenheightbox.py
 msgid "add a lid (works best with high corners opposing each other)"
-msgstr "добавить крышку (лучше всего работает"
+msgstr "добавить крышку (лучше всего работает, если высокие углы противоположны друг другу)"
 
 #. help for parameter lid_height
 #: boxes/generators/unevenheightbox.py
@@ -11752,7 +11752,7 @@ msgstr ""
 #. name of box generator
 #: boxes/generators/universalbox.py
 msgid "UniversalBox"
-msgstr "Коробка с различными вариантами исполнения и крышками"
+msgstr "Универсальная коробка"
 
 #. description of UniversalBox
 #: boxes/generators/universalbox.py
@@ -11785,7 +11785,7 @@ msgstr "отверстия для пальцев"
 #. name of box generator
 #: boxes/generators/wallcaliperholder.py
 msgid "WallCaliper"
-msgstr "Держатель штангенциркуля на стену"
+msgstr "Держатель для штангенциркуля"
 
 #. description of WallCaliper
 #: boxes/generators/wallcaliperholder.py
@@ -11982,7 +11982,7 @@ msgstr "крючок+штифт"
 #. name of box generator
 #: boxes/generators/wallchiselholder.py
 msgid "WallChiselHolder"
-msgstr "Держатель для стамесок на стену"
+msgstr "Держатель для стамесок"
 
 #. description of WallChiselHolder
 #: boxes/generators/wallchiselholder.py
@@ -12101,12 +12101,12 @@ msgstr "Настройки WallDrillBox"
 #. name of box generator
 #: boxes/generators/walledges.py
 msgid "WallEdges"
-msgstr "Типы кромок для настенных систем"
+msgstr "Типы креплений для настенных систем"
 
 #. description of WallEdges
 #: boxes/generators/walledges.py
 msgid "Shows the different edge types for wall systems"
-msgstr "Показывает различные типы кромок для настенных систем"
+msgstr "Показывает различные типы креплений для настенных систем"
 
 msgid "WallEdges Settings"
 msgstr "Настройки WallEdges"
@@ -12114,12 +12114,12 @@ msgstr "Настройки WallEdges"
 #. name of box generator
 #: boxes/generators/wallhopper.py
 msgid "WallHopper"
-msgstr "Настенный бункер с лотком"
+msgstr "Настенное хранилище"
 
 #. description of WallHopper
 #: boxes/generators/wallhopper.py
 msgid "Storage hopper with dispensing tray"
-msgstr "Бункер для хранения с лотком для выдачи"
+msgstr "Емкость для хранения с лотком для выдачи"
 
 #. long description of WallHopper in markdown
 #: boxes/generators/wallhopper.py
@@ -12204,7 +12204,7 @@ msgstr "label_ratio"
 #. help for parameter label_ratio
 #: boxes/generators/wallhopper.py
 msgid "Fraction of the label of the dispenser"
-msgstr "Доля высоты лотка"
+msgstr "Доля высоты лотка, занимаемая этикеткой"
 
 #. name of box generator
 #: boxes/generators/wallpinrow.py
@@ -12335,7 +12335,7 @@ msgstr "угол распорки — меньше для большей жес�
 #. name of box generator
 #: boxes/generators/wallrack.py
 msgid "WallRack"
-msgstr "Настенная полка для специй или других предметов"
+msgstr "Настенная полка"
 
 #. description of WallRack
 #: boxes/generators/wallrack.py
@@ -12525,7 +12525,7 @@ msgstr "Настенные ступени для инструментов"
 #. description of WallStairs
 #: boxes/generators/wallstairs.py
 msgid "Platforms in different heights e.g. for screw drivers"
-msgstr "Платформы разной высоты"
+msgstr "Платформы разной высоты, например, для отверток"
 
 #. long description of WallStairs in markdown
 #: boxes/generators/wallstairs.py
