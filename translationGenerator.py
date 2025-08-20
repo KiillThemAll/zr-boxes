@@ -32,6 +32,9 @@ def update_po_file_inplace(po_path, single_dict, multiline_dict):
     i = 0
     while i < len(lines):
         line = lines[i]
+
+        # need add ignor for '#, fuzzy'
+
         # Only alter msgstr lines, leave everything else untouched
         if line.startswith('msgid '):
             # Check for '#. parameter name' in the comment line above

@@ -32,7 +32,7 @@
           <h2 class="custom-header__text">Параметры по умолчанию<a class="headerlink" href="#default-arguments" title="Ссылка на этот заголовок">¶</a></h2>
           <div class="custom-header__line"></div>
         </div>
-        <p>В веб-интерфейсе это нижняя группа прямо перед кнопкой <code class="docutils literal notranslate"><span class="pre">Сгенерировать</span></code>. Это в основном все технические настройки, которые мало связаны с объектом, который генерируется, но больше с используемым материалом и способом обработки чертежа и материала.</p>
+        <p>В веб-интерфейсе это нижняя группа прямо перед кнопкой <code><span>Сгенерировать</span></code>. Это в основном все технические настройки, которые мало связаны с объектом, который генерируется, но больше с используемым материалом и способом обработки чертежа и материала.</p>
         <p>Настройки:</p>
         <section id="thickness">
           <div class="custom-header">
@@ -54,7 +54,7 @@
         </section>
         <section id="format">
           <div class="custom-header">
-          	<h3 class="custom-header__text">format (формат)<a class="headerlink" href="#format" title="Ссылка на этот заголовок">¶</a></h3>
+            <h3 class="custom-header__text">format (формат)<a class="headerlink" href="#format" title="Ссылка на этот заголовок">¶</a></h3>
             <div class="custom-header__line"></div>
           </div>
           <p>Boxes.py может создавать файлы в нескольких форматах:</p>
@@ -67,7 +67,7 @@
         </section>
         <section id="tabs">
           <div class="custom-header">
-          	<h3 class="custom-header__text">tabs (перемычки)<a class="headerlink" href="#tabs" title="Ссылка на этот заголовок">¶</a></h3>
+            <h3 class="custom-header__text">tabs (перемычки)<a class="headerlink" href="#tabs" title="Ссылка на этот заголовок">¶</a></h3>
             <div class="custom-header__line"></div>
           </div>
           <p>Перемычки — это небольшие мостики между деталями и окружающим материалом, которые не дают детали выпасть. В теории их ширина должна зависеть от параметра выжигания. Но практичнее иметь их независимыми, чтобы вы могли настраивать их отдельно. Большинство деталей и генераторов поддерживают эту функцию, но некоторые могут не поддерживать.</p>
@@ -75,19 +75,19 @@
         </section>
         <section id="inner-corners">
           <div class="custom-header">
-          	<h3 class="custom-header__text">inner_corners (внутренние углы)<a class="headerlink" href="#inner-corners" title="Ссылка на этот заголовок">¶</a></h3>
+            <h3 class="custom-header__text">inner_corners (внутренние углы)<a class="headerlink" href="#inner-corners" title="Ссылка на этот заголовок">¶</a></h3>
             <div class="custom-header__line"></div>
           </div>
           <p>Как обрабатывать внутренние углы. Внутренние углы — это проблема, так как круглый инструмент, такой как лазер или фреза, не может сделать острый внутренний угол. Есть разные варианты:</p>
           <ul class="list">
-            <li><p><code class="docutils literal notranslate"><span class="pre">loop</span></code> — создать петлю, заполняющую угол</p></li>
-            <li><p><code class="docutils literal notranslate"><span class="pre">corner</span></code> — просто острый угол в траектории, который оставит радиус нетронутым</p></li>
-            <li><p><code class="docutils literal notranslate"><span class="pre">backarc</span></code> — наивная реализация с инвертированными дугами, соединяющими прямые линии</p></li>
+            <li><p><code><span>loop</span></code> — создать петлю, заполняющую угол</p></li>
+            <li><p><code><span>corner</span></code> — просто острый угол в траектории, который оставит радиус нетронутым</p></li>
+            <li><p><code><span>backarc</span></code> — наивная реализация с инвертированными дугами, соединяющими прямые линии</p></li>
           </ul>
         </section>
         <section id="debug">
           <div class="custom-header">
-          	<h3 class="custom-header__text">debug (отладка)<a class="headerlink" href="#debug" title="Ссылка на этот заголовок">¶</a></h3>
+            <h3 class="custom-header__text">debug (отладка)<a class="headerlink" href="#debug" title="Ссылка на этот заголовок">¶</a></h3>
             <div class="custom-header__line"></div>
           </div>
           <p>Большинству обычных пользователей эта опция не нужна.</p>
@@ -95,7 +95,7 @@
         </section>
         <section id="reference">
           <div class="custom-header">
-          	<h3 class="custom-header__text">reference (эталон)<a class="headerlink" href="#reference" title="Ссылка на этот заголовок">¶</a></h3>
+            <h3 class="custom-header__text">reference (эталон)<a class="headerlink" href="#reference" title="Ссылка на этот заголовок">¶</a></h3>
             <div class="custom-header__line"></div>
           </div>
           <p>Конвертация векторной графики подвержена ошибкам. Многие форматы имеют очень странные представления о том, как их внутренние единицы переводятся в реальные размеры. Если reference установлен в ненулевое значение, Boxes.py рисует прямоугольник заданной длины. Это можно использовать для проверки масштаба чертежа или для понимания, как вернуть его к правильным пропорциям.</p>
@@ -103,28 +103,28 @@
       </section>
       <section id="common-parameters-and-types">
         <div class="custom-header">
-        	<h2 class="custom-header__text">Общие параметры и типы<a class="headerlink" href="#common-parameters-and-types" title="Ссылка на этот заголовок">¶</a></h2>
+          <h2 class="custom-header__text">Общие параметры и типы<a class="headerlink" href="#common-parameters-and-types" title="Ссылка на этот заголовок">¶</a></h2>
           <div class="custom-header__line"></div>
         </div>
         <section id="section-parameters">
           <div class="custom-header">
-          	<h3 class="custom-header__text">Параметры секций<a class="headerlink" href="#section-parameters" title="Ссылка на этот заголовок">¶</a></h3>
+            <h3 class="custom-header__text">Параметры секций<a class="headerlink" href="#section-parameters" title="Ссылка на этот заголовок">¶</a></h3>
             <div class="custom-header__line"></div>
           </div>
-          <p>Некоторые генераторы поддерживают произвольное количество секций. Это можно использовать для рядов или колонок отсеков, ступенчатых высот или для деления длины на несколько подчастей. Стандартные параметры для этого — <code class="docutils literal notranslate"><span class="pre">sx</span></code>, <code class="docutils literal notranslate"><span class="pre">sy</span></code> и <code class="docutils literal notranslate"><span class="pre">sh</span></code> (вместо <code class="docutils literal notranslate"><span class="pre">x</span></code>, <code class="docutils literal notranslate"><span class="pre">y</span></code> и <code class="docutils literal notranslate"><span class="pre">h</span></code>).</p>
+          <p>Некоторые генераторы поддерживают произвольное количество секций. Это можно использовать для рядов или колонок отсеков, ступенчатых высот или для деления длины на несколько подчастей. Стандартные параметры для этого — <code><span>sx</span></code>, <code><span>sy</span></code> и <code><span>sh</span></code> (вместо <code><span>x</span></code>, <code><span>y</span></code> и <code><span>h</span></code>).</p>
           <p>Большинство генераторов добавляют стенки между отсеками, поэтому общий размер может быть больше в зависимости от количества отсеков (и дополнительных стенок).</p>
-          <p>Размеры секций разделяются двоеточием (<code class="docutils literal notranslate"><span class="pre">:</span></code>), например <code class="docutils literal notranslate"><span class="pre">30:25.5:70</span></code>. Вместо повторения одного и того же значения можно использовать <code class="docutils literal notranslate"><span class="pre">значение*количество секций</span></code>, например <code class="docutils literal notranslate"><span class="pre">50*3</span></code> означает то же, что и <code class="docutils literal notranslate"><span class="pre">50:50:50</span></code>. Чтобы равномерно разделить длину на несколько секций, можно использовать <code class="docutils literal notranslate"><span class="pre">общая длина/количество секций</span></code> — например, <code class="docutils literal notranslate"><span class="pre">120/4</span></code> то же, что и <code class="docutils literal notranslate"><span class="pre">30:30:30:30</span></code>. Все эти форматы можно свободно комбинировать.</p>
+          <p>Размеры секций разделяются двоеточием (<code><span>:</span></code>), например <code><span>30:25.5:70</span></code>. Вместо повторения одного и того же значения можно использовать <code><span>значение*количество секций</span></code>, например <code><span>50*3</span></code> означает то же, что и <code><span>50:50:50</span></code>. Чтобы равномерно разделить длину на несколько секций, можно использовать <code><span>общая длина/количество секций</span></code> — например, <code><span>120/4</span></code> то же, что и <code><span>30:30:30:30</span></code>. Все эти форматы можно свободно комбинировать.</p>
         </section>
         <section id="mounting-holes">
           <div class="custom-header">
-          	<h3 class="custom-header__text">mounting_holes (монтажные отверстия)<a class="headerlink" href="#mounting-holes" title="Ссылка на этот заголовок">¶</a></h3>
+            <h3 class="custom-header__text">mounting_holes (монтажные отверстия)<a class="headerlink" href="#mounting-holes" title="Ссылка на этот заголовок">¶</a></h3>
             <div class="custom-header__line"></div>
           </div>
-          <p>Некоторые генераторы позволяют создавать грушевидные монтажные отверстия. Чтобы получить отверстия нужного размера, необходимо указать диаметр стержня и головки крепежного винта. Формат — «стержень:головка», оба диаметра в мм (например, <code class="docutils literal notranslate"><span class="pre">3.5:6.5</span></code>). Если указан только диаметр стержня (например, <code class="docutils literal notranslate"><span class="pre">3.5</span></code>), создается круглое монтажное отверстие. Если параметр диаметра монтажного отверстия установлен в <code class="docutils literal notranslate"><span class="pre">0</span></code>, монтажные отверстия не создаются.</p>
+          <p>Некоторые генераторы позволяют создавать грушевидные монтажные отверстия. Чтобы получить отверстия нужного размера, необходимо указать диаметр стержня и головки крепежного винта. Формат — «стержень:головка», оба диаметра в мм (например, <code><span>3.5:6.5</span></code>). Если указан только диаметр стержня (например, <code><span>3.5</span></code>), создается круглое монтажное отверстие. Если параметр диаметра монтажного отверстия установлен в <code><span>0</span></code>, монтажные отверстия не создаются.</p>
         </section>
         <section id="outside">
           <div class="custom-header">
-          	<h3 class="custom-header__text">outside (внешние размеры)<a class="headerlink" href="#outside" title="Ссылка на этот заголовок">¶</a></h3>
+            <h3 class="custom-header__text">outside (внешние размеры)<a class="headerlink" href="#outside" title="Ссылка на этот заголовок">¶</a></h3>
             <div class="custom-header__line"></div>
           </div>
           <p>Большинство размеров — внутренние. Если генератор предлагает этот параметр, он пересчитает внутренние размеры так, чтобы стены и внешние элементы уместились в заданных габаритах. Это может быть неожиданно для типов кромок с выступами, такими как петли, ручки, ножки и т.д., так как они тоже учитываются. Если размеры недостаточны для этих элементов, коробка может работать неправильно. Большинство генераторов не имеют проверки на такие ситуации (например, отрицательную высоту), и ответственность за проверку результата лежит на пользователе.</p>
@@ -133,13 +133,13 @@
       </section>
       <section id="edge-type-parameters">
         <div class="custom-header">
-        	<h2 class="custom-header__text">Параметры типа кромки<a class="headerlink" href="#edge-type-parameters" title="Ссылка на этот заголовок">¶</a></h2>
+          <h2 class="custom-header__text">Параметры типа кромки<a class="headerlink" href="#edge-type-parameters" title="Ссылка на этот заголовок">¶</a></h2>
           <div class="custom-header__line"></div>
         </div>
         <p>Все, кроме самых простых, типы кромок имеют ряд настроек, определяющих их внешний вид. В настройках генераторов рекомендуется дать возможность настроить эти параметры пользователю. В веб-интерфейсе они свернуты. В командной строке они сгруппированы. Пользователи должны понимать, что не все параметры имеет смысл менять. Пока что Boxes.py не позволяет скрывать некоторые параметры.</p>
         <section id="finger-joint-settings">
           <div class="custom-header">
-          	<h3 class="custom-header__text">Настройки шипового соединения<a class="headerlink" href="#finger-joint-settings" title="Ссылка на этот заголовок">¶</a></h3>
+            <h3 class="custom-header__text">Настройки шипового соединения<a class="headerlink" href="#finger-joint-settings" title="Ссылка на этот заголовок">¶</a></h3>
             <div class="custom-header__line"></div>
           </div>
           <dl class="glossary">
@@ -159,10 +159,10 @@
         </section>
         <section id="stackable-edge-settings">
           <div class="custom-header">
-          	<h3 class="custom-header__text">Настройки кромок для штабелирования<a class="headerlink" href="#stackable-edge-settings" title="Ссылка на этот заголовок">¶</a></h3>
+            <h3 class="custom-header__text">Настройки кромок для штабелирования<a class="headerlink" href="#stackable-edge-settings" title="Ссылка на этот заголовок">¶</a></h3>
             <div class="custom-header__line"></div>
           </div>
-          <p>Чтобы коробки можно было складывать друг на друга, они должны быть одинаковой ширины и глубины, а <code class="docutils literal notranslate"><span class="pre">angle</span></code>, <code class="docutils literal notranslate"><span class="pre">width</span></code> и <code class="docutils literal notranslate"><span class="pre">height</span></code> ножек должны совпадать.</p>
+          <p>Чтобы коробки можно было складывать друг на друга, они должны быть одинаковой ширины и глубины, а <code><span>angle</span></code>, <code><span>width</span></code> и <code><span>height</span></code> ножек должны совпадать.</p>
           <dl class="glossary">
             <dt id="term-angle">angle<a class="headerlink" href="#term-angle" title="Ссылка на этот термин">¶</a></dt>
             <dd><p>внутренний угол ножек</p></dd>
@@ -173,13 +173,13 @@
             <dt id="term-width">width<a class="headerlink" href="#term-width" title="Ссылка на этот термин">¶</a></dt>
             <dd><p>ширина ножек</p></dd>
             <dt id="term-bottom_stabilizers">bottom_stabilizers<a class="headerlink" href="#term-bottom_stabilizers" title="Ссылка на этот термин">¶</a></dt>
-            <dd><p>генерировать детали для приклеивания внутри нижних кромок для более надежного штабелирования. Используйте значение немного меньше <code class="docutils literal notranslate"><span class="pre">height</span></code> ( + <code class="docutils literal notranslate"><span class="pre">holedistance</span></code> ), чтобы часть ножек оставалась снаружи.</p></dd>
+            <dd><p>генерировать детали для приклеивания внутри нижних кромок для более надежного штабелирования. Используйте значение немного меньше <code><span>height</span></code> ( + <code><span>holedistance</span></code> ), чтобы часть ножек оставалась снаружи.</p></dd>
           </dl>
         </section>
       </section>
       <section id="colors">
         <div class="custom-header">
-        	<h2 class="custom-header__text">Цвета<a class="headerlink" href="#colors" title="Ссылка на этот заголовок">¶</a></h2>
+          <h2 class="custom-header__text">Цвета<a class="headerlink" href="#colors" title="Ссылка на этот заголовок">¶</a></h2>
           <div class="custom-header__line"></div>
         </div>
         <p>В сгенерированных файлах используются следующие цветовые обозначения:</p>

@@ -1269,7 +1269,7 @@ LBeam Settings,Настройки L-образной балки
 MagazineFile,Лоток для журналов
 Open magazine file,Открытый лоток для журналов
 MagazineFile Settings,Настройки лотка для журналов
-MakitaPowerSupply,Лабораторный блок питания Maktia
+MakitaPowerSupply,Лабораторный блок питания Makita
 Bench power supply powered with Maktia 18V battery or laptop power supply,Лабораторный блок питания на аккумуляторе Makita 18В или ноутбучном БП
 "\nVitamins: DSP5005 (or similar) power supply, two banana sockets, two 4.8mm flat terminals with flat soldering tag\n\nTo allow powering by laptop power supply: flip switch, Lenovo round socket (or adjust right  hole for different socket)\n","Витамины: блок питания DSP5005 (или аналогичный), два гнезда «банан», два плоских клеммника 4.8 мм с ушком для пайки\n\nДля питания от ноутбучного БП: переключатель, круглый разъем Lenovo (или подберите отверстие под другой разъем)\n"
 MakitaPowerSupply Settings,Настройки блока питания Makita
@@ -1584,7 +1584,7 @@ pinsize,диаметр установочных штифтов
 diameter of alignment pins,диаметр установочных штифтов
 Platonic,Правильный многогранник
 Platonic solids generator,Генератор правильных многогранников
-![Icosahedron](static/samples/Platonic-Icosahedron.jpg)\n,![Икосаэдр](static/samples/Platonic-Icosahedron.jpg)
+![Icosahedron](static/samples/Platonic-Icosahedron.jpg)\n,![Икосаэдр](static/samples/Platonic-Icosahedron.jpg)\n
 Platonic Settings,Настройки правильного многогранника
 type,тип платонова тела
 type of platonic solid,тип платонова тела
@@ -1595,7 +1595,7 @@ dodecahedron,додекаэдр
 icosahedro,икосаэдр
 PoleHook,Крючок для трубы
 Hook for pole like things to be clamped to another pole,Крючок для шеста или трубы для крепления к другому шесту
-PoleHook Settings,Настройки крючока для трубы
+PoleHook Settings,Настройки крючка для трубы
 diameter of the thing to hook,диаметр предмета для захвата
 screw,винт
 diameter of the screw in mm,диаметр винта в мм
@@ -1633,7 +1633,7 @@ RackBox,Коробка для стойки
 RackBox Settings,Настройки коробки для стойки
 RectangularWall,Прямоугольная стенка
 Simple wall with options for different edges,Простая стенка с вариантами кромок
-RectangularWall Settings,Настройки прямоугольная стенка
+RectangularWall Settings,Настройки прямоугольной стенки
 C,С
 I,I
 j,й
@@ -1959,7 +1959,7 @@ extend walls for 45° corners. Requires grinding a 22.5° bevel.,удлинит�
 TwoPiece,Двухкомпонентная коробка
 A two piece box where top slips over the bottom half to form the enclosure.,"Двухкомпонентная коробка, где верхняя часть надевается на нижнюю, образуя корпус"
 \nSet *hi* larger than *h* to leave gap between the inner and outer shell. This can be used to make opening the box easier. Set *hi* smaller to only have a small inner ridge that will allow the content to be more visible after opening.\n\n![Bottom view](static/samples/TwoPiece2.jpg)\n,"\nУстановите *hi* больше, чем *h*, чтобы оставить зазор между внутренней и внешней оболочкой. Это облегчает открытие коробки. Если *hi* меньше, то получится небольшой внутренний выступ, который позволит содержимому быть более видимым после открытия.\n\n![Вид снизу](static/samples/TwoPiece2.jpg)\n"
-TwoPiece Settings,Настройки двухкомпонентной коробка
+TwoPiece Settings,Настройки двухкомпонентной коробки
 UBox,UBox
 Box various options for different stypes and lids,Коробка с различными вариантами исполнения и крышками
 UBox Settings,Настройки UBox
@@ -1982,7 +1982,7 @@ edge_types,типы кромок
 "which edges are flat (e) or grooved (z,Z), counter-clockwise from the front","какие кромки плоские (e) или с пазом (z,Z), против часовой стрелки от передней части"
 UniversalBox,Универсальная коробка
 Box with various options for different styles and lids,Коробка с различными вариантами исполнения и крышками
-UniversalBox Settings,Настройки универсальной коробка
+UniversalBox Settings,Настройки универсальной коробки
 vertical_edges,вертикальные кромки
 connections used for the vertical edges,соединения для вертикальных кромок
 finger joints,шиповое соединение
@@ -2089,7 +2089,7 @@ number of hooks into the wall,количество крючков для кре�
 height of the front plate (in mm) - needs to be at least 7 time the thickness,высота передней панели (мм) — должна быть не менее 7 толщин
 WallPlaneHolder,Держатель рубанка на стену
 Hold a plane to a wall,Держит рубанок на стене
-WallPlaneHolder Settings,Настройки держателя рубанки на стену
+WallPlaneHolder Settings,Настройки держателя рубанка на стену
 width of the plane,ширина рубанка
 length of the plane,длина рубанка
 hold_length,длина держателя
@@ -2112,7 +2112,7 @@ edge type holding the shelves together,тип кромки для соедине
 flat_bottom,плоское дно
 "Make bottom Flat, so that the rack can also stand","Сделать дно плоским, чтобы полка могла стоять"
 WallRollHolder,Держатель рулонов на стену
-WallRollHolder Настройки держателя рулонов
+WallRollHolder Settings,Настройки держателя рулонов
 WallSlottedHolder,Держатель с пазами на стену
 Wall tool holder with slots,Держатель инструментов с пазами
 WallSlottedHolder Settings,Настройки держателя инструментов
@@ -2137,7 +2137,7 @@ WallStairs Settings,Настройки настенныой ступени дл�
 braceheight,высота распорки
 height of the brace at the bottom back (in mm). Zero for none,высота распорки внизу сзади (мм). Ноль — нет
 WallTypeTray,Лоток для настенных систем
-WallTypeTray Settings,Настройки лотока для настенных систем
+WallTypeTray Settings,Настройки лотка для настенных систем
 additional height of the back wall,дополнительная высота задней стенки
 radius for strengthening walls with the hooks,радиус для усиления стенок с крючками
 WallWrenchHolder,Держатель для гаечных ключей на стену
@@ -2170,7 +2170,7 @@ no_verticals,без вертикалей
 ZBeam,Z-образная балка (или U-балка)
 Z-Beam (or U-Beam): three pieces joined at right angles,"Z-образная (или U-образная) балка: три детали, соединенные под прямым углом"
 "\nWith the \""flanged_ubeam\"" option, there is a fourth piece the length of \""y\"".\n![U-Beam with flange](static/samples/ZBeam-flanged-ubeam.jpg)\n","\"\nС опцией \"flanged_ubeam\" добавляется четвертая деталь длиной \"y\".\n![U-образная балка с фланцем](static/samples/ZBeam-flanged-ubeam.jpg)\n\""
-ZBeam Settings,Настройки Z-образной балка
+ZBeam Settings,Настройки Z-образной балки
 flanged_ubeam,фланцевый U-образный профиль
 Add a fourth piece to make a U-Beam with a flange,Добавить четвертую деталь для создания U-образной балки с фланцем
 %s - Boxes,%s - Коробки

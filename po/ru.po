@@ -3099,7 +3099,7 @@ msgid ""
 msgstr ""
 "\n"
 "    Вы можете хранить свои кофейные капсулы рядом с вашей эспрессо-машиной с помощью этого держателя. "
-"Он работает как в вертикальном положении.\n"
+"Он работает как в вертикальном положении, так и перевёрнутым под полкой.\n"
 
 msgid "CoffeeCapsuleHolder Settings"
 msgstr "Настройки держателя капсул для кофе"
@@ -7632,7 +7632,7 @@ msgstr "Настройки лотка для журналов"
 #. name of box generator
 #: boxes/generators/makitapowersupply.py
 msgid "MakitaPowerSupply"
-msgstr "Лабораторный блок питания Maktia"
+msgstr "Лабораторный блок питания Makita"
 
 #. description of MakitaPowerSupply
 #: boxes/generators/makitapowersupply.py
@@ -9539,7 +9539,7 @@ msgid "Hook for pole like things to be clamped to another pole"
 msgstr "Крючок для шеста или трубы для крепления к другому шесту"
 
 msgid "PoleHook Settings"
-msgstr "Настройки крючока для трубы"
+msgstr "Настройки крючка для трубы"
 
 #. help for parameter diameter
 #: boxes/generators/polehook.py
@@ -9719,7 +9719,7 @@ msgid "Simple wall with options for different edges"
 msgstr "Простая стенка с вариантами кромок"
 
 msgid "RectangularWall Settings"
-msgstr "Настройки прямоугольная стенка"
+msgstr "Настройки прямоугольной стенки"
 
 #. possible choice for bottom_edge
 #: boxes/generators/rectangularWall.py
@@ -11649,7 +11649,7 @@ msgstr ""
 "![Вид снизу](static/samples/TwoPiece2.jpg)\n"
 
 msgid "TwoPiece Settings"
-msgstr "Настройки двухкомпонентной коробка"
+msgstr "Настройки двухкомпонентной коробки"
 
 #. name of box generator
 #: boxes/generators/ubox.py
@@ -11760,7 +11760,7 @@ msgid "Box with various options for different styles and lids"
 msgstr "Коробка с различными вариантами исполнения и крышками"
 
 msgid "UniversalBox Settings"
-msgstr "Настройки универсальной коробка"
+msgstr "Настройки универсальной коробки"
 
 #. parameter name
 #: boxes/generators/universalbox.py
@@ -12287,7 +12287,7 @@ msgid "Hold a plane to a wall"
 msgstr "Держит рубанок на стене"
 
 msgid "WallPlaneHolder Settings"
-msgstr "Настройки держателя рубанки на стену"
+msgstr "Настройки держателя рубанка на стену"
 
 #. help for parameter width
 #: boxes/generators/wallplaneholder.py
@@ -12396,7 +12396,7 @@ msgid "WallRollHolder"
 msgstr "Держатель рулонов на стену"
 
 msgid "WallRollHolder Settings"
-msgstr ""
+msgstr "Настройки держателя рулонов"
 
 #. name of box generator
 #: boxes/generators/wallslottedholder.py
@@ -12563,7 +12563,7 @@ msgid "WallTypeTray"
 msgstr "Лоток для настенных систем"
 
 msgid "WallTypeTray Settings"
-msgstr "Настройки лотока для настенных систем"
+msgstr "Настройки лотка для настенных систем"
 
 #. help for parameter back_height
 #: boxes/generators/walltypetray.py
@@ -12728,7 +12728,7 @@ msgstr ""
 "![U-образная балка с фланцем](static/samples/ZBeam-flanged-ubeam.jpg)\n"
 
 msgid "ZBeam Settings"
-msgstr "Настройки Z-образной балка"
+msgstr "Настройки Z-образной балки"
 
 #. parameter name
 #: boxes/generators/zbeam.py
