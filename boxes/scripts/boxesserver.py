@@ -285,13 +285,14 @@ class BServer:
         result.append(f"""
 <input type="hidden" name="language" id="language" value="{lang_name}">
 
-<p>
+<div>
     <button class="link-button" name="render" value="1" formtarget="_blank">{_("Generate")}</button>
     <button class="link-button" name="render" value="2" formtarget="_self">{_("Download")}</button>
-    <button class="link-button" id="order-product-btn" type="button">{_("Order product")}</button>
     <!--<button name="render" value="0" formtarget="_self">{_("Save to URL")}</button>
     <button class="link-button" name="render" value="3" formtarget="_blank">{_("QR Code")}</button>-->
-</p>
+    <button class="link-button" id="order-product-btn" type="button">{_("Order product")}</button>
+    <input type="number" id="order_quantity" class="input-base" min="1" value="1">{_("Quantity of boxes")}</input>
+</div>
 </form>
 </div>
 
