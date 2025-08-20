@@ -154,13 +154,14 @@ function initOrderProductButton() {
             })
             .then(res => res.json())
             .then(data => {
-                if (data.response === 'ok' && data.uploadUrl) {
-                    // Step 2: PUT the SVG file to uploadUrl
-                    fetch(data.uploadUrl, {
+                if (data.response) {
+                    console.log(data.response)
+                    // Step 2: PUT the DXF file to uploadUrl
+                    fetch(data.response, {
                         method: 'PUT',
-                        headers: {
-                            'Content-Type': 'image/svg+xml; charset=utf-8',
-                        },
+                        // headers: {
+                        //     'Content-Type': 'image/svg+xml; charset=utf-8',
+                        // },
                         body: blob
                     })
                     .then(putRes => {
