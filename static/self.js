@@ -123,8 +123,10 @@ function initOrderProductButton() {
         const params = new URLSearchParams();
         let length = 0;
         let thickness = 0; 
+        let orderQuantity = document.getElementById('order_quantity').value ?? 1;
+        orderQuantity = orderQuantity ? orderQuantity : 1;
+        console.log(orderQuantity, 'lol');
         for (let pair of formData.entries()) {
-            console.log(pair, 'lol');
             if(pair[0] === 'format') pair[1] = 'svg';
             if(pair[0] === 'reference') pair[1] = '0.0';
             // there are some args, that duplicated
@@ -169,7 +171,9 @@ function initOrderProductButton() {
                             url.searchParams.set('file_name', fileName);
                             url.searchParams.set('meters', length);
                             url.searchParams.set('thickness_01mm', thickness*10)
-                            window.open(url.toString(), '_blank');
+                            url.searchParams.set('order_quantity', orderQuantity);
+                            console.log(url.toString(), url, 'lil');
+                            // window.open(url.toString(), '_blank');
                         } else {
                             alert('Failed to upload SVG to uploadUrl');
                         }
