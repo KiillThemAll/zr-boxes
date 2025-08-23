@@ -2,7 +2,7 @@ import csv
 import re
 
 input_file = "./po/boxes.py.pot"
-output_file = "boxes2.csv"
+output_file = "boxes_param_names.csv"
 
 msgid_pattern = re.compile(r'^msgid\s+"(.*)"$')
 msgid_multiline_pattern = re.compile(r'^msgid\s+""$')

@@ -119,12 +119,12 @@ sy,sy
 sections back to front in mm [🛈](https://florianfesti.github.io/boxes/html/usermanual.html#section-parameters),секции сзади наперед в мм [🛈](https://florianfesti.github.io/boxes/html/usermanual.html#section-parameters)
 sh,sh
 sections bottom to top in mm [🛈](https://florianfesti.github.io/boxes/html/usermanual.html#section-parameters),секции снизу вверх в мм [🛈](https://florianfesti.github.io/boxes/html/usermanual.html#section-parameters)
-bottom_edge,bottom_edge
+bottom_edge,нижний_край
 edge type for bottom edge,тип края для нижнего края
 F,F
 s,s
 e,e
-top_edge,top_edge
+top_edge,верхний_край
 edge type for top edge,тип края для верхнего края
 f,f
 c,c
@@ -138,14 +138,14 @@ L,L
 t,t
 G,G
 Y,Y
-outside,outside
+outside,внешние_габариты
 treat sizes as outside measurements [🛈](https://florianfesti.github.io/boxes/html/usermanual.html#outside),обрабатывать размеры как внешние измерения [🛈](https://florianfesti.github.io/boxes/html/usermanual.html#outside)
-nema_mount,nema_mount
+nema_mount,крепление_nema
 NEMA size of motor,размер двигателя NEMA
 Default Settings,Настройки по умолчанию
-thickness,thickness
+thickness,толщина
 thickness of the material (in mm) [🛈](https://florianfesti.github.io/boxes/html/usermanual.html#thickness),толщина материала (в мм) [🛈](https://florianfesti.github.io/boxes/html/usermanual.html#thickness)
-format,format
+format,формат
 format of resulting file [🛈](https://florianfesti.github.io/boxes/html/usermanual.html#format),формат результирующего файла [🛈](https://florianfesti.github.io/boxes/html/usermanual.html#format)
 dxf,dxf
 gcode,gcode
@@ -155,50 +155,50 @@ plt,plt
 ps,ps
 svg,svg
 svg_Ponoko,svg_Ponoko
-tabs,tabs
+tabs,перемычки
 width of tabs holding the parts in place (in mm)(not supported everywhere) [🛈](https://florianfesti.github.io/boxes/html/usermanual.html#tabs),ширина выступов удерживающих детали на месте (в мм)(поддерживается не везде) [🛈](https://florianfesti.github.io/boxes/html/usermanual.html#tabs)
-qr_code,qr_code
+qr_code,qr_код
 Add a QR Code with link or command line to the generated output,Добавить QR-код со ссылкой или командной строкой к генерируемому выводу
-debug,debug
+debug,отладка
 print surrounding boxes for some structures [🛈](https://florianfesti.github.io/boxes/html/usermanual.html#debug),печатать окружающие коробки для некоторых структур [🛈](https://florianfesti.github.io/boxes/html/usermanual.html#debug)
-labels,labels
+labels,ярлыки
 label the parts (where available),подписывать детали (где доступно)
-reference,reference
+reference,эталон
 print reference rectangle with given length (in mm)(zero to disable) [🛈](https://florianfesti.github.io/boxes/html/usermanual.html#reference),печатать референсный прямоугольник заданной длины (в мм)(ноль для отключения) [🛈](https://florianfesti.github.io/boxes/html/usermanual.html#reference)
-inner_corners,inner_corners
+inner_corners,внутренние_углы
 style for inner corners [🛈](https://florianfesti.github.io/boxes/html/usermanual.html#inner-corners),стиль для внутренних углов [🛈](https://florianfesti.github.io/boxes/html/usermanual.html#inner-corners)
 loop,петля
 corner,угол
 backarc,обратная дуга
-burn,burn
+burn,радиус_прожига
 burn correction (in mm)(bigger values for tighter fit) [🛈](https://florianfesti.github.io/boxes/html/usermanual.html#burn),коррекция прожига (в мм)(большие значения для более плотной посадки) [🛈](https://florianfesti.github.io/boxes/html/usermanual.html#burn)
 Settings for Finger Joints,Настройки для шиповых соединений
-style,style
+style,стиль
 style of the fingers,стиль шипов
 rectangular,прямоугольный
 springs,пружины
 barbs,зазубрины
 snap,защелка
-surroundingspaces,surroundingspaces
+surroundingspaces,внешние_зазоры
 space at the start and end in multiple of normal spaces,пространство в начале и конце в кратных нормальных пространствах
-bottom_lip,bottom_lip
+bottom_lip,нижняя_кромка
 height of the bottom lips sticking out  (multiples of thickness) FingerHoleEdge only!,высота нижних губ выступающих наружу (кратные толщине) только для FingerHoleEdge!
-edge_width,edge_width
+edge_width,ширина_кромки
 space below holes of FingerHoleEdge (multiples of thickness),пространство под отверстиями FingerHoleEdge (кратные толщине)
-extra_length,extra_length
+extra_length,доп_длина
 extra material to grind away burn marks (multiples of thickness),дополнительный материал для шлифовки следов прожига (кратные толщине)
-finger,finger
+finger,паз
 width of the fingers (multiples of thickness),ширина шипов (кратные толщине)
-play,play
+play,люфт
 extra space to allow finger move in and out (multiples of thickness),дополнительное пространство для движения шипов внутрь и наружу (кратные толщине)
-space,space
+space,пространство
 space between fingers (multiples of thickness),пространство между шипами (кратные толщине)
-width,width
+width,ширина
 width of finger holes (multiples of thickness),ширина отверстий для шипов (кратные толщине)
 Settings for Stackable Edges,Настройки для штабелируемых краев
-angle,angle
+angle,угол
 inside angle of the feet,внутренний угол ножек
-bottom_stabilizers,bottom_stabilizers
+bottom_stabilizers,нижние_стабилизаторы
 height of strips to be glued to the inside of bottom edges (multiples of thickness),высота полосок приклеиваемых к внутренней стороне нижних краев (кратные толщине)
 height,высота
 height of the feet (multiples of thickness),высота ножек (кратно толщине)

@@ -619,7 +619,7 @@ msgstr ""
 
 #. parameter name
 msgid "bottom_edge"
-msgstr "bottom_edge"
+msgstr "нижний_край"
 
 #. help for parameter bottom_edge
 msgid "edge type for bottom edge"
@@ -639,7 +639,7 @@ msgstr "e"
 
 #. parameter name
 msgid "top_edge"
-msgstr "top_edge"
+msgstr "верхний_край"
 
 #. help for parameter top_edge
 msgid "edge type for top edge"
@@ -695,7 +695,7 @@ msgstr "Y"
 
 #. parameter name
 msgid "outside"
-msgstr "outside"
+msgstr "внешние_габариты"
 
 #. help for parameter outside
 msgid ""
@@ -707,7 +707,7 @@ msgstr ""
 
 #. parameter name
 msgid "nema_mount"
-msgstr "nema_mount"
+msgstr "крепление_nema"
 
 #. help for parameter nema_mount
 msgid "NEMA size of motor"
@@ -718,7 +718,7 @@ msgstr "Настройки по умолчанию"
 
 #. parameter name
 msgid "thickness"
-msgstr "thickness"
+msgstr "толщина"
 
 #. help for parameter thickness
 msgid ""
@@ -730,7 +730,7 @@ msgstr ""
 
 #. parameter name
 msgid "format"
-msgstr "format"
+msgstr "формат"
 
 #. help for parameter format
 msgid ""
@@ -774,7 +774,7 @@ msgstr "svg_Ponoko"
 
 #. parameter name
 msgid "tabs"
-msgstr "tabs"
+msgstr "перемычки"
 
 #. help for parameter tabs
 msgid ""
@@ -786,7 +786,7 @@ msgstr ""
 
 #. parameter name
 msgid "qr_code"
-msgstr "qr_code"
+msgstr "qr_код"
 
 #. help for parameter qr_code
 msgid "Add a QR Code with link or command line to the generated output"
@@ -794,7 +794,7 @@ msgstr "Добавить QR-код со ссылкой или командной
 
 #. parameter name
 msgid "debug"
-msgstr "debug"
+msgstr "отладка"
 
 #. help for parameter debug
 msgid ""
@@ -806,7 +806,7 @@ msgstr ""
 
 #. parameter name
 msgid "labels"
-msgstr "labels"
+msgstr "ярлыки"
 
 #. help for parameter labels
 msgid "label the parts (where available)"
@@ -814,7 +814,7 @@ msgstr "подписывать детали (где доступно)"
 
 #. parameter name
 msgid "reference"
-msgstr "reference"
+msgstr "эталон"
 
 #. help for parameter reference
 msgid ""
@@ -826,7 +826,7 @@ msgstr ""
 
 #. parameter name
 msgid "inner_corners"
-msgstr "inner_corners"
+msgstr "внутренние_углы"
 
 #. help for parameter inner_corners
 msgid ""
@@ -850,7 +850,7 @@ msgstr "обратная дуга"
 
 #. parameter name
 msgid "burn"
-msgstr "burn"
+msgstr "радиус_прожига"
 
 #. help for parameter burn
 msgid ""
@@ -865,7 +865,7 @@ msgstr "Настройки для шиповых соединений"
 
 #. parameter name for FingerJoint
 msgid "style"
-msgstr "style"
+msgstr "стиль"
 
 #. help for parameter style
 msgid "style of the fingers"
@@ -889,7 +889,7 @@ msgstr "защелка"
 
 #. parameter name for FingerJoint
 msgid "surroundingspaces"
-msgstr "surroundingspaces"
+msgstr "внешние_зазоры"
 
 #. help for parameter surroundingspaces
 msgid "space at the start and end in multiple of normal spaces"
@@ -897,7 +897,7 @@ msgstr "пространство в начале и конце в кратных
 
 #. parameter name for FingerJoint
 msgid "bottom_lip"
-msgstr "bottom_lip"
+msgstr "нижняя_кромка"
 
 #. help for parameter bottom_lip
 msgid ""
@@ -909,7 +909,7 @@ msgstr ""
 
 #. parameter name for FingerJoint
 msgid "edge_width"
-msgstr "edge_width"
+msgstr "ширина_кромки"
 
 #. help for parameter edge_width
 msgid "space below holes of FingerHoleEdge (multiples of thickness)"
@@ -917,7 +917,7 @@ msgstr "пространство под отверстиями FingerHoleEdge (�
 
 #. parameter name for FingerJoint
 msgid "extra_length"
-msgstr "extra_length"
+msgstr "доп_длина"
 
 #. help for parameter extra_length
 msgid "extra material to grind away burn marks (multiples of thickness)"
@@ -925,7 +925,7 @@ msgstr "дополнительный материал для шлифовки с
 
 #. parameter name for FingerJoint
 msgid "finger"
-msgstr "finger"
+msgstr "паз"
 
 #. help for parameter finger
 msgid "width of the fingers (multiples of thickness)"
@@ -933,7 +933,7 @@ msgstr "ширина шипов (кратные толщине)"
 
 #. parameter name for FingerJoint
 msgid "play"
-msgstr "play"
+msgstr "люфт"
 
 #. help for parameter play
 msgid "extra space to allow finger move in and out (multiples of thickness)"
@@ -941,7 +941,7 @@ msgstr "дополнительное пространство для движе�
 
 #. parameter name for FingerJoint
 msgid "space"
-msgstr "space"
+msgstr "пространство"
 
 #. help for parameter space
 msgid "space between fingers (multiples of thickness)"
@@ -949,7 +949,7 @@ msgstr "пространство между шипами (кратные тол�
 
 #. parameter name for FingerJoint
 msgid "width"
-msgstr "width"
+msgstr "ширина"
 
 #. help for parameter width
 msgid "width of finger holes (multiples of thickness)"
@@ -960,7 +960,7 @@ msgstr "Настройки для штабелируемых краев"
 
 #. parameter name for Stackable
 msgid "angle"
-msgstr "angle"
+msgstr "угол"
 
 #. help for parameter angle
 msgid "inside angle of the feet"
@@ -968,7 +968,7 @@ msgstr "внутренний угол ножек"
 
 #. parameter name for Stackable
 msgid "bottom_stabilizers"
-msgstr "bottom_stabilizers"
+msgstr "нижние_стабилизаторы"
 
 #. help for parameter bottom_stabilizers
 msgid ""
@@ -980,7 +980,7 @@ msgstr ""
 
 #. parameter name for Stackable
 msgid "height"
-msgstr "height"
+msgstr "высота"
 
 #. help for parameter height
 msgid "height of the feet (multiples of thickness)"
@@ -988,7 +988,7 @@ msgstr "высота ножек (кратно толщине)"
 
 #. parameter name for Stackable
 msgid "holedistance"
-msgstr "holedistance"
+msgstr "расстояние до отверстий"
 
 #. help for parameter holedistance
 msgid "distance from finger holes to bottom edge (multiples of thickness)"
@@ -1003,11 +1003,11 @@ msgstr "Настройки петель и осей петель"
 
 #. parameter name for Hinge
 msgid "grip_percentage"
-msgstr "grip_percentage"
+msgstr "процент захвата"
 
 #. parameter name for Hinge
 msgid "outset"
-msgstr "outset"
+msgstr "выступ"
 
 #. help for parameter outset
 msgid "have lid overlap at the sides (similar to OutSetEdge)"
@@ -1015,7 +1015,7 @@ msgstr "перекрытие крышки по бокам (аналогично 
 
 #. parameter name for Hinge
 msgid "pinwidth"
-msgstr "pinwidth"
+msgstr "ширина оси"
 
 #. help for parameter pinwidth
 msgid "set to lower value to get disks surrounding the pins"
@@ -1023,7 +1023,7 @@ msgstr "установите меньшее значение для получе
 
 #. parameter name for Hinge
 msgid "axle"
-msgstr "axle"
+msgstr "ось"
 
 #. help for parameter axle
 msgid "diameter of the pin hole (multiples of thickness)"
@@ -1031,7 +1031,7 @@ msgstr "диаметр отверстия оси (кратно толщине)"
 
 #. parameter name for Hinge
 msgid "grip_length"
-msgstr "grip_length"
+msgstr "длина захвата"
 
 #. help for parameter grip_length
 msgid "fixed length of the grips on he lids (multiples of thickness)"
@@ -1039,7 +1039,7 @@ msgstr "фиксированная длина захватов на крышка
 
 #. parameter name for Hinge
 msgid "hingestrength"
-msgstr "hingestrength"
+msgstr "прочность петли"
 
 #. help for parameter hingestrength
 msgid "thickness of the arc holding the pin in place (multiples of thickness)"
@@ -1050,7 +1050,7 @@ msgstr "Настройки надвижных крышек"
 
 #. parameter name for SlideOnLid
 msgid "hole_width"
-msgstr "hole_width"
+msgstr "ширина отверстия"
 
 #. help for parameter hole_width
 msgid "width of the \"finger hole\" in mm"
@@ -1058,7 +1058,7 @@ msgstr "ширина отверстия для пальца в мм"
 
 #. parameter name for SlideOnLid
 msgid "second_pin"
-msgstr "second_pin"
+msgstr "вторая ось"
 
 #. help for parameter second_pin
 msgid "additional pin for better positioning"
@@ -1066,7 +1066,7 @@ msgstr "дополнительная ось для лучшего позицио
 
 #. parameter name for SlideOnLid
 msgid "spring"
-msgstr "spring"
+msgstr "пружина"
 
 #. help for parameter spring
 msgid "position(s) of the extra locking springs in the lid"
@@ -1097,7 +1097,7 @@ msgstr "угол изгиба крючков наружу"
 
 #. parameter name for Click
 msgid "bottom_radius"
-msgstr "bottom_radius"
+msgstr "радиус дна"
 
 #. help for parameter bottom_radius
 msgid "radius at the bottom (multiples of thickness)"
@@ -1105,7 +1105,7 @@ msgstr "радиус внизу (кратно толщине)"
 
 #. parameter name for Click
 msgid "depth"
-msgstr "depth"
+msgstr "глубина"
 
 #. help for parameter depth
 msgid "length of the hooks (multiples of thickness)"
@@ -1116,7 +1116,7 @@ msgstr "Настройки гибкости"
 
 #. parameter name for Flex
 msgid "stretch"
-msgstr "stretch"
+msgstr "растяжение"
 
 #. help for parameter stretch
 msgid "Hint of how much the flex part should be shortened"
@@ -1124,7 +1124,7 @@ msgstr "Подсказка о том насколько должна быть у
 
 #. parameter name for Flex
 msgid "connection"
-msgstr "connection"
+msgstr "соединение"
 
 #. help for parameter connection
 msgid "width of the gaps in the cuts (multiples of thickness)"
@@ -1132,7 +1132,7 @@ msgstr "ширина зазоров в разрезах (кратно толщи
 
 #. parameter name for Flex
 msgid "distance"
-msgstr "distance"
+msgstr "расстояние"
 
 #. help for parameter distance
 msgid "width of the pattern perpendicular to the cuts (multiples of thickness)"
@@ -1147,7 +1147,7 @@ msgstr "Настройки крышки"
 
 #. parameter name for Lid
 msgid "handle"
-msgstr "handle"
+msgstr "ручка"
 
 #. help for parameter handle
 msgid "type of handle"
@@ -1191,7 +1191,7 @@ msgstr "сверху"
 
 #. parameter name for Lid
 msgid "handle_height"
-msgstr "handle_height"
+msgstr "высота ручки"
 
 #. help for parameter handle_height
 msgid "height of the handle (if applicable)"
@@ -1521,7 +1521,7 @@ msgstr "внутренняя глубина в мм"
 #. parameter name
 #: boxes/generators/airpurifier.py
 msgid "filter_height"
-msgstr "filter_height"
+msgstr "высота фильтра"
 
 #. help for parameter filter_height
 #: boxes/generators/airpurifier.py
@@ -1531,7 +1531,7 @@ msgstr "высота фильтра вдоль направления поток
 #. parameter name
 #: boxes/generators/airpurifier.py
 msgid "rim"
-msgstr "rim"
+msgstr "ободок"
 
 #. help for parameter rim
 #: boxes/generators/airpurifier.py
@@ -1541,7 +1541,7 @@ msgstr "ободок вокруг фильтра удерживающий его
 #. parameter name
 #: boxes/generators/airpurifier.py
 msgid "fan_diameter"
-msgstr "fan_diameter"
+msgstr "диаметр вентилятора"
 
 #. help for parameter fan_diameter
 #: boxes/generators/airpurifier.py
@@ -1551,7 +1551,7 @@ msgstr "диаметр вентиляторов (в мм)"
 #. parameter name
 #: boxes/generators/airpurifier.py
 msgid "filters"
-msgstr "filters"
+msgstr "фильтры"
 
 #. help for parameter filters
 #: boxes/generators/airpurifier.py
@@ -1561,7 +1561,7 @@ msgstr "Фильтры с обеих сторон или только с одн�
 #. parameter name
 #: boxes/generators/airpurifier.py
 msgid "split_frames"
-msgstr "split_frames"
+msgstr "разделить рамки"
 
 #. help for parameter split_frames
 #: boxes/generators/airpurifier.py
@@ -1571,7 +1571,7 @@ msgstr "Разделить детали рамки на четыре тонки�
 #. parameter name
 #: boxes/generators/airpurifier.py
 msgid "fans_left"
-msgstr "fans_left"
+msgstr "вентиляторы слева"
 
 #. help for parameter fans_left
 #: boxes/generators/airpurifier.py
@@ -1581,7 +1581,7 @@ msgstr "количество вентиляторов слева (-1 для ма
 #. parameter name
 #: boxes/generators/airpurifier.py
 msgid "fans_right"
-msgstr "fans_right"
+msgstr "вентиляторы справа"
 
 #. help for parameter fans_right
 #: boxes/generators/airpurifier.py
@@ -1591,7 +1591,7 @@ msgstr "количество вентиляторов справа (-1 для м
 #. parameter name
 #: boxes/generators/airpurifier.py
 msgid "fans_top"
-msgstr "fans_top"
+msgstr "вентиляторы сверху"
 
 #. help for parameter fans_top
 #: boxes/generators/airpurifier.py
@@ -1601,7 +1601,7 @@ msgstr "количество вентиляторов сверху (-1 для м
 #. parameter name
 #: boxes/generators/airpurifier.py
 msgid "fans_bottom"
-msgstr "fans_bottom"
+msgstr "вентиляторы снизу"
 
 #. help for parameter fans_bottom
 #: boxes/generators/airpurifier.py
@@ -1611,7 +1611,7 @@ msgstr "количество вентиляторов снизу (-1 для ма
 #. parameter name
 #: boxes/generators/airpurifier.py
 msgid "screw_holes"
-msgstr "screw_holes"
+msgstr "винтовые отверстия"
 
 #. help for parameter screw_holes
 #: boxes/generators/airpurifier.py
@@ -1636,7 +1636,7 @@ msgstr ""
 #. parameter name for DoveTail
 #: boxes/generators/airpurifier.py
 msgid "radius"
-msgstr "radius"
+msgstr "радиус"
 
 #. help for parameter radius
 #: boxes/generators/airpurifier.py
@@ -1646,7 +1646,7 @@ msgstr "радиус используемый на всех четырех уг�
 #. parameter name for DoveTail
 #: boxes/generators/airpurifier.py
 msgid "size"
-msgstr "size"
+msgstr "размер"
 
 #. help for parameter size
 #: boxes/generators/airpurifier.py
@@ -1677,7 +1677,7 @@ msgstr "высота над стенкой в мм"
 #. parameter name for HandleEdge
 #: boxes/generators/alledges.py
 msgid "hole_height"
-msgstr "hole_height"
+msgstr "высота отверстия"
 
 #. help for parameter hole_height
 #: boxes/generators/alledges.py
@@ -1700,7 +1700,7 @@ msgstr ""
 #. parameter name for HandleEdge
 #: boxes/generators/alledges.py
 msgid "on_sides"
-msgstr "on_sides"
+msgstr "по бокам"
 
 #. help for parameter on_sides
 #: boxes/generators/alledges.py
@@ -1745,7 +1745,7 @@ msgstr "количество стенок на одной стороне (1+)"
 #. parameter name
 #: boxes/generators/angledbox.py
 msgid "top"
-msgstr "top"
+msgstr "верх"
 
 #. help for parameter top
 #: boxes/generators/angledbox.py
@@ -1806,12 +1806,12 @@ msgstr "внутренняя ширина консоли"
 #. parameter name
 #: boxes/generators/arcade.py
 msgid "monitor_height"
-msgstr "monitor_height"
+msgstr "высота монитора"
 
 #. parameter name
 #: boxes/generators/arcade.py
 msgid "keyboard_depth"
-msgstr "keyboard_depth"
+msgstr "глубина клавиатуры"
 
 #. name of box generator
 #: boxes/generators/atreus21.py
@@ -1829,7 +1829,7 @@ msgstr "Настройки Atreus21"
 #. parameter name
 #: boxes/generators/atreus21.py
 msgid "hotswap_enable"
-msgstr "hotswap_enable"
+msgstr "включить горячую замену"
 
 #. help for parameter hotswap_enable
 #: boxes/generators/atreus21.py
@@ -1839,7 +1839,7 @@ msgstr "увеличить отверстия переключателей дл�
 #. parameter name
 #: boxes/generators/atreus21.py
 msgid "pcb_mount_enable"
-msgstr "pcb_mount_enable"
+msgstr "включить крепление PCB"
 
 #. help for parameter pcb_mount_enable
 #: boxes/generators/atreus21.py
@@ -1849,7 +1849,7 @@ msgstr "добавляет отверстия для переключателе�
 #. parameter name
 #: boxes/generators/atreus21.py
 msgid "led_enable"
-msgstr "led_enable"
+msgstr "включить LED"
 
 #. help for parameter led_enable
 #: boxes/generators/atreus21.py
@@ -1859,7 +1859,7 @@ msgstr "добавляет отверстия для штырьков под п�
 #. parameter name
 #: boxes/generators/atreus21.py
 msgid "diode_enable"
-msgstr "diode_enable"
+msgstr "включить диоды"
 
 #. help for parameter diode_enable
 #: boxes/generators/atreus21.py
@@ -1869,7 +1869,7 @@ msgstr "добавляет отверстия для штырьков под п�
 #. parameter name
 #: boxes/generators/atreus21.py
 msgid "cutout_type"
-msgstr "cutout_type"
+msgstr "тип выреза"
 
 #. help for parameter cutout_type
 #: boxes/generators/atreus21.py
@@ -1883,7 +1883,7 @@ msgstr ""
 #. parameter name
 #: boxes/generators/atreus21.py
 msgid "columns_definition"
-msgstr "columns_definition"
+msgstr "определение колонок"
 
 #. help for parameter columns_definition
 #: boxes/generators/atreus21.py
@@ -1960,7 +1960,7 @@ msgstr "Настройки штыковой коробки"
 #. parameter name
 #: boxes/generators/bayonetbox.py
 msgid "diameter"
-msgstr "diameter"
+msgstr "диаметр"
 
 #. help for parameter diameter
 #: boxes/generators/bayonetbox.py
@@ -1970,7 +1970,7 @@ msgstr "Диаметр коробки в мм"
 #. parameter name
 #: boxes/generators/bayonetbox.py
 msgid "lugs"
-msgstr "lugs"
+msgstr "выступы"
 
 #. help for parameter lugs
 #: boxes/generators/bayonetbox.py
@@ -1980,7 +1980,7 @@ msgstr "количество блокирующих выступов"
 #. parameter name
 #: boxes/generators/bayonetbox.py
 msgid "alignment_pins"
-msgstr "alignment_pins"
+msgstr "штифты выравнивания"
 
 #. help for parameter alignment_pins
 #: boxes/generators/bayonetbox.py
@@ -2003,7 +2003,7 @@ msgstr "Настройки лотка-контейнера"
 #. parameter name
 #: boxes/generators/bintray.py
 msgid "hole_dD"
-msgstr "hole_dD"
+msgstr "диаметр отверстия"
 
 #. help for parameter hole_dD
 #: boxes/generators/bintray.py
@@ -2017,7 +2017,7 @@ msgstr ""
 #. parameter name
 #: boxes/generators/bintray.py
 msgid "front"
-msgstr "front"
+msgstr "передняя часть"
 
 #. help for parameter front
 #: boxes/generators/bintray.py
@@ -2045,7 +2045,7 @@ msgstr "внутренняя высота в мм"
 #. parameter name
 #: boxes/generators/birdhouse.py
 msgid "roof_overhang"
-msgstr "roof_overhang"
+msgstr "свес крыши"
 
 #. help for parameter roof_overhang
 #: boxes/generators/birdhouse.py
@@ -2096,7 +2096,7 @@ msgstr "Настройки держателя книг"
 #. parameter name
 #: boxes/generators/bookholder.py
 msgid "book_width"
-msgstr "book_width"
+msgstr "ширина книги"
 
 #. help for parameter book_width
 #: boxes/generators/bookholder.py
@@ -2106,7 +2106,7 @@ msgstr "общая ширина подставки для книг"
 #. parameter name
 #: boxes/generators/bookholder.py
 msgid "book_height"
-msgstr "book_height"
+msgstr "высота книги"
 
 #. help for parameter book_height
 #: boxes/generators/bookholder.py
@@ -2116,7 +2116,7 @@ msgstr "высота передней пластины"
 #. parameter name
 #: boxes/generators/bookholder.py
 msgid "book_depth"
-msgstr "book_depth"
+msgstr "глубина книги"
 
 #. help for parameter book_depth
 #: boxes/generators/bookholder.py
@@ -2126,7 +2126,7 @@ msgstr "большие размеры для книг с большим коли
 #. parameter name
 #: boxes/generators/bookholder.py
 msgid "ledge_height"
-msgstr "ledge_height"
+msgstr "высота полочки"
 
 #. help for parameter ledge_height
 #: boxes/generators/bookholder.py
@@ -2141,7 +2141,7 @@ msgstr "градусы между полом и передней пластин�
 #. parameter name
 #: boxes/generators/bookholder.py
 msgid "bottom_support"
-msgstr "bottom_support"
+msgstr "нижняя поддержка"
 
 #. help for parameter bottom_support
 #: boxes/generators/bookholder.py
@@ -2151,7 +2151,7 @@ msgstr "дополнительный материал внизу для подн
 #. parameter name
 #: boxes/generators/bookholder.py
 msgid "back_support"
-msgstr "back_support"
+msgstr "задняя поддержка"
 
 #. help for parameter back_support
 #: boxes/generators/bookholder.py
@@ -2197,7 +2197,7 @@ msgstr "диаметр бутылок в мм"
 #. parameter name
 #: boxes/generators/bottlestack.py
 msgid "number"
-msgstr "number"
+msgstr "количество"
 
 #. help for parameter number
 #: boxes/generators/bottlestack.py
@@ -2212,7 +2212,7 @@ msgstr "глубина стеллажа вдоль основания бутыл
 #. parameter name
 #: boxes/generators/bottlestack.py
 msgid "double"
-msgstr "double"
+msgstr "двойной"
 
 #. help for parameter double
 #: boxes/generators/bottlestack.py
@@ -2245,7 +2245,7 @@ msgstr "высота бирки на горлышке"
 #. parameter name
 #: boxes/generators/bottletag.py
 msgid "min_diameter"
-msgstr "min_diameter"
+msgstr "минимальный диаметр"
 
 #. help for parameter min_diameter
 #: boxes/generators/bottletag.py
@@ -2255,7 +2255,7 @@ msgstr "внутренний диаметр отверстия горлышка 
 #. parameter name
 #: boxes/generators/bottletag.py
 msgid "max_diameter"
-msgstr "max_diameter"
+msgstr "максимальный диаметр"
 
 #. help for parameter max_diameter
 #: boxes/generators/bottletag.py
@@ -2270,7 +2270,7 @@ msgstr "радиус угла нижней бирки"
 #. parameter name
 #: boxes/generators/bottletag.py
 msgid "segment_width"
-msgstr "segment_width"
+msgstr "ширина сегмента"
 
 #. help for parameter segment_width
 #: boxes/generators/bottletag.py
@@ -2373,7 +2373,7 @@ msgstr "внешняя ширина самого наружного слоя"
 #. parameter name
 #: boxes/generators/brick_sorter.py
 msgid "level"
-msgstr "level"
+msgstr "уровень"
 
 #. help for parameter level
 #: boxes/generators/brick_sorter.py
@@ -2417,7 +2417,7 @@ msgstr ""
 #. parameter name
 #: boxes/generators/brick_sorter.py
 msgid "wiggle"
-msgstr "wiggle"
+msgstr "Зазор, чтобы слои могли скользить друг в друге."
 
 #. help for parameter wiggle
 #: boxes/generators/brick_sorter.py
@@ -2470,7 +2470,7 @@ msgstr "Настройки теста прожига"
 #. parameter name
 #: boxes/generators/burntest.py
 msgid "step"
-msgstr "step"
+msgstr "шаг"
 
 #. help for parameter step
 #: boxes/generators/burntest.py
@@ -2480,7 +2480,7 @@ msgstr "увеличение значения прожига между стор
 #. parameter name
 #: boxes/generators/burntest.py
 msgid "pairs"
-msgstr "pairs"
+msgstr "пары"
 
 #. help for parameter pairs
 #: boxes/generators/burntest.py
@@ -2490,7 +2490,7 @@ msgstr "количество пар (каждая тестирует четыр�
 #. parameter name
 #: boxes/generators/burntest.py
 msgid "date"
-msgstr "date"
+msgstr "дата"
 
 #. help for parameter date
 #: boxes/generators/burntest.py
@@ -2500,7 +2500,7 @@ msgstr "добавить гравировку текущей даты на ка�
 #. parameter name
 #: boxes/generators/burntest.py
 msgid "id"
-msgstr "id"
+msgstr "идентификатор"
 
 #. help for parameter id
 #: boxes/generators/burntest.py
@@ -2545,7 +2545,7 @@ msgstr "ш"
 #. parameter name
 #: boxes/generators/can_storage.py
 msgid "canDiameter"
-msgstr "canDiameter"
+msgstr "диаметр банки"
 
 #. help for parameter canDiameter
 #: boxes/generators/can_storage.py
@@ -2555,7 +2555,7 @@ msgstr "внешний диаметр банок для хранения (в м�
 #. parameter name
 #: boxes/generators/can_storage.py
 msgid "canHeight"
-msgstr "canHeight"
+msgstr "высота банки"
 
 #. help for parameter canHeight
 #: boxes/generators/can_storage.py
@@ -2565,7 +2565,7 @@ msgstr "высота банок для хранения (в мм)"
 #. parameter name
 #: boxes/generators/can_storage.py
 msgid "canNum"
-msgstr "canNum"
+msgstr "количество банок"
 
 #. help for parameter canNum
 #: boxes/generators/can_storage.py
@@ -2575,7 +2575,7 @@ msgstr "количество банок для хранения"
 #. parameter name
 #: boxes/generators/can_storage.py
 msgid "chuteAngle"
-msgstr "chuteAngle"
+msgstr "угол желоба"
 
 #. help for parameter chuteAngle
 #: boxes/generators/can_storage.py
@@ -2588,7 +2588,7 @@ msgstr "Настройки заполнения отверстий"
 #. parameter name for fillHoles
 #: boxes/generators/can_storage.py
 msgid "bar_length"
-msgstr "bar_length"
+msgstr "длина планки"
 
 #. help for parameter bar_length
 #: boxes/generators/can_storage.py
@@ -2598,7 +2598,7 @@ msgstr "максимальная длина планок"
 #. parameter name for fillHoles
 #: boxes/generators/can_storage.py
 msgid "fill_pattern"
-msgstr "fill_pattern"
+msgstr "узор заполнения"
 
 #. help for parameter fill_pattern
 #: boxes/generators/can_storage.py
@@ -2638,7 +2638,7 @@ msgstr "вертикальная планка"
 #. parameter name for fillHoles
 #: boxes/generators/can_storage.py
 msgid "hole_max_radius"
-msgstr "hole_max_radius"
+msgstr "максимальный радиус отверстия"
 
 #. help for parameter hole_max_radius
 #: boxes/generators/can_storage.py
@@ -2648,7 +2648,7 @@ msgstr "максимальный радиус создаваемых отвер�
 #. parameter name for fillHoles
 #: boxes/generators/can_storage.py
 msgid "hole_min_radius"
-msgstr "hole_min_radius"
+msgstr "минимальный радиус отверстия"
 
 #. help for parameter hole_min_radius
 #: boxes/generators/can_storage.py
@@ -2658,7 +2658,7 @@ msgstr "минимальный радиус создаваемых отверс�
 #. parameter name for fillHoles
 #: boxes/generators/can_storage.py
 msgid "hole_style"
-msgstr "hole_style"
+msgstr "стиль отверстия"
 
 #. help for parameter hole_style
 #: boxes/generators/can_storage.py
@@ -2688,7 +2688,7 @@ msgstr "восьмиугольник"
 #. parameter name for fillHoles
 #: boxes/generators/can_storage.py
 msgid "max_random"
-msgstr "max_random"
+msgstr "максимум случайных"
 
 #. help for parameter max_random
 #: boxes/generators/can_storage.py
@@ -2698,7 +2698,7 @@ msgstr "максимальное количество случайных отв�
 #. parameter name for fillHoles
 #: boxes/generators/can_storage.py
 msgid "space_between_holes"
-msgstr "space_between_holes"
+msgstr "расстояние между отверстиями"
 
 #. help for parameter space_between_holes
 #: boxes/generators/can_storage.py
@@ -2708,7 +2708,7 @@ msgstr "расстояние между отверстиями (в мм)"
 #. parameter name for fillHoles
 #: boxes/generators/can_storage.py
 msgid "space_to_border"
-msgstr "space_to_border"
+msgstr "расстояние до границы"
 
 #. help for parameter space_to_border
 #: boxes/generators/can_storage.py
@@ -2783,7 +2783,7 @@ msgstr "Настройки угольного фильтра"
 #. parameter name
 #: boxes/generators/carbonfilter.py
 msgid "pockets"
-msgstr "pockets"
+msgstr "карманы"
 
 #. help for parameter pockets
 #: boxes/generators/carbonfilter.py
@@ -2793,7 +2793,7 @@ msgstr "количество V-образных фильтровальных к�
 #. parameter name
 #: boxes/generators/carbonfilter.py
 msgid "ribs"
-msgstr "ribs"
+msgstr "ребра"
 
 #. help for parameter ribs
 #: boxes/generators/carbonfilter.py
@@ -2855,7 +2855,7 @@ msgstr "Настройки коробки для карт"
 #. parameter name
 #: boxes/generators/cardbox.py
 msgid "openingdirection"
-msgstr "openingdirection"
+msgstr "направление открытия"
 
 #. help for parameter openingdirection
 #: boxes/generators/cardbox.py
@@ -2867,7 +2867,7 @@ msgstr ""
 #. parameter name
 #: boxes/generators/cardbox.py
 msgid "fingerhole"
-msgstr "fingerhole"
+msgstr "отверстие для пальца"
 
 #. help for parameter fingerhole
 #: boxes/generators/cardbox.py
@@ -2892,7 +2892,7 @@ msgstr "пользовательский"
 #. parameter name
 #: boxes/generators/cardbox.py
 msgid "fingerhole_depth"
-msgstr "fingerhole_depth"
+msgstr "глубина отверстия для пальца"
 
 #. help for parameter fingerhole_depth
 #: boxes/generators/cardbox.py
@@ -2902,7 +2902,7 @@ msgstr "Глубина выреза если отверстие для паль�
 #. parameter name
 #: boxes/generators/cardbox.py
 msgid "add_lidtopper"
-msgstr "add_lidtopper"
+msgstr "добавить верхнюю накладку крышки"
 
 #. help for parameter add_lidtopper
 #: boxes/generators/cardbox.py
@@ -2930,7 +2930,7 @@ msgstr "задний угол пола"
 #. parameter name
 #: boxes/generators/cardholder.py
 msgid "stackable"
-msgstr "stackable"
+msgstr "штабелируемый"
 
 #. help for parameter stackable
 #: boxes/generators/cardholder.py
@@ -2943,7 +2943,7 @@ msgstr "Настройки рифленого края"
 #. parameter name for Grooved
 #: boxes/generators/cardholder.py
 msgid "arc_angle"
-msgstr "arc_angle"
+msgstr "угол дуги"
 
 #. help for parameter arc_angle
 #: boxes/generators/cardholder.py
@@ -2953,7 +2953,7 @@ msgstr "угол дуговых вырезов"
 #. parameter name for Grooved
 #: boxes/generators/cardholder.py
 msgid "gap"
-msgstr "gap"
+msgstr "зазор"
 
 #. help for parameter gap
 #: boxes/generators/cardholder.py
@@ -2963,7 +2963,7 @@ msgstr "зазор между канавками (доля от длины кр�
 #. parameter name for Grooved
 #: boxes/generators/cardholder.py
 msgid "interleave"
-msgstr "interleave"
+msgstr "чередование"
 
 #. help for parameter interleave
 #: boxes/generators/cardholder.py
@@ -2973,7 +2973,7 @@ msgstr "чередовать направление канавок"
 #. parameter name for Grooved
 #: boxes/generators/cardholder.py
 msgid "inverse"
-msgstr "inverse"
+msgstr "обратный"
 
 #. help for parameter inverse
 #: boxes/generators/cardholder.py
@@ -2983,7 +2983,7 @@ msgstr "инвертировать направления канавок"
 #. parameter name for Grooved
 #: boxes/generators/cardholder.py
 msgid "margin"
-msgstr "margin"
+msgstr "отступ"
 
 #. help for parameter margin
 #: boxes/generators/cardholder.py
@@ -3010,7 +3010,7 @@ msgstr "мягкая дуга"
 #. parameter name for Grooved
 #: boxes/generators/cardholder.py
 msgid "tri_angle"
-msgstr "tri_angle"
+msgstr "угол треугольника"
 
 #. help for parameter tri_angle
 #: boxes/generators/cardholder.py
@@ -3107,7 +3107,7 @@ msgstr "Настройки держателя капсул для кофе"
 #. parameter name
 #: boxes/generators/coffeecapsulesholder.py
 msgid "columns"
-msgstr "columns"
+msgstr "колонки"
 
 #. help for parameter columns
 #: boxes/generators/coffeecapsulesholder.py
@@ -3117,7 +3117,7 @@ msgstr "Количество колонок капсул."
 #. parameter name
 #: boxes/generators/coffeecapsulesholder.py
 msgid "rows"
-msgstr "rows"
+msgstr "ряды"
 
 #. help for parameter rows
 #: boxes/generators/coffeecapsulesholder.py
@@ -3127,7 +3127,7 @@ msgstr "Количество капсул по колонкам."
 #. parameter name
 #: boxes/generators/coffeecapsulesholder.py
 msgid "backplate"
-msgstr "backplate"
+msgstr "задняя пластина"
 
 #. help for parameter backplate
 #: boxes/generators/coffeecapsulesholder.py
@@ -3185,7 +3185,7 @@ msgstr "Настройки сейфа-копилки"
 #. parameter name
 #: boxes/generators/coinbanksafe.py
 msgid "slotlength"
-msgstr "slotlength"
+msgstr "длина слота"
 
 #. help for parameter slotlength
 #: boxes/generators/coinbanksafe.py
@@ -3195,7 +3195,7 @@ msgstr "Длина слота для монет в мм"
 #. parameter name
 #: boxes/generators/coinbanksafe.py
 msgid "slotwidth"
-msgstr "slotwidth"
+msgstr "ширина слота"
 
 #. help for parameter slotwidth
 #: boxes/generators/coinbanksafe.py
@@ -3205,7 +3205,7 @@ msgstr "Ширина слота для монет в мм"
 #. parameter name
 #: boxes/generators/coinbanksafe.py
 msgid "handlelength"
-msgstr "handlelength"
+msgstr "длина ручки"
 
 #. help for parameter handlelength
 #: boxes/generators/coinbanksafe.py
@@ -3215,7 +3215,7 @@ msgstr "Длина ручки в кратных толщинам"
 #. parameter name
 #: boxes/generators/coinbanksafe.py
 msgid "handleclearance"
-msgstr "handleclearance"
+msgstr "зазор ручки"
 
 #. help for parameter handleclearance
 #: boxes/generators/coinbanksafe.py
@@ -3238,7 +3238,7 @@ msgstr "Настройки витрины для монет"
 #. parameter name
 #: boxes/generators/coindisplay.py
 msgid "coin_d"
-msgstr "coin_d"
+msgstr "диаметр монеты"
 
 #. help for parameter coin_d
 #: boxes/generators/coindisplay.py
@@ -3248,7 +3248,7 @@ msgstr "Диаметр монеты в мм"
 #. parameter name
 #: boxes/generators/coindisplay.py
 msgid "coin_plate"
-msgstr "coin_plate"
+msgstr "пластина для монеты"
 
 #. help for parameter coin_plate
 #: boxes/generators/coindisplay.py
@@ -3258,7 +3258,7 @@ msgstr "Размер пластины для монеты"
 #. parameter name
 #: boxes/generators/coindisplay.py
 msgid "coin_showcase_h"
-msgstr "coin_showcase_h"
+msgstr "высота витрины для монеты"
 
 #. help for parameter coin_showcase_h
 #: boxes/generators/coindisplay.py
@@ -3286,7 +3286,7 @@ msgstr "Настройки ящика с отделениями"
 #. parameter name
 #: boxes/generators/typetray.py
 msgid "back_height"
-msgstr "back_height"
+msgstr "высота задней стенки"
 
 #. help for parameter back_height
 #: boxes/generators/typetray.py
@@ -3301,7 +3301,7 @@ msgstr "радиус для усиления боковых стенок с вы
 #. parameter name
 #: boxes/generators/typetray.py
 msgid "gripheight"
-msgstr "gripheight"
+msgstr "высота захвата"
 
 #. help for parameter gripheight
 #: boxes/generators/typetray.py
@@ -3311,7 +3311,7 @@ msgstr "высота отверстия для захвата в мм"
 #. parameter name
 #: boxes/generators/typetray.py
 msgid "gripwidth"
-msgstr "gripwidth"
+msgstr "ширина захвата"
 
 #. help for parameter gripwidth
 #: boxes/generators/typetray.py
@@ -3326,7 +3326,7 @@ msgstr "добавить ручку снизу (изменяет нижний к
 #. parameter name
 #: boxes/generators/typetray.py
 msgid "fingerholes"
-msgstr "fingerholes"
+msgstr "отверстия для пальцев"
 
 #. help for parameter fingerholes
 #: boxes/generators/typetray.py
@@ -3354,7 +3354,7 @@ msgstr "Настройки мебельных петель"
 #. parameter name for CabinetHinge
 #: boxes/generators/typetray.py
 msgid "bore"
-msgstr "bore"
+msgstr "отверстие"
 
 #. help for parameter bore
 #: boxes/generators/typetray.py
@@ -3364,7 +3364,7 @@ msgstr "диаметр отверстия для штифта в мм"
 #. parameter name for CabinetHinge
 #: boxes/generators/typetray.py
 msgid "eyes_per_hinge"
-msgstr "eyes_per_hinge"
+msgstr "глазков на петлю"
 
 #. help for parameter eyes_per_hinge
 #: boxes/generators/typetray.py
@@ -3374,7 +3374,7 @@ msgstr "деталей на петлю"
 #. parameter name for CabinetHinge
 #: boxes/generators/typetray.py
 msgid "hinges"
-msgstr "hinges"
+msgstr "петли"
 
 #. help for parameter hinges
 #: boxes/generators/typetray.py
@@ -3394,7 +3394,7 @@ msgstr "внутренний"
 #. parameter name for CabinetHinge
 #: boxes/generators/typetray.py
 msgid "eye"
-msgstr "eye"
+msgstr "глазок"
 
 #. help for parameter eye
 #: boxes/generators/typetray.py
@@ -3409,7 +3409,7 @@ msgstr "расстояние между глазками (кратные тол�
 #. parameter name for CabinetHinge
 #: boxes/generators/typetray.py
 msgid "spacing"
-msgstr "spacing"
+msgstr "интервал"
 
 #. help for parameter spacing
 #: boxes/generators/typetray.py
@@ -3427,7 +3427,7 @@ msgstr "высота над стенкой"
 #. parameter name for RoundedTriangleEdge
 #: boxes/generators/typetray.py
 msgid "r_hole"
-msgstr "r_hole"
+msgstr "r_отверстие"
 
 #. help for parameter r_hole
 #: boxes/generators/typetray.py
@@ -3452,7 +3452,7 @@ msgstr "Настройки для монтажного края"
 #. parameter name for Mounting
 #: boxes/generators/typetray.py
 msgid "d_head"
-msgstr "d_head"
+msgstr "d_головка"
 
 #. help for parameter d_head
 #: boxes/generators/typetray.py
@@ -3462,7 +3462,7 @@ msgstr "диаметр головки монтажного винта (в мм)"
 #. parameter name for Mounting
 #: boxes/generators/typetray.py
 msgid "d_shaft"
-msgstr "d_shaft"
+msgstr "d_стержень"
 
 #. help for parameter d_shaft
 #: boxes/generators/typetray.py
@@ -3479,7 +3479,7 @@ msgstr ""
 #. parameter name for Mounting
 #: boxes/generators/typetray.py
 msgid "num"
-msgstr "num"
+msgstr "номер"
 
 #. help for parameter num
 #: boxes/generators/typetray.py
@@ -3489,7 +3489,7 @@ msgstr "количество монтажных отверстий (целое �
 #. parameter name for Mounting
 #: boxes/generators/typetray.py
 msgid "side"
-msgstr "side"
+msgstr "сторона"
 
 #. help for parameter side
 #: boxes/generators/typetray.py
@@ -3522,7 +3522,7 @@ msgstr "Ярлыки отделений"
 #. parameter name
 #: boxes/generators/typetray.py
 msgid "text_size"
-msgstr "text_size"
+msgstr "размер_текста"
 
 #. help for parameter text_size
 #: boxes/generators/typetray.py
@@ -3532,7 +3532,7 @@ msgstr "размер текста в мм для содержимого лотк
 #. parameter name
 #: boxes/generators/typetray.py
 msgid "text_alignment"
-msgstr "text_alignment"
+msgstr "выравнивание_текста"
 
 #. help for parameter text_alignment
 #: boxes/generators/typetray.py
@@ -3547,7 +3547,7 @@ msgstr "центр"
 #. parameter name
 #: boxes/generators/typetray.py
 msgid "text_distance_x"
-msgstr "text_distance_x"
+msgstr "расстояние_текста_x"
 
 #. help for parameter text_distance_x
 #: boxes/generators/typetray.py
@@ -3559,7 +3559,7 @@ msgstr ""
 #. parameter name
 #: boxes/generators/typetray.py
 msgid "text_distance_y"
-msgstr "text_distance_y"
+msgstr "расстояние_текста_y"
 
 #. help for parameter text_distance_y
 #: boxes/generators/typetray.py
@@ -3569,7 +3569,7 @@ msgstr "расстояние по Y от края лотка в мм."
 #. parameter name
 #: boxes/generators/typetray.py
 msgid "text_at_front"
-msgstr "text_at_front"
+msgstr "текст_спереди"
 
 #. help for parameter text_at_front
 #: boxes/generators/typetray.py
@@ -3579,7 +3579,7 @@ msgstr "начать ярлыки отделений спереди"
 #. parameter name
 #: boxes/generators/typetray.py
 msgid "label_file"
-msgstr "label_file"
+msgstr "файл_ярлыков"
 
 #. help for parameter label_file
 #: boxes/generators/typetray.py
@@ -3592,7 +3592,7 @@ msgstr "Настройки для края с отверстиями для па
 #. parameter name for FingerHoleEdge
 #: boxes/generators/typetray.py
 msgid "absolute_depth"
-msgstr "absolute_depth"
+msgstr "абсолютная_глубина"
 
 #. help for parameter absolute_depth
 #: boxes/generators/typetray.py
@@ -3602,7 +3602,7 @@ msgstr "глубина отверстия в мм (в дополнение к о
 #. parameter name for FingerHoleEdge
 #: boxes/generators/typetray.py
 msgid "absolute_width"
-msgstr "absolute_width"
+msgstr "абсолютная_ширина"
 
 #. help for parameter absolute_width
 #: boxes/generators/typetray.py
@@ -3617,7 +3617,7 @@ msgstr "максимальный радиус (в мм)"
 #. parameter name for FingerHoleEdge
 #: boxes/generators/typetray.py
 msgid "relative_depth"
-msgstr "relative_depth"
+msgstr "относительная_глубина"
 
 #. help for parameter relative_depth
 #: boxes/generators/typetray.py
@@ -3627,7 +3627,7 @@ msgstr "глубина отверстия как доля от стенки"
 #. parameter name for FingerHoleEdge
 #: boxes/generators/typetray.py
 msgid "relative_width"
-msgstr "relative_width"
+msgstr "относительная_ширина"
 
 #. help for parameter relative_width
 #: boxes/generators/typetray.py
@@ -3695,7 +3695,7 @@ msgstr "радиус отверстия для захвата в мм"
 #. parameter name
 #: boxes/generators/compartmentbox.py
 msgid "holes"
-msgstr "holes"
+msgstr "отверстия"
 
 #. help for parameter holes
 #: boxes/generators/compartmentbox.py
@@ -3705,7 +3705,7 @@ msgstr "ширина отверстия(й) в процентах от макс�
 #. parameter name
 #: boxes/generators/compartmentbox.py
 msgid "margin_t"
-msgstr "margin_t"
+msgstr "зазор_t"
 
 #. help for parameter margin_t
 #: boxes/generators/compartmentbox.py
@@ -3715,7 +3715,7 @@ msgstr "вертикальный зазор для выдвижной крышк
 #. parameter name
 #: boxes/generators/compartmentbox.py
 msgid "margin_s"
-msgstr "margin_s"
+msgstr "зазор_s"
 
 #. help for parameter margin_s
 #: boxes/generators/compartmentbox.py
@@ -3725,7 +3725,7 @@ msgstr "зазор для добавления с обеих сторон выд
 #. parameter name
 #: boxes/generators/compartmentbox.py
 msgid "split_lip"
-msgstr "split_lip"
+msgstr "разделенный_выступ"
 
 #. help for parameter split_lip
 #: boxes/generators/compartmentbox.py
@@ -3753,7 +3753,7 @@ msgstr "диаметр ручки (мм)"
 #. parameter name
 #: boxes/generators/concaveknob.py
 msgid "serrations"
-msgstr "serrations"
+msgstr "зубцы"
 
 #. help for parameter serrations
 #: boxes/generators/concaveknob.py
@@ -3763,7 +3763,7 @@ msgstr "количество зубцов"
 #. parameter name
 #: boxes/generators/concaveknob.py
 msgid "rounded"
-msgstr "rounded"
+msgstr "скругленный"
 
 #. help for parameter rounded
 #: boxes/generators/concaveknob.py
@@ -3778,7 +3778,7 @@ msgstr "угол между выпуклыми и вогнутыми частя�
 #. parameter name
 #: boxes/generators/concaveknob.py
 msgid "bolthole"
-msgstr "bolthole"
+msgstr "отверстие_для_болта"
 
 #. help for parameter bolthole
 #: boxes/generators/concaveknob.py
@@ -3788,7 +3788,7 @@ msgstr "диаметр отверстия для болта (мм)"
 #. parameter name
 #: boxes/generators/concaveknob.py
 msgid "dhole"
-msgstr "dhole"
+msgstr "d_отверстие"
 
 #. help for parameter dhole
 #: boxes/generators/concaveknob.py
@@ -3798,7 +3798,7 @@ msgstr "D-плоскость в доле от диаметра"
 #. parameter name
 #: boxes/generators/concaveknob.py
 msgid "hexhead"
-msgstr "hexhead"
+msgstr "шестигранная_головка"
 
 #. help for parameter hexhead
 #: boxes/generators/concaveknob.py
@@ -3844,7 +3844,7 @@ msgstr "Настройки консоли"
 #. parameter name
 #: boxes/generators/console.py
 msgid "front_height"
-msgstr "front_height"
+msgstr "высота_переда"
 
 #. help for parameter front_height
 #: boxes/generators/console.py
@@ -3971,7 +3971,7 @@ msgstr "Настройки консоли2"
 #. parameter name
 #: boxes/generators/console2.py
 msgid "removable_backwall"
-msgstr "removable_backwall"
+msgstr "съемная_задняя_стенка"
 
 #. help for parameter removable_backwall
 #: boxes/generators/console2.py
@@ -3981,7 +3981,7 @@ msgstr "иметь защелки на задней стенке"
 #. parameter name
 #: boxes/generators/console2.py
 msgid "removable_panel"
-msgstr "removable_panel"
+msgstr "съемная_панель"
 
 #. help for parameter removable_panel
 #: boxes/generators/console2.py
@@ -3991,7 +3991,7 @@ msgstr "панель удерживается язычками и может б�
 #. parameter name
 #: boxes/generators/console2.py
 msgid "glued_panel"
-msgstr "glued_panel"
+msgstr "приклеенная_панель"
 
 #. help for parameter glued_panel
 #: boxes/generators/console2.py
@@ -4044,7 +4044,7 @@ msgstr "угол пластины в градусах (90 - вертикальн
 #. parameter name
 #: boxes/generators/desksign.py
 msgid "label"
-msgstr "label"
+msgstr "ярлык"
 
 #. help for parameter label
 #: boxes/generators/desksign.py
@@ -4054,7 +4054,7 @@ msgstr "необязательный текст для гравировки (о�
 #. parameter name
 #: boxes/generators/desksign.py
 msgid "fontsize"
-msgstr "fontsize"
+msgstr "размер_шрифта"
 
 #. help for parameter fontsize
 #: boxes/generators/desksign.py
@@ -4064,7 +4064,7 @@ msgstr "высота текста"
 #. parameter name
 #: boxes/generators/desksign.py
 msgid "feet"
-msgstr "feet"
+msgstr "ножки"
 
 #. help for parameter feet
 #: boxes/generators/desksign.py
@@ -4074,7 +4074,7 @@ msgstr "добавить приподнятые ножки"
 #. parameter name
 #: boxes/generators/desksign.py
 msgid "mirror"
-msgstr "mirror"
+msgstr "зеркало"
 
 #. help for parameter mirror
 #: boxes/generators/desksign.py
@@ -4087,7 +4087,7 @@ msgstr ""
 #. parameter name
 #: boxes/generators/desksign.py
 msgid "verticaltextoffset"
-msgstr "verticaltextoffset"
+msgstr "вертикальное_смещение_текста"
 
 #. help for parameter verticaltextoffset
 #: boxes/generators/desksign.py
@@ -4110,7 +4110,7 @@ msgstr "Настройки коробки для кубиков"
 #. parameter name
 #: boxes/generators/dicebox.py
 msgid "lidheight"
-msgstr "lidheight"
+msgstr "высота_крышки"
 
 #. help for parameter lidheight
 #: boxes/generators/dicebox.py
@@ -4120,7 +4120,7 @@ msgstr "высота крышки в мм"
 #. parameter name
 #: boxes/generators/dicebox.py
 msgid "hex_hole_corner_radius"
-msgstr "hex_hole_corner_radius"
+msgstr "радиус_угла_шестигранного_отверстия"
 
 #. help for parameter hex_hole_corner_radius
 #: boxes/generators/dicebox.py
@@ -4130,7 +4130,7 @@ msgstr "радиус угла шестигранных отверстий для
 #. parameter name
 #: boxes/generators/dicebox.py
 msgid "magnet_diameter"
-msgstr "magnet_diameter"
+msgstr "диаметр_магнита"
 
 #. help for parameter magnet_diameter
 #: boxes/generators/dicebox.py
@@ -4143,7 +4143,7 @@ msgstr "Настройки петель сундука"
 #. parameter name for ChestHinge
 #: boxes/generators/dicebox.py
 msgid "finger_joints_on_box"
-msgstr "finger_joints_on_box"
+msgstr "пальцевые_соединения_на_коробке"
 
 #. help for parameter finger_joints_on_box
 #: boxes/generators/dicebox.py
@@ -4153,7 +4153,7 @@ msgstr "включать ли пальцевые соединения на кр�
 #. parameter name for ChestHinge
 #: boxes/generators/dicebox.py
 msgid "finger_joints_on_lid"
-msgstr "finger_joints_on_lid"
+msgstr "пальцевые_соединения_на_крышке"
 
 #. help for parameter finger_joints_on_lid
 #: boxes/generators/dicebox.py
@@ -4163,12 +4163,12 @@ msgstr "включать ли пальцевые соединения на кр�
 #. parameter name for ChestHinge
 #: boxes/generators/dicebox.py
 msgid "hinge_strength"
-msgstr "hinge_strength"
+msgstr "прочность_петли"
 
 #. parameter name for ChestHinge
 #: boxes/generators/dicebox.py
 msgid "pin_height"
-msgstr "pin_height"
+msgstr "высота_штифта"
 
 #. help for parameter pin_height
 #: boxes/generators/dicebox.py
@@ -4225,7 +4225,7 @@ msgstr "включить нижнюю часть"
 #. parameter name
 #: boxes/generators/dicetower.py
 msgid "ramps"
-msgstr "ramps"
+msgstr "пандусы"
 
 #. help for parameter ramps
 #: boxes/generators/dicetower.py
@@ -4253,7 +4253,7 @@ msgstr "Настройки коробки для DIN-рейки"
 #. parameter name
 #: boxes/generators/dinrailbox.py
 msgid "rail_width"
-msgstr "rail_width"
+msgstr "ширина_рейки"
 
 #. help for parameter rail_width
 #: boxes/generators/dinrailbox.py
@@ -4263,7 +4263,7 @@ msgstr "ширина рейки (обычно 35 или 15мм)"
 #. parameter name
 #: boxes/generators/dinrailbox.py
 msgid "rail_offset"
-msgstr "rail_offset"
+msgstr "смещение_рейки"
 
 #. help for parameter rail_offset
 #: boxes/generators/dinrailbox.py
@@ -4286,7 +4286,7 @@ msgstr "Настройки стойки для дисков"
 #. parameter name
 #: boxes/generators/discrack.py
 msgid "disc_diameter"
-msgstr "disc_diameter"
+msgstr "диаметр_диска"
 
 #. help for parameter disc_diameter
 #: boxes/generators/discrack.py
@@ -4296,7 +4296,7 @@ msgstr "диаметр диска в мм"
 #. parameter name
 #: boxes/generators/discrack.py
 msgid "disc_thickness"
-msgstr "disc_thickness"
+msgstr "толщина_диска"
 
 #. help for parameter disc_thickness
 #: boxes/generators/discrack.py
@@ -4306,7 +4306,7 @@ msgstr "толщина дисков в мм"
 #. parameter name
 #: boxes/generators/discrack.py
 msgid "lower_factor"
-msgstr "lower_factor"
+msgstr "нижний_фактор"
 
 #. help for parameter lower_factor
 #: boxes/generators/discrack.py
@@ -4316,7 +4316,7 @@ msgstr "положение нижних решеток стойки вдоль �
 #. parameter name
 #: boxes/generators/discrack.py
 msgid "rear_factor"
-msgstr "rear_factor"
+msgstr "задний_фактор"
 
 #. help for parameter rear_factor
 #: boxes/generators/discrack.py
@@ -4326,7 +4326,7 @@ msgstr "положение задних решеток стойки вдоль �
 #. parameter name
 #: boxes/generators/discrack.py
 msgid "disc_outset"
-msgstr "disc_outset"
+msgstr "выступ_диска"
 
 #. help for parameter disc_outset
 #: boxes/generators/discrack.py
@@ -4363,7 +4363,7 @@ msgstr "Настройки диспенсера"
 #. parameter name
 #: boxes/generators/dispenser.py
 msgid "slotheight"
-msgstr "slotheight"
+msgstr "высота_щели"
 
 #. help for parameter slotheight
 #: boxes/generators/dispenser.py
@@ -4373,7 +4373,7 @@ msgstr "высота щели диспенсера / предметов (в мм
 #. parameter name
 #: boxes/generators/dispenser.py
 msgid "viewingwidth"
-msgstr "viewingwidth"
+msgstr "ширина_просмотра"
 
 #. help for parameter viewingwidth
 #: boxes/generators/dispenser.py
@@ -4383,7 +4383,7 @@ msgstr "ширина смотрового окна как часть общей 
 #. parameter name
 #: boxes/generators/dispenser.py
 msgid "bottomheight"
-msgstr "bottomheight"
+msgstr "высота_основания"
 
 #. help for parameter bottomheight
 #: boxes/generators/dispenser.py
@@ -4393,7 +4393,7 @@ msgstr "высота под диспенсером (в мм)"
 #. parameter name
 #: boxes/generators/dispenser.py
 msgid "sideedges"
-msgstr "sideedges"
+msgstr "боковые_края"
 
 #. help for parameter sideedges
 #: boxes/generators/dispenser.py
@@ -4443,7 +4443,7 @@ msgstr "Настройки витрины"
 #. parameter name
 #: boxes/generators/displaycase.py
 msgid "overhang"
-msgstr "overhang"
+msgstr "выступ"
 
 #. help for parameter overhang
 #: boxes/generators/displaycase.py
@@ -4471,7 +4471,7 @@ msgstr "количество полок"
 #. parameter name
 #: boxes/generators/displayshelf.py
 msgid "front_wall_height"
-msgstr "front_wall_height"
+msgstr "высота_передней_стенки"
 
 #. help for parameter front_wall_height
 #: boxes/generators/displayshelf.py
@@ -4486,7 +4486,7 @@ msgstr "угол полов (отрицательные значения для 
 #. parameter name
 #: boxes/generators/displayshelf.py
 msgid "include_back"
-msgstr "include_back"
+msgstr "включить_заднюю_часть"
 
 #. help for parameter include_back
 #: boxes/generators/displayshelf.py
@@ -4496,7 +4496,7 @@ msgstr "включить панель на задней части полки"
 #. parameter name
 #: boxes/generators/displayshelf.py
 msgid "include_front"
-msgstr "include_front"
+msgstr "включить_переднюю_часть"
 
 #. help for parameter include_front
 #: boxes/generators/displayshelf.py
@@ -4506,7 +4506,7 @@ msgstr "включить панель на передней части полк�
 #. parameter name
 #: boxes/generators/displayshelf.py
 msgid "include_bottom"
-msgstr "include_bottom"
+msgstr "включить_основание"
 
 #. help for parameter include_bottom
 #: boxes/generators/displayshelf.py
@@ -4516,7 +4516,7 @@ msgstr "включить горизонтальную панель на дне �
 #. parameter name
 #: boxes/generators/displayshelf.py
 msgid "slope_top"
-msgstr "slope_top"
+msgstr "наклон_верха"
 
 #. help for parameter slope_top
 #: boxes/generators/displayshelf.py
@@ -4526,7 +4526,7 @@ msgstr "наклонить бока и верх на высоту передне
 #. parameter name
 #: boxes/generators/displayshelf.py
 msgid "divider_wall_height"
-msgstr "divider_wall_height"
+msgstr "высота_разделительной_стенки"
 
 #. help for parameter divider_wall_height
 #: boxes/generators/displayshelf.py
@@ -4536,7 +4536,7 @@ msgstr "высота разделительных стенок"
 #. parameter name
 #: boxes/generators/displayshelf.py
 msgid "bottom_distance"
-msgstr "bottom_distance"
+msgstr "расстояние_от_дна"
 
 #. help for parameter bottom_distance
 #: boxes/generators/displayshelf.py
@@ -4546,7 +4546,7 @@ msgstr "высота под нижней полкой"
 #. parameter name
 #: boxes/generators/displayshelf.py
 msgid "top_distance"
-msgstr "top_distance"
+msgstr "расстояние_от_верха"
 
 #. help for parameter top_distance
 #: boxes/generators/displayshelf.py
@@ -4600,7 +4600,7 @@ msgstr "Настройки разделительного лотка"
 #. parameter name
 #: boxes/generators/dividertray.py
 msgid "notches_in_wall"
-msgstr "notches_in_wall"
+msgstr "пазы_в_стенке"
 
 #. help for parameter notches_in_wall
 #: boxes/generators/dividertray.py
@@ -4610,7 +4610,7 @@ msgstr "генерировать те же пазы на стенках что �
 #. parameter name
 #: boxes/generators/dividertray.py
 msgid "left_wall"
-msgstr "left_wall"
+msgstr "левая_стенка"
 
 #. help for parameter left_wall
 #: boxes/generators/dividertray.py
@@ -4620,7 +4620,7 @@ msgstr "генерировать стенку слева"
 #. parameter name
 #: boxes/generators/dividertray.py
 msgid "right_wall"
-msgstr "right_wall"
+msgstr "правая_стенка"
 
 #. help for parameter right_wall
 #: boxes/generators/dividertray.py
@@ -4653,7 +4653,7 @@ msgstr "глубина слота в мм"
 #. parameter name for Slot
 #: boxes/generators/dividertray.py
 msgid "extra_slack"
-msgstr "extra_slack"
+msgstr "дополнительный_зазор"
 
 #. help for parameter extra_slack
 #: boxes/generators/dividertray.py
@@ -4673,12 +4673,12 @@ msgstr "Настройки для пазов на разделителях"
 #. parameter name for Notch
 #: boxes/generators/dividertray.py
 msgid "lower_radius"
-msgstr "lower_radius"
+msgstr "нижний_радиус"
 
 #. parameter name for Notch
 #: boxes/generators/dividertray.py
 msgid "upper_radius"
-msgstr "upper_radius"
+msgstr "верхний_радиус"
 
 msgid "Settings for Dividers"
 msgstr "Настройки для разделителей"
@@ -4686,7 +4686,7 @@ msgstr "Настройки для разделителей"
 #. parameter name for Divider
 #: boxes/generators/dividertray.py
 msgid "bottom_margin"
-msgstr "bottom_margin"
+msgstr "нижний_отступ"
 
 #. help for parameter bottom_margin
 #: boxes/generators/dividertray.py
@@ -4719,7 +4719,7 @@ msgstr "Радиус защелки в мм"
 #. parameter name
 #: boxes/generators/doubleflexdoorbox.py
 msgid "latchsize"
-msgstr "latchsize"
+msgstr "размер_защелки"
 
 #. help for parameter latchsize
 #: boxes/generators/doubleflexdoorbox.py
@@ -4752,7 +4752,7 @@ msgstr "Количество отверстий для каждого разме
 #. parameter name
 #: boxes/generators/drillbox.py
 msgid "firsthole"
-msgstr "firsthole"
+msgstr "первое_отверстие"
 
 #. help for parameter firsthole
 #: boxes/generators/drillbox.py
@@ -4762,7 +4762,7 @@ msgstr "Наименьшее отверстие"
 #. parameter name
 #: boxes/generators/drillbox.py
 msgid "holeincrement"
-msgstr "holeincrement"
+msgstr "приращение_отверстий"
 
 #. help for parameter holeincrement
 #: boxes/generators/drillbox.py
@@ -4835,7 +4835,7 @@ msgstr "Настройки стойки для сверл"
 #. parameter name
 #: boxes/generators/drillstand.py
 msgid "extra_height"
-msgstr "extra_height"
+msgstr "дополнительная_высота"
 
 #. help for parameter extra_height
 #: boxes/generators/drillstand.py
@@ -4863,7 +4863,7 @@ msgstr "Стороны треугольников удерживающих кр�
 #. parameter name
 #: boxes/generators/electronicsbox.py
 msgid "d1"
-msgstr "d1"
+msgstr "д1"
 
 #. help for parameter d1
 #: boxes/generators/electronicsbox.py
@@ -4873,7 +4873,7 @@ msgstr "Диаметр внутренних винтовых отверстий 
 #. parameter name
 #: boxes/generators/electronicsbox.py
 msgid "d2"
-msgstr "d2"
+msgstr "д2"
 
 #. help for parameter d2
 #: boxes/generators/electronicsbox.py
@@ -4883,7 +4883,7 @@ msgstr "Диаметр винтовых отверстий крышки в мм"
 #. parameter name
 #: boxes/generators/electronicsbox.py
 msgid "d3"
-msgstr "d3"
+msgstr "д3"
 
 #. help for parameter d3
 #: boxes/generators/electronicsbox.py
@@ -4893,7 +4893,7 @@ msgstr "Диаметр монтажных винтовых отверстий в
 #. parameter name
 #: boxes/generators/electronicsbox.py
 msgid "outsidemounts"
-msgstr "outsidemounts"
+msgstr "внешние_крепления"
 
 #. help for parameter outsidemounts
 #: boxes/generators/electronicsbox.py
@@ -4903,7 +4903,7 @@ msgstr "Добавить внешние точки крепления"
 #. parameter name
 #: boxes/generators/electronicsbox.py
 msgid "holedist"
-msgstr "holedist"
+msgstr "расстояние_отверстий"
 
 #. help for parameter holedist
 #: boxes/generators/electronicsbox.py
@@ -4926,7 +4926,7 @@ msgstr "Настройки корпуса EuroRack"
 #. parameter name
 #: boxes/generators/eurorackskiff.py
 msgid "hp"
-msgstr "hp"
+msgstr "л.с."
 
 #. help for parameter hp
 #: boxes/generators/eurorackskiff.py
@@ -4954,7 +4954,7 @@ msgstr "диаметр отверстия для вентилятора"
 #. parameter name
 #: boxes/generators/fanhole.py
 msgid "mounting_holes"
-msgstr "mounting_holes"
+msgstr "монтажные_отверстия"
 
 #. help for parameter mounting_holes
 #: boxes/generators/fanhole.py
@@ -4964,7 +4964,7 @@ msgstr "диаметр монтажных отверстий вентилято�
 #. parameter name
 #: boxes/generators/fanhole.py
 msgid "mounting_holes_inset"
-msgstr "mounting_holes_inset"
+msgstr "вставка_монтажных_отверстий"
 
 #. help for parameter mounting_holes_inset
 #: boxes/generators/fanhole.py
@@ -4974,7 +4974,7 @@ msgstr "расстояние монтажных отверстий вентил�
 #. parameter name
 #: boxes/generators/fanhole.py
 msgid "arms"
-msgstr "arms"
+msgstr "лопасти"
 
 #. help for parameter arms
 #: boxes/generators/fanhole.py
@@ -4984,7 +4984,7 @@ msgstr "количество лопастей"
 #. parameter name
 #: boxes/generators/fanhole.py
 msgid "inner_disc"
-msgstr "inner_disc"
+msgstr "внутренний_диск"
 
 #. help for parameter inner_disc
 #: boxes/generators/fanhole.py
@@ -5182,7 +5182,7 @@ msgstr "Настройки дозатора жировых шариков"
 #. parameter name
 #: boxes/generators/fatballdispenser.py
 msgid "sides"
-msgstr "sides"
+msgstr "стороны"
 
 #. help for parameter sides
 #: boxes/generators/fatballdispenser.py
@@ -5192,7 +5192,7 @@ msgstr "Количество сторон плана этажа."
 #. parameter name
 #: boxes/generators/fatballdispenser.py
 msgid "pole_diameter"
-msgstr "pole_diameter"
+msgstr "диаметр_жерди"
 
 #. help for parameter pole_diameter
 #: boxes/generators/fatballdispenser.py
@@ -5202,7 +5202,7 @@ msgstr "Диаметр жердей."
 #. parameter name
 #: boxes/generators/fatballdispenser.py
 msgid "ball_diameter"
-msgstr "ball_diameter"
+msgstr "диаметр_шарика"
 
 #. help for parameter ball_diameter
 #: boxes/generators/fatballdispenser.py
@@ -5214,7 +5214,7 @@ msgstr ""
 #. parameter name
 #: boxes/generators/fatballdispenser.py
 msgid "balcony_width"
-msgstr "balcony_width"
+msgstr "ширина_балкона"
 
 #. help for parameter balcony_width
 #: boxes/generators/fatballdispenser.py
@@ -5224,7 +5224,7 @@ msgstr "Ширина области снаружи жердей."
 #. parameter name
 #: boxes/generators/fatballdispenser.py
 msgid "balcony_height"
-msgstr "balcony_height"
+msgstr "высота_балкона"
 
 #. help for parameter balcony_height
 #: boxes/generators/fatballdispenser.py
@@ -5234,7 +5234,7 @@ msgstr "Высота балкона в мм. Установите в 0 если 
 #. parameter name
 #: boxes/generators/fatballdispenser.py
 msgid "drain_hole_diameter"
-msgstr "drain_hole_diameter"
+msgstr "диаметр_дренажного_отверстия"
 
 #. help for parameter drain_hole_diameter
 #: boxes/generators/fatballdispenser.py
@@ -5248,7 +5248,7 @@ msgstr ""
 #. parameter name
 #: boxes/generators/fatballdispenser.py
 msgid "pole_clearance"
-msgstr "pole_clearance"
+msgstr "зазор_жерди"
 
 #. help for parameter pole_clearance
 #: boxes/generators/fatballdispenser.py
@@ -5262,7 +5262,7 @@ msgstr ""
 #. parameter name
 #: boxes/generators/fatballdispenser.py
 msgid "slide_clearance"
-msgstr "slide_clearance"
+msgstr "зазор_скольжения"
 
 #. help for parameter slide_clearance
 #: boxes/generators/fatballdispenser.py
@@ -5276,7 +5276,7 @@ msgstr ""
 #. parameter name
 #: boxes/generators/fatballdispenser.py
 msgid "spacer_width"
-msgstr "spacer_width"
+msgstr "ширина_прокладки"
 
 #. help for parameter spacer_width
 #: boxes/generators/fatballdispenser.py
@@ -5286,7 +5286,7 @@ msgstr "Ширина прокладки (часть механизма блок�
 #. parameter name
 #: boxes/generators/fatballdispenser.py
 msgid "pole_clearance_factor"
-msgstr "pole_clearance_factor"
+msgstr "фактор_зазора_жерди"
 
 #. help for parameter pole_clearance_factor
 #: boxes/generators/fatballdispenser.py
@@ -5305,7 +5305,7 @@ msgstr "Определяет насколько шире нижнего этаж
 #. parameter name
 #: boxes/generators/fatballdispenser.py
 msgid "roof_height"
-msgstr "roof_height"
+msgstr "высота_крыши"
 
 #. help for parameter roof_height
 #: boxes/generators/fatballdispenser.py
@@ -5315,7 +5315,7 @@ msgstr "Высота крыши в мм."
 #. parameter name
 #: boxes/generators/fatballdispenser.py
 msgid "roof_hole_diameter"
-msgstr "roof_hole_diameter"
+msgstr "диаметр_отверстия_крыши"
 
 #. help for parameter roof_hole_diameter
 #: boxes/generators/fatballdispenser.py
@@ -5329,7 +5329,7 @@ msgstr ""
 #. parameter name
 #: boxes/generators/fatballdispenser.py
 msgid "roof_maintenance_clearance"
-msgstr "roof_maintenance_clearance"
+msgstr "зазор_обслуживания_крыши"
 
 #. help for parameter roof_maintenance_clearance
 #: boxes/generators/fatballdispenser.py
@@ -5341,7 +5341,7 @@ msgstr ""
 #. parameter name
 #: boxes/generators/fatballdispenser.py
 msgid "roof_support_fraction"
-msgstr "roof_support_fraction"
+msgstr "доля_поддержки_крыши"
 
 #. help for parameter roof_support_fraction
 #: boxes/generators/fatballdispenser.py
@@ -5379,7 +5379,7 @@ msgstr "Настройки катушки для филамента"
 #. parameter name
 #: boxes/generators/filamentspool.py
 msgid "outer_diameter"
-msgstr "outer_diameter"
+msgstr "внешний_диаметр"
 
 #. help for parameter outer_diameter
 #: boxes/generators/filamentspool.py
@@ -5389,7 +5389,7 @@ msgstr "диаметр фланцев"
 #. parameter name
 #: boxes/generators/filamentspool.py
 msgid "inner_diameter"
-msgstr "inner_diameter"
+msgstr "внутренний_диаметр"
 
 #. help for parameter inner_diameter
 #: boxes/generators/filamentspool.py
@@ -5399,7 +5399,7 @@ msgstr "диаметр центральной части"
 #. parameter name
 #: boxes/generators/filamentspool.py
 msgid "axle_diameter"
-msgstr "axle_diameter"
+msgstr "диаметр_оси"
 
 #. help for parameter axle_diameter
 #: boxes/generators/filamentspool.py
@@ -5454,7 +5454,7 @@ msgstr "Настройки гибкой книги"
 #. parameter name
 #: boxes/generators/flexbook.py
 msgid "recess_wall"
-msgstr "recess_wall"
+msgstr "углубленная_стенка"
 
 #. help for parameter recess_wall
 #: boxes/generators/flexbook.py
@@ -5503,7 +5503,7 @@ msgstr "Настройки гибкой коробки 3"
 #. parameter name
 #: boxes/generators/flexbox3.py
 msgid "z"
-msgstr "z"
+msgstr "в"
 
 #. help for parameter z
 #: boxes/generators/flexbox3.py
@@ -5549,7 +5549,7 @@ msgstr "Настройки гибкой коробки 5"
 #. parameter name
 #: boxes/generators/flexbox5.py
 msgid "top_diameter"
-msgstr "top_diameter"
+msgstr "верхний_диаметр"
 
 #. help for parameter top_diameter
 #: boxes/generators/flexbox5.py
@@ -5559,7 +5559,7 @@ msgstr "диаметр сверху"
 #. parameter name
 #: boxes/generators/flexbox5.py
 msgid "bottom_diameter"
-msgstr "bottom_diameter"
+msgstr "нижний_диаметр"
 
 #. help for parameter bottom_diameter
 #: boxes/generators/flexbox5.py
@@ -5595,7 +5595,7 @@ msgstr "Настройки теста гибкости 2"
 #. parameter name
 #: boxes/generators/flextest2.py
 msgid "fw"
-msgstr "fw"
+msgstr "гш"
 
 #. help for parameter fw
 #: boxes/generators/flextest2.py
@@ -5618,7 +5618,7 @@ msgstr "Настройки папки"
 #. parameter name
 #: boxes/generators/folder.py
 msgid "r"
-msgstr "r"
+msgstr "р"
 
 #. name of box generator
 #: boxes/generators/frontpanel.py
@@ -5803,7 +5803,7 @@ msgstr "Настройки передней панели"
 #. parameter name
 #: boxes/generators/frontpanel.py
 msgid "layout"
-msgstr "layout"
+msgstr "макет"
 
 #. name of box generator
 #: boxes/generators/gear.py
@@ -5816,7 +5816,7 @@ msgstr "Настройки шестерен"
 #. parameter name
 #: boxes/generators/gear.py
 msgid "teeth1"
-msgstr "teeth1"
+msgstr "число зубьев 1"
 
 #. help for parameter teeth1
 #: boxes/generators/gear.py
@@ -5826,7 +5826,7 @@ msgstr "число зубьев"
 #. parameter name
 #: boxes/generators/gear.py
 msgid "shaft1"
-msgstr "shaft1"
+msgstr "диаметр вала 1"
 
 #. help for parameter shaft1
 #: boxes/generators/gear.py
@@ -5836,7 +5836,7 @@ msgstr "диаметр вала 1"
 #. parameter name
 #: boxes/generators/gear.py
 msgid "dpercentage1"
-msgstr "dpercentage1"
+msgstr "процент D-секции вала 1"
 
 #. help for parameter dpercentage1
 #: boxes/generators/gear.py
@@ -5846,7 +5846,7 @@ msgstr "процент D-секции вала 1 (100 для круглого в
 #. parameter name
 #: boxes/generators/gear.py
 msgid "teeth2"
-msgstr "teeth2"
+msgstr "число зубьев 2"
 
 #. help for parameter teeth2
 #: boxes/generators/gear.py
@@ -5856,7 +5856,7 @@ msgstr "число зубьев другой шестерни"
 #. parameter name
 #: boxes/generators/gear.py
 msgid "shaft2"
-msgstr "shaft2"
+msgstr "диаметр вала 2"
 
 #. help for parameter shaft2
 #: boxes/generators/gear.py
@@ -5866,7 +5866,7 @@ msgstr "диаметр вала 2 (ноль — как у вала 1)"
 #. parameter name
 #: boxes/generators/gear.py
 msgid "dpercentage2"
-msgstr "dpercentage2"
+msgstr "процент D-секции вала 2"
 
 #. help for parameter dpercentage2
 #: boxes/generators/gear.py
@@ -5876,7 +5876,7 @@ msgstr "процент D-секции вала 1 (0 — как у вала 1)"
 #. parameter name
 #: boxes/generators/gear.py
 msgid "modulus"
-msgstr "modulus"
+msgstr "модуль"
 
 #. help for parameter modulus
 #: boxes/generators/gear.py
@@ -5886,7 +5886,7 @@ msgstr "размер зубьев (диаметр / число зубьев) в 
 #. parameter name
 #: boxes/generators/gear.py
 msgid "pressure_angle"
-msgstr "pressure_angle"
+msgstr "угол давления"
 
 #. help for parameter pressure_angle
 #: boxes/generators/gear.py
@@ -5896,7 +5896,7 @@ msgstr "угол зацепления зубьев (в градусах)"
 #. parameter name
 #: boxes/generators/gear.py
 msgid "profile_shift"
-msgstr "profile_shift"
+msgstr "смещение профиля"
 
 #. help for parameter profile_shift
 #: boxes/generators/gear.py
@@ -5934,7 +5934,7 @@ msgstr "модуль зубьев в мм"
 #. parameter name
 #: boxes/generators/gearbox.py
 msgid "shaft"
-msgstr "shaft"
+msgstr "вал"
 
 #. help for parameter shaft
 #: boxes/generators/gearbox.py
@@ -5944,7 +5944,7 @@ msgstr "диаметр вала"
 #. parameter name
 #: boxes/generators/gearbox.py
 msgid "stages"
-msgstr "stages"
+msgstr "этапы"
 
 #. help for parameter stages
 #: boxes/generators/gearbox.py
@@ -5980,7 +5980,7 @@ msgstr "Настройки основания Gridfinity"
 #. parameter name
 #: boxes/generators/gridfinitybase.py
 msgid "size_x"
-msgstr "size_x"
+msgstr "размер_x"
 
 #. help for parameter size_x
 #: boxes/generators/gridfinitybase.py
@@ -5990,7 +5990,7 @@ msgstr "размер основания в направлении X (0=авто)
 #. parameter name
 #: boxes/generators/gridfinitybase.py
 msgid "size_y"
-msgstr "size_y"
+msgstr "размер_y"
 
 #. help for parameter size_y
 #: boxes/generators/gridfinitybase.py
@@ -6015,7 +6015,7 @@ msgstr "высота боковых стенок лотка (мм)"
 #. parameter name
 #: boxes/generators/gridfinitybase.py
 msgid "m"
-msgstr "m"
+msgstr "м"
 
 #. help for parameter m
 #: boxes/generators/gridfinitybase.py
@@ -6029,7 +6029,7 @@ msgstr ""
 #. parameter name
 #: boxes/generators/gridfinitybase.py
 msgid "panel_edge"
-msgstr "panel_edge"
+msgstr "край_панели"
 
 #. help for parameter panel_edge
 #: boxes/generators/gridfinitybase.py
@@ -6044,7 +6044,7 @@ msgstr "Г"
 #. parameter name
 #: boxes/generators/gridfinitybase.py
 msgid "pitch"
-msgstr "pitch"
+msgstr "шаг"
 
 #. help for parameter pitch
 #: boxes/generators/gridfinitybase.py
@@ -6054,7 +6054,7 @@ msgstr "Шаг Gridfinity в мм. Всегда должен быть 42."
 #. parameter name
 #: boxes/generators/gridfinitybase.py
 msgid "opening"
-msgstr "opening"
+msgstr "отверстие"
 
 #. help for parameter opening
 #: boxes/generators/gridfinitybase.py
@@ -6069,7 +6069,7 @@ msgstr "Радиус угла для каждого отверстия сетк�
 #. parameter name
 #: boxes/generators/gridfinitybase.py
 msgid "cut_pads"
-msgstr "cut_pads"
+msgstr "вырезать_накладки"
 
 #. help for parameter cut_pads
 #: boxes/generators/gridfinitybase.py
@@ -6079,7 +6079,7 @@ msgstr "вырезать накладки для использования в �
 #. parameter name
 #: boxes/generators/gridfinitybase.py
 msgid "cut_pads_mag_diameter"
-msgstr "cut_pads_mag_diameter"
+msgstr "диаметр_магнита_накладок"
 
 #. help for parameter cut_pads_mag_diameter
 #: boxes/generators/gridfinitybase.py
@@ -6089,7 +6089,7 @@ msgstr "если накладки вырезаны, добавить отвер�
 #. parameter name
 #: boxes/generators/gridfinitybase.py
 msgid "cut_pads_mag_offset"
-msgstr "cut_pads_mag_offset"
+msgstr "смещение_магнита_накладок"
 
 #. help for parameter cut_pads_mag_offset
 #: boxes/generators/gridfinitybase.py
@@ -6099,7 +6099,7 @@ msgstr "смещение отверстия магнита от углов ша�
 #. parameter name
 #: boxes/generators/gridfinitybase.py
 msgid "pad_radius"
-msgstr "pad_radius"
+msgstr "радиус_накладки"
 
 #. help for parameter pad_radius
 #: boxes/generators/gridfinitybase.py
@@ -6109,7 +6109,7 @@ msgstr "Радиус угла для каждого отверстия сетк�
 #. parameter name
 #: boxes/generators/gridfinitybase.py
 msgid "panel_x"
-msgstr "panel_x"
+msgstr "панель_x"
 
 #. help for parameter panel_x
 #: boxes/generators/gridfinitybase.py
@@ -6119,7 +6119,7 @@ msgstr "максимальный размер панели, которую мо�
 #. parameter name
 #: boxes/generators/gridfinitybase.py
 msgid "panel_y"
-msgstr "panel_y"
+msgstr "панель_y"
 
 #. help for parameter panel_y
 #: boxes/generators/gridfinitybase.py
@@ -6209,7 +6209,7 @@ msgstr "количество сеток gridfinity в направлении Y"
 #. parameter name
 #: boxes/generators/gridfinitytraylayout.py
 msgid "countx"
-msgstr "countx"
+msgstr "счетчик_x"
 
 #. help for parameter countx
 #: boxes/generators/gridfinitytraylayout.py
@@ -6219,7 +6219,7 @@ msgstr "разделить x на столько секций сетки. 0 оз
 #. parameter name
 #: boxes/generators/gridfinitytraylayout.py
 msgid "county"
-msgstr "county"
+msgstr "счетчик_y"
 
 #. help for parameter county
 #: boxes/generators/gridfinitytraylayout.py
@@ -6234,7 +6234,7 @@ msgstr "Оставить столько общего зазора снаружи
 #. parameter name
 #: boxes/generators/gridfinitytraylayout.py
 msgid "stacking"
-msgstr "stacking"
+msgstr "складирование"
 
 #. help for parameter stacking
 #: boxes/generators/gridfinitytraylayout.py
@@ -6244,7 +6244,7 @@ msgstr "поддержка складирования совместимого �
 #. parameter name
 #: boxes/generators/gridfinitytraylayout.py
 msgid "gen_pads"
-msgstr "gen_pads"
+msgstr "генерировать_накладки"
 
 #. help for parameter gen_pads
 #: boxes/generators/gridfinitytraylayout.py
@@ -6358,7 +6358,7 @@ msgstr "Настройки полукоробки"
 #. parameter name
 #: boxes/generators/halfbox.py
 msgid "Clamping"
-msgstr "Clamping"
+msgstr "Зажим"
 
 #. help for parameter Clamping
 #: boxes/generators/halfbox.py
@@ -6368,7 +6368,7 @@ msgstr "добавить отверстия для зажима"
 #. parameter name
 #: boxes/generators/halfbox.py
 msgid "ClampingSize"
-msgstr "ClampingSize"
+msgstr "РазмерЗажима"
 
 #. help for parameter ClampingSize
 #: boxes/generators/halfbox.py
@@ -6378,7 +6378,7 @@ msgstr "диаметр отверстий для зажима"
 #. parameter name
 #: boxes/generators/halfbox.py
 msgid "Mounting"
-msgstr "Mounting"
+msgstr "Крепление"
 
 #. help for parameter Mounting
 #: boxes/generators/halfbox.py
@@ -6388,7 +6388,7 @@ msgstr "добавить крепежные отверстия"
 #. parameter name
 #: boxes/generators/halfbox.py
 msgid "Sturdy"
-msgstr "Sturdy"
+msgstr "Прочный"
 
 #. help for parameter Sturdy
 #: boxes/generators/halfbox.py
@@ -6455,7 +6455,7 @@ msgstr "Настройки коробки с петлями"
 #. parameter name
 #: boxes/generators/hingebox.py
 msgid "splitlid"
-msgstr "splitlid"
+msgstr "разделить_крышку"
 
 #. help for parameter splitlid
 #: boxes/generators/hingebox.py
@@ -6514,7 +6514,7 @@ msgstr "Настройки кейса для хобби"
 #. parameter name
 #: boxes/generators/hobbycase.py
 msgid "unit_d"
-msgstr "unit_d"
+msgstr "единица_г"
 
 #. help for parameter unit_d
 #: boxes/generators/hobbycase.py
@@ -6524,7 +6524,7 @@ msgstr "Глубина одной единицы"
 #. parameter name
 #: boxes/generators/hobbycase.py
 msgid "unit_h"
-msgstr "unit_h"
+msgstr "единица_в"
 
 #. help for parameter unit_h
 #: boxes/generators/hobbycase.py
@@ -6534,7 +6534,7 @@ msgstr "Высота одной единицы"
 #. parameter name
 #: boxes/generators/hobbycase.py
 msgid "unit_w"
-msgstr "unit_w"
+msgstr "единица_ш"
 
 #. help for parameter unit_w
 #: boxes/generators/hobbycase.py
@@ -6549,7 +6549,7 @@ msgstr "Количество строк в каждом из столбцов"
 #. parameter name
 #: boxes/generators/hobbycase.py
 msgid "shelves_n"
-msgstr "shelves_n"
+msgstr "полки_к"
 
 #. help for parameter shelves_n
 #: boxes/generators/hobbycase.py
@@ -6559,7 +6559,7 @@ msgstr "Сколько полок должно быть в каждом стол
 #. parameter name
 #: boxes/generators/hobbycase.py
 msgid "add_rails"
-msgstr "add_rails"
+msgstr "добавить_направляющие"
 
 #. help for parameter add_rails
 #: boxes/generators/hobbycase.py
@@ -6569,7 +6569,7 @@ msgstr "Должны ли направляющие генерироваться 
 #. parameter name
 #: boxes/generators/hobbycase.py
 msgid "add_cover"
-msgstr "add_cover"
+msgstr "добавить_крышку"
 
 #. help for parameter add_cover
 #: boxes/generators/hobbycase.py
@@ -6579,7 +6579,7 @@ msgstr "Должна ли генерироваться крышка для ке�
 #. parameter name
 #: boxes/generators/hobbycase.py
 msgid "inset_shelves"
-msgstr "inset_shelves"
+msgstr "встроенные_полки"
 
 #. help for parameter inset_shelves
 #: boxes/generators/hobbycase.py
@@ -6602,7 +6602,7 @@ msgstr "Настройки шаблона отверстий"
 #. parameter name
 #: boxes/generators/holepattern.py
 msgid "shape"
-msgstr "shape"
+msgstr "форма"
 
 #. help for parameter shape
 #: boxes/generators/holepattern.py
@@ -6655,7 +6655,7 @@ msgstr "внутренняя глубина крючка"
 #. parameter name
 #: boxes/generators/hooks.py
 msgid "strength"
-msgstr "strength"
+msgstr "прочность"
 
 #. help for parameter strength
 #: boxes/generators/hooks.py
@@ -6749,7 +6749,7 @@ msgstr "Настройки соединительной панели"
 #. parameter name
 #: boxes/generators/jointpanel.py
 msgid "separate"
-msgstr "separate"
+msgstr "отдельно"
 
 #. help for parameter separate
 #: boxes/generators/jointpanel.py
@@ -6919,7 +6919,7 @@ msgstr "Настройки камисибай"
 #. parameter name
 #: boxes/generators/kamishibai.py
 msgid "SheetWidth"
-msgstr "SheetWidth"
+msgstr "ШиринаЛиста"
 
 #. help for parameter SheetWidth
 #: boxes/generators/kamishibai.py
@@ -6929,7 +6929,7 @@ msgstr "ширина листов в мм"
 #. parameter name
 #: boxes/generators/kamishibai.py
 msgid "SheetHeight"
-msgstr "SheetHeight"
+msgstr "ВысотаЛиста"
 
 #. help for parameter SheetHeight
 #: boxes/generators/kamishibai.py
@@ -6939,7 +6939,7 @@ msgstr "высота листов в мм"
 #. parameter name
 #: boxes/generators/kamishibai.py
 msgid "SheetsStackDepth"
-msgstr "SheetsStackDepth"
+msgstr "ГлубинаСтопкиЛистов"
 
 #. help for parameter SheetsStackDepth
 #: boxes/generators/kamishibai.py
@@ -6949,7 +6949,7 @@ msgstr "Глубина стопки листов в мм"
 #. parameter name
 #: boxes/generators/kamishibai.py
 msgid "FrameThickness"
-msgstr "FrameThickness"
+msgstr "ТолщинаРамы"
 
 #. help for parameter FrameThickness
 #: boxes/generators/kamishibai.py
@@ -6959,7 +6959,7 @@ msgstr "Толщина рамы в мм"
 #. parameter name
 #: boxes/generators/kamishibai.py
 msgid "FrameCornerRadius"
-msgstr "FrameCornerRadius"
+msgstr "РадиусУглаРамы"
 
 #. help for parameter FrameCornerRadius
 #: boxes/generators/kamishibai.py
@@ -6969,7 +6969,7 @@ msgstr "Радиус углов рамы в мм"
 #. parameter name
 #: boxes/generators/kamishibai.py
 msgid "Margin"
-msgstr "Margin"
+msgstr "Зазор"
 
 #. help for parameter Margin
 #: boxes/generators/kamishibai.py
@@ -6979,7 +6979,7 @@ msgstr "Зазор для листов и подвижных частей в м�
 #. parameter name
 #: boxes/generators/kamishibai.py
 msgid "HandleThickness"
-msgstr "HandleThickness"
+msgstr "ТолщинаРучки"
 
 #. help for parameter HandleThickness
 #: boxes/generators/kamishibai.py
@@ -6992,7 +6992,7 @@ msgstr ""
 #. parameter name
 #: boxes/generators/kamishibai.py
 msgid "HandleWidth"
-msgstr "HandleWidth"
+msgstr "ШиринаРучки"
 
 #. help for parameter HandleWidth
 #: boxes/generators/kamishibai.py
@@ -7006,7 +7006,7 @@ msgstr ""
 #. parameter name
 #: boxes/generators/kamishibai.py
 msgid "HandleMargin"
-msgstr "HandleMargin"
+msgstr "ЗазорРучки"
 
 #. help for parameter HandleMargin
 #: boxes/generators/kamishibai.py
@@ -7016,7 +7016,7 @@ msgstr "Зазор для верхней ручки в мм (Установит�
 #. parameter name
 #: boxes/generators/kamishibai.py
 msgid "BackExtraDepth"
-msgstr "BackExtraDepth"
+msgstr "ДополнительнаяГлубинаЗада"
 
 #. help for parameter BackExtraDepth
 #: boxes/generators/kamishibai.py
@@ -7030,7 +7030,7 @@ msgstr ""
 #. parameter name
 #: boxes/generators/kamishibai.py
 msgid "PegsWidthMargin"
-msgstr "PegsWidthMargin"
+msgstr "ЗазорШиринаШтифтов"
 
 #. help for parameter PegsWidthMargin
 #: boxes/generators/kamishibai.py
@@ -7049,7 +7049,7 @@ msgstr "Передняя крышка камисибай"
 #. parameter name
 #: boxes/generators/kamishibai.py
 msgid "FrontCoverStyle"
-msgstr "FrontCoverStyle"
+msgstr "СтильПереднейКрышки"
 
 #. help for parameter FrontCoverStyle
 #: boxes/generators/kamishibai.py
@@ -7074,7 +7074,7 @@ msgstr "трехчастная крышка, петли не предостав�
 #. parameter name
 #: boxes/generators/kamishibai.py
 msgid "FrontExtraDepth"
-msgstr "FrontExtraDepth"
+msgstr "ДополнительнаяГлубинаПереда"
 
 #. help for parameter FrontExtraDepth
 #: boxes/generators/kamishibai.py
@@ -7088,7 +7088,7 @@ msgstr ""
 #. parameter name
 #: boxes/generators/kamishibai.py
 msgid "FrontLockStyle"
-msgstr "FrontLockStyle"
+msgstr "СтильПереднегоЗамка"
 
 #. help for parameter FrontLockStyle
 #: boxes/generators/kamishibai.py
@@ -7108,7 +7108,7 @@ msgstr "с ключом"
 #. parameter name
 #: boxes/generators/kamishibai.py
 msgid "FrontExtraTopAndBottomLocks"
-msgstr "FrontExtraTopAndBottomLocks"
+msgstr "ДополнительныеВерхниеИНижниеЗамкиПереда"
 
 #. help for parameter FrontExtraTopAndBottomLocks
 #: boxes/generators/kamishibai.py
@@ -7121,7 +7121,7 @@ msgstr "Отверстия петель трехпанельной крышки 
 #. parameter name
 #: boxes/generators/kamishibai.py
 msgid "HingeHolesDiameter"
-msgstr "HingeHolesDiameter"
+msgstr "ДиаметрОтверстийПетель"
 
 #. help for parameter HingeHolesDiameter
 #: boxes/generators/kamishibai.py
@@ -7131,7 +7131,7 @@ msgstr "Диаметр отверстий петель в мм (установи
 #. parameter name
 #: boxes/generators/kamishibai.py
 msgid "HingeHolesCoverEdgeDistance"
-msgstr "HingeHolesCoverEdgeDistance"
+msgstr "РасстояниеОтверстийПетельКрышкиОтКрая"
 
 #. help for parameter HingeHolesCoverEdgeDistance
 #: boxes/generators/kamishibai.py
@@ -7141,7 +7141,7 @@ msgstr "расстояние от края крышки до центров от
 #. parameter name
 #: boxes/generators/kamishibai.py
 msgid "HingeHolesBoxEdgeDistance"
-msgstr "HingeHolesBoxEdgeDistance"
+msgstr "РасстояниеОтверстийПетельКоробкиОтКрая"
 
 #. help for parameter HingeHolesBoxEdgeDistance
 #: boxes/generators/kamishibai.py
@@ -7151,7 +7151,7 @@ msgstr "расстояние от края коробки до центров о
 #. parameter name
 #: boxes/generators/kamishibai.py
 msgid "HingeHolesCoverSeparation"
-msgstr "HingeHolesCoverSeparation"
+msgstr "РазделениеОтверстийПетельКрышки"
 
 #. help for parameter HingeHolesCoverSeparation
 #: boxes/generators/kamishibai.py
@@ -7165,7 +7165,7 @@ msgstr ""
 #. parameter name
 #: boxes/generators/kamishibai.py
 msgid "HingeHolesBoxSeparation"
-msgstr "HingeHolesBoxSeparation"
+msgstr "РазделениеОтверстийПетельКоробки"
 
 #. help for parameter HingeHolesBoxSeparation
 #: boxes/generators/kamishibai.py
@@ -7182,7 +7182,7 @@ msgstr "Параметры винтов для соединения детале
 #. parameter name
 #: boxes/generators/kamishibai.py
 msgid "LockScrewDiameter"
-msgstr "LockScrewDiameter"
+msgstr "ДиаметрВинтаЗамка"
 
 #. help for parameter LockScrewDiameter
 #: boxes/generators/kamishibai.py
@@ -7192,7 +7192,7 @@ msgstr "Диаметр отверстий винтов в мм (установи
 #. parameter name
 #: boxes/generators/kamishibai.py
 msgid "TopLockScrewLength"
-msgstr "TopLockScrewLength"
+msgstr "ДлинаВерхнегоВинтаЗамка"
 
 #. help for parameter TopLockScrewLength
 #: boxes/generators/kamishibai.py
@@ -7202,7 +7202,7 @@ msgstr "Длина верхних запорных винтов в мм"
 #. parameter name
 #: boxes/generators/kamishibai.py
 msgid "BottomLockScrewLength"
-msgstr "BottomLockScrewLength"
+msgstr "ДлинаНижнегоВинтаЗамка"
 
 #. help for parameter BottomLockScrewLength
 #: boxes/generators/kamishibai.py
@@ -7212,7 +7212,7 @@ msgstr "Длина нижних запорных винтов в мм"
 #. parameter name
 #: boxes/generators/kamishibai.py
 msgid "DoorFeetScrewLength"
-msgstr "DoorFeetScrewLength"
+msgstr "ДлинаВинтаНожекДвери"
 
 #. help for parameter DoorFeetScrewLength
 #: boxes/generators/kamishibai.py
@@ -7222,7 +7222,7 @@ msgstr "Длина винтов ножек двери в мм (установи�
 #. parameter name
 #: boxes/generators/kamishibai.py
 msgid "LockNutThickness"
-msgstr "LockNutThickness"
+msgstr "ТолщинаГайкиЗамка"
 
 #. help for parameter LockNutThickness
 #: boxes/generators/kamishibai.py
@@ -7232,7 +7232,7 @@ msgstr "Толщина запорных гаек в мм"
 #. parameter name
 #: boxes/generators/kamishibai.py
 msgid "LockNutWidth"
-msgstr "LockNutWidth"
+msgstr "ШиринаГайкиЗамка"
 
 #. help for parameter LockNutWidth
 #: boxes/generators/kamishibai.py
@@ -7242,7 +7242,7 @@ msgstr "Ширина запорных гаек в мм"
 #. parameter name
 #: boxes/generators/kamishibai.py
 msgid "LockScrewDistanceFromBorder"
-msgstr "LockScrewDistanceFromBorder"
+msgstr "РасстояниеВинтаЗамкаОтГраницы"
 
 #. help for parameter LockScrewDistanceFromBorder
 #: boxes/generators/kamishibai.py
@@ -7254,7 +7254,7 @@ msgstr ""
 #. parameter name
 #: boxes/generators/kamishibai.py
 msgid "LockScrewExtraFeetScewDiameter"
-msgstr "LockScrewExtraFeetScewDiameter"
+msgstr "ДиаметрВинтаДополнительныхНожекЗамка"
 
 #. help for parameter LockScrewExtraFeetScewDiameter
 #: boxes/generators/kamishibai.py
@@ -7268,7 +7268,7 @@ msgstr ""
 #. parameter name
 #: boxes/generators/kamishibai.py
 msgid "LockScrewExtraFeetDistanceFromBorder"
-msgstr "LockScrewExtraFeetDistanceFromBorder"
+msgstr "РасстояниеВинтаДополнительныхНожекОтГраницы"
 
 #. help for parameter LockScrewExtraFeetDistanceFromBorder
 #: boxes/generators/kamishibai.py
@@ -7316,7 +7316,7 @@ msgstr "Настройки держателя ключей"
 #. parameter name
 #: boxes/generators/keyholder.py
 msgid "num_hooks"
-msgstr "num_hooks"
+msgstr "Количество крючков"
 
 #. help for parameter num_hooks
 #: boxes/generators/keyholder.py
@@ -7326,7 +7326,7 @@ msgstr "Количество крючков"
 #. parameter name
 #: boxes/generators/keyholder.py
 msgid "hook_distance"
-msgstr "hook_distance"
+msgstr "Расстояние между крючками"
 
 #. help for parameter hook_distance
 #: boxes/generators/keyholder.py
@@ -7336,7 +7336,7 @@ msgstr "Расстояние между крючками"
 #. parameter name
 #: boxes/generators/keyholder.py
 msgid "hook_thickness"
-msgstr "hook_thickness"
+msgstr "Толщина крючка"
 
 #. help for parameter hook_thickness
 #: boxes/generators/keyholder.py
@@ -7346,7 +7346,7 @@ msgstr "Толщина крючка"
 #. parameter name
 #: boxes/generators/keyholder.py
 msgid "hook_height"
-msgstr "hook_height"
+msgstr "Высота задней части крючка"
 
 #. help for parameter hook_height
 #: boxes/generators/keyholder.py
@@ -7356,7 +7356,7 @@ msgstr "Высота задней части крючка"
 #. parameter name
 #: boxes/generators/keyholder.py
 msgid "padding_top"
-msgstr "padding_top"
+msgstr "Отступ сверху от крючков"
 
 #. help for parameter padding_top
 #: boxes/generators/keyholder.py
@@ -7366,7 +7366,7 @@ msgstr "Отступ сверху от крючков"
 #. parameter name
 #: boxes/generators/keyholder.py
 msgid "padding_left_right"
-msgstr "padding_left_right"
+msgstr "Отступ слева/справа от крючков"
 
 #. help for parameter padding_left_right
 #: boxes/generators/keyholder.py
@@ -7376,7 +7376,7 @@ msgstr "Отступ слева/справа от крючков"
 #. parameter name
 #: boxes/generators/keyholder.py
 msgid "padding_bot"
-msgstr "padding_bot"
+msgstr "Отступ снизу от крючков"
 
 #. help for parameter padding_bot
 #: boxes/generators/keyholder.py
@@ -7386,7 +7386,7 @@ msgstr "Отступ снизу от крючков"
 #. parameter name
 #: boxes/generators/keyholder.py
 msgid "mounting"
-msgstr "mounting"
+msgstr "Добавить монтажные отверстия"
 
 #. help for parameter mounting
 #: boxes/generators/keyholder.py
@@ -7418,7 +7418,7 @@ msgstr "Настройки клавиатуры"
 #. parameter name
 #: boxes/generators/keypad.py
 msgid "top1_thickness"
-msgstr "top1_thickness"
+msgstr "толщина слоя удержания кнопок"
 
 #. help for parameter top1_thickness
 #: boxes/generators/keypad.py
@@ -7432,7 +7432,7 @@ msgstr ""
 #. parameter name
 #: boxes/generators/keypad.py
 msgid "top2_enable"
-msgstr "top2_enable"
+msgstr "включает дополнительный верхний слой для установки гнезд CPG151101S11 hotswap"
 
 #. help for parameter top2_enable
 #: boxes/generators/keypad.py
@@ -7442,7 +7442,7 @@ msgstr "включает дополнительный верхний слой д
 #. parameter name
 #: boxes/generators/keypad.py
 msgid "top2_thickness"
-msgstr "top2_thickness"
+msgstr "толщина слоя для горячей замены"
 
 #. help for parameter top2_thickness
 #: boxes/generators/keypad.py
@@ -7468,7 +7468,7 @@ msgstr "Настройки подставки для ноутбука"
 #. parameter name
 #: boxes/generators/laptopstand.py
 msgid "l_depth"
-msgstr "l_depth"
+msgstr "глубина ноутбука (спереди назад"
 
 #. help for parameter l_depth
 #: boxes/generators/laptopstand.py
@@ -7478,7 +7478,7 @@ msgstr "глубина ноутбука (спереди назад"
 #. parameter name
 #: boxes/generators/laptopstand.py
 msgid "l_thickness"
-msgstr "l_thickness"
+msgstr "толщина ноутбука (мм)"
 
 #. help for parameter l_thickness
 #: boxes/generators/laptopstand.py
@@ -7493,7 +7493,7 @@ msgstr "желаемый угол наклона клавиатуры (град�
 #. parameter name
 #: boxes/generators/laptopstand.py
 msgid "ground_offset"
-msgstr "ground_offset"
+msgstr "желаемая высота между низом ноутбука и поверхностью в самой низкой точке (перед подставки)"
 
 #. help for parameter ground_offset
 #: boxes/generators/laptopstand.py
@@ -7507,7 +7507,7 @@ msgstr ""
 #. parameter name
 #: boxes/generators/laptopstand.py
 msgid "nub_size"
-msgstr "nub_size"
+msgstr "желаемая толщина поддерживающего края"
 
 #. help for parameter nub_size
 #: boxes/generators/laptopstand.py
@@ -7543,7 +7543,7 @@ msgstr "Настройки зажима для лазера"
 #. parameter name
 #: boxes/generators/laserclamp.py
 msgid "minheight"
-msgstr "minheight"
+msgstr "минимальная высота зажима (мм)"
 
 #. help for parameter minheight
 #: boxes/generators/laserclamp.py
@@ -7553,7 +7553,7 @@ msgstr "минимальная высота зажима (мм)"
 #. parameter name
 #: boxes/generators/laserclamp.py
 msgid "maxheight"
-msgstr "maxheight"
+msgstr "максимальная высота зажима (мм)"
 
 #. help for parameter maxheight
 #: boxes/generators/laserclamp.py
@@ -7563,7 +7563,7 @@ msgstr "максимальная высота зажима (мм)"
 #. parameter name
 #: boxes/generators/laserclamp.py
 msgid "extraheight"
-msgstr "extraheight"
+msgstr "дополнительная высота для более плавной работы (мм)"
 
 #. help for parameter extraheight
 #: boxes/generators/laserclamp.py
@@ -7586,7 +7586,7 @@ msgstr "Настройки зажима для сотового стола"
 #. parameter name
 #: boxes/generators/laserholdfast.py
 msgid "hookheight"
-msgstr "hookheight"
+msgstr "высота верхнего крючка"
 
 #. help for parameter hookheight
 #: boxes/generators/laserholdfast.py
@@ -7596,7 +7596,7 @@ msgstr "высота верхнего крючка"
 #. parameter name
 #: boxes/generators/laserholdfast.py
 msgid "shaftwidth"
-msgstr "shaftwidth"
+msgstr "ширина стержня"
 
 #. help for parameter shaftwidth
 #: boxes/generators/laserholdfast.py
@@ -7664,7 +7664,7 @@ msgstr "Настройки блока питания Makita"
 #. parameter name
 #: boxes/generators/makitapowersupply.py
 msgid "banana_socket_diameter"
-msgstr "banana_socket_diameter"
+msgstr "диаметр отверстий под гнезда «банан»"
 
 #. help for parameter banana_socket_diameter
 #: boxes/generators/makitapowersupply.py
@@ -7674,7 +7674,7 @@ msgstr "диаметр отверстий под гнезда «банан»"
 #. parameter name
 #: boxes/generators/makitapowersupply.py
 msgid "flipswitch_diameter"
-msgstr "flipswitch_diameter"
+msgstr "диаметр отверстия под переключатель (отключено"
 
 #. help for parameter flipswitch_diameter
 #: boxes/generators/makitapowersupply.py
@@ -7686,7 +7686,7 @@ msgstr ""
 #. parameter name
 #: boxes/generators/makitapowersupply.py
 msgid "secondary_power"
-msgstr "secondary_power"
+msgstr "тип второго входа питания"
 
 #. help for parameter secondary_power
 #: boxes/generators/makitapowersupply.py
@@ -7798,7 +7798,7 @@ msgstr "Настройки матрицы"
 #. parameter name
 #: boxes/generators/matrix.py
 msgid "led_width"
-msgstr "led_width"
+msgstr "Ширина матрицы светодиодов в пикселях"
 
 #. help for parameter led_width
 #: boxes/generators/matrix.py
@@ -7808,7 +7808,7 @@ msgstr "Ширина матрицы светодиодов в пикселях"
 #. parameter name
 #: boxes/generators/matrix.py
 msgid "led_height"
-msgstr "led_height"
+msgstr "Высота матрицы светодиодов в пикселях"
 
 #. help for parameter led_height
 #: boxes/generators/matrix.py
@@ -7818,7 +7818,7 @@ msgstr "Высота матрицы светодиодов в пикселях"
 #. parameter name
 #: boxes/generators/matrix.py
 msgid "pysical_led_y"
-msgstr "pysical_led_y"
+msgstr "Ширина платы матрицы светодиодов в мм"
 
 #. help for parameter pysical_led_y
 #: boxes/generators/matrix.py
@@ -7828,7 +7828,7 @@ msgstr "Ширина платы матрицы светодиодов в мм"
 #. parameter name
 #: boxes/generators/matrix.py
 msgid "pysical_led_x"
-msgstr "pysical_led_x"
+msgstr "Высота платы матрицы светодиодов в мм"
 
 #. help for parameter pysical_led_x
 #: boxes/generators/matrix.py
@@ -7838,7 +7838,7 @@ msgstr "Высота платы матрицы светодиодов в мм"
 #. parameter name
 #: boxes/generators/matrix.py
 msgid "matrix_back_frame_border"
-msgstr "matrix_back_frame_border"
+msgstr "Край задней рамки для фиксации платы и обеспечения вентиляции и укладки кабелей"
 
 #. help for parameter matrix_back_frame_border
 #: boxes/generators/matrix.py
@@ -7851,7 +7851,7 @@ msgstr ""
 #. parameter name
 #: boxes/generators/matrix.py
 msgid "matrix_front_frame_border_offset"
-msgstr "matrix_front_frame_border_offset"
+msgstr "Смещение передней рамки для крепления оргстекла"
 
 #. help for parameter matrix_front_frame_border_offset
 #: boxes/generators/matrix.py
@@ -7861,7 +7861,7 @@ msgstr "Смещение передней рамки для крепления �
 #. parameter name
 #: boxes/generators/matrix.py
 msgid "distance_between_leds"
-msgstr "distance_between_leds"
+msgstr "Расстояние между цветными разделителями. Убедитесь"
 
 #. help for parameter distance_between_leds
 #: boxes/generators/matrix.py
@@ -7879,7 +7879,7 @@ msgstr "Высота матрицы"
 #. parameter name
 #: boxes/generators/matrix.py
 msgid "height_pcb"
-msgstr "height_pcb"
+msgstr "Высота платы с учетом самых высоких не-светодиодных компонентов (мм)"
 
 #. help for parameter height_pcb
 #: boxes/generators/matrix.py
@@ -7889,7 +7889,7 @@ msgstr "Высота платы с учетом самых высоких не-�
 #. parameter name
 #: boxes/generators/matrix.py
 msgid "plexiglass_thicknes"
-msgstr "plexiglass_thicknes"
+msgstr "Толщина оргстекла (мм)"
 
 #. help for parameter plexiglass_thicknes
 #: boxes/generators/matrix.py
@@ -7904,7 +7904,7 @@ msgstr "Добавить монтажные отверстия для корпу
 #. parameter name
 #: boxes/generators/matrix.py
 msgid "mounting_hole_diameter"
-msgstr "mounting_hole_diameter"
+msgstr "Диаметр монтажных отверстий (мм)"
 
 #. help for parameter mounting_hole_diameter
 #: boxes/generators/matrix.py
@@ -7914,7 +7914,7 @@ msgstr "Диаметр монтажных отверстий (мм)"
 #. parameter name
 #: boxes/generators/matrix.py
 msgid "matrix_count_x"
-msgstr "matrix_count_x"
+msgstr "Количество модулей по оси X"
 
 #. help for parameter matrix_count_x
 #: boxes/generators/matrix.py
@@ -7924,7 +7924,7 @@ msgstr "Количество модулей по оси X"
 #. parameter name
 #: boxes/generators/matrix.py
 msgid "matrix_count_y"
-msgstr "matrix_count_y"
+msgstr "Количество модулей по оси Y"
 
 #. help for parameter matrix_count_y
 #: boxes/generators/matrix.py
@@ -7947,7 +7947,7 @@ msgstr "Настройки стойки для Raspberry Pi"
 #. parameter name
 #: boxes/generators/microrack.py
 msgid "sbcs"
-msgstr "sbcs"
+msgstr "Количество слотов для одноплатных компьютеров"
 
 #. help for parameter sbcs
 #: boxes/generators/microrack.py
@@ -7957,7 +7957,7 @@ msgstr "Количество слотов для одноплатных комп
 #. parameter name
 #: boxes/generators/microrack.py
 msgid "clearance_x"
-msgstr "clearance_x"
+msgstr "Запас по ширине платы в корпусе (мм)"
 
 #. help for parameter clearance_x
 #: boxes/generators/microrack.py
@@ -7967,7 +7967,7 @@ msgstr "Запас по ширине платы в корпусе (мм)"
 #. parameter name
 #: boxes/generators/microrack.py
 msgid "clearance_y"
-msgstr "clearance_y"
+msgstr "Запас по высоте платы в корпусе (мм)"
 
 #. help for parameter clearance_y
 #: boxes/generators/microrack.py
@@ -7977,7 +7977,7 @@ msgstr "Запас по высоте платы в корпусе (мм)"
 #. parameter name
 #: boxes/generators/microrack.py
 msgid "clearance_z"
-msgstr "clearance_z"
+msgstr "Запас по высоте SBC (мм)"
 
 #. help for parameter clearance_z
 #: boxes/generators/microrack.py
@@ -7987,7 +7987,7 @@ msgstr "Запас по высоте SBC (мм)"
 #. parameter name
 #: boxes/generators/microrack.py
 msgid "hole_dist_edge"
-msgstr "hole_dist_edge"
+msgstr "Расстояние от отверстия до края (мм)"
 
 #. help for parameter hole_dist_edge
 #: boxes/generators/microrack.py
@@ -7997,7 +7997,7 @@ msgstr "Расстояние от отверстия до края (мм)"
 #. parameter name
 #: boxes/generators/microrack.py
 msgid "hole_grid_dimension_x"
-msgstr "hole_grid_dimension_x"
+msgstr "Ширина области отверстий по X"
 
 #. help for parameter hole_grid_dimension_x
 #: boxes/generators/microrack.py
@@ -8007,7 +8007,7 @@ msgstr "Ширина области отверстий по X"
 #. parameter name
 #: boxes/generators/microrack.py
 msgid "hole_grid_dimension_y"
-msgstr "hole_grid_dimension_y"
+msgstr "Ширина области отверстий по Y"
 
 #. help for parameter hole_grid_dimension_y
 #: boxes/generators/microrack.py
@@ -8017,7 +8017,7 @@ msgstr "Ширина области отверстий по Y"
 #. parameter name
 #: boxes/generators/microrack.py
 msgid "hole_diameter"
-msgstr "hole_diameter"
+msgstr "Диаметры отверстий"
 
 #. help for parameter hole_diameter
 #: boxes/generators/microrack.py
@@ -8027,7 +8027,7 @@ msgstr "Диаметры отверстий"
 #. parameter name
 #: boxes/generators/microrack.py
 msgid "netusb_z"
-msgstr "netusb_z"
+msgstr "Высота отверстия под сетевой/USB разъем (мм)"
 
 #. help for parameter netusb_z
 #: boxes/generators/microrack.py
@@ -8037,7 +8037,7 @@ msgstr "Высота отверстия под сетевой/USB разъем (
 #. parameter name
 #: boxes/generators/microrack.py
 msgid "netusb_x"
-msgstr "netusb_x"
+msgstr "Ширина отверстия под сетевой/USB разъем (мм)"
 
 #. help for parameter netusb_x
 #: boxes/generators/microrack.py
@@ -8047,7 +8047,7 @@ msgstr "Ширина отверстия под сетевой/USB разъем (
 #. parameter name
 #: boxes/generators/microrack.py
 msgid "stable"
-msgstr "stable"
+msgstr "стабильно"
 
 #. help for parameter stable
 #: boxes/generators/microrack.py
@@ -8057,7 +8057,7 @@ msgstr "Сделать отверстия для установки штифта
 #. parameter name
 #: boxes/generators/microrack.py
 msgid "switch"
-msgstr "switch"
+msgstr "Добавляет дополнительный вертикальный сегмент для фиксации переключателя, лучше всего работает с --stable"
 
 #. help for parameter switch
 #: boxes/generators/microrack.py
@@ -8102,7 +8102,7 @@ msgstr "Настройки крепежного шаблона Nema"
 #. parameter name
 #: boxes/generators/nemapattern.py
 msgid "screwholes"
-msgstr "screwholes"
+msgstr "отверстия для винтов"
 
 #. help for parameter screwholes
 #: boxes/generators/nemapattern.py
@@ -8133,7 +8133,7 @@ msgstr "Настройки светового короба"
 #. parameter name
 #: boxes/generators/nightlightbox.py
 msgid "BoxStyle"
-msgstr "BoxStyle"
+msgstr "Стиль коробки"
 
 #. possible choice for BoxStyle
 #: boxes/generators/nightlightbox.py
@@ -8153,7 +8153,7 @@ msgstr "дополнительная настраиваемая лицевая �
 #. parameter name
 #: boxes/generators/nightlightbox.py
 msgid "PlateVisibleWidth"
-msgstr "PlateVisibleWidth"
+msgstr "Ширина передней панели "
 
 #. help for parameter PlateVisibleWidth
 #: boxes/generators/nightlightbox.py
@@ -8163,7 +8163,7 @@ msgstr "Ширина окна на передней панели (мм)"
 #. parameter name
 #: boxes/generators/nightlightbox.py
 msgid "PlateVisibleHeight"
-msgstr "PlateVisibleHeight"
+msgstr "Высота передней панели"
 
 #. help for parameter PlateVisibleHeight
 #: boxes/generators/nightlightbox.py
@@ -8173,7 +8173,7 @@ msgstr "Высота окна на передней панели (мм)"
 #. parameter name
 #: boxes/generators/nightlightbox.py
 msgid "WoodPlatesCount"
-msgstr "WoodPlatesCount"
+msgstr "Количество деревянных пластин"
 
 #. help for parameter WoodPlatesCount
 #: boxes/generators/nightlightbox.py
@@ -8183,7 +8183,7 @@ msgstr "Количество декоративных деревянных пл�
 #. parameter name
 #: boxes/generators/nightlightbox.py
 msgid "WoodPlateThickness"
-msgstr "WoodPlateThickness"
+msgstr "Толщина деревянных пластин"
 
 #. help for parameter WoodPlateThickness
 #: boxes/generators/nightlightbox.py
@@ -8193,7 +8193,7 @@ msgstr "Толщина деревянных пластин (мм)"
 #. parameter name
 #: boxes/generators/nightlightbox.py
 msgid "DiffuserPlateThickness"
-msgstr "DiffuserPlateThickness"
+msgstr "Толщина пластины-рассеивателя"
 
 #. help for parameter DiffuserPlateThickness
 #: boxes/generators/nightlightbox.py
@@ -8203,7 +8203,7 @@ msgstr "Толщина акриловой пластины-рассеивате�
 #. parameter name
 #: boxes/generators/nightlightbox.py
 msgid "BackgroundDepth"
-msgstr "BackgroundDepth"
+msgstr "Глубина зоны для электроники и светодиодов (мм)"
 
 #. help for parameter BackgroundDepth
 #: boxes/generators/nightlightbox.py
@@ -8213,7 +8213,7 @@ msgstr "Глубина зоны для электроники и светоди�
 #. parameter name
 #: boxes/generators/nightlightbox.py
 msgid "InterPlateSpacing"
-msgstr "InterPlateSpacing"
+msgstr "Расстояние между пластинами"
 
 #. help for parameter InterPlateSpacing
 #: boxes/generators/nightlightbox.py
@@ -8235,7 +8235,7 @@ msgstr ""
 #. parameter name
 #: boxes/generators/nightlightbox.py
 msgid "DiffuserPlateTLockScrewDiameter"
-msgstr "DiffuserPlateTLockScrewDiameter"
+msgstr "Диаметр отверстия под винт замка пластины-рассеивателя"
 
 #. help for parameter DiffuserPlateTLockScrewDiameter
 #: boxes/generators/nightlightbox.py
@@ -8247,7 +8247,7 @@ msgstr ""
 #. parameter name
 #: boxes/generators/nightlightbox.py
 msgid "DiffuserPlateTLockScrewLength"
-msgstr "DiffuserPlateTLockScrewLength"
+msgstr "Длина винта замка пластины-рассеивателя (мм)"
 
 #. help for parameter DiffuserPlateTLockScrewLength
 #: boxes/generators/nightlightbox.py
@@ -8257,7 +8257,7 @@ msgstr "Длина винта замка пластины-рассеивател
 #. parameter name
 #: boxes/generators/nightlightbox.py
 msgid "DiffuserPlateTLockNutThickness"
-msgstr "DiffuserPlateTLockNutThickness"
+msgstr "Толщина гайки замка пластины-рассеивателя (мм)"
 
 #. help for parameter DiffuserPlateTLockNutThickness
 #: boxes/generators/nightlightbox.py
@@ -8267,7 +8267,7 @@ msgstr "Толщина гайки замка пластины-рассеиват
 #. parameter name
 #: boxes/generators/nightlightbox.py
 msgid "DiffuserPlateTLockNutWidth"
-msgstr "DiffuserPlateTLockNutWidth"
+msgstr "Ширина гайки замка пластины-рассеивателя (мм)"
 
 #. help for parameter DiffuserPlateTLockNutWidth
 #: boxes/generators/nightlightbox.py
@@ -8282,7 +8282,7 @@ msgstr ""
 #. parameter name
 #: boxes/generators/nightlightbox.py
 msgid "BackExtraHoles"
-msgstr "BackExtraHoles"
+msgstr "Дополнительные отверстия"
 
 #. help for parameter BackExtraHoles
 #: boxes/generators/nightlightbox.py
@@ -8333,7 +8333,7 @@ msgstr "процент открытой передней (или задней) �
 #. parameter name
 #: boxes/generators/notesholder.py
 msgid "back_openings"
-msgstr "back_openings"
+msgstr "отверстия на задней стороне"
 
 #. help for parameter back_openings
 #: boxes/generators/notesholder.py
@@ -8356,7 +8356,7 @@ msgstr "Настройки открытого короба"
 #. parameter name
 #: boxes/generators/openbox.py
 msgid "edgetype"
-msgstr "edgetype"
+msgstr "тип края"
 
 #. help for parameter edgetype
 #: boxes/generators/openbox.py
@@ -8424,7 +8424,7 @@ msgstr "си"
 #. parameter name
 #: boxes/generators/organpipe.py
 msgid "octave"
-msgstr "octave"
+msgstr "Октава"
 
 #. help for parameter octave
 #: boxes/generators/organpipe.py
@@ -8434,7 +8434,7 @@ msgstr "Октава в международной звуковысотной н
 #. parameter name
 #: boxes/generators/organpipe.py
 msgid "intonation"
-msgstr "intonation"
+msgstr "Интонация"
 
 #. help for parameter intonation
 #: boxes/generators/organpipe.py
@@ -8444,7 +8444,7 @@ msgstr "Номер интонации. 2 — максимальная эффек
 #. parameter name
 #: boxes/generators/organpipe.py
 msgid "mouthratio"
-msgstr "mouthratio"
+msgstr "Соотношение отверстия к окружности"
 
 #. help for parameter mouthratio
 #: boxes/generators/organpipe.py
@@ -8458,7 +8458,7 @@ msgstr ""
 #. parameter name
 #: boxes/generators/organpipe.py
 msgid "cutup"
-msgstr "cutup"
+msgstr "Соотношение выреза к отверстию"
 
 #. help for parameter cutup
 #: boxes/generators/organpipe.py
@@ -8468,7 +8468,7 @@ msgstr "Соотношение выреза к отверстию"
 #. parameter name
 #: boxes/generators/organpipe.py
 msgid "mensur"
-msgstr "mensur"
+msgstr "Мензура"
 
 #. help for parameter mensur
 #: boxes/generators/organpipe.py
@@ -8478,7 +8478,7 @@ msgstr "Расстояние в полутонах в Normalmensur по Тёпф
 #. parameter name
 #: boxes/generators/organpipe.py
 msgid "windpressure"
-msgstr "windpressure"
+msgstr "Давление воздуха"
 
 #. help for parameter windpressure
 #: boxes/generators/organpipe.py
@@ -8488,7 +8488,7 @@ msgstr "использует выбранную ниже единицу"
 #. parameter name
 #: boxes/generators/organpipe.py
 msgid "windpressure_units"
-msgstr "windpressure_units"
+msgstr "единицы давления воздуха"
 
 #. help for parameter windpressure_units
 #: boxes/generators/organpipe.py
@@ -8518,7 +8518,7 @@ msgstr "мм вод. ст."
 #. parameter name
 #: boxes/generators/organpipe.py
 msgid "stopped"
-msgstr "stopped"
+msgstr "Закрытая труба"
 
 #. help for parameter stopped
 #: boxes/generators/organpipe.py
@@ -8554,7 +8554,7 @@ msgstr "Настройки ног робота Otto"
 #. parameter name
 #: boxes/generators/ottolegs.py
 msgid "anklebolt1"
-msgstr "anklebolt1"
+msgstr "диаметр отверстия для болта лодыжки — со стороны стопы"
 
 #. help for parameter anklebolt1
 #: boxes/generators/ottolegs.py
@@ -8564,7 +8564,7 @@ msgstr "диаметр отверстия для болта лодыжки — �
 #. parameter name
 #: boxes/generators/ottolegs.py
 msgid "anklebolt2"
-msgstr "anklebolt2"
+msgstr "диаметр отверстия для болта лодыжки — со стороны ноги"
 
 #. help for parameter anklebolt2
 #: boxes/generators/ottolegs.py
@@ -8574,7 +8574,7 @@ msgstr "диаметр отверстия для болта лодыжки — �
 #. parameter name
 #: boxes/generators/ottolegs.py
 msgid "length"
-msgstr "length"
+msgstr "длина ног"
 
 #. help for parameter length
 #: boxes/generators/ottolegs.py
@@ -8602,7 +8602,7 @@ msgstr "ширина полоски подошвы"
 #. parameter name
 #: boxes/generators/ottosoles.py
 msgid "chamfer"
-msgstr "chamfer"
+msgstr "фаска"
 
 #. help for parameter chamfer
 #: boxes/generators/ottosoles.py
@@ -8630,7 +8630,7 @@ msgstr "Настройки хранилища для красок"
 #. parameter name
 #: boxes/generators/paintbox.py
 msgid "canheight"
-msgstr "canheight"
+msgstr "Высота банок с краской"
 
 #. help for parameter canheight
 #: boxes/generators/paintbox.py
@@ -8640,7 +8640,7 @@ msgstr "Высота банок с краской"
 #. parameter name
 #: boxes/generators/paintbox.py
 msgid "candiameter"
-msgstr "candiameter"
+msgstr "Диаметр банок с краской"
 
 #. help for parameter candiameter
 #: boxes/generators/paintbox.py
@@ -8650,7 +8650,7 @@ msgstr "Диаметр банок с краской"
 #. parameter name
 #: boxes/generators/paintbox.py
 msgid "minspace"
-msgstr "minspace"
+msgstr "Минимальное расстояние между банками"
 
 #. help for parameter minspace
 #: boxes/generators/paintbox.py
@@ -8660,7 +8660,7 @@ msgstr "Минимальное расстояние между банками"
 #. parameter name
 #: boxes/generators/paintbox.py
 msgid "additional_bottom"
-msgstr "additional_bottom"
+msgstr "Дополнительное дно/пол с отверстиями для банок"
 
 #. help for parameter additional_bottom
 #: boxes/generators/paintbox.py
@@ -8670,7 +8670,7 @@ msgstr "Дополнительное дно/пол с отверстиями д�
 #. parameter name
 #: boxes/generators/paintbox.py
 msgid "additional_top"
-msgstr "additional_top"
+msgstr "Дополнительный верх/пол с отверстиями для банок"
 
 #. help for parameter additional_top
 #: boxes/generators/paintbox.py
@@ -8680,7 +8680,7 @@ msgstr "Дополнительный верх/пол с отверстиями �
 #. parameter name
 #: boxes/generators/paintbox.py
 msgid "hexpattern"
-msgstr "hexpattern"
+msgstr "шестигранный шаблон"
 
 #. help for parameter hexpattern
 #: boxes/generators/paintbox.py
@@ -8690,7 +8690,7 @@ msgstr "Использовать шестиугольное расположен
 #. parameter name
 #: boxes/generators/paintbox.py
 msgid "drawer"
-msgstr "drawer"
+msgstr "ящик"
 
 #. help for parameter drawer
 #: boxes/generators/paintbox.py
@@ -8742,7 +8742,7 @@ msgstr "Настройки бумажной коробки"
 #. parameter name
 #: boxes/generators/paperbox.py
 msgid "design"
-msgstr "design"
+msgstr "дизайн"
 
 #. help for parameter design
 #: boxes/generators/paperbox.py
@@ -8771,7 +8771,7 @@ msgstr "tuckbox"
 #. parameter name
 #: boxes/generators/paperbox.py
 msgid "lid_height"
-msgstr "lid_height"
+msgstr "Высота крышки"
 
 #. help for parameter lid_height
 #: boxes/generators/paperbox.py
@@ -8781,7 +8781,7 @@ msgstr "Высота крышки (часть, которая входит вн�
 #. parameter name
 #: boxes/generators/paperbox.py
 msgid "lid_radius"
-msgstr "lid_radius"
+msgstr "Радиус крышки"
 
 #. help for parameter lid_radius
 #: boxes/generators/paperbox.py
@@ -8791,7 +8791,7 @@ msgstr "Угол (в радианах) закругленного угла кр�
 #. parameter name
 #: boxes/generators/paperbox.py
 msgid "lid_sides"
-msgstr "lid_sides"
+msgstr "Ширина двух сторон"
 
 #. help for parameter lid_sides
 #: boxes/generators/paperbox.py
@@ -8806,7 +8806,7 @@ msgstr "Запас для склеиваемых сторон"
 #. parameter name
 #: boxes/generators/paperbox.py
 msgid "mark_length"
-msgstr "mark_length"
+msgstr "Длина внешней линии сгиба"
 
 #. help for parameter mark_length
 #: boxes/generators/paperbox.py
@@ -8816,7 +8816,7 @@ msgstr "Длина внешней линии сгиба"
 #. parameter name
 #: boxes/generators/paperbox.py
 msgid "tab_angle_rad"
-msgstr "tab_angle_rad"
+msgstr "Угол (в радианах) сторон"
 
 #. help for parameter tab_angle_rad
 #: boxes/generators/paperbox.py
@@ -8826,7 +8826,7 @@ msgstr "Угол (в радианах) сторон, которые склеив
 #. parameter name
 #: boxes/generators/paperbox.py
 msgid "finger_hole_diameter"
-msgstr "finger_hole_diameter"
+msgstr "Диаметр отверстия для захвата крышки"
 
 #. help for parameter finger_hole_diameter
 #: boxes/generators/paperbox.py
@@ -8872,7 +8872,7 @@ msgstr "Настройки подставки для смартфона"
 #. parameter name
 #: boxes/generators/phoneholder.py
 msgid "phone_height"
-msgstr "phone_height"
+msgstr "Высота телефона"
 
 #. help for parameter phone_height
 #: boxes/generators/phoneholder.py
@@ -8882,7 +8882,7 @@ msgstr "Высота телефона"
 #. parameter name
 #: boxes/generators/phoneholder.py
 msgid "phone_width"
-msgstr "phone_width"
+msgstr "Ширина телефона"
 
 #. help for parameter phone_width
 #: boxes/generators/phoneholder.py
@@ -8892,7 +8892,7 @@ msgstr "Ширина телефона"
 #. parameter name
 #: boxes/generators/phoneholder.py
 msgid "phone_depth"
-msgstr "phone_depth"
+msgstr "Глубина телефона"
 
 #. help for parameter phone_depth
 #: boxes/generators/phoneholder.py
@@ -8918,7 +8918,7 @@ msgstr "Высота опоры под телефоном"
 #. parameter name
 #: boxes/generators/phoneholder.py
 msgid "tab_size"
-msgstr "tab_size"
+msgstr "Длина выступов"
 
 #. help for parameter tab_size
 #: boxes/generators/phoneholder.py
@@ -8928,7 +8928,7 @@ msgstr "Длина выступов, удерживающих телефон"
 #. parameter name
 #: boxes/generators/phoneholder.py
 msgid "bottom_support_spacing"
-msgstr "bottom_support_spacing"
+msgstr "Расстояние между двумя нижними опорами"
 
 #. help for parameter bottom_support_spacing
 #: boxes/generators/phoneholder.py
@@ -9077,7 +9077,7 @@ msgstr "Высота фотографии, не включая рамку"
 #. parameter name
 #: boxes/generators/photoframe.py
 msgid "golden_mat"
-msgstr "golden_mat"
+msgstr "золотой коврик"
 
 #. help for parameter golden_mat
 #: boxes/generators/photoframe.py
@@ -9087,7 +9087,7 @@ msgstr "Использовать золотое сечение для расчё
 #. parameter name
 #: boxes/generators/photoframe.py
 msgid "matting_w"
-msgstr "matting_w"
+msgstr "матирование_w"
 
 #. help for parameter matting_w
 #: boxes/generators/photoframe.py
@@ -9097,7 +9097,7 @@ msgstr "Ширина паспарту по бокам фото"
 #. parameter name
 #: boxes/generators/photoframe.py
 msgid "matting_h"
-msgstr "matting_h"
+msgstr "матирование_h"
 
 #. help for parameter matting_h
 #: boxes/generators/photoframe.py
@@ -9107,7 +9107,7 @@ msgstr "Ширина паспарту сверху/снизу фото"
 #. parameter name
 #: boxes/generators/photoframe.py
 msgid "matting_overlap"
-msgstr "matting_overlap"
+msgstr "матирование_перекрытие"
 
 #. help for parameter matting_overlap
 #: boxes/generators/photoframe.py
@@ -9117,7 +9117,7 @@ msgstr "Перекрытие паспарту на фото, например 2 
 #. parameter name
 #: boxes/generators/photoframe.py
 msgid "glass_w"
-msgstr "glass_w"
+msgstr "стекло_w"
 
 #. help for parameter glass_w
 #: boxes/generators/photoframe.py
@@ -9127,7 +9127,7 @@ msgstr "Ширина стекла или акрила"
 #. parameter name
 #: boxes/generators/photoframe.py
 msgid "glass_h"
-msgstr "glass_h"
+msgstr "стекло_h"
 
 #. help for parameter glass_h
 #: boxes/generators/photoframe.py
@@ -9137,7 +9137,7 @@ msgstr "Высота стекла или акрила"
 #. parameter name
 #: boxes/generators/photoframe.py
 msgid "frame_w"
-msgstr "frame_w"
+msgstr "рамка_w"
 
 #. help for parameter frame_w
 #: boxes/generators/photoframe.py
@@ -9147,7 +9147,7 @@ msgstr "Ширина рамки вокруг паспарту"
 #. parameter name
 #: boxes/generators/photoframe.py
 msgid "guide_fudge"
-msgstr "guide_fudge"
+msgstr "руководство_помадка"
 
 #. help for parameter guide_fudge
 #: boxes/generators/photoframe.py
@@ -9157,7 +9157,7 @@ msgstr "Запас в пазу для облегчения вставки пас
 #. parameter name
 #: boxes/generators/photoframe.py
 msgid "frame_overlap"
-msgstr "frame_overlap"
+msgstr "рамбка_перекрытие"
 
 #. help for parameter frame_overlap
 #: boxes/generators/photoframe.py
@@ -9167,7 +9167,7 @@ msgstr "Перекрытие рамки для удержания паспарт
 #. parameter name
 #: boxes/generators/photoframe.py
 msgid "split_front"
-msgstr "split_front"
+msgstr "Разделить переднюю часть на тонкие прямоугольники для экономии материала"
 
 #. help for parameter split_front
 #: boxes/generators/photoframe.py
@@ -9240,7 +9240,7 @@ msgstr "Длина ручки. Ноль — отверстия для навин
 #. parameter name
 #: boxes/generators/pizzashovel.py
 msgid "grip_height"
-msgstr "grip_height"
+msgstr "Высота ручки"
 
 #. help for parameter grip_height
 #: boxes/generators/pizzashovel.py
@@ -9250,7 +9250,7 @@ msgstr "Высота ручки. Расстояние между попереч�
 #. parameter name
 #: boxes/generators/pizzashovel.py
 msgid "top_holes"
-msgstr "top_holes"
+msgstr "Диаметр верхних отверстий для винтов в толкателе (куда проходят винты)"
 
 #. help for parameter top_holes
 #: boxes/generators/pizzashovel.py
@@ -9264,7 +9264,7 @@ msgstr ""
 #. parameter name
 #: boxes/generators/pizzashovel.py
 msgid "bottom_holes"
-msgstr "bottom_holes"
+msgstr "Диаметр нижних отверстий для винтов в толкателе (куда крепятся винты)"
 
 #. help for parameter bottom_holes
 #: boxes/generators/pizzashovel.py
@@ -9278,7 +9278,7 @@ msgstr ""
 #. parameter name
 #: boxes/generators/pizzashovel.py
 msgid "grip_holes"
-msgstr "grip_holes"
+msgstr "Диаметр отверстий для винтов при нулевой длине ручки"
 
 #. help for parameter grip_holes
 #: boxes/generators/pizzashovel.py
@@ -9301,7 +9301,7 @@ msgstr "Настройки планетарной передачи"
 #. parameter name
 #: boxes/generators/planetary.py
 msgid "sunteeth"
-msgstr "sunteeth"
+msgstr "Число зубьев солнечной шестерни"
 
 #. help for parameter sunteeth
 #: boxes/generators/planetary.py
@@ -9311,7 +9311,7 @@ msgstr "Число зубьев солнечной шестерни"
 #. parameter name
 #: boxes/generators/planetary.py
 msgid "planetteeth"
-msgstr "planetteeth"
+msgstr "Число зубьев планетарной шестерни"
 
 #. help for parameter planetteeth
 #: boxes/generators/planetary.py
@@ -9321,7 +9321,7 @@ msgstr "Число зубьев планетарной шестерни"
 #. parameter name
 #: boxes/generators/planetary.py
 msgid "maxplanets"
-msgstr "maxplanets"
+msgstr "Ограничение числа планетарных шестерён (0 — максимум)"
 
 #. help for parameter maxplanets
 #: boxes/generators/planetary.py
@@ -9331,7 +9331,7 @@ msgstr "Ограничение числа планетарных шестерё�
 #. parameter name
 #: boxes/generators/planetary.py
 msgid "deltateeth"
-msgstr "deltateeth"
+msgstr "Включить второе кольцо с заданной разницей к основному"
 
 #. help for parameter deltateeth
 #: boxes/generators/planetary.py
@@ -9368,7 +9368,7 @@ msgstr "Настройки планетарной передачи 2"
 #. parameter name
 #: boxes/generators/planetary2.py
 msgid "profile"
-msgstr "profile"
+msgstr "Профиль зубьев/ремня"
 
 #. help for parameter profile
 #: boxes/generators/planetary2.py
@@ -9448,7 +9448,7 @@ msgstr "XL"
 #. parameter name
 #: boxes/generators/planetary2.py
 msgid "screw1"
-msgstr "screw1"
+msgstr "диаметр нижней части отверстия под винт"
 
 #. help for parameter screw1
 #: boxes/generators/planetary2.py
@@ -9458,7 +9458,7 @@ msgstr "диаметр нижней части отверстия под вин�
 #. parameter name
 #: boxes/generators/planetary2.py
 msgid "screw2"
-msgstr "screw2"
+msgstr "диаметр верхней части отверстия под винт"
 
 #. help for parameter screw2
 #: boxes/generators/planetary2.py
@@ -9468,7 +9468,7 @@ msgstr "диаметр верхней части отверстия под ви�
 #. parameter name
 #: boxes/generators/planetary2.py
 msgid "pinsize"
-msgstr "pinsize"
+msgstr "диаметр установочных штифтов"
 
 #. help for parameter pinsize
 #: boxes/generators/planetary2.py
@@ -9496,7 +9496,7 @@ msgstr "Настройки правильного многогранника"
 #. parameter name
 #: boxes/generators/platonic.py
 msgid "type"
-msgstr "type"
+msgstr "тип платонова тела"
 
 #. help for parameter type
 #: boxes/generators/platonic.py
@@ -9549,7 +9549,7 @@ msgstr "диаметр предмета для захвата"
 #. parameter name
 #: boxes/generators/polehook.py
 msgid "screw"
-msgstr "screw"
+msgstr "винт"
 
 #. help for parameter screw
 #: boxes/generators/polehook.py
@@ -9559,7 +9559,7 @@ msgstr "диаметр винта в мм"
 #. parameter name
 #: boxes/generators/polehook.py
 msgid "screwhead"
-msgstr "screwhead"
+msgstr "ширина головки винта"
 
 #. help for parameter screwhead
 #: boxes/generators/polehook.py
@@ -9569,7 +9569,7 @@ msgstr "ширина головки винта в мм"
 #. parameter name
 #: boxes/generators/polehook.py
 msgid "screwheadheight"
-msgstr "screwheadheight"
+msgstr "высота головки винта"
 
 #. help for parameter screwheadheight
 #: boxes/generators/polehook.py
@@ -9579,7 +9579,7 @@ msgstr "высота головки винта в мм"
 #. parameter name
 #: boxes/generators/polehook.py
 msgid "pin"
-msgstr "pin"
+msgstr "штифт"
 
 #. help for parameter pin
 #: boxes/generators/polehook.py
@@ -9602,7 +9602,7 @@ msgstr "Настройки шкива"
 #. parameter name
 #: boxes/generators/pulley.py
 msgid "teeth"
-msgstr "teeth"
+msgstr "зубья"
 
 #. help for parameter axle
 #: boxes/generators/pulley.py
@@ -9612,7 +9612,7 @@ msgstr "диаметр оси"
 #. parameter name
 #: boxes/generators/pulley.py
 msgid "insideout"
-msgstr "insideout"
+msgstr "наизнанку"
 
 #. help for parameter insideout
 #: boxes/generators/pulley.py
@@ -9671,7 +9671,7 @@ msgstr "Настройки Rack19HalfWidth"
 #. parameter name
 #: boxes/generators/rack19halfwidth.py
 msgid "ru_count"
-msgstr "ru_count"
+msgstr "количество юнитов стойки"
 
 #. help for parameter ru_count
 #: boxes/generators/rack19halfwidth.py
@@ -9693,7 +9693,7 @@ msgstr "глубина короткой стороны (крепежное ух�
 #. parameter name
 #: boxes/generators/rack19halfwidth.py
 msgid "deepz"
-msgstr "deepz"
+msgstr "глубина длинной стороны (прикручивается к другой половине)"
 
 #. help for parameter deepz
 #: boxes/generators/rack19halfwidth.py
@@ -9814,7 +9814,7 @@ msgstr "В"
 #. parameter name
 #: boxes/generators/rectangularWall.py
 msgid "right_edge"
-msgstr "right_edge"
+msgstr "правая кромка"
 
 #. help for parameter right_edge
 #: boxes/generators/rectangularWall.py
@@ -9824,7 +9824,7 @@ msgstr "тип кромки для правой стороны"
 #. parameter name
 #: boxes/generators/rectangularWall.py
 msgid "left_edge"
-msgstr "left_edge"
+msgstr "левая кромка"
 
 #. help for parameter left_edge
 #: boxes/generators/rectangularWall.py
@@ -9842,12 +9842,12 @@ msgstr "угол давления"
 #. parameter name for Gear
 #: boxes/generators/rectangularWall.py
 msgid "clearance"
-msgstr "clearance"
+msgstr "зазор"
 
 #. parameter name for Gear
 #: boxes/generators/rectangularWall.py
 msgid "dimension"
-msgstr "dimension"
+msgstr "размер"
 
 #. help for parameter dimension
 #: boxes/generators/rectangularWall.py
@@ -9918,7 +9918,7 @@ msgstr "Настройки RegularBox"
 #. parameter name
 #: boxes/generators/regularbox.py
 msgid "radius_bottom"
-msgstr "radius_bottom"
+msgstr "внутренний радиус дна коробки (по углам)"
 
 #. help for parameter radius_bottom
 #: boxes/generators/regularbox.py
@@ -9928,7 +9928,7 @@ msgstr "внутренний радиус дна коробки (по углам
 #. parameter name
 #: boxes/generators/regularbox.py
 msgid "radius_top"
-msgstr "radius_top"
+msgstr "внутренний радиус верха коробки (по углам)"
 
 #. help for parameter radius_top
 #: boxes/generators/regularbox.py
@@ -9999,7 +9999,7 @@ msgstr "Настройки роботизированной конечности
 #. parameter name
 #: boxes/generators/robotarm.py
 msgid "type1"
-msgstr "type1"
+msgstr "тип сегмента руки"
 
 #. help for parameter type1
 #: boxes/generators/robotarm.py
@@ -10034,7 +10034,7 @@ msgstr "RobotArmMu"
 #. parameter name
 #: boxes/generators/robotarm.py
 msgid "servo1a"
-msgstr "servo1a"
+msgstr "тип сервопривода"
 
 #. help for parameter servo1a
 #: boxes/generators/robotarm.py
@@ -10049,7 +10049,7 @@ msgstr "Servo9g"
 #. parameter name
 #: boxes/generators/robotarm.py
 msgid "servo1b"
-msgstr "servo1b"
+msgstr "тип сервопривода для второй стороны (если поддерживается)"
 
 #. help for parameter servo1b
 #: boxes/generators/robotarm.py
@@ -10059,7 +10059,7 @@ msgstr "тип сервопривода для второй стороны (ес
 #. parameter name
 #: boxes/generators/robotarm.py
 msgid "length1"
-msgstr "length1"
+msgstr "длина сегмента от оси до оси"
 
 #. help for parameter length1
 #: boxes/generators/robotarm.py
@@ -10069,82 +10069,82 @@ msgstr "длина сегмента от оси до оси"
 #. parameter name
 #: boxes/generators/robotarm.py
 msgid "type2"
-msgstr "type2"
+msgstr "тип второго сегмента"
 
 #. parameter name
 #: boxes/generators/robotarm.py
 msgid "servo2a"
-msgstr "servo2a"
+msgstr "тип второго сервопривода"
 
 #. parameter name
 #: boxes/generators/robotarm.py
 msgid "servo2b"
-msgstr "servo2b"
+msgstr "тип второго сервопривода для второй стороны"
 
 #. parameter name
 #: boxes/generators/robotarm.py
 msgid "length2"
-msgstr "length2"
+msgstr "длина второго сегмента"
 
 #. parameter name
 #: boxes/generators/robotarm.py
 msgid "type3"
-msgstr "type3"
+msgstr "тип третьего сегмента"
 
 #. parameter name
 #: boxes/generators/robotarm.py
 msgid "servo3a"
-msgstr "servo3a"
+msgstr "тип третьего сервопривода"
 
 #. parameter name
 #: boxes/generators/robotarm.py
 msgid "servo3b"
-msgstr "servo3b"
+msgstr "тип третьего сервопривода для второй стороны"
 
 #. parameter name
 #: boxes/generators/robotarm.py
 msgid "length3"
-msgstr "length3"
+msgstr "длина третьего сегмента"
 
 #. parameter name
 #: boxes/generators/robotarm.py
 msgid "type4"
-msgstr "type4"
+msgstr "тип четвертого сегмента"
 
 #. parameter name
 #: boxes/generators/robotarm.py
 msgid "servo4a"
-msgstr "servo4a"
+msgstr "тип четвертого сервопривода"
 
 #. parameter name
 #: boxes/generators/robotarm.py
 msgid "servo4b"
-msgstr "servo4b"
+msgstr "тип четвертого сервопривода для второй стороны"
 
 #. parameter name
 #: boxes/generators/robotarm.py
 msgid "length4"
-msgstr "length4"
+msgstr "длина четвертого сегмента"
 
 #. parameter name
 #: boxes/generators/robotarm.py
 msgid "type5"
-msgstr "type5"
+msgstr "тип пятого сегмента"
 
 #. parameter name
 #: boxes/generators/robotarm.py
 msgid "servo5a"
-msgstr "servo5a"
+msgstr "тип пятого сервопривода"
 
 #. parameter name
 #: boxes/generators/robotarm.py
 msgid "servo5b"
-msgstr "servo5b"
+msgstr "тип пятого сервопривода для второй стороны"
 
 #. parameter name
 #: boxes/generators/robotarm.py
 msgid "length5"
-msgstr "length5"
+msgstr "длина пятого сегмента"
 
 #. name of box generator
 #: boxes/generators/rollholder.py
@@ -10192,7 +10192,7 @@ msgstr "диаметр монтажных отверстий в мм"
 #. parameter name
 #: boxes/generators/rollholder.py
 msgid "one_piece"
-msgstr "one_piece"
+msgstr "единая деталь"
 
 #. help for parameter one_piece
 #: boxes/generators/rollholder.py
@@ -10220,7 +10220,7 @@ msgstr "внешний диаметр колес (включая O-кольца)
 #. parameter name
 #: boxes/generators/rotary.py
 msgid "rubberthickness"
-msgstr "rubberthickness"
+msgstr "толщина резины"
 
 #. help for parameter rubberthickness
 #: boxes/generators/rotary.py
@@ -10235,7 +10235,7 @@ msgstr "диаметр осей"
 #. parameter name
 #: boxes/generators/rotary.py
 msgid "knifethickness"
-msgstr "knifethickness"
+msgstr "толщина ножей в мм"
 
 #. help for parameter knifethickness
 #: boxes/generators/rotary.py
@@ -10245,7 +10245,7 @@ msgstr "толщина ножей в мм. Используйте 0 для ра�
 #. parameter name
 #: boxes/generators/rotary.py
 msgid "beamwidth"
-msgstr "beamwidth"
+msgstr "ширина профиля (алюминиевого)"
 
 #. help for parameter beamwidth
 #: boxes/generators/rotary.py
@@ -10255,7 +10255,7 @@ msgstr "ширина (алюминиевого) профиля, соединяю
 #. parameter name
 #: boxes/generators/rotary.py
 msgid "beamheight"
-msgstr "beamheight"
+msgstr "высота профиля (алюминиевого)"
 
 #. help for parameter beamheight
 #: boxes/generators/rotary.py
@@ -10299,7 +10299,7 @@ msgstr "Настройки скругленной коробки"
 #. parameter name
 #: boxes/generators/roundedbox.py
 msgid "wallpieces"
-msgstr "wallpieces"
+msgstr "количество частей внешней стенки"
 
 #. help for parameter wallpieces
 #: boxes/generators/roundedbox.py
@@ -10309,7 +10309,7 @@ msgstr "количество частей внешней стенки"
 #. parameter name
 #: boxes/generators/roundedbox.py
 msgid "edge_style"
-msgstr "edge_style"
+msgstr "тип кромки"
 
 #. help for parameter edge_style
 #: boxes/generators/roundedbox.py
@@ -10341,7 +10341,7 @@ msgstr "Настройки простой коробки с округления
 #. parameter name
 #: boxes/generators/roundedregularbox.py
 msgid "inner_size"
-msgstr "inner_size"
+msgstr "диаметр внутреннего круга в мм"
 
 #. help for parameter inner_size
 #: boxes/generators/roundedregularbox.py
@@ -10416,7 +10416,7 @@ msgstr "Настройки шаблона семисегментной цифр�
 #. parameter name
 #: boxes/generators/sevensegment.py
 msgid "digit"
-msgstr "digit"
+msgstr "цифра"
 
 #. help for parameter digit
 #: boxes/generators/sevensegment.py
@@ -10514,7 +10514,7 @@ msgstr "Настройки шэдоубокса"
 #. parameter name
 #: boxes/generators/shadowbox.py
 msgid "layers"
-msgstr "layers"
+msgstr "количество бумажных слоев"
 
 #. help for parameter layers
 #: boxes/generators/shadowbox.py
@@ -10524,7 +10524,7 @@ msgstr "количество бумажных слоев; не забудьте 
 #. parameter name
 #: boxes/generators/shadowbox.py
 msgid "framewidth"
-msgstr "framewidth"
+msgstr "ширина рамки слоя"
 
 #. help for parameter framewidth
 #: boxes/generators/shadowbox.py
@@ -10534,7 +10534,7 @@ msgstr "ширина рамки бумажного слоя"
 #. parameter name
 #: boxes/generators/shadowbox.py
 msgid "frameheight"
-msgstr "frameheight"
+msgstr "высота рамки слоя"
 
 #. help for parameter frameheight
 #: boxes/generators/shadowbox.py
@@ -10553,7 +10553,7 @@ msgstr ""
 #. parameter name
 #: boxes/generators/shadowbox.py
 msgid "casejoinery"
-msgstr "casejoinery"
+msgstr "соединение корпуса"
 
 #. help for parameter casejoinery
 #: boxes/generators/shadowbox.py
@@ -10610,7 +10610,7 @@ msgstr "высота сзади ботинка"
 #. parameter name
 #: boxes/generators/shoe.py
 msgid "frontheight"
-msgstr "frontheight"
+msgstr "высота спереди ботинка"
 
 #. help for parameter frontheight
 #: boxes/generators/shoe.py
@@ -10620,7 +10620,7 @@ msgstr "высота спереди ботинка"
 #. parameter name
 #: boxes/generators/shoe.py
 msgid "fronttop"
-msgstr "fronttop"
+msgstr "длина плоской части спереди ботинка"
 
 #. help for parameter fronttop
 #: boxes/generators/shoe.py
@@ -10630,7 +10630,7 @@ msgstr "длина плоской части спереди ботинка"
 #. parameter name
 #: boxes/generators/shoe.py
 msgid "tophole"
-msgstr "tophole"
+msgstr "длина отверстия сверху"
 
 #. help for parameter tophole
 #: boxes/generators/shoe.py
@@ -10761,7 +10761,7 @@ msgstr "Настройки корпуса с сервисными люками"
 #. parameter name
 #: boxes/generators/sidedoorhousing.py
 msgid "double_door"
-msgstr "double_door"
+msgstr "двойная дверь"
 
 #. help for parameter double_door
 #: boxes/generators/sidedoorhousing.py
@@ -10816,7 +10816,7 @@ msgstr "зазор между двумя сторонами в кратных т
 #. parameter name
 #: boxes/generators/sidehingebox.py
 msgid "hinge_center"
-msgstr "hinge_center"
+msgstr "центр петли"
 
 #. help for parameter hinge_center
 #: boxes/generators/sidehingebox.py
@@ -10826,7 +10826,7 @@ msgstr "расстояние от центра петли до соседних 
 #. parameter name
 #: boxes/generators/sidehingebox.py
 msgid "hinge_radius"
-msgstr "hinge_radius"
+msgstr "радиус петли"
 
 #. help for parameter hinge_radius
 #: boxes/generators/sidehingebox.py
@@ -10836,7 +10836,7 @@ msgstr "радиус внутреннего круга петли"
 #. parameter name
 #: boxes/generators/sidehingebox.py
 msgid "cherrymx_latches"
-msgstr "cherrymx_latches"
+msgstr "защёлки Cherry MX"
 
 #. help for parameter cherrymx_latches
 #: boxes/generators/sidehingebox.py
@@ -10869,7 +10869,7 @@ msgstr "Настройки подставки для столовых прибо
 #. parameter name
 #: boxes/generators/silverwarebox.py
 msgid "cornerradius"
-msgstr "cornerradius"
+msgstr "радиус скругления углов"
 
 #. help for parameter cornerradius
 #: boxes/generators/silverwarebox.py
@@ -10879,7 +10879,7 @@ msgstr "Радиус углов"
 #. parameter name
 #: boxes/generators/silverwarebox.py
 msgid "handleheight"
-msgstr "handleheight"
+msgstr "высота ручки"
 
 #. help for parameter handleheight
 #: boxes/generators/silverwarebox.py
@@ -10889,7 +10889,7 @@ msgstr "Высота ручки"
 #. parameter name
 #: boxes/generators/silverwarebox.py
 msgid "handlewidth"
-msgstr "handlewidth"
+msgstr "ширина ручки"
 
 #. help for parameter handlewidth
 #: boxes/generators/silverwarebox.py
@@ -11030,7 +11030,7 @@ msgstr "Настройки коробки с раздвижной крышкой
 #. parameter name
 #: boxes/generators/slidinglidbox.py
 msgid "rail"
-msgstr "rail"
+msgstr "направляющая"
 
 #. help for parameter rail
 #: boxes/generators/slidinglidbox.py
@@ -11040,7 +11040,7 @@ msgstr "ширина направляющей (в кратных толщине)
 #. parameter name
 #: boxes/generators/slidinglidbox.py
 msgid "lid_type"
-msgstr "lid_type"
+msgstr "тип крышки"
 
 #. help for parameter lid_type
 #: boxes/generators/slidinglidbox.py
@@ -11050,7 +11050,7 @@ msgstr "добавить отверстие для захвата в крышк�
 #. parameter name
 #: boxes/generators/slidinglidbox.py
 msgid "hole_length"
-msgstr "hole_length"
+msgstr "длина отверстия для захвата"
 
 #. help for parameter hole_length
 #: boxes/generators/slidinglidbox.py
@@ -11065,7 +11065,7 @@ msgstr "ширина отверстия для захвата в мм"
 #. parameter name
 #: boxes/generators/slidinglidbox.py
 msgid "hole_radius"
-msgstr "hole_radius"
+msgstr "радиус отверстия"
 
 #. name of box generator
 #: boxes/generators/smallpartstray.py
@@ -11088,7 +11088,7 @@ msgstr "угол наклонных стенок"
 #. parameter name
 #: boxes/generators/smallpartstray.py
 msgid "rampheight"
-msgstr "rampheight"
+msgstr "высота наклонных стенок"
 
 #. help for parameter rampheight
 #: boxes/generators/smallpartstray.py
@@ -11098,7 +11098,7 @@ msgstr "высота наклонных стенок относительно о
 #. parameter name
 #: boxes/generators/smallpartstray.py
 msgid "two_sided"
-msgstr "two_sided"
+msgstr "двусторонний"
 
 #. help for parameter two_sided
 #: boxes/generators/smallpartstray.py
@@ -11108,7 +11108,7 @@ msgstr "наклонные стенки с обеих сторон. Позвол
 #. parameter name
 #: boxes/generators/smallpartstray.py
 msgid "front_panel"
-msgstr "front_panel"
+msgstr "передняя панель"
 
 #. help for parameter front_panel
 #: boxes/generators/smallpartstray.py
@@ -11180,7 +11180,7 @@ msgstr "расстояние между банками"
 #. parameter name
 #: boxes/generators/spicesrack.py
 msgid "numx"
-msgstr "numx"
+msgstr "количество банок в ряду"
 
 #. help for parameter numx
 #: boxes/generators/spicesrack.py
@@ -11190,7 +11190,7 @@ msgstr "количество банок в ряду"
 #. parameter name
 #: boxes/generators/spicesrack.py
 msgid "numy"
-msgstr "numy"
+msgstr "количество банок в колонке"
 
 #. help for parameter numy
 #: boxes/generators/spicesrack.py
@@ -11200,7 +11200,7 @@ msgstr "количество банок в колонке"
 #. parameter name
 #: boxes/generators/spicesrack.py
 msgid "in_place_supports"
-msgstr "in_place_supports"
+msgstr "вставные опоры"
 
 #. help for parameter in_place_supports
 #: boxes/generators/spicesrack.py
@@ -11233,7 +11233,7 @@ msgstr "диаметр отверстия для оси (ось не входи�
 #. parameter name
 #: boxes/generators/spool.py
 msgid "reinforcements"
-msgstr "reinforcements"
+msgstr "усиления"
 
 #. help for parameter reinforcements
 #: boxes/generators/spool.py
@@ -11243,7 +11243,7 @@ msgstr "количество рёбер жёсткости на сторону"
 #. parameter name
 #: boxes/generators/spool.py
 msgid "reinforcement_height"
-msgstr "reinforcement_height"
+msgstr "высота рёбер жёсткости"
 
 #. help for parameter reinforcement_height
 #: boxes/generators/spool.py
@@ -11266,7 +11266,7 @@ msgstr "Настройки штыря для басового блокфлейт
 #. parameter name
 #: boxes/generators/stachel.py
 msgid "flutediameter"
-msgstr "flutediameter"
+msgstr "диаметр нижней части блокфлейты"
 
 #. help for parameter flutediameter
 #: boxes/generators/stachel.py
@@ -11276,7 +11276,7 @@ msgstr "диаметр нижней части блокфлейты в мм"
 #. parameter name
 #: boxes/generators/stachel.py
 msgid "polediameter"
-msgstr "polediameter"
+msgstr "диаметр штыря"
 
 #. help for parameter polediameter
 #: boxes/generators/stachel.py
@@ -11286,7 +11286,7 @@ msgstr "диаметр штыря в мм"
 #. parameter name
 #: boxes/generators/stachel.py
 msgid "wall"
-msgstr "wall"
+msgstr "стенка"
 
 #. help for parameter wall
 #: boxes/generators/stachel.py
@@ -11369,7 +11369,7 @@ msgstr "Настройки полки для хранения"
 #. parameter name
 #: boxes/generators/storageshelf.py
 msgid "retainer"
-msgstr "retainer"
+msgstr "ограничитель"
 
 #. help for parameter retainer
 #: boxes/generators/storageshelf.py
@@ -11379,7 +11379,7 @@ msgstr "высота ограничительной стенки на перед
 #. parameter name
 #: boxes/generators/storageshelf.py
 msgid "retainer_hole_edge"
-msgstr "retainer_hole_edge"
+msgstr "отверстие для пальца на ограничителе"
 
 #. help for parameter retainer_hole_edge
 #: boxes/generators/storageshelf.py
@@ -11402,7 +11402,7 @@ msgstr "Настройки тетрис-фигуры"
 #. parameter name
 #: boxes/generators/tetris.py
 msgid "blocksize"
-msgstr "blocksize"
+msgstr "размер блока"
 
 #. help for parameter blocksize
 #: boxes/generators/tetris.py
@@ -11452,7 +11452,7 @@ msgstr "внутренняя глубина без учёта козырьков
 #. parameter name
 #: boxes/generators/trafficlight.py
 msgid "shades"
-msgstr "shades"
+msgstr "козырьки"
 
 #. help for parameter shades
 #: boxes/generators/trafficlight.py
@@ -11467,7 +11467,7 @@ msgstr "количество ламп"
 #. parameter name
 #: boxes/generators/trafficlight.py
 msgid "upright"
-msgstr "upright"
+msgstr "вертикальное расположение"
 
 #. help for parameter upright
 #: boxes/generators/trafficlight.py
@@ -11580,7 +11580,7 @@ msgstr "Настройки треугольной лампы"
 #. parameter name
 #: boxes/generators/trianglelamp.py
 msgid "cornersize"
-msgstr "cornersize"
+msgstr "размер угла"
 
 #. help for parameter cornersize
 #: boxes/generators/trianglelamp.py
@@ -11590,7 +11590,7 @@ msgstr "короткая сторона угловых треугольнико�
 #. parameter name
 #: boxes/generators/trianglelamp.py
 msgid "screenholesize"
-msgstr "screenholesize"
+msgstr "диаметр отверстий в экране"
 
 #. help for parameter screenholesize
 #: boxes/generators/trianglelamp.py
@@ -11600,7 +11600,7 @@ msgstr "диаметр отверстий в экране"
 #. parameter name
 #: boxes/generators/trianglelamp.py
 msgid "screwholesize"
-msgstr "screwholesize"
+msgstr "диаметр отверстий в дереве"
 
 #. help for parameter screwholesize
 #: boxes/generators/trianglelamp.py
@@ -11610,7 +11610,7 @@ msgstr "диаметр отверстий в дереве"
 #. parameter name
 #: boxes/generators/trianglelamp.py
 msgid "sharpcorners"
-msgstr "sharpcorners"
+msgstr "острые углы"
 
 #. help for parameter sharpcorners
 #: boxes/generators/trianglelamp.py
@@ -11685,7 +11685,7 @@ msgstr "Настройки коробки с разной высотой в ка
 #. parameter name
 #: boxes/generators/unevenheightbox.py
 msgid "height0"
-msgstr "height0"
+msgstr "высота0"
 
 #. help for parameter height0
 #: boxes/generators/unevenheightbox.py
@@ -11695,7 +11695,7 @@ msgstr "высота переднего левого угла в мм"
 #. parameter name
 #: boxes/generators/unevenheightbox.py
 msgid "height1"
-msgstr "height1"
+msgstr "высота1"
 
 #. help for parameter height1
 #: boxes/generators/unevenheightbox.py
@@ -11705,7 +11705,7 @@ msgstr "высота переднего правого угла в мм"
 #. parameter name
 #: boxes/generators/unevenheightbox.py
 msgid "height2"
-msgstr "height2"
+msgstr "высота2"
 
 #. help for parameter height2
 #: boxes/generators/unevenheightbox.py
@@ -11715,7 +11715,7 @@ msgstr "высота заднего правого угла в мм"
 #. parameter name
 #: boxes/generators/unevenheightbox.py
 msgid "height3"
-msgstr "height3"
+msgstr "высота3"
 
 #. help for parameter height3
 #: boxes/generators/unevenheightbox.py
@@ -11725,7 +11725,7 @@ msgstr "высота заднего левого угла в мм"
 #. parameter name
 #: boxes/generators/unevenheightbox.py
 msgid "add_lid"
-msgstr "add_lid"
+msgstr "добавить крышку"
 
 #. help for parameter add_lid
 #: boxes/generators/unevenheightbox.py
@@ -11740,7 +11740,7 @@ msgstr "дополнительная высота крышки"
 #. parameter name
 #: boxes/generators/unevenheightbox.py
 msgid "edge_types"
-msgstr "edge_types"
+msgstr "типы кромок"
 
 #. help for parameter edge_types
 #: boxes/generators/unevenheightbox.py
@@ -11765,7 +11765,7 @@ msgstr "Настройки универсальной коробки"
 #. parameter name
 #: boxes/generators/universalbox.py
 msgid "vertical_edges"
-msgstr "vertical_edges"
+msgstr "вертикальные кромки"
 
 #. help for parameter vertical_edges
 #: boxes/generators/universalbox.py
@@ -11798,7 +11798,7 @@ msgstr "Настройки держателя для штангенциркул�
 #. parameter name
 #: boxes/generators/wallcaliperholder.py
 msgid "walltype"
-msgstr "walltype"
+msgstr "тип стены"
 
 #. help for parameter walltype
 #: boxes/generators/wallcaliperholder.py
@@ -11854,7 +11854,7 @@ msgstr "Настройки для реечных кромок стены"
 #. parameter name for SlatWall
 #: boxes/generators/wallcaliperholder.py
 msgid "bottom_hook"
-msgstr "bottom_hook"
+msgstr "нижний крюк"
 
 #. help for parameter bottom_hook
 #: boxes/generators/wallcaliperholder.py
@@ -11874,7 +11874,7 @@ msgstr "штифт"
 #. parameter name for SlatWall
 #: boxes/generators/wallcaliperholder.py
 msgid "hook_depth"
-msgstr "hook_depth"
+msgstr "глубина крюка"
 
 #. help for parameter hook_depth
 #: boxes/generators/wallcaliperholder.py
@@ -11894,7 +11894,7 @@ msgstr "высота горизонтальной перекладины крю�
 #. parameter name for SlatWall
 #: boxes/generators/wallcaliperholder.py
 msgid "hook_overall_height"
-msgstr "hook_overall_height"
+msgstr "высота крючка сверху вниз"
 
 #. help for parameter hook_overall_height
 #: boxes/generators/wallcaliperholder.py
@@ -11909,7 +11909,7 @@ msgstr "вертикальное расстояние между центрам�
 #. parameter name for SlatWall
 #: boxes/generators/wallcaliperholder.py
 msgid "hook_extra_height"
-msgstr "hook_extra_height"
+msgstr "дополнительная высота крючка"
 
 #. help for parameter hook_extra_height
 #: boxes/generators/wallcaliperholder.py
@@ -11957,7 +11957,7 @@ msgstr "Настройки SkadisEdges"
 #. parameter name for Skadis
 #: boxes/generators/wallcaliperholder.py
 msgid "board_thickness"
-msgstr "board_thickness"
+msgstr "толщина доски"
 
 #. help for parameter board_thickness
 #: boxes/generators/wallcaliperholder.py
@@ -11995,7 +11995,7 @@ msgstr "Настройки держателя для стамесок"
 #. parameter name
 #: boxes/generators/wallchiselholder.py
 msgid "tooldiameter"
-msgstr "tooldiameter"
+msgstr "диаметр инструмента с учетом захвата"
 
 #. help for parameter tooldiameter
 #: boxes/generators/wallchiselholder.py
@@ -12005,7 +12005,7 @@ msgstr "диаметр инструмента с учетом пространс
 #. parameter name
 #: boxes/generators/wallchiselholder.py
 msgid "holediameter"
-msgstr "holediameter"
+msgstr "диаметр отверстия"
 
 #. help for parameter holediameter
 #: boxes/generators/wallchiselholder.py
@@ -12015,7 +12015,7 @@ msgstr "диаметр отверстия для инструмента (руч�
 #. parameter name
 #: boxes/generators/wallchiselholder.py
 msgid "slot_width"
-msgstr "slot_width"
+msgstr "ширина паза"
 
 #. help for parameter slot_width
 #: boxes/generators/wallchiselholder.py
@@ -12068,7 +12068,7 @@ msgstr "Настройки консоли для стены"
 #. parameter name
 #: boxes/generators/wallconsole.py
 msgid "top_depth"
-msgstr "top_depth"
+msgstr "глубина сверху"
 
 #. help for parameter top_depth
 #: boxes/generators/wallconsole.py
@@ -12078,7 +12078,7 @@ msgstr "глубина в верхней части"
 #. parameter name
 #: boxes/generators/wallconsole.py
 msgid "bottom_depth"
-msgstr "bottom_depth"
+msgstr "глубина снизу"
 
 #. help for parameter bottom_depth
 #: boxes/generators/wallconsole.py
@@ -12144,7 +12144,7 @@ msgstr "Настройки настенного хранилища"
 #. parameter name
 #: boxes/generators/wallhopper.py
 msgid "hopper_depth"
-msgstr "hopper_depth"
+msgstr "глубина бункера"
 
 #. help for parameter hopper_depth
 #: boxes/generators/wallhopper.py
@@ -12154,7 +12154,7 @@ msgstr "глубина бункера"
 #. parameter name
 #: boxes/generators/wallhopper.py
 msgid "dispenser_depth"
-msgstr "dispenser_depth"
+msgstr "глубина лотка"
 
 #. help for parameter dispenser_depth
 #: boxes/generators/wallhopper.py
@@ -12164,7 +12164,7 @@ msgstr "глубина лотка"
 #. parameter name
 #: boxes/generators/wallhopper.py
 msgid "dispenser_height"
-msgstr "dispenser_height"
+msgstr "высота лотка"
 
 #. help for parameter dispenser_height
 #: boxes/generators/wallhopper.py
@@ -12174,7 +12174,7 @@ msgstr "высота лотка"
 #. parameter name
 #: boxes/generators/wallhopper.py
 msgid "slope_ratio"
-msgstr "slope_ratio"
+msgstr "доля наклона дна лотка"
 
 #. help for parameter slope_ratio
 #: boxes/generators/wallhopper.py
@@ -12184,7 +12184,7 @@ msgstr "Доля наклона дна лотка"
 #. parameter name
 #: boxes/generators/wallhopper.py
 msgid "slope_angle"
-msgstr "slope_angle"
+msgstr "угол наклона дна лотка"
 
 #. help for parameter slope_angle
 #: boxes/generators/wallhopper.py
@@ -12199,7 +12199,7 @@ msgstr "включить область для этикетки спереди"
 #. parameter name
 #: boxes/generators/wallhopper.py
 msgid "label_ratio"
-msgstr "label_ratio"
+msgstr "доля этикетки"
 
 #. help for parameter label_ratio
 #: boxes/generators/wallhopper.py
@@ -12217,7 +12217,7 @@ msgstr "Настройки ряда штифтов на стену"
 #. parameter name
 #: boxes/generators/wallpinrow.py
 msgid "pins"
-msgstr "pins"
+msgstr "штифты"
 
 #. help for parameter pins
 #: boxes/generators/wallpinrow.py
@@ -12227,7 +12227,7 @@ msgstr "количество штифтов"
 #. parameter name
 #: boxes/generators/wallpinrow.py
 msgid "pinlength"
-msgstr "pinlength"
+msgstr "длина штифта"
 
 #. help for parameter pinlength
 #: boxes/generators/wallpinrow.py
@@ -12242,7 +12242,7 @@ msgstr "ширина штифтов (мм)"
 #. parameter name
 #: boxes/generators/wallpinrow.py
 msgid "pinspacing"
-msgstr "pinspacing"
+msgstr "расстояние между штифтами"
 
 #. help for parameter pinspacing
 #: boxes/generators/wallpinrow.py
@@ -12252,7 +12252,7 @@ msgstr "расстояние между центрами штифтов (мм)"
 #. parameter name
 #: boxes/generators/wallpinrow.py
 msgid "pinspacing_increment"
-msgstr "pinspacing_increment"
+msgstr "увеличение расстояния между штифтами"
 
 #. help for parameter pinspacing_increment
 #: boxes/generators/wallpinrow.py
@@ -12302,7 +12302,7 @@ msgstr "длина рубанка"
 #. parameter name
 #: boxes/generators/wallplaneholder.py
 msgid "hold_length"
-msgstr "hold_length"
+msgstr "длина держателя"
 
 #. help for parameter hold_length
 #: boxes/generators/wallplaneholder.py
@@ -12348,7 +12348,7 @@ msgstr "Настройки настенной полки"
 #. parameter name
 #: boxes/generators/wallrack.py
 msgid "full_height_top"
-msgstr "full_height_top"
+msgstr "полная высота верхней полки"
 
 #. help for parameter full_height_top
 #: boxes/generators/wallrack.py
@@ -12358,7 +12358,7 @@ msgstr "Добавить полную высоту верхней полки к 
 #. parameter name
 #: boxes/generators/wallrack.py
 msgid "wall_height"
-msgstr "wall_height"
+msgstr "высота стенок"
 
 #. help for parameter wall_height
 #: boxes/generators/wallrack.py
@@ -12373,7 +12373,7 @@ msgstr "высота задней стенки как доля передней"
 #. parameter name
 #: boxes/generators/wallrack.py
 msgid "side_edges"
-msgstr "side_edges"
+msgstr "тип кромки для соединения полок"
 
 #. help for parameter side_edges
 #: boxes/generators/wallrack.py
@@ -12383,7 +12383,7 @@ msgstr "тип кромки для соединения полок"
 #. parameter name
 #: boxes/generators/wallrack.py
 msgid "flat_bottom"
-msgstr "flat_bottom"
+msgstr "плоское дно"
 
 #. help for parameter flat_bottom
 #: boxes/generators/wallrack.py
@@ -12414,7 +12414,7 @@ msgstr "Настройки держателя инструментов"
 #. parameter name
 #: boxes/generators/wallslottedholder.py
 msgid "slot_depth"
-msgstr "slot_depth"
+msgstr "глубина паза"
 
 #. help for parameter slot_depth
 #: boxes/generators/wallslottedholder.py
@@ -12424,7 +12424,7 @@ msgstr "глубина пазов от передней части"
 #. parameter name
 #: boxes/generators/wallslottedholder.py
 msgid "additional_depth"
-msgstr "additional_depth"
+msgstr "дополнительная глубина"
 
 #. help for parameter additional_depth
 #: boxes/generators/wallslottedholder.py
@@ -12434,7 +12434,7 @@ msgstr "глубина за пазами"
 #. parameter name
 #: boxes/generators/wallslottedholder.py
 msgid "tool_width"
-msgstr "tool_width"
+msgstr "ширина инструмента"
 
 #. help for parameter tool_width
 #: boxes/generators/wallslottedholder.py
@@ -12510,7 +12510,7 @@ msgstr "угол наклона дна"
 #. parameter name
 #: boxes/generators/wallstackablebin.py
 msgid "label_height"
-msgstr "label_height"
+msgstr "высота этикетки"
 
 #. help for parameter label_height
 #: boxes/generators/wallstackablebin.py
@@ -12550,7 +12550,7 @@ msgstr "Настройки настенныой ступени для инстр
 #. parameter name
 #: boxes/generators/wallstairs.py
 msgid "braceheight"
-msgstr "braceheight"
+msgstr "высота распорки"
 
 #. help for parameter braceheight
 #: boxes/generators/wallstairs.py
@@ -12601,7 +12601,7 @@ msgstr "количество ключей (мм)"
 #. parameter name
 #: boxes/generators/wallwrenchholder.py
 msgid "min_width"
-msgstr "min_width"
+msgstr "минимальная ширина"
 
 #. help for parameter min_width
 #: boxes/generators/wallwrenchholder.py
@@ -12611,7 +12611,7 @@ msgstr "ширина самого маленького ключа (мм)"
 #. parameter name
 #: boxes/generators/wallwrenchholder.py
 msgid "max_width"
-msgstr "max_width"
+msgstr "максимальная ширина"
 
 #. help for parameter max_width
 #: boxes/generators/wallwrenchholder.py
@@ -12621,7 +12621,7 @@ msgstr "ширина самого большого ключа (мм)"
 #. parameter name
 #: boxes/generators/wallwrenchholder.py
 msgid "min_strength"
-msgstr "min_strength"
+msgstr "минимальная толщина"
 
 #. help for parameter min_strength
 #: boxes/generators/wallwrenchholder.py
@@ -12631,7 +12631,7 @@ msgstr "толщина самого маленького ключа (мм)"
 #. parameter name
 #: boxes/generators/wallwrenchholder.py
 msgid "max_strength"
-msgstr "max_strength"
+msgstr "максимальная толщина"
 
 #. help for parameter max_strength
 #: boxes/generators/wallwrenchholder.py
@@ -12641,7 +12641,7 @@ msgstr "толщина самого большого ключа (мм)"
 #. parameter name
 #: boxes/generators/wallwrenchholder.py
 msgid "extra_distance"
-msgstr "extra_distance"
+msgstr "дополнительное расстояние"
 
 #. help for parameter extra_distance
 #: boxes/generators/wallwrenchholder.py
@@ -12659,7 +12659,7 @@ msgstr "Настройки волнистой ручки"
 #. parameter name
 #: boxes/generators/wavyknob.py
 msgid "serrationangle"
-msgstr "serrationangle"
+msgstr "угол зазубрин"
 
 #. help for parameter serrationangle
 #: boxes/generators/wavyknob.py
@@ -12687,7 +12687,7 @@ msgstr "радиус соты"
 #. parameter name
 #: boxes/generators/winerack.py
 msgid "walls"
-msgstr "walls"
+msgstr "стенки"
 
 #. help for parameter walls
 #: boxes/generators/winerack.py
@@ -12733,7 +12733,7 @@ msgstr "Настройки Z-образной балки"
 #. parameter name
 #: boxes/generators/zbeam.py
 msgid "flanged_ubeam"
-msgstr "flanged_ubeam"
+msgstr "фланцевый U-образный профиль"
 
 #. help for parameter flanged_ubeam
 #: boxes/generators/zbeam.py

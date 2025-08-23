@@ -2,7 +2,7 @@
     <div class="_page-container">
       <!--lolboxes-->
       <div class="custom-header">
-        <h2 class="custom-header__text">Использование Boxes.py<a class="headerlink" href="#using-boxes-py" title="Ссылка на этот заголовок">¶</a></h2>
+        <h2 class="custom-header__text">Использование Boxes.py<a class="headerlink" href="#using-boxes-py">¶</a></h2>
         <div class="custom-header__line"></div>
       </div>
       <p>Boxes.py состоит из множества генераторов — каждый из которых имеет свой набор параметров и создает чертеж для своего типа объекта. Эти генераторы разделены на разные группы, чтобы их было легче найти:</p>
@@ -18,43 +18,42 @@
       <p>Параметры для каждого генератора также сгруппированы.</p>
       <section id="units-of-measurements">
         <div class="custom-header">
-          <h2 class="custom-header__text">Единицы измерения<a class="headerlink" href="#units-of-measurements" title="Ссылка на этот заголовок">¶</a></h2>
+          <h2 class="custom-header__text">Единицы измерения<a class="headerlink" href="#units-of-measurements">¶</a></h2>
           <div class="custom-header__line"></div>
         </div>
         <p>В целом все размеры указаны в миллиметрах (мм). Нет возможности изменить единицы измерения, и не планируется добавлять такую опцию.</p>
-        <!--не понимаю этого предложения, что за элементы могут зависить зависят от толщины? мне бы пример-->
-        <p>Второй способ задать длины — как кратные толщине материала, которая является одним из стандартных параметров, описанных ниже. Это позволяет сохранять пропорции элементов даже если некоторые части зависят от толщины материала.</p>
-        <p>В описаниях большинства параметров должна быть указана единица измерения каждого аргумента.</p>
+        <p>Некоторые длины можно задать кратно толщине материала. Толщина материала - это один из стандартных параметров, описанных ниже. Это позволяет сохранять пропорции элементов даже если некоторые части зависят от толщины материала.</p>
+        <p>В описаниях большинства параметров указана единица измерения.</p>
       </section>
       <section id="default-arguments">
         <span id="default-args"></span>
         <div class="custom-header">
-          <h2 class="custom-header__text">Параметры по умолчанию<a class="headerlink" href="#default-arguments" title="Ссылка на этот заголовок">¶</a></h2>
+          <h2 class="custom-header__text">Параметры по умолчанию<a class="headerlink" href="#default-arguments">¶</a></h2>
           <div class="custom-header__line"></div>
         </div>
         <p>В веб-интерфейсе это нижняя группа прямо перед кнопкой <code><span>Сгенерировать</span></code>. Это в основном все технические настройки, которые мало связаны с объектом, который генерируется, но больше с используемым материалом и способом обработки чертежа и материала.</p>
         <p>Настройки:</p>
         <section id="thickness">
           <div class="custom-header">
-            <h3 class="custom-header__text">thickness (толщина)<a class="headerlink" href="#thickness" title="Ссылка на этот заголовок">¶</a></h3>
+            <h3 class="custom-header__text">Толщина (thickness)<a class="headerlink" href="#thickness">¶</a></h3>
             <div class="custom-header__line"></div>
           </div>
           <p>Толщина используемого материала. Это значение используется во многих местах для определения размеров таких элементов, как шиповые соединения, петли и т.д. Очень важно правильно указать это значение — особенно если есть шипы, которые должны входить в отверстия. Имейте в виду, что многие материалы могут отличаться от номинального значения. Вы должны <strong>всегда измерять толщину</strong> каждого листа, если только у вас нет очень надежного поставщика, который строго придерживается спецификаций. Для дерева (фанеры) даже сотая доля миллиметра может заметно повлиять на плотность посадки. Более твердые и хрупкие материалы могут быть еще более чувствительны.</p>
         </section>
         <section id="burn">
           <div class="custom-header">
-            <h3 class="custom-header__text">burn (прожигание)<a class="headerlink" href="#burn" title="Ссылка на этот заголовок">¶</a></h3>
+            <h3 class="custom-header__text">Радиус прожига (burn)<a class="headerlink" href="#burn">¶</a></h3>
             <div class="custom-header__line"></div>
           </div>
-          <p>Коррекция прожига, также известная как "пропил", — это расстояние, которое лазер должен держать от края деталей. Если бы лазер резал прямо по краю, он бы срезал внешнюю часть детали. Таким образом, значение burn — это по сути радиус лазера или половина ширины лазерного реза.</p>
-          <p>Значение параметра burn зависит от вашего лазерного резака, материала и толщины материала. Кроме того, это зависит от того, хотите ли вы, чтобы детали были чуть больше или меньше. Мягкие материалы, такие как дерево, можно резать с большим значением burn (больше прожига), чтобы детали можно было плотно вставить с усилием и, возможно, собрать без клея. Хрупкие материалы (например, акрил) нужно резать с меньшим значением burn, чтобы оставить зазор для клея.</p>
+          <p>Коррекция прожига, также известная как "радиус прожига", — это расстояние, на котором должен держаться лазер от края детали. Если бы лазер резал прямо по краю, он бы срезал внешнюю часть детали. Таким образом, значение burn — это по сути радиус лазера или половина ширины лазерного реза.</p>
+          <p>Значение параметра burn зависит от вашего излучателя, материала и толщины материала. Кроме того, это зависит от того, хотите ли вы, чтобы детали были чуть больше или меньше. Мягкие материалы, такие как дерево, можно резать с большим значением burn (дальше отодвинуть луч от детали), чтобы детали можно было плотно вставить с усилием и, возможно, собрать без клея. Хрупкие материалы (например, акрил) нужно резать с меньшим значением burn, чтобы оставить зазор для клея.</p>
           <p><strong>Примечание:</strong> Работа параметра burn немного неинтуитивна. Большие значения burn делают посадку плотнее. Меньшие значения делают посадку свободнее.</p>
           <p>Небольшие изменения параметра burn могут существенно повлиять на результат. Типичные шаги для регулировки — 0,01 или даже 0,005 мм, чтобы выбрать нужное усилие для соединения фанеры.</p>
           <p>Чтобы подобрать правильное значение burn, вырежьте прямоугольник и измерьте, насколько он меньше номинального размера. Значение burn должно быть примерно половиной этой разницы. Чтобы протестировать несколько значений одновременно, вы можете использовать генератор <strong>Тест прожига</strong> в разделе «Детали и образцы».</p>
         </section>
         <section id="format">
           <div class="custom-header">
-            <h3 class="custom-header__text">format (формат)<a class="headerlink" href="#format" title="Ссылка на этот заголовок">¶</a></h3>
+            <h3 class="custom-header__text">Формат (format)<a class="headerlink" href="#format">¶</a></h3>
             <div class="custom-header__line"></div>
           </div>
           <p>Boxes.py может создавать файлы в нескольких форматах:</p>
@@ -67,15 +66,15 @@
         </section>
         <section id="tabs">
           <div class="custom-header">
-            <h3 class="custom-header__text">tabs (перемычки)<a class="headerlink" href="#tabs" title="Ссылка на этот заголовок">¶</a></h3>
+            <h3 class="custom-header__text">Перемычки (tabs)<a class="headerlink" href="#tabs">¶</a></h3>
             <div class="custom-header__line"></div>
           </div>
-          <p>Перемычки — это небольшие мостики между деталями и окружающим материалом, которые не дают детали выпасть. В теории их ширина должна зависеть от параметра выжигания. Но практичнее иметь их независимыми, чтобы вы могли настраивать их отдельно. Большинство деталей и генераторов поддерживают эту функцию, но некоторые могут не поддерживать.</p>
-          <p>Для фанеры значения 0,2–0,3 мм позволяют извлекать детали вручную (в зависимости от вашего лазерного резака и материала). При большем значении потребуется нож для отделения деталей.</p>
+          <p>Перемычки — это небольшие мостики между деталями и окружающим материалом, которые не дают детали выпасть. В теории их ширина должна зависеть от радиуса прожига. Но практичнее иметь их независимыми, чтобы вы могли настраивать их отдельно. Большинство деталей и генераторов поддерживают эту функцию, но некоторые могут не поддерживать.</p>
+          <p>Для фанеры значения 0,2–0,3 мм позволяют извлекать детали вручную (в зависимости от вашего излучателя и материала). При большем значении потребуется нож для отделения деталей.</p>
         </section>
         <section id="inner-corners">
           <div class="custom-header">
-            <h3 class="custom-header__text">inner_corners (внутренние углы)<a class="headerlink" href="#inner-corners" title="Ссылка на этот заголовок">¶</a></h3>
+            <h3 class="custom-header__text">Внутренние углы (inner_corners)<a class="headerlink" href="#inner-corners">¶</a></h3>
             <div class="custom-header__line"></div>
           </div>
           <p>Как обрабатывать внутренние углы. Внутренние углы — это проблема, так как круглый инструмент, такой как лазер или фреза, не может сделать острый внутренний угол. Есть разные варианты:</p>
@@ -87,7 +86,7 @@
         </section>
         <section id="debug">
           <div class="custom-header">
-            <h3 class="custom-header__text">debug (отладка)<a class="headerlink" href="#debug" title="Ссылка на этот заголовок">¶</a></h3>
+            <h3 class="custom-header__text">Отладка (debug)<a class="headerlink" href="#debug">¶</a></h3>
             <div class="custom-header__line"></div>
           </div>
           <p>Большинству обычных пользователей эта опция не нужна.</p>
@@ -95,7 +94,7 @@
         </section>
         <section id="reference">
           <div class="custom-header">
-            <h3 class="custom-header__text">reference (эталон)<a class="headerlink" href="#reference" title="Ссылка на этот заголовок">¶</a></h3>
+            <h3 class="custom-header__text">Эталон (reference)<a class="headerlink" href="#reference">¶</a></h3>
             <div class="custom-header__line"></div>
           </div>
           <p>Конвертация векторной графики подвержена ошибкам. Многие форматы имеют очень странные представления о том, как их внутренние единицы переводятся в реальные размеры. Если reference установлен в ненулевое значение, Boxes.py рисует прямоугольник заданной длины. Это можно использовать для проверки масштаба чертежа или для понимания, как вернуть его к правильным пропорциям.</p>
@@ -103,12 +102,12 @@
       </section>
       <section id="common-parameters-and-types">
         <div class="custom-header">
-          <h2 class="custom-header__text">Общие параметры и типы<a class="headerlink" href="#common-parameters-and-types" title="Ссылка на этот заголовок">¶</a></h2>
+          <h2 class="custom-header__text">Общие параметры и типы<a class="headerlink" href="#common-parameters-and-types">¶</a></h2>
           <div class="custom-header__line"></div>
         </div>
         <section id="section-parameters">
           <div class="custom-header">
-            <h3 class="custom-header__text">Параметры секций<a class="headerlink" href="#section-parameters" title="Ссылка на этот заголовок">¶</a></h3>
+            <h3 class="custom-header__text">Параметры секций<a class="headerlink" href="#section-parameters">¶</a></h3>
             <div class="custom-header__line"></div>
           </div>
           <p>Некоторые генераторы поддерживают произвольное количество секций. Это можно использовать для рядов или колонок отсеков, ступенчатых высот или для деления длины на несколько подчастей. Стандартные параметры для этого — <code><span>sx</span></code>, <code><span>sy</span></code> и <code><span>sh</span></code> (вместо <code><span>x</span></code>, <code><span>y</span></code> и <code><span>h</span></code>).</p>
@@ -117,14 +116,14 @@
         </section>
         <section id="mounting-holes">
           <div class="custom-header">
-            <h3 class="custom-header__text">mounting_holes (монтажные отверстия)<a class="headerlink" href="#mounting-holes" title="Ссылка на этот заголовок">¶</a></h3>
+            <h3 class="custom-header__text">Монтажные отверстия (mounting_holes)<a class="headerlink" href="#mounting-holes">¶</a></h3>
             <div class="custom-header__line"></div>
           </div>
           <p>Некоторые генераторы позволяют создавать грушевидные монтажные отверстия. Чтобы получить отверстия нужного размера, необходимо указать диаметр стержня и головки крепежного винта. Формат — «стержень:головка», оба диаметра в мм (например, <code><span>3.5:6.5</span></code>). Если указан только диаметр стержня (например, <code><span>3.5</span></code>), создается круглое монтажное отверстие. Если параметр диаметра монтажного отверстия установлен в <code><span>0</span></code>, монтажные отверстия не создаются.</p>
         </section>
         <section id="outside">
           <div class="custom-header">
-            <h3 class="custom-header__text">outside (внешние размеры)<a class="headerlink" href="#outside" title="Ссылка на этот заголовок">¶</a></h3>
+            <h3 class="custom-header__text">Внешние габариты (outside)<a class="headerlink" href="#outside">¶</a></h3>
             <div class="custom-header__line"></div>
           </div>
           <p>Большинство размеров — внутренние. Если генератор предлагает этот параметр, он пересчитает внутренние размеры так, чтобы стены и внешние элементы уместились в заданных габаритах. Это может быть неожиданно для типов кромок с выступами, такими как петли, ручки, ножки и т.д., так как они тоже учитываются. Если размеры недостаточны для этих элементов, коробка может работать неправильно. Большинство генераторов не имеют проверки на такие ситуации (например, отрицательную высоту), и ответственность за проверку результата лежит на пользователе.</p>
@@ -133,22 +132,22 @@
       </section>
       <section id="edge-type-parameters">
         <div class="custom-header">
-          <h2 class="custom-header__text">Параметры типа кромки<a class="headerlink" href="#edge-type-parameters" title="Ссылка на этот заголовок">¶</a></h2>
+          <h2 class="custom-header__text">Параметры типа кромки<a class="headerlink" href="#edge-type-parameters">¶</a></h2>
           <div class="custom-header__line"></div>
         </div>
         <p>Все, кроме самых простых, типы кромок имеют ряд настроек, определяющих их внешний вид. В настройках генераторов рекомендуется дать возможность настроить эти параметры пользователю. В веб-интерфейсе они свернуты. В командной строке они сгруппированы. Пользователи должны понимать, что не все параметры имеет смысл менять. Пока что Boxes.py не позволяет скрывать некоторые параметры.</p>
         <section id="finger-joint-settings">
           <div class="custom-header">
-            <h3 class="custom-header__text">Настройки шипового соединения<a class="headerlink" href="#finger-joint-settings" title="Ссылка на этот заголовок">¶</a></h3>
+            <h3 class="custom-header__text">Настройки шипового соединения<a class="headerlink" href="#finger-joint-settings">¶</a></h3>
             <div class="custom-header__line"></div>
           </div>
           <dl class="glossary">
             <dt id="term-finger">finger<a class="headerlink" href="#term-finger" title="Ссылка на этот термин">¶</a></dt>
-            <dd><p>ширина шипов в кратных толщине материала</p></dd>
+            <dd><p>ширина шипов в кратно толщине материала</p></dd>
             <dt id="term-space">space<a class="headerlink" href="#term-space" title="Ссылка на этот термин">¶</a></dt>
-            <dd><p>ширина промежутков между шипами в кратных толщине материала</p></dd>
+            <dd><p>ширина промежутков между шипами в кратно толщине материала</p></dd>
             <dt id="term-surroundingspaces">surroundingspaces<a class="headerlink" href="#term-surroundingspaces" title="Ссылка на этот термин">¶</a></dt>
-            <dd><p>размер пространства перед первым и после последнего шипа. Это в кратных обычному промежутку между шипами. Фактическое пространство может быть больше при необходимости, но может быть меньше для очень коротких кромок.</p></dd>
+            <dd><p>размер пространства перед первым и после последнего шипа. Определяется кратно обычному промежутку между шипами. Фактическое пространство может быть больше при необходимости, но может быть меньше для очень коротких кромок.</p></dd>
             <dt id="term-style">style<a class="headerlink" href="#term-style" title="Ссылка на этот термин">¶</a></dt>
             <dd><p>как должны выглядеть шиповые соединения. В будущем может появиться больше стилей. Обратите внимание, что защелкивающиеся шипы рисуются только для ширины шипа 1.9 и выше.</p></dd>
             <dt id="term-extra_length">extra_length<a class="headerlink" href="#term-extra_length" title="Ссылка на этот термин">¶</a></dt>
@@ -159,7 +158,7 @@
         </section>
         <section id="stackable-edge-settings">
           <div class="custom-header">
-            <h3 class="custom-header__text">Настройки кромок для штабелирования<a class="headerlink" href="#stackable-edge-settings" title="Ссылка на этот заголовок">¶</a></h3>
+            <h3 class="custom-header__text">Настройки кромок для штабелирования<a class="headerlink" href="#stackable-edge-settings">¶</a></h3>
             <div class="custom-header__line"></div>
           </div>
           <p>Чтобы коробки можно было складывать друг на друга, они должны быть одинаковой ширины и глубины, а <code><span>angle</span></code>, <code><span>width</span></code> и <code><span>height</span></code> ножек должны совпадать.</p>
@@ -179,9 +178,10 @@
       </section>
       <section id="colors">
         <div class="custom-header">
-          <h2 class="custom-header__text">Цвета<a class="headerlink" href="#colors" title="Ссылка на этот заголовок">¶</a></h2>
+          <h2 class="custom-header__text">Цвета<a class="headerlink" href="#colors">¶</a></h2>
           <div class="custom-header__line"></div>
         </div>
+        <!--это наши цвета уже=)-->
         <p>В сгенерированных файлах используются следующие цветовые обозначения:</p>
         <dl class="glossary">
           <dt id="term-Black">Синий<a class="headerlink" href="#term-Black" title="Ссылка на этот термин">¶</a></dt>
