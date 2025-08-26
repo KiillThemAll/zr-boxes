@@ -119,12 +119,12 @@ sy,sy
 sections back to front in mm [🛈](https://florianfesti.github.io/boxes/html/usermanual.html#section-parameters),секции сзади наперед в мм [🛈](https://florianfesti.github.io/boxes/html/usermanual.html#section-parameters)
 sh,sh
 sections bottom to top in mm [🛈](https://florianfesti.github.io/boxes/html/usermanual.html#section-parameters),секции снизу вверх в мм [🛈](https://florianfesti.github.io/boxes/html/usermanual.html#section-parameters)
-bottom_edge,нижний_край
+bottom_edge,нижний край
 edge type for bottom edge,тип края для нижнего края
 F,F
 s,s
 e,e
-top_edge,верхний_край
+top_edge,верхний край
 edge type for top edge,тип края для верхнего края
 f,f
 c,c
@@ -138,7 +138,7 @@ L,L
 t,t
 G,G
 Y,Y
-outside,внешние_габариты
+outside,внешние габариты
 treat sizes as outside measurements [🛈](https://florianfesti.github.io/boxes/html/usermanual.html#outside),обрабатывать размеры как внешние измерения [🛈](https://florianfesti.github.io/boxes/html/usermanual.html#outside)
 nema_mount,крепление_nema
 NEMA size of motor,размер двигателя NEMA
@@ -165,12 +165,12 @@ labels,ярлыки
 label the parts (where available),подписывать детали (где доступно)
 reference,эталон
 print reference rectangle with given length (in mm)(zero to disable) [🛈](https://florianfesti.github.io/boxes/html/usermanual.html#reference),печатать референсный прямоугольник заданной длины (в мм)(ноль для отключения) [🛈](https://florianfesti.github.io/boxes/html/usermanual.html#reference)
-inner_corners,внутренние_углы
+inner_corners,внутренние углы
 style for inner corners [🛈](https://florianfesti.github.io/boxes/html/usermanual.html#inner-corners),стиль для внутренних углов [🛈](https://florianfesti.github.io/boxes/html/usermanual.html#inner-corners)
 loop,петля
 corner,угол
 backarc,обратная дуга
-burn,радиус_прожига
+burn,радиус прожига
 burn correction (in mm)(bigger values for tighter fit) [🛈](https://florianfesti.github.io/boxes/html/usermanual.html#burn),коррекция прожига (в мм)(большие значения для более плотной посадки) [🛈](https://florianfesti.github.io/boxes/html/usermanual.html#burn)
 Settings for Finger Joints,Настройки для шиповых соединений
 style,стиль
@@ -179,13 +179,13 @@ rectangular,прямоугольный
 springs,пружины
 barbs,зазубрины
 snap,защелка
-surroundingspaces,внешние_зазоры
+surroundingspaces,внешние зазоры
 space at the start and end in multiple of normal spaces,пространство в начале и конце в кратных нормальных пространствах
-bottom_lip,нижняя_кромка
+bottom_lip,нижняя кромка
 height of the bottom lips sticking out  (multiples of thickness) FingerHoleEdge only!,высота нижних губ выступающих наружу (кратные толщине) только для FingerHoleEdge!
-edge_width,ширина_кромки
+edge_width,ширина кромки
 space below holes of FingerHoleEdge (multiples of thickness),пространство под отверстиями FingerHoleEdge (кратные толщине)
-extra_length,доп_длина
+extra_length,доп длина
 extra material to grind away burn marks (multiples of thickness),дополнительный материал для шлифовки следов прожига (кратные толщине)
 finger,паз
 width of the fingers (multiples of thickness),ширина шипов (кратные толщине)
@@ -198,7 +198,7 @@ width of finger holes (multiples of thickness),ширина отверстий �
 Settings for Stackable Edges,Настройки для штабелируемых краев
 angle,угол
 inside angle of the feet,внутренний угол ножек
-bottom_stabilizers,нижние_стабилизаторы
+bottom_stabilizers,нижние стабилизаторы
 height of strips to be glued to the inside of bottom edges (multiples of thickness),высота полосок приклеиваемых к внутренней стороне нижних краев (кратные толщине)
 height,высота
 height of the feet (multiples of thickness),высота ножек (кратно толщине)
@@ -431,7 +431,7 @@ small_sieve,маленькое сито
 tiny_sieve,крошечное сито
 bottom,дно
 Radius of the corners of the sieve pattern in mm. Enter 30 for circular holes.,Радиус углов узора сита в мм. Введите 30 для круглых отверстий.
-wiggle,"Зазор, чтобы слои могли скользить друг в друге."
+wiggle,зазор
 "Wiggle room, that the layers can slide in each other.","Зазор, чтобы слои могли скользить друг в друге."
 BurnTest,Тест прожига
 Test different burn values,Тестирование различных значений прожига
@@ -590,15 +590,15 @@ front-and-back,передняя и задняя
 Settings for Cabinet Hinges,Настройки мебельных петель
 bore,отверстие
 diameter of the pin hole in mm,диаметр отверстия для штифта в мм
-eyes_per_hinge,глазков на петлю
-pieces per hinge,деталей на петлю
+eyes_per_hinge,проушины на петлю
+pieces per hinge,детали на петлю
 hinges,петли
 number of hinges per edge,количество петель на край
 style of hinge used,используемый стиль петли
 inside,внутренний
-eye,глазок
-radius of the eye (multiples of thickness),радиус глазка (кратные толщинам)
-space between eyes (multiples of thickness),расстояние между глазками (кратные толщинам)
+eye,проушина
+radius of the eye (multiples of thickness),радиус проушины (кратные толщинам)
+space between eyes (multiples of thickness),расстояние между проушинами (кратные толщинам)
 spacing,интервал
 minimum space around the hinge (multiples of thickness),минимальное пространство вокруг петли (кратные толщинам)
 Settings for RoundedTriangleEdge,Настройки края с округленными треугольниками
@@ -622,28 +622,28 @@ edge style,стиль края
 "straight edge, extended","прямой край, расширенный"
 mounting tab,монтажная вкладка
 Compartment Labels,Ярлыки отделений
-text_size,размер_текста
+text_size,размер текста
 Textsize in mm for the traycontent,размер текста в мм для содержимого лотка
-text_alignment,выравнивание_текста
+text_alignment,выравнивание текста
 Text Alignment,выравнивание текста
 center,центр
-text_distance_x,расстояние_текста_x
+text_distance_x,расстояние текста_x
 Distance in X from edge of tray in mm. Has no effect when text is centered.,расстояние по X от края лотка в мм. Не действует при центрированном тексте.
-text_distance_y,расстояние_текста_y
+text_distance_y,расстояние текста_y
 Distance in Y from edge of tray in mm.,расстояние по Y от края лотка в мм.
-text_at_front,текст_спереди
+text_at_front,текст спереди
 Start compartement labels on the front,начать ярлыки отделений спереди
-label_file,файл_ярлыков
+label_file,файл ярлыка
 file with compartment labels. One line per compartment,файл с ярлыками отделений. Одна строка на отделение
 Settings for FingerHoleEdge,Настройки для края с отверстиями для пальцев
-absolute_depth,абсолютная_глубина
+absolute_depth,абсолютная глубина
 depth of the hole in mm (in addition to the relative),глубина отверстия в мм (в дополнение к относительной)
-absolute_width,абсолютная_ширина
+absolute_width,абсолютная ширина
 width of the hole in mm (in addition to the relative),ширина отверстия в мм (в дополнение к относительной)
 maximal radius (in mm),максимальный радиус (в мм)
-relative_depth,относительная_глубина
+relative_depth,относительная глубина
 depth of the hole as fraction of the wall,глубина отверстия как доля от стенки
-relative_width,относительная_ширина
+relative_width,относительная ширина
 width of the hole as fraction of the wall width,ширина отверстия как доля от ширины стенки
 CompartmentBox,Коробка с отделениями
 Type tray variation with sliding lid,Тип лотка с выдвижной крышкой
@@ -659,7 +659,7 @@ margin_t,зазор_t
 vertical margin for sliding lid (multiples of thickness),вертикальный зазор для выдвижной крышки (кратно толщине)
 margin_s,зазор_s
 margin to add at both sides of sliding lid (multiples of thickness),зазор для добавления с обеих сторон выдвижной крышки (кратно толщине)
-split_lip,разделенный_выступ
+split_lip,разделенный выступ
 create two strips to reduce waste material,создать две полосы для уменьшения отходов материала
 ConcaveKnob,Вогнутая ручка
 Round knob serrated outside for better gripping,Круглая ручка с зубцами снаружи для лучшего захвата
@@ -670,28 +670,28 @@ Number of serrations,количество зубцов
 rounded,скругленный
 Amount of circumference used for non convex parts,"количество окружности, используемое для невыпуклых частей"
 Angle between convex and concave parts,угол между выпуклыми и вогнутыми частями
-bolthole,отверстие_для_болта
+bolthole,отверстие для болта
 Diameter of the bolt hole (mm),диаметр отверстия для болта (мм)
 dhole,d_отверстие
 D-Flat in fraction of the diameter,D-плоскость в доле от диаметра
-hexhead,шестигранная_головка
+hexhead,шестигранная головка
 Width of the hex bolt head (mm),ширина шестигранной головки болта (мм)
 Console,Консоль
 Console with slanted panel,Консоль с наклонной панелью
 "\n\nConsole Arcade Stick\n\n![Front](static/samples/ConsoleArcadeStickFront.jpg)\n![Back](static/samples/ConsoleArcadeStickBack.jpg)\n![Inside](static/samples/ConsoleArcadeStickInside.jpg)\n\nKeyboard enclosure:\n","\n\nАркадный джойстик консоли\n\n![Спереди](static/samples/ConsoleArcadeStickFront.jpg)\n![Сзади](static/samples/ConsoleArcadeStickBack.jpg)\n![Внутри](static/samples/ConsoleArcadeStickInside.jpg)\nКорпус клавиатуры:\n"
 Console Settings,Настройки консоли
-front_height,высота_переда
+front_height,высота переда
 height of the front below the panel (in mm),высота переда под панелью (в мм)
 angle of the front panel (90°=upright),угол передней панели (90°=вертикально)
 Console2,Консоль2
 Console with slanted panel and service hatches,Консоль с наклонной панелью и сервисными люками
 \nThis box is designed as a housing for electronic projects. It has hatches that can be re-opened with simple tools. It intentionally cannot be opened with bare hands - if build with thin enough material.\n\n#### Caution\nThere is a chance that the latches of the back wall or the back wall itself interfere with the front panel or its mounting frame/lips. The generator does not check for this. So depending on the variant chosen you might need to make the box deeper (increase y parameter) or the panel angle steeper (increase angle parameter) until there is enough room.\n\nIt's also possible that the frame of the panel interferes with the floor if the hi parameter is too small.\n\n#### Assembly instructions\nThe main body is easy to assemble by starting with the floor and then adding the four walls and (if present) the top piece.\n\nIf the back wall is removable you need to add the lips and latches. The U-shaped clamps holding the latches in place need to be clued in place without also gluing the latches themselves. Make sure the springs on the latches point inwards and the angled ends point to the side walls as shown here:\n\n![Back wall details](static/samples/Console2-backwall-detail.jpg)\n\nIf the panel is removable you need to add the springs with the tabs to the side lips. This photo shows the variant which has the panel glued to the frame:\n\n![Back wall details](static/samples/Console2-panel-detail.jpg)\n\nIf space is tight you may consider not gluing the cross pieces in place and remove them after the glue-up. This may prevent the latches of the back wall and the panel from interfering with each other.\n\nThe variant using finger joints only has the two side lips without the cross bars.\n\n#### Re-Opening\n\nThe latches at the back wall lock in place when closed. To open them they need to be pressed in and can then be moved aside.\n\nTo remove the panel you have to press in the four tabs at the side. It is easiest to push them in and then pull the panel up a little bit so the tabs stay in.\n,"\nЭта коробка предназначена как корпус для электронных проектов. У неё есть люки, которые можно снова открыть простыми инструментами. Она намеренно не может быть открыта голыми руками - если построена из достаточно тонкого материала.\n\n#### Внимание\nЕсть вероятность, что защелки задней стенки или сама задняя стенка мешают передней панели или её монтажной раме/выступам. Генератор не проверяет это. Поэтому в зависимости от выбранного варианта вам может потребоваться сделать коробку глубже (увеличить параметр y) или угол панели круче (увеличить параметр angle), пока не будет достаточно места.\n\nТакже возможно, что рама панели мешает полу, если параметр hi слишком мал.\n\n#### Инструкции по сборке\nОсновной корпус легко собрать, начиная с пола, а затем добавляя четыре стенки и (если есть) верхнюю часть.\nЕсли задняя стенка съемная, нужно добавить выступы и защелки. U-образные зажимы, удерживающие защелки на месте, нужно приклеить на место, не приклеивая при этом сами защелки. Убедитесь, что пружины на защелках направлены внутрь, а скошенные концы направлены к боковым стенкам, как показано здесь:\n\n![Детали задней стенки](static/samples/Console2-backwall-detail.jpg)\n\nЕсли панель съемная, нужно добавить пружины с язычками к боковым выступам. На этой фотографии показан вариант, в котором панель приклеена к раме:\n\n![Детали задней стенки](static/samples/Console2-panel-detail.jpg)\n\nЕсли места мало, можно не приклеивать поперечные детали на место и убрать их после склейки. Это может предотвратить взаимное мешание защелок задней стенки и панели.\n\nВариант, использующий только пальцевые соединения, имеет только два боковых выступа без поперечных планок.\n\n#### Повторное открытие\n\nЗащелки на задней стенке фиксируются на месте при закрытии. Чтобы открыть их, нужно нажать на них и затем отодвинуть в сторону.\nЧтобы снять панель, нужно нажать на четыре язычка по бокам. Проще всего нажать на них и затем немного приподнять панель, чтобы язычки остались нажатыми.\n,"
 Console2 Settings,Настройки консоли2
-removable_backwall,съемная_задняя_стенка
+removable_backwall,съемная задняя стенка
 have latches at the backwall,иметь защелки на задней стенке
-removable_panel,съемная_панель
+removable_panel,съемная панель
 The panel is held by tabs and can be removed,панель удерживается язычками и может быть снята
-glued_panel,приклеенная_панель
+glued_panel,приклеенная панель
 the panel is glued and not held by finger joints,панель приклеена и не удерживается пальцевыми соединениями
 Desksign,Настольная табличка
 Simple diagonal plate with stands to show name or message.,Простая диагональная пластина с подставками для показа имени или сообщения
@@ -702,30 +702,30 @@ plate height in mm,высота пластины в мм
 plate angle in degrees (90 is vertical),угол пластины в градусах (90 - вертикально)
 label,ярлык
 optional text to engrave (leave blank to omit),"необязательный текст для гравировки (оставьте пустым, чтобы пропустить)"
-fontsize,размер_шрифта
+fontsize,размер шрифта
 height of text,высота текста
 feet,ножки
 add raised feet,добавить приподнятые ножки
 mirror,зеркало
 mirrors one of the stand so the same side of the material can be placed on the outside,"зеркально отражает одну из подставок, чтобы одна и та же сторона материала могла быть размещена снаружи"
-verticaltextoffset,вертикальное_смещение_текста
+verticaltextoffset,вертикальное смещение текста
 vertical offset of text in mm from the default centered location,вертикальное смещение текста в мм от центрированного положения по умолчанию
 DiceBox,Коробка для кубиков
 Box with lid and integraded hinge for storing dice,Коробка с крышкой и встроенным шарниром для хранения кубиков
 DiceBox Settings,Настройки коробки для кубиков
-lidheight,высота_крышки
+lidheight,высота крышки
 height of lid in mm,высота крышки в мм
-hex_hole_corner_radius,радиус_угла_шестигранного_отверстия
+hex_hole_corner_radius,радиус угла шестигранного отверстия
 "The corner radius of the hexagonal dice holes, in mm","радиус угла шестигранных отверстий для кубиков, в мм"
-magnet_diameter,диаметр_магнита
+magnet_diameter,диаметр магнита
 "The diameter of magnets for holding the box closed, in mm","диаметр магнитов для удержания коробки закрытой, в мм"
 Settings for Chest Hinges,Настройки петель сундука
-finger_joints_on_box,пальцевые_соединения_на_коробке
+finger_joints_on_box,пальцевые соединения на коробке
 whether to include finger joints on the edge with the box,включать ли пальцевые соединения на краю с коробкой
-finger_joints_on_lid,пальцевые_соединения_на_крышке
+finger_joints_on_lid,пальцевые соединения на крышке
 whether to include finger joints on the edge with the lid,включать ли пальцевые соединения на краю с крышкой
-hinge_strength,прочность_петли
-pin_height,высота_штифта
+hinge_strength,прочность петли
+pin_height,высота штифта
 radius of the disc rotating in the hinge (multiples of thickness),"радиус диска, вращающегося в петле (кратно толщине)"
 DiceTower,Башня для кубиков
 Tool for fairly rolling dice,Инструмент для честного броска кубиков
@@ -741,35 +741,35 @@ angle of the ramps in the tower,угол пандусов в башне
 DinRailBox,Коробка для DIN-рейки
 Box for DIN rail used in electrical junction boxes,"Коробка для DIN-рейки, используемой в электрических распределительных коробках"
 DinRailBox Settings,Настройки коробки для DIN-рейки
-rail_width,ширина_рейки
+rail_width,ширина рейки
 width of the rail (typically 35 or 15mm),ширина рейки (обычно 35 или 15мм)
-rail_offset,смещение_рейки
+rail_offset,смещение рейки
 offset of the rail from the middle of the box (in mm),смещение рейки от середины коробки (в мм)
 DiscRack,Стойка для дисков
 A rack for storing disk-shaped objects vertically next to each other,Стойка для хранения дискообразных объектов вертикально рядом друг с другом
 DiscRack Settings,Настройки стойки для дисков
-disc_diameter,диаметр_диска
+disc_diameter,диаметр диска
 Disc diameter in mm,диаметр диска в мм
-disc_thickness,толщина_диска
+disc_thickness,толщина диска
 Thickness of the discs in mm,толщина дисков в мм
-lower_factor,нижний_фактор
+lower_factor,нижний фактор
 Position of the lower rack grids along the radius,положение нижних решеток стойки вдоль радиуса
-rear_factor,задний_фактор
+rear_factor,задний фактор
 Position of the rear rack grids along the radius,положение задних решеток стойки вдоль радиуса
-disc_outset,выступ_диска
+disc_outset,выступ диска
 Additional space kept between the disks and the outbox of the rack,"дополнительное пространство, оставляемое между дисками и внешней частью стойки"
 Backwards slant of the rack,наклон стойки назад
 Dispenser,Диспенсер
 Dispenser for stackable (flat) items of same size,Диспенсер для штабелируемых (плоских) предметов одинакового размера
 Set *bottomheight* to 0 for a wall mounting variant.\nPlease add mounting holes yourself.,"Установите *bottomheight* на 0 для настенного варианта.\nПожалуйста, добавьте монтажные отверстия самостоятельно."
 Dispenser Settings,Настройки диспенсера
-slotheight,высота_щели
+slotheight,высота щели
 height of the dispenser slot / items (in mm),высота щели диспенсера / предметов (в мм)
-viewingwidth,ширина_просмотра
+viewingwidth,ширина смотрового окна
 width of the viewing slot as part of total width (0 for closed front),ширина смотрового окна как часть общей ширины (0 для закрытого переда)
-bottomheight,высота_основания
+bottomheight,высота основания
 height underneath the dispenser (in mm),высота под диспенсером (в мм)
-sideedges,боковые_края
+sideedges,боковые края
 edges used for holding the front panels and back,"края, используемые для удержания передних панелей и задней части"
 Display,Стойка
 Display for flyers or leaflets,Стойка для флаеров или листовок
@@ -785,99 +785,99 @@ DisplayShelf,Витрина-полка
 Shelf with slanted floors,Полка с наклонными полами
 DisplayShelf Settings,Настройки витрины-полки
 number of shelves,количество полок
-front_wall_height,высота_передней_стенки
+front_wall_height,высота передней стенки
 height of front walls,высота передних стенок
 angle of floors (negative values for slanting backwards),угол полов (отрицательные значения для наклона назад)
-include_back,включить_заднюю_часть
+include_back,включить заднюю часть
 Include panel on the back of the shelf,включить панель на задней части полки
-include_front,включить_переднюю_часть
+include_front,включить переднюю часть
 Include panel on the front of the shelf (to be used backwards),включить панель на передней части полки (для использования наоборот)
-include_bottom,включить_основание
+include_bottom,включить основание
 Include horizontal panel on the bottom of the shelf,включить горизонтальную панель на дне полки
-slope_top,наклон_верха
+slope_top,наклон верха
 Slope the sides and the top by front wall height,наклонить бока и верх на высоту передней стенки
-divider_wall_height,высота_разделительной_стенки
+divider_wall_height,высота разделительной стенки
 height of divider walls,высота разделительных стенок
-bottom_distance,расстояние_от_дна
+bottom_distance,расстояние от дна
 height below the bottom shelf,высота под нижней полкой
-top_distance,расстояние_от_верха
+top_distance,расстояние от верха
 extra height above the top shelf,дополнительная высота над верхней полкой
 DividerTray,Лоток с разделителями
 Divider tray - rows and dividers,Разделительный лоток - ряды и разделители
 \nAdding '0:' at the start of the sy parameter adds a slot at the very back. Adding ':0' at the end of sy adds a slot meeting the bottom at the very front. This is especially useful if slot angle is set above zero.\n\nThere are 4 different sets of dividers rendered:\n\n* With asymmetric tabs so the tabs fit on top of each other\n* With tabs of half wall thickness that can go side by side\n* With tabs of a full wall thickness\n* One single divider spanning across all columns\n\nYou will likely need to cut each of the dividers you want multiple times.\n,"\nДобавление '0:' в начале параметра sy добавляет слот в самом конце. Добавление ':0' в конце sy добавляет слот, встречающийся с дном в самом начале. Это особенно полезно, если угол слота установлен выше нуля.\n\nВизуализируются 4 различных набора разделителей:\n\n* С асимметричными выступами, чтобы выступы помещались друг на друга\n* С выступами половинной толщины стенки, которые могут располагаться рядом\n* С выступами полной толщины стенки\n* Один разделитель, охватывающий все столбцы\n\nВам, вероятно, потребуется вырезать каждый из нужных разделителей несколько раз.\n"
 DividerTray Settings,Настройки разделительного лотка
-notches_in_wall,пазы_в_стенке
+notches_in_wall,пазы в стенке
 generate the same notches on the walls that are on the dividers,генерировать те же пазы на стенках что и на разделителях
-left_wall,левая_стенка
+left_wall,левая стенка
 generate wall on the left side,генерировать стенку слева
-right_wall,правая_стенка
+right_wall,правая стенка
 generate wall on the right side,генерировать стенку справа
 generate wall on the bottom,генерировать стенку снизу
 add handle to the bottom,добавить ручку снизу
 Settings for Divider Slots,Настройки для слотов разделителей
 "angle at which slots are generated, in degrees. 0° is vertical.","угол под которым генерируются слоты в градусах. 0° - вертикально."
 depth of the slot in mm,глубина слота в мм
-extra_slack,дополнительный_зазор
+extra_slack,дополнительный зазор
 extra slack (in addition to thickness and kerf) to help insert dividers in mm,дополнительный зазор (в дополнение к толщине и пропилу) для помощи вставки разделителей в мм
 radius of the slot entrance in mm,радиус входа слота в мм
 Settings for Notches on the Dividers,Настройки для пазов на разделителях
-lower_radius,нижний_радиус
-upper_radius,верхний_радиус
+lower_radius,нижний радиус
+upper_radius,верхний радиус
 Settings for Dividers,Настройки для разделителей
-bottom_margin,нижний_отступ
+bottom_margin,нижний отступ
 margin between box's bottom and divider's in mm,отступ между дном коробки и разделителем в мм
 play to avoid them clamping onto the walls (in multiples of thickness),зазор чтобы избежать зажатия на стенках (в кратных толщины)
 DoubleFlexDoorBox,Коробка с двойными гибкими дверцами
 Box with two part lid with living hinges and round corners,Коробка с двухчастной крышкой с гибкими шарнирами и округлыми углами
 DoubleFlexDoorBox Settings,Настройки коробки с двойными гибкими дверцами
 Radius of the latch in mm,Радиус защелки в мм
-latchsize,размер_защелки
+latchsize,размер защелки
 size of latch in multiples of thickness,размер защелки в кратных толщины
 DrillBox,Коробка для сверл
 A parametrized box for drills,Параметризованная коробка для сверл
 ![Multiple DrillBoxes](static/samples/DrillBoxes.jpg) ,![Множественные коробки для сверл](static/samples/DrillBoxes.jpg) 
 DrillBox Settings,Настройки коробки для сверл
 Number of holes for each size,Количество отверстий для каждого размера
-firsthole,первое_отверстие
+firsthole,первое отверстие
 Smallest hole,Наименьшее отверстие
-holeincrement,приращение_отверстий
-increment between holes,приращение между отверстиями
+holeincrement,шаг отверстий
+increment between holes,шаг между отверстиями
 DrillStand,Стойка для сверл
 Box for drills with each compartment of a different height,Коробка для сверл с отсеками разной высоты
 Note: `sh` gives the height of the rows front to back. It though should have the same number of entries as `sy`. These heights are the one on the left side and increase throughout the row. To have each compartment a bit higher than the previous one the steps in `sh` should be a bit bigger than `extra_height`.\n\nAssembly:\n\n![Parts](static/samples/DrillStand-drawing.png)\n\nStart with putting the slots of the inner walls together. Be especially careful with adding the bottom. It is always asymmetrical and flush with the right/lower side while being a little short on the left/higher side to not protrude into the side wall.\n\n|      |      |\n| ---- | ---- |\n| ![Assembly inner walls](static/samples/DrillStand-assembly-1.jpg) | ![Assembly bottom](static/samples/DrillStand-assembly-2.jpg) |\n| Then add the front and the back wall. | Add the very left and right walls last. |\n| ![Assembly front and back](static/samples/DrillStand-assembly-3.jpg) | ![Assembly side walls](static/samples/DrillStand-assembly-4.jpg) |\n,"Примечание: `sh` задает высоту рядов спереди назад. Однако должно иметь такое же количество записей как `sy`. Эти высоты находятся на левой стороне и увеличиваются по всему ряду. Чтобы каждый отсек был немного выше предыдущего, шаги в `sh` должны быть немного больше чем `extra_height`.\n\nСборка:\n\n![Детали](static/samples/DrillStand-drawing.png)\n\nНачните с соединения пазов внутренних стенок. Будьте особенно осторожны при добавлении дна. Оно всегда асимметрично и заподлицо с правой/нижней стороной, при этом немного короче на левой/верхней стороне, чтобы не выступать в боковую стенку.\n\n|      |      |\n| ---- | ---- |\n| ![Сборка внутренних стенок](static/samples/DrillStand-assembly-1.jpg) | ![Сборка дна](static/samples/DrillStand-assembly-2.jpg) |\n| Затем добавьте переднюю и заднюю стенки. | Добавьте самые левую и правую стенки последними. |\n| ![Сборка передней и задней стенок](static/samples/DrillStand-assembly-3.jpg) | ![Сборка боковых стенок](static/samples/DrillStand-assembly-4.jpg) |\n"
 DrillStand Settings,Настройки стойки для сверл
-extra_height,дополнительная_высота
+extra_height,дополнительная высота
 height difference left to right,разность высот слева направо
 ElectronicsBox,Коробка для электроники
 Closed box with screw on top and mounting holes,Закрытая коробка с винтом сверху и монтажными отверстиями
 ElectronicsBox Settings,Настройки коробки для электроники
 Sides of the triangles holding the lid in mm,Стороны треугольников удерживающих крышку в мм
-d1,д1
+d1,d1
 Diameter of the inner lid screw holes in mm,Диаметр внутренних винтовых отверстий крышки в мм
-d2,д2
+d2,d2
 Diameter of the lid screw holes in mm,Диаметр винтовых отверстий крышки в мм
-d3,д3
+d3,d3
 Diameter of the mounting screw holes in mm,Диаметр монтажных винтовых отверстий в мм
-outsidemounts,внешние_крепления
+outsidemounts,внешние крепления
 Add external mounting points,Добавить внешние точки крепления
-holedist,расстояние_отверстий
+holedist,расстояние винтовых отверстий
 Distance of the screw holes from the wall in mm,Расстояние винтовых отверстий от стенки в мм
 EuroRackSkiff,Корпус EuroRack
 3U Height case with adjustable width and height and included rails,Корпус высотой 3U с регулируемой шириной и высотой и включенными рейками
 EuroRackSkiff Settings,Настройки корпуса EuroRack
-hp,л.с.
+hp,hp
 Width of the case in HP,Ширина корпуса в HP
 FanHole,Отверстие для вентилятора
 Hole pattern for mounting a fan,Схема отверстий для монтажа вентилятора
 FanHole Settings,Настройки отверстия для вентилятора
 diameter of the fan hole,диаметр отверстия для вентилятора
-mounting_holes,монтажные_отверстия
+mounting_holes,монтажные отверстия
 diameter of the fan mounting holes,диаметр монтажных отверстий вентилятора
-mounting_holes_inset,вставка_монтажных_отверстий
+mounting_holes_inset,вставка монтажных отверстий
 distance of the fan mounting holes from the outside,расстояние монтажных отверстий вентилятора от края
 arms,лопасти
 number of arms,количество лопастей
-inner_disc,внутренний_диск
+inner_disc,внутренний диск
 relative size of the inner disc,относительный размер внутреннего диска
 Style of the fan hole,Стиль отверстия для вентилятора
 CW Swirl,Вихрь по часовой стрелке
@@ -885,46 +885,46 @@ CCW Swirl,Вихрь против часовой стрелки
 Hole,Отверстие
 FatBallDispenser,Дозатор жировых шариков
 Birdhouse for fat balls.,Скворечник для жировых шариков.
-"\n### Description\nFat balls are quite common to feed tits. Here you can build a dispenser that protects\nthe fat balls from rain and snow. The design was tested using 4mm plywood for the\nmain structural parts. For the spacer of the locking mechanism two layers of 3mm\nplywood have been stacked. The poles were made from 8mm diameter beech rod and 19cm\nin length. Some basic consistency checks have been made for different numbers, but\nonly the defaults have ever been built.\n\nThe final dispenser consists of two parts which slide into each other. You can mount\na hook to hang it into a tree. All edges that have angles different from 90 degrees (chamfers)\nhave engraved guiding lines which indicate the angle. You have to sand the edge such\nthat the pieces fit together.\n\nThe top part (roof) consists of the the following elements for a N sided dispenser:\n\n  * The N sided roof bottom plate which supports the roof tiles. It has a central cut out\n    which is needed for assembly and on the bottom side an engraved line which indicates the\n    position of the mounting bracket.\n  * N triangles forming the roof. They also have a small arc at the tip (roof_hole_diameter)\n  which acts as a drilling guide if you want to mount a hook.\n  * The N sided roof support piece which has a central hole for the hook. It is been mounted\n  to the roof tiles through the hole in the roof bottom plate to support the roof\n  tiles and acts as a mounting plate for the hook.\n  * Spacer(s); in the reference builds 2 spacers using 3mm plywood have been used. The spacer\n  needs to be a bit thicker than the ceiling (see below). That's the smaller\n  \""U\"" shaped part which is glued to the bottom side of the roof bottom plate.\n  * The bracket is also \""U\"" shaped and a bit wider than the spacer. This is glued to the\n  bottom of the spacer and holds the cage (bottom part).\n\nThe bottom part (cage) consists of the follwoing elements:\n\n  * The ceiling is N sided with the central refill hole and N smaller holes into which\n  the poles are fitted.\n  * The N sided floor part with finger joints for the balcony walls and holes for\n  the poles. A central hole to drain rain water can be added as well.\n  * N balcony walls surrounding the floor.\n  * N poles that join floor and ceiling (not part of the drawing)\n\nOther parts needed for assembly:\n\n  * Wooden rod (N times the length of the poles).\n  * A hook (e.g. M5x50mm)\n  * A washer to distribute the load of the hook to the support piece\n  * One or two nuts to secure the hook\n  * Optional, a pice of wire mesh\n\nAssembly:\n\n  * Sand all chamfers\n  * Glue balcony walls to the floor\n  * Glue pairs of roof tiles and use the roof bottom plate as a jig, Hot glue may be used to\n    tack the parts.\n  * Glue all roof tiles to form the roof\n  * Glue spacer(s) and the bracket into a stack\n  * Glue roof tiles to the roof bottom plate and attach the support piece\n  * Glue the stack to the roof bottom plate\n  * Cut the poles to length\n  * If you want to use multiple colors paint now, otherwise you also can paint later\n  * After painting you may need to get the paint out of the pole holes again using a drillbit\n  * Glue the poles into floor plate and ceiling\n  * Attach the hanger\n  * Attach the wire mesh\n    ","\n### Описание\nЖировые шарики довольно часто используются для кормления синиц. Здесь вы можете построить дозатор, который защищает\nжировые шарики от дождя и снега. Дизайн был протестирован с использованием 4мм фанеры для\nосновных конструктивных частей. Для прокладки механизма блокировки были сложены два слоя 3мм\nфанеры. Жерди были сделаны из 8мм буковых прутьев диаметром и 19см\nв длину. Были сделаны некоторые базовые проверки согласованности для разных чисел, но\nтолько значения по умолчанию когда-либо строились.\n\nГотовый дозатор состоит из двух частей, которые скользят друг в друга. Вы можете установить\nкрючок, чтобы повесить его на дерево. Все края, которые имеют углы отличные от 90 градусов (фаски),\nимеют гравированные направляющие линии, которые указывают угол. Вы должны отшлифовать край так,\nчтобы детали подходили друг к другу.\n\nВерхняя часть (крыша) состоит из следующих элементов для N-стороннего дозатора:\n\n  * N-сторонняя нижняя пластина крыши, которая поддерживает черепицу. Она имеет центральный вырез,\n    который необходим для сборки, и на нижней стороне гравированную линию, которая указывает\n    положение монтажного кронштейна.\n  * N треугольников, формирующих крышу. Они также имеют небольшую дугу на кончике (roof_hole_diameter),\n  которая действует как направляющая для сверления, если вы хотите установить крючок.\n  * N-сторонняя опорная деталь крыши, которая имеет центральное отверстие для крючка. Она установлена\n  на черепицу через отверстие в нижней пластине крыши для поддержки черепицы\n  и действует как монтажная пластина для крючка.\n  * Прокладка(и); в эталонных сборках использовались 2 прокладки из 3мм фанеры. Прокладка\n  должна быть немного толще потолка (см. ниже). Это меньшая\n  \""U\""-образная часть, которая приклеивается к нижней стороне нижней пластины крыши.\n  * Кронштейн также \""U\""-образный и немного шире прокладки. Он приклеивается к\n  низу прокладки и удерживает клетку (нижняя часть).\n\nНижняя часть (клетка) состоит из следующих элементов:\n\n  * Потолок N-сторонний с центральным отверстием для пополнения и N меньшими отверстиями, в которые\n  вставляются жерди.\n  * N-сторонняя напольная часть с пальцевыми соединениями для стенок балкона и отверстиями для\n  жердей. Центральное отверстие для слива дождевой воды также может быть добавлено.\n  * N стенок балкона, окружающих пол.\n  * N жердей, которые соединяют пол и потолок (не часть чертежа)\n\nДругие части, необходимые для сборки:\n\n  * Деревянный прут (N раз длина жердей).\n  * Крючок (например, M5x50мм)\n  * Шайба для распределения нагрузки крючка на опорную деталь\n  * Одна или две гайки для закрепления крючка\n  * Дополнительно, кусок проволочной сетки\n\nСборка:\n\n  * Отшлифуйте все фаски\n  * Приклейте стенки балкона к полу\n  * Склейте пары черепицы и используйте нижнюю пластину крыши как кондуктор, можно использовать горячий клей для\n    закрепления частей.\n  * Склейте всю черепицу для формирования крыши\n  * Склейте прокладку(и) и кронштейн в стопку\n  * Приклейте черепицу к нижней пластине крыши и прикрепите опорную деталь\n  * Приклейте стопку к нижней пластине крыши\n  * Отрежьте жерди по длине\n  * Если хотите использовать несколько цветов, покрасьте сейчас, иначе можете покрасить позже\n  * После покраски вам может понадобиться удалить краску из отверстий для жердей снова, используя сверло\n  * Приклейте жерди в напольную пластину и потолок\n  * Прикрепите подвеску\n  * Прикрепите проволочную сетку\n    "
+"\n### Description\nFat balls are quite common to feed tits. Here you can build a dispenser that protects\nthe fat balls from rain and snow. The design was tested using 4mm plywood for the\nmain structural parts. For the spacer of the locking mechanism two layers of 3mm\nplywood have been stacked. The poles were made from 8mm diameter beech rod and 19cm\nin length. Some basic consistency checks have been made for different numbers, but\nonly the defaults have ever been built.\n\nThe final dispenser consists of two parts which slide into each other. You can mount\na hook to hang it into a tree. All edges that have angles different from 90 degrees (chamfers)\nhave engraved guiding lines which indicate the angle. You have to sand the edge such\nthat the pieces fit together.\n\nThe top part (roof) consists of the the following elements for a N sided dispenser:\n\n  * The N sided roof bottom plate which supports the roof tiles. It has a central cut out\n    which is needed for assembly and on the bottom side an engraved line which indicates the\n    position of the mounting bracket.\n  * N triangles forming the roof. They also have a small arc at the tip (roof_hole_diameter)\n  which acts as a drilling guide if you want to mount a hook.\n  * The N sided roof support piece which has a central hole for the hook. It is been mounted\n  to the roof tiles through the hole in the roof bottom plate to support the roof\n  tiles and acts as a mounting plate for the hook.\n  * Spacer(s); in the reference builds 2 spacers using 3mm plywood have been used. The spacer\n  needs to be a bit thicker than the ceiling (see below). That's the smaller\n  \""U\"" shaped part which is glued to the bottom side of the roof bottom plate.\n  * The bracket is also \""U\"" shaped and a bit wider than the spacer. This is glued to the\n  bottom of the spacer and holds the cage (bottom part).\n\nThe bottom part (cage) consists of the follwoing elements:\n\n  * The ceiling is N sided with the central refill hole and N smaller holes into which\n  the poles are fitted.\n  * The N sided floor part with finger joints for the balcony walls and holes for\n  the poles. A central hole to drain rain water can be added as well.\n  * N balcony walls surrounding the floor.\n  * N poles that join floor and ceiling (not part of the drawing)\n\nOther parts needed for assembly:\n\n  * Wooden rod (N times the length of the poles).\n  * A hook (e.g. M5x50mm)\n  * A washer to distribute the load of the hook to the support piece\n  * One or two nuts to secure the hook\n  * Optional, a pice of wire mesh\n\nAssembly:\n\n  * Sand all chamfers\n  * Glue balcony walls to the floor\n  * Glue pairs of roof tiles and use the roof bottom plate as a jig, Hot glue may be used to\n    tack the parts.\n  * Glue all roof tiles to form the roof\n  * Glue spacer(s) and the bracket into a stack\n  * Glue roof tiles to the roof bottom plate and attach the support piece\n  * Glue the stack to the roof bottom plate\n  * Cut the poles to length\n  * If you want to use multiple colors paint now, otherwise you also can paint later\n  * After painting you may need to get the paint out of the pole holes again using a drillbit\n  * Glue the poles into floor plate and ceiling\n  * Attach the hanger\n  * Attach the wire mesh\n    ","\n### Описание\nЖировые шарики довольно часто используются для кормления синиц. Здесь вы можете построить дозатор, который защищает\nжировые шарики от дождя и снега. Дизайн был протестирован с использованием 4мм фанеры для\nосновных конструктивных частей. Для прокладки механизма блокировки были сложены два слоя 3мм\nфанеры. Столбы были сделаны из 8мм буковых прутьев диаметром и 19см\nв длину. Были сделаны некоторые базовые проверки согласованности для разных чисел, но\nтолько значения по умолчанию когда-либо строились.\n\nГотовый дозатор состоит из двух частей, которые скользят друг в друга. Вы можете установить\nкрючок, чтобы повесить его на дерево. Все края, которые имеют углы отличные от 90 градусов (фаски),\nимеют гравированные направляющие линии, которые указывают угол. Вы должны отшлифовать край так,\nчтобы детали подходили друг к другу.\n\nВерхняя часть (крыша) состоит из следующих элементов для N-стороннего дозатора:\n\n  * N-сторонняя нижняя пластина крыши, которая поддерживает черепицу. Она имеет центральный вырез,\n    который необходим для сборки, и на нижней стороне гравированную линию, которая указывает\n    положение монтажного кронштейна.\n  * N треугольников, формирующих крышу. Они также имеют небольшую дугу на кончике (roof_hole_diameter),\n  которая действует как направляющая для сверления, если вы хотите установить крючок.\n  * N-сторонняя опорная деталь крыши, которая имеет центральное отверстие для крючка. Она установлена\n  на черепицу через отверстие в нижней пластине крыши для поддержки черепицы\n  и действует как монтажная пластина для крючка.\n  * Прокладка(и); в эталонных сборках использовались 2 прокладки из 3мм фанеры. Прокладка\n  должна быть немного толще потолка (см. ниже). Это меньшая\n  \""U\""-образная часть, которая приклеивается к нижней стороне нижней пластины крыши.\n  * Кронштейн также \""U\""-образный и немного шире прокладки. Он приклеивается к\n  низу прокладки и удерживает клетку (нижняя часть).\n\nНижняя часть (клетка) состоит из следующих элементов:\n\n  * Потолок N-сторонний с центральным отверстием для пополнения и N меньшими отверстиями, в которые\n  вставляются столбы.\n  * N-сторонняя напольная часть с пальцевыми соединениями для стенок балкона и отверстиями для\n  столбов. Центральное отверстие для слива дождевой воды также может быть добавлено.\n  * N стенок балкона, окружающих пол.\n  * N столбов, которые соединяют пол и потолок (не часть чертежа)\n\nДругие части, необходимые для сборки:\n\n  * Деревянный прут (N раз длина столбов).\n  * Крючок (например, M5x50мм)\n  * Шайба для распределения нагрузки крючка на опорную деталь\n  * Одна или две гайки для закрепления крючка\n  * Дополнительно, кусок проволочной сетки\n\nСборка:\n\n  * Отшлифуйте все фаски\n  * Приклейте стенки балкона к полу\n  * Склейте пары черепицы и используйте нижнюю пластину крыши как кондуктор, можно использовать горячий клей для\n    закрепления частей.\n  * Склейте всю черепицу для формирования крыши\n  * Склейте прокладку(и) и кронштейн в стопку\n  * Приклейте черепицу к нижней пластине крыши и прикрепите опорную деталь\n  * Приклейте стопку к нижней пластине крыши\n  * Отрежьте столбы по длине\n  * Если хотите использовать несколько цветов, покрасьте сейчас, иначе можете покрасить позже\n  * После покраски вам может понадобиться удалить краску из отверстий для столбов снова, используя сверло\n  * Приклейте столбы в напольную пластину и потолок\n  * Прикрепите подвеску\n  * Прикрепите проволочную сетку\n    "
 FatBallDispenser Settings,Настройки дозатора жировых шариков
 sides,стороны
 The number of sides of the floor plan.,Количество сторон плана этажа.
-pole_diameter,диаметр_жерди
-The diameter of the poles.,Диаметр жердей.
-ball_diameter,диаметр_шарика
+pole_diameter,диаметр столба 
+The diameter of the poles.,Диаметр столбов.
+ball_diameter,диаметр шарика
 The diameter of the fat balls. Give some extra mm to make it a loose fit,Диаметр жировых шариков. Дайте несколько дополнительных мм для свободной посадки
-balcony_width,ширина_балкона
-The width of the area outside of the poles.,Ширина области снаружи жердей.
-balcony_height,высота_балкона
+balcony_width,ширина балкона
+The width of the area outside of the poles.,Ширина области снаружи столбов.
+balcony_height,высота балкона
 The height of the balcony in mm. Set to 0 if no walls are needed.,Высота балкона в мм. Установите в 0 если стенки не нужны.
-drain_hole_diameter,диаметр_дренажного_отверстия
+drain_hole_diameter,диаметр дренажного отверстия
 The diameter of the hole of the floor (to drain rainwater)\n                    in mm. Set to 0 if you don't need it.,Диаметр отверстия в полу (для слива дождевой воды)\n                    в мм. Установите в 0 если не нужно.
-pole_clearance,зазор_жерди
-The minimum distance between a pole and the central\n                    refill hole in the ceiling in mm.,Минимальное расстояние между жердью и центральным\n                    отверстием для пополнения в потолке в мм.
-slide_clearance,зазор_скольжения
+pole_clearance,зазор столба 
+The minimum distance between a pole and the central\n                    refill hole in the ceiling in mm.,Минимальное расстояние между столбом и центральным\n                    отверстием для пополнения в потолке в мм.
+slide_clearance,зазор скольжения
 The gap between the parts that slide into each other\n                    in the locking mechanism in mm.,Зазор между частями которые скользят друг в друга\n                    в механизме блокировки в мм.
-spacer_width,ширина_прокладки
+spacer_width,ширина прокладки
 The width of the spacer (part of the locking mechanism) in mm.,Ширина прокладки (часть механизма блокировки) в мм.
-pole_clearance_factor,фактор_зазора_жерди
-The fraction of the pole clearance which is being used for\n                    the locking mechanism.,Доля зазора жерди которая используется для\n                    механизма блокировки.
+pole_clearance_factor,доля зазора столба 
+The fraction of the pole clearance which is being used for\n                    the locking mechanism.,"Доля зазора столба, которая используется для\n                    механизма блокировки."
 Defines how much wider than the bottom floor the roof is.,Определяет насколько шире нижнего этажа крыша.
-roof_height,высота_крыши
+roof_height,высота крыши
 The height of the roof in mm.,Высота крыши в мм.
-roof_hole_diameter,диаметр_отверстия_крыши
+roof_hole_diameter,диаметр отверстия крыши
 The diameter of the hole of the roof in mm.\n                    Set to 0 if you don't want to attach a hanger.,Диаметр отверстия крыши в мм.\n                    Установите в 0 если не хотите прикреплять подвеску.
-roof_maintenance_clearance,зазор_обслуживания_крыши
+roof_maintenance_clearance,зазор для обслуживания на крыше
 The distance from on bottom corner of the roof to the maintenance hole in mm.,Расстояние от нижнего угла крыши до сервисного отверстия в мм.
-roof_support_fraction,доля_поддержки_крыши
+roof_support_fraction,радиус части поддержки крыши
 The radius of the roof support part as a fraction of the roof radius.,Радиус части поддержки крыши как доля радиуса крыши.
 FilamentSpool,Катушка для филамента
 A two part spool for 3D printing filament,Катушка из двух частей для филамента 3D-печати
 "\nUse small nails to properly align the pieces of the bayonet latch. Glue the parts of the bayonet latch before assembling the \""axle\"". The inner parts go at the side and the outer parts at the inside of the axle.\n![opened spool](static/samples/FilamentSpool-2.jpg)","\nИспользуйте маленькие гвозди для правильного выравнивания частей байонетной защелки. Склейте части байонетной защелки перед сборкой \""оси\"". Внутренние части идут сбоку, а внешние части внутри оси.\n![открытая катушка](static/samples/FilamentSpool-2.jpg)"
 FilamentSpool Settings,Настройки катушки для филамента
-outer_diameter,внешний_диаметр
+outer_diameter,внешний диаметр
 diameter of the flanges,диаметр фланцев
-inner_diameter,внутренний_диаметр
+inner_diameter,внутренний диаметр
 diameter of the center part,диаметр центральной части
-axle_diameter,диаметр_оси
+axle_diameter,диаметр оси
 diameter of the axle hole,диаметр отверстия оси
 number of pieces for the center part,количество частей для центральной части
 FillTest,Тест заполнения
@@ -934,7 +934,7 @@ FlexBook,Гибкая книга
 Box with living hinge styled after a book.,Коробка с гибким шарниром в стиле книги.
 "\nIf you have an enclosure, arrange the living hinge to be as close to your extractor fan as possible.\n\n![Open](static/samples/FlexBook-2.jpg)","\nЕсли у вас есть корпус, расположите гибкий шарнир как можно ближе к вытяжному вентилятору.\n\n![Открыто](static/samples/FlexBook-2.jpg)"
 FlexBook Settings,Настройки гибкой книги
-recess_wall,углубленная_стенка
+recess_wall,углубленная стенка
 Whether to recess the inner wall for easier object removal,Нужно ли углублять внутреннюю стенку для более легкого извлечения объектов
 Box with living hinge and round corners,Коробка с гибким шарниром и округлыми углами
 FlexBox Settings,Настройки гибкой коробки
@@ -945,7 +945,7 @@ Radius of the corners in mm,Радиус углов в мм
 FlexBox3,Гибкая коробка 3
 Box with living hinge,Коробка с гибким шарниром
 FlexBox3 Settings,Настройки гибкой коробки 3
-z,в
+z,z
 height of the box,высота коробки
 height of the lid,высота крышки
 radius of the lids living hinge,радиус гибкого шарнира крышки
@@ -955,9 +955,9 @@ Box with living hinge and left corners rounded,Коробка с гибким ш
 FlexBox4 Settings,Настройки гибкой коробки 4
 FlexBox5,Гибкая коробка 5
 FlexBox5 Settings,Настройки гибкой коробки 5
-top_diameter,верхний_диаметр
+top_diameter,верхний диаметр
 diameter at the top,диаметр сверху
-bottom_diameter,нижний_диаметр
+bottom_diameter,нижний диаметр
 diameter at the bottom,диаметр снизу
 FlexTest,Тест гибкости
 Piece for testing different flex settings,Деталь для тестирования различных настроек гибкости
@@ -965,12 +965,12 @@ FlexTest Settings,Настройки теста гибкости
 FlexTest2,Тест гибкости 2
 Piece for testing 2D flex settings,Деталь для тестирования 2D настроек гибкости
 FlexTest2 Settings,Настройки теста гибкости 2
-fw,гш
+fw,fw
 distance of flex cuts in multiples of thickness,расстояние гибких пропилов в кратных толщины
 Folder,Папка
 Book cover with flex for the spine,Обложка книги с гибкостью для корешка
 Folder Settings,Настройки папки
-r,р
+r,r
 FrontPanel,Передняя панель
 Mounting Holes and cutouts for all your holy needs.,Монтажные отверстия и вырезы для всех ваших святых нужд.
 "\n<script type=\""module\"" src=\""https://md-block.verou.me/md-block.js\""></script>\n<md-block>\n\n\nThis will help you create font (and side and top) panels for your\nboxes that are pre-configured for all the bits and bobs you'd like to\ninstall\n\n    The layout can create several types of holes including rectangles,\n    circles and mounting holes.  The default shows an example layout with all\n    currently supported objects.\n\n####\n`rect x y w h [cr=0] [cx=True] [cy=True]`\n\n     x: x position\n     y: y position\n     w: width\n     h: height\n    cr: optional, Corner radius, default=0\n    cx: optional, Center x.  the x position denotes the center of the rectangle.\n        accepts t, T, 1, or other true-like values.\n    cy: optional, Center y.  the y position denotes the center of the rectangle.\n\n#### outline\n`rect w h`\n\n    w: width\n    h: height\n\n`outline` has a special meaning: You can create multiple panel outlines with one command.\nThis has the effect of making it easy to manage all the holes on all the sides of\nyour boxes.\n\n#### circle\n`circle x y r`\n\n    x: x position\n    y: y position\n    r: radius\n\n#### mountinghole\nmountinghole x y d_shaft [d_head=0] [angle=0]\n\n          x: x position\n          y: y position\n    d_shaft: diameter of the shaft part of the mounting hole\n     d_head: optional. diameter of the head\n      angle: optional. angle of the mounting hole\n\n#### text\n`text x y size \""some text\"" [angle=0] [align=bottom|left]`\n\n        x: x position\n        y: y position\n     size: size, in mm\n     text: text to render.  This *must* be in quotation marks\n    angle: angle (in degrees)\n    align: string with combinations of (top|middle|bottom) and (left|center|right),\n           separated by '|'.  Default is 'bottom|left'\n\n\n\n#### nema\n`nema x y size [screwhole_size=0]`\n\n        x: x position (center of shaft)\n        y: y position (center of shaft)\n     size: nema size.  One of [8, 11, 14, 16, 17, 23, 24, 34, 42]\n    screw: screw size, in mm.  Optional.  Default=0, which means the default size\n</md-block>\n    ","\n<script type=\"module\" src=\"https://md-block.verou.me/md-block.js\"></script>\n<md-block>\n\n\nЭто поможет вам создать передние (а также боковые и верхние) панели для ваших\nкоробок, которые заранее настроены для всех компонентов, которые вы хотите\nустановить.\n\n    Макет может создавать несколько типов отверстий, включая прямоугольники,\n    круги и монтажные отверстия.  По умолчанию показан пример макета со всеми\n    поддерживаемыми объектами.\n\n####\n`rect x y w h [cr=0] [cx=True] [cy=True]`\n\n     x: x-позиция\n     y: y-позиция\n     w: ширина\n     h: высота\n    cr: необязательно, радиус скругления углов, по умолчанию=0\n    cx: необязательно, центр по x.  x-позиция обозначает центр прямоугольника.\n        принимает t, T, 1 или другие значения, трактуемые как истина.\n    cy: необязательно, центр по y.  y-позиция обозначает центр прямоугольника.\n\n#### outline\n`rect w h`\n\n    w: ширина\n    h: высота\n\n`outline` имеет особое значение: вы можете создать несколько контуров панелей одной командой.\nЭто облегчает управление всеми отверстиями на всех сторонах\nваших коробок.\n\n#### circle\n`circle x y r`\n\n    x: x-позиция\n    y: y-позиция\n    r: радиус\n\n#### mountinghole\nmountinghole x y d_shaft [d_head=0] [angle=0]\n\n          x: x-позиция\n          y: y-позиция\n    d_shaft: диаметр части отверстия под вал\n     d_head: необязательно. диаметр головки\n      angle: необязательно. угол монтажного отверстия\n\n#### text\n`text x y size \"some text\" [angle=0] [align=bottom|left]`\n\n        x: x-позиция\n        y: y-позиция\n     size: размер, в мм\n     text: текст для отображения.  Должен быть в кавычках\n    angle: угол (в градусах)\n    align: строка с комбинациями (top|middle|bottom) и (left|center|right),\n           разделёнными '|'.  По умолчанию 'bottom|left'\n\n\n\n#### nema\n`nema x y size [screwhole_size=0]`\n\n        x: x-позиция (центр вала)\n        y: y-позиция (центр вала)\n     size: размер nema.  Один из [8, 11, 14, 16, 17, 23, 24, 34, 42]\n    screw: размер винта, в мм.  Необязательно.  По умолчанию=0, что означает размер по умолчанию\n</md-block>\n    "
@@ -978,13 +978,13 @@ FrontPanel Settings,Настройки передней панели
 layout,макет
 Gears,Шестерни
 Gears Settings,Настройки шестерен
-teeth1,число зубьев 1
+teeth1,зубъя1
 number of teeth,число зубьев
 shaft1,диаметр вала 1
 diameter of the shaft 1,диаметр вала 1
 dpercentage1,процент D-секции вала 1
 percent of the D section of shaft 1 (100 for round shaft),процент D-секции вала 1 (100 для круглого вала)
-teeth2,число зубьев 2
+teeth2,зубъя2
 number of teeth in the other size of gears,число зубьев другой шестерни
 shaft2,диаметр вала 2
 diameter of the shaft2 (zero for same as shaft 1),диаметр вала 2 (ноль — как у вала 1)
@@ -1004,8 +1004,8 @@ number of teeth on outgoing shaft,число зубьев на выходном 
 modulus of the teeth in mm,модуль зубьев в мм
 shaft,вал
 diameter of the shaft,диаметр вала
-stages,этапы
-number of stages in the gear reduction,количество этапов в редукторе
+stages,ступени
+number of stages in the gear reduction,Количество ступеней в редукторе
 GridfinityBase,Основание Gridfinity
 A parameterized Gridfinity base,Параметризованное основание Gridfinity
 "This is a configurable gridfinity base.  This\n    design is based on\n    <a href=\""https://www.youtube.com/watch?app=desktop&v=ra_9zU-mnl8\"">Zach Freedman's Gridfinity system</a>","Это настраиваемое основание gridfinity. Этот\n    дизайн основан на\n    <a href=\""https://www.youtube.com/watch?app=desktop&v=ra_9zU-mnl8\"">системе Gridfinity от Зака Фридмана</a>"
@@ -1017,23 +1017,23 @@ size of base in Y direction (0=auto),размер основания в напр
 number of grids in X direction (0=auto),количество сеток в направлении X (0=авто)
 number of grids in Y direction (0=auto),количество сеток в направлении Y (0=авто)
 height of sidewalls of the tray (mm),высота боковых стенок лотка (мм)
-m,м
+m,m
 Extra margin around the gridfinity base to allow it to drop into the carrier (mm),Дополнительный зазор вокруг основания gridfinity для установки в держатель (мм)
-panel_edge,край_панели
+panel_edge,край панели
 edge type for sub panels,тип края для подпанелей
-D,Г
+D,D
 pitch,шаг
 "The Gridfinity pitch, in mm.  Should always be 42.","Шаг Gridfinity в мм. Всегда должен быть 42."
 opening,отверстие
 The cutout for each grid opening.  Typical is 38.,Вырез для каждого отверстия сетки. Обычно 38.
 The corner radius for each grid opening.  Typical is 1.6.,Радиус угла для каждого отверстия сетки. Обычно 1.6.
-cut_pads,вырезать_накладки
+cut_pads,вырезать накладки
 cut pads to be used for gridinity boxes from the grid openings,вырезать накладки для использования в коробках gridfinity из отверстий сетки
-cut_pads_mag_diameter,диаметр_магнита_накладок
+cut_pads_mag_diameter,диаметр магнита накладок
 "if pads are cut add holes for magnets. Typical is 6.5, zero to disable,","если накладки вырезаны, добавить отверстия для магнитов. Обычно 6.5, ноль для отключения,"
-cut_pads_mag_offset,смещение_магнита_накладок
+cut_pads_mag_offset,смещение магнита накладок
 if magnet hole offset from pitch corners.  Typical is 7.75.,смещение отверстия магнита от углов шага. Обычно 7.75.
-pad_radius,радиус_накладки
+pad_radius,радиус накладки
 "The corner radius for each grid opening.  Typical is 0.8,","Радиус угла для каждого отверстия сетки. Обычно 0.8,"
 panel_x,панель_x
 the maximum sized panel that can be cut in x direction,"максимальный размер панели, которую можно вырезать в направлении x"
@@ -1041,7 +1041,7 @@ panel_y,панель_y
 the maximum sized panel that can be cut in y direction,"максимальный размер панели, которую можно вырезать в направлении y"
 GridfinityTrayLayout,Макет лотка Gridfinity
 A Gridfinity Tray Generator based on TrayLayout,Генератор лотка Gridfinity на основе TrayLayout
-"\nThis is a general purpose gridfinity tray generator.  You can create\nsomewhat arbitrarily shaped trays, or just do nothing for simple grid\nshaped trays.\n\nThe dimensions are automatically calculated to fit perfectly into a\ngridfinity grid (like the GridfinityBase, or any other Gridfinity\nbased base).\n\nEdit the layout text graphics to adjust your tray.\nYou can replace the hyphens and vertical bars representing the walls\nwith a space character to remove the walls.  You can replace the space\ncharacters representing the floor by a \""X\"" to remove the floor for\nthis compartment.\n","\nЭто универсальный генератор лотков gridfinity. Вы можете создавать\nлотки произвольной формы или просто ничего не делать для простых\nлотков в форме сетки.\n\nРазмеры автоматически рассчитываются для идеального размещения в\nсетке gridfinity (как GridfinityBase или любое другое основание\nна базе Gridfinity).\n\nИзмените текстовую графику макета для настройки лотка.\nВы можете заменить дефисы и вертикальные полосы, представляющие стены,\nна пробел, чтобы убрать стены. Вы можете заменить пробелы,\nпредставляющие пол, на \""X\"", чтобы убрать пол для этого отсека.\n"
+"\nThis is a general purpose gridfinity tray generator.  You can create\nsomewhat arbitrarily shaped trays, or just do nothing for simple grid\nshaped trays.\n\nThe dimensions are automatically calculated to fit perfectly into a\ngridfinity grid (like the DGridfinityBase, or any other Gridfinity\nbased base).\n\nEdit the layout text graphics to adjust your tray.\nYou can replace the hyphens and vertical bars representing the walls\nwith a space character to remove the walls.  You can replace the space\ncharacters representing the floor by a \""X\"" to remove the floor for\nthis compartment.\n","\nЭто универсальный генератор лотков gridfinity. Вы можете создавать\nлотки произвольной формы или просто ничего не делать для простых\nлотков в форме сетки.\n\nРазмеры автоматически рассчитываются для идеального размещения в\nсетке gridfinity (как GridfinityBase или любое другое основание\nна базе Gridfinity).\n\nИзмените текстовую графику макета для настройки лотка.\nВы можете заменить дефисы и вертикальные полосы, представляющие стены,\nна пробел, чтобы убрать стены. Вы можете заменить пробелы,\nпредставляющие пол, на \""X\"", чтобы убрать пол для этого отсека.\n"
 GridfinityTrayLayout Settings,Настройки макета лотка Gridfinity
 height in mm or add 'u' at the end for Gridfinity units,высота в мм или добавьте 'u' в конце для единиц Gridfinity
 inner height of inner walls in mm (leave to zero for same as outer walls with optional reduction for stacking),внутренняя высота внутренних стен в мм (оставьте ноль для такой же как внешние стены с возможным уменьшением для складирования)
@@ -1049,14 +1049,14 @@ nx,nx
 number of gridfinity grids in X direction,количество сеток gridfinity в направлении X
 ny,ny
 number of gridfinity grids in Y direction,количество сеток gridfinity в направлении Y
-countx,счетчик_x
+countx,количество_x
 split x into this many grid sections.  0 means same as --nx,разделить x на столько секций сетки. 0 означает то же что --nx
-county,счетчик_y
+county,количество_y
 split y into this many grid sections.  0 means same as --ny,разделить y на столько секций сетки. 0 означает то же что --ny
 "Leave this much total margin on the outside, in mm","Оставить столько общего зазора снаружи, в мм"
 stacking,складирование
 support gridfinity compatible stacking,поддержка складирования совместимого с gridfinity
-gen_pads,генерировать_накладки
+gen_pads,генерировать накладки
 generate pads to be used on the bottom of the box,генерировать накладки для использования на дне коробки
 GridfinityDrillBox,Коробка для сверл Gridfinity
 A Gridfinity box for drills or similar tools,Коробка Gridfinity для сверл или аналогичных инструментов
@@ -1070,9 +1070,9 @@ HalfBox,Полукоробка
 "Configurable half of a box which can be: a bookend, a hanging shelf, an angle clamping jig, ...","Настраиваемая половина коробки, которая может быть: подставкой для книг, подвесной полкой, угловым зажимным приспособлением, ..."
 This can be used to create:\n\n* a hanging shelf:\n![HalfBox as hanging shelf](static/samples/HalfBox_Shelf_usage.jpg)\n\n* an angle clamping jig:\n![HalfBox as an angle clamping jig](static/samples/HalfBox_AngleJig_usage.jpg)\n\n* a bookend:\n![HalfBox as a bookend](static/samples/HalfBox_Bookend_usage.jpg)\n\nand many more...\n\n,Это можно использовать для создания:\n\n* подвесной полки:\n![HalfBox как подвесная полка](static/samples/HalfBox_Shelf_usage.jpg)\n\n* углового зажимного приспособления:\n![HalfBox как угловое зажимное приспособление](static/samples/HalfBox_AngleJig_usage.jpg)\n\n* подставки для книг:\n![HalfBox как подставка для книг](static/samples/HalfBox_Bookend_usage.jpg)\n\nи многое другое...\n\n
 HalfBox Settings,Настройки полукоробки
-Clamping,Зажим
+Clamping,отверстия для зажима
 add clamping holes,добавить отверстия для зажима
-ClampingSize,РазмерЗажима
+ClampingSize,Размер отверстий для зажима
 diameter of clamping holes,диаметр отверстий для зажима
 Mounting,Крепление
 add mounting holes,добавить крепежные отверстия
@@ -1087,26 +1087,26 @@ HingeBox,Коробка с петлями
 Box with lid attached by cabinet hinges,"Коробка с крышкой, прикрепленной мебельными петлями"
 Needs (metal) pins as hinge axles. Pieces of nails will\ndo fine. They need to be cut to length as they are captured as soon as the\nhinges are assembled.\n\nAssemble the box and the lid separately. Then insert the axle into the hinges.\nThen attach the hinges on the inside of the box and then connect them to lid.\n,Требуются (металлические) штифты как оси петель. Кусочки гвоздей\nподойдут. Их нужно обрезать по длине, так как они захватываются сразу\nпосле сборки петель.\n\nСоберите коробку и крышку отдельно. Затем вставьте ось в петли.\nЗатем прикрепите петли с внутренней стороны коробки и подсоедините их к крышке.\n
 HingeBox Settings,Настройки коробки с петлями
-splitlid,разделить_крышку
+splitlid,разделить крышку
 split the lid in y direction (mm),разделить крышку в направлении y (мм)
 HobbyCase,Кейс для хобби
 A case that can be used in any hobby involving small pieces in need of organizing.,"Кейс, который можно использовать в любом хобби, связанном с мелкими деталями, требующими организации."
 "\nThe hobby case is defined by units, \""cells\"" of the case.\nYou define depth, height and widths of the cells.\nBy combining dimensions with number of columns and rows slots for shelves are generated.\nSlots can be populated by:\n\n* shelves (horizontal piece of plywood that covers full width and depth of the column. You can put anything on them, but they also provide some structural integrity. It is recommended to have a least one shelve every 2-4 slots (depending on the unit height)\n* rails (3 horizontal pieces that stick out of the side and back walls of the column. They can be used to allow taller things placed on shelves below, but also some sliding drawers can be put in them.\n","\nКейс для хобби определяется единицами, \""ячейками\"" кейса.\nВы определяете глубину, высоту и ширину ячеек.\nКомбинированием размеров с количеством столбцов и строк генерируются слоты для полок.\nСлоты могут быть заполнены:\n\n* полками (горизонтальный кусок фанеры, который покрывает полную ширину и глубину столбца. Вы можете поставить на них что угодно, но они также обеспечивают некоторую структурную целостность. Рекомендуется иметь как минимум одну полку каждые 2-4 слота (в зависимости от высоты единицы)\n* направляющими (3 горизонтальных элемента, которые выступают из боковых и задних стен столбца. Они могут использоваться для размещения более высоких предметов на полках ниже, а также для установки выдвижных ящиков.\n"
 HobbyCase Settings,Настройки кейса для хобби
-unit_d,единица_г
+unit_d,единица г
 Depth of single unit,Глубина одной единицы
-unit_h,единица_в
+unit_h,единица в
 Height of single unit,Высота одной единицы
-unit_w,единица_ш
+unit_w,единица ш
 "Widths of unit columns, eg. 215*3 or 150:215:150","Ширина столбцов единиц, например, 215*3 или 150:215:150"
 Number of rows in each of the columns,Количество строк в каждом из столбцов
-shelves_n,полки_к
+shelves_n,полки к
 How many shelves should each column have eg. 2:3:2. Use integers only!,"Сколько полок должно быть в каждом столбце, например, 2:3:2. Используйте только целые числа!"
-add_rails,добавить_направляющие
+add_rails,добавить направляющие
 Should rails be generated for slots unpopulated by shelves?,"Должны ли направляющие генерироваться для слотов, не заполненных полками?"
-add_cover,добавить_крышку
+add_cover,добавить крышку
 Should cover for the case be generated?,Должна ли генерироваться крышка для кейса?
-inset_shelves,встроенные_полки
+inset_shelves,встроенные полки
 Should the inner dividers and shelves be inset from the front edge?,Должны ли внутренние разделители и полки быть утоплены от переднего края?
 HolePattern,Шаблон отверстий
 Generate hole patterns in different simple shapes,Генерировать шаблоны отверстий в различных простых формах
@@ -1512,7 +1512,7 @@ matting_w,матирование_w
 Width of the matting border around the sides of the photo,Ширина паспарту по бокам фото
 matting_h,матирование_h
 Width of the matting border around top/bottom of the photo,Ширина паспарту сверху/снизу фото
-matting_overlap,матирование_перекрытие
+matting_overlap,матирование перекрытие
 "Matting overlap of the photo, e.g. 2mm if photo has border, 5mm if not","Перекрытие паспарту на фото, например 2 мм если есть рамка, 5 мм если нет"
 glass_w,стекло_w
 Width of the pre-cut glass or acrylic,Ширина стекла или акрила
@@ -1520,9 +1520,9 @@ glass_h,стекло_h
 Height of the pre-cut glass or acrylic,Высота стекла или акрила
 frame_w,рамка_w
 Width of the frame border around the matting,Ширина рамки вокруг паспарту
-guide_fudge,руководство_помадка
+guide_fudge,руководство помадка
 Clearance in the guide pocket to help slide the matting/glass in,Запас в пазу для облегчения вставки паспарту/стекла
-frame_overlap,рамбка_перекрытие
+frame_overlap,рамбка перекрытие
 Frame overlap to hold the matting/glass in place,Перекрытие рамки для удержания паспарту/стекла
 split_front,Разделить переднюю часть на тонкие прямоугольники для экономии материала
 Split front into thin rectangles to save material,Разделить переднюю часть на тонкие прямоугольники для экономии материала
@@ -1636,22 +1636,22 @@ Simple wall with options for different edges,Простая стенка с ва
 RectangularWall Settings,Настройки прямоугольной стенки
 C,С
 I,I
-j,й
-J,Й
+j,j
+J,J
 K,K
-l,л
-M,М
-N,Н
-o,о
-O,О
-p,п
-P,П
-q,к
-Q,К
-R,Р
-u,у
-U,У
-V,В
+l,l
+M,M
+N,N
+o,o
+O,O
+p,p
+P,P
+q,q
+Q,Q
+R,R
+u,u
+U,U
+V,V
 right_edge,правая кромка
 edge type for right edge,тип кромки для правой стороны
 left_edge,левая кромка
@@ -2177,6 +2177,7 @@ Add a fourth piece to make a U-Beam with a flange,Добавить четвер�
 Boxes.py,Boxes.py
 Generate,Сгенерировать
 Download,Скачать
+Order product, Заказать
 Save to URL,Сохранить по ссылке
 QR Code,QR-код
 There is no image yet. Please donate an image of your project on <a href=&quot;https://github.com/florianfesti/boxes/issues/628&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;>GitHub</a>!,"Пока нет изображения. Пожалуйста, добавьте фото вашего проекта на <a href=&quot;https://github.com/florianfesti/boxes/issues/628&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;>GitHub</a>!"

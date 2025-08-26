@@ -590,8 +590,8 @@ msgid ""
 "sections left to right in mm [🛈](https://florianfesti.github.io/boxes/html/"
 "usermanual.html#section-parameters)"
 msgstr ""
-"секции слева направо в мм [🛈](https://florianfesti.github.io/boxes/html/"
-"usermanual.html#section-parameters)"
+"секции слева направо в мм [🛈](https://tridecagram.ru/factory/laser-cutting/"
+"boxes-manual/#section-parameters)"
 
 #. parameter name
 msgid "sy"
@@ -602,8 +602,8 @@ msgid ""
 "sections back to front in mm [🛈](https://florianfesti.github.io/boxes/html/"
 "usermanual.html#section-parameters)"
 msgstr ""
-"секции сзади наперед в мм [🛈](https://florianfesti.github.io/boxes/html/"
-"usermanual.html#section-parameters)"
+"секции сзади наперед в мм [🛈](https://tridecagram.ru/factory/laser-cutting/"
+"boxes-manual/#section-parameters)"
 
 #. parameter name
 msgid "sh"
@@ -614,12 +614,12 @@ msgid ""
 "sections bottom to top in mm [🛈](https://florianfesti.github.io/boxes/html/"
 "usermanual.html#section-parameters)"
 msgstr ""
-"секции снизу вверх в мм [🛈](https://florianfesti.github.io/boxes/html/"
-"usermanual.html#section-parameters)"
+"секции снизу вверх в мм [🛈](https://tridecagram.ru/factory/laser-cutting/"
+"boxes-manual/#section-parameters)"
 
 #. parameter name
 msgid "bottom_edge"
-msgstr "нижний_край"
+msgstr "нижний край"
 
 #. help for parameter bottom_edge
 msgid "edge type for bottom edge"
@@ -639,7 +639,7 @@ msgstr "e"
 
 #. parameter name
 msgid "top_edge"
-msgstr "верхний_край"
+msgstr "верхний край"
 
 #. help for parameter top_edge
 msgid "edge type for top edge"
@@ -695,15 +695,15 @@ msgstr "Y"
 
 #. parameter name
 msgid "outside"
-msgstr "внешние_габариты"
+msgstr "внешние габариты"
 
 #. help for parameter outside
 msgid ""
 "treat sizes as outside measurements [🛈](https://florianfesti.github.io/boxes/"
 "html/usermanual.html#outside)"
 msgstr ""
-"считать размеры внешними [🛈](https://florianfesti.github.io/boxes/"
-"html/usermanual.html#outside)"
+"считать размеры внешними [🛈](https://tridecagram.ru/factory/laser-cutting/"
+"boxes-manual/#outside)"
 
 #. parameter name
 msgid "nema_mount"
@@ -725,8 +725,8 @@ msgid ""
 "thickness of the material (in mm) [🛈](https://florianfesti.github.io/boxes/"
 "html/usermanual.html#thickness)"
 msgstr ""
-"толщина материала (в мм) [🛈](https://florianfesti.github.io/boxes/"
-"html/usermanual.html#thickness)"
+"толщина материала (в мм) [🛈](https://tridecagram.ru/factory/laser-cutting/"
+"boxes-manual/#thickness)"
 
 #. parameter name
 msgid "format"
@@ -737,8 +737,8 @@ msgid ""
 "format of resulting file [🛈](https://florianfesti.github.io/boxes/html/"
 "usermanual.html#format)"
 msgstr ""
-"формат выходного файла [🛈](https://florianfesti.github.io/boxes/html/"
-"usermanual.html#format)"
+"формат выходного файла [🛈](https://tridecagram.ru/factory/laser-cutting/"
+"boxes-manual/#format)"
 
 #. possible choice for format
 msgid "dxf"
@@ -782,7 +782,8 @@ msgid ""
 "[🛈](https://florianfesti.github.io/boxes/html/usermanual.html#tabs)"
 msgstr ""
 "ширина язычков, удерживающих детали (в мм) (поддерживается не везде) "
-"[🛈](https://florianfesti.github.io/boxes/html/usermanual.html#tabs)"
+"[🛈](https://tridecagram.ru/factory/laser-cutting/"
+"boxes-manual/#tabs)"
 
 #. parameter name
 msgid "qr_code"
@@ -801,8 +802,8 @@ msgid ""
 "print surrounding boxes for some structures [🛈](https://"
 "florianfesti.github.io/boxes/html/usermanual.html#debug)"
 msgstr ""
-"печать окружающих коробок для некоторых структур [🛈](https://"
-"florianfesti.github.io/boxes/html/usermanual.html#debug)"
+"печать окружающих коробок для некоторых структур [🛈](https://tridecagram.ru/factory/laser-cutting/"
+"boxes-manual/#debug)"
 
 #. parameter name
 msgid "labels"
@@ -822,19 +823,20 @@ msgid ""
 "(https://florianfesti.github.io/boxes/html/usermanual.html#reference)"
 msgstr ""
 "печать опорного прямоугольника с заданной длиной (в мм) (0 для отключения) [🛈]"
-"(https://florianfesti.github.io/boxes/html/usermanual.html#reference)"
+"(https://tridecagram.ru/factory/laser-cutting/"
+"boxes-manual/#reference)"
 
 #. parameter name
 msgid "inner_corners"
-msgstr "внутренние_углы"
+msgstr "внутренние углы"
 
 #. help for parameter inner_corners
 msgid ""
 "style for inner corners [🛈](https://florianfesti.github.io/boxes/html/"
 "usermanual.html#inner-corners)"
 msgstr ""
-"стиль внутренних углов [🛈](https://florianfesti.github.io/boxes/html/"
-"usermanual.html#inner-corners)"
+"стиль внутренних углов [🛈](https://tridecagram.ru/factory/laser-cutting/"
+"boxes-manual/#inner-corners)"
 
 #. possible choice for inner_corners
 msgid "loop"
@@ -850,15 +852,15 @@ msgstr "обратная дуга"
 
 #. parameter name
 msgid "burn"
-msgstr "радиус_прожига"
+msgstr "радиус прожига"
 
 #. help for parameter burn
 msgid ""
 "burn correction (in mm)(bigger values for tighter fit) [🛈](https://"
 "florianfesti.github.io/boxes/html/usermanual.html#burn)"
 msgstr ""
-"коррекция прожига (в мм) (большее значение — более плотная посадка) [🛈](https://"
-"florianfesti.github.io/boxes/html/usermanual.html#burn)"
+"коррекция прожига (в мм) (большее значение — более плотная посадка) [🛈](https://tridecagram.ru/factory/laser-cutting/"
+"boxes-manual/#burn)"
 
 msgid "Settings for Finger Joints"
 msgstr "Настройки для шиповых соединений"
@@ -889,7 +891,7 @@ msgstr "защелка"
 
 #. parameter name for FingerJoint
 msgid "surroundingspaces"
-msgstr "внешние_зазоры"
+msgstr "внешние зазоры"
 
 #. help for parameter surroundingspaces
 msgid "space at the start and end in multiple of normal spaces"
@@ -897,7 +899,7 @@ msgstr "пространство в начале и конце в кратных
 
 #. parameter name for FingerJoint
 msgid "bottom_lip"
-msgstr "нижняя_кромка"
+msgstr "нижняя кромка"
 
 #. help for parameter bottom_lip
 msgid ""
@@ -909,7 +911,7 @@ msgstr ""
 
 #. parameter name for FingerJoint
 msgid "edge_width"
-msgstr "ширина_кромки"
+msgstr "ширина кромки"
 
 #. help for parameter edge_width
 msgid "space below holes of FingerHoleEdge (multiples of thickness)"
@@ -917,7 +919,7 @@ msgstr "пространство под отверстиями FingerHoleEdge (�
 
 #. parameter name for FingerJoint
 msgid "extra_length"
-msgstr "доп_длина"
+msgstr "доп длина"
 
 #. help for parameter extra_length
 msgid "extra material to grind away burn marks (multiples of thickness)"
@@ -968,7 +970,7 @@ msgstr "внутренний угол ножек"
 
 #. parameter name for Stackable
 msgid "bottom_stabilizers"
-msgstr "нижние_стабилизаторы"
+msgstr "нижние стабилизаторы"
 
 #. help for parameter bottom_stabilizers
 msgid ""
@@ -2011,8 +2013,8 @@ msgid ""
 "mounting hole diameter (shaft:head) in mm [🛈](https://florianfesti.github.io/"
 "boxes/html/usermanual.html#mounting-holes)"
 msgstr ""
-"диаметр монтажного отверстия (вал:головка) в мм [🛈](https://florianfesti.github.io/"
-"boxes/html/usermanual.html#mounting-holes)"
+"диаметр монтажного отверстия (вал:головка) в мм [🛈](https://tridecagram.ru/factory/laser-cutting/"
+"boxes-manual/#mounting-holes)"
 
 #. parameter name
 #: boxes/generators/bintray.py
@@ -2417,7 +2419,7 @@ msgstr ""
 #. parameter name
 #: boxes/generators/brick_sorter.py
 msgid "wiggle"
-msgstr "Зазор, чтобы слои могли скользить друг в друге."
+msgstr "зазор"
 
 #. help for parameter wiggle
 #: boxes/generators/brick_sorter.py
@@ -3364,12 +3366,12 @@ msgstr "диаметр отверстия для штифта в мм"
 #. parameter name for CabinetHinge
 #: boxes/generators/typetray.py
 msgid "eyes_per_hinge"
-msgstr "глазков на петлю"
+msgstr "проушины на петлю"
 
 #. help for parameter eyes_per_hinge
 #: boxes/generators/typetray.py
 msgid "pieces per hinge"
-msgstr "деталей на петлю"
+msgstr "детали на петлю"
 
 #. parameter name for CabinetHinge
 #: boxes/generators/typetray.py
@@ -3394,17 +3396,17 @@ msgstr "внутренний"
 #. parameter name for CabinetHinge
 #: boxes/generators/typetray.py
 msgid "eye"
-msgstr "глазок"
+msgstr "проушина"
 
 #. help for parameter eye
 #: boxes/generators/typetray.py
 msgid "radius of the eye (multiples of thickness)"
-msgstr "радиус глазка (кратные толщинам)"
+msgstr "радиус проушины (кратные толщинам)"
 
 #. help for parameter play
 #: boxes/generators/typetray.py
 msgid "space between eyes (multiples of thickness)"
-msgstr "расстояние между глазками (кратные толщинам)"
+msgstr "расстояние между проушинами (кратные толщинам)"
 
 #. parameter name for CabinetHinge
 #: boxes/generators/typetray.py
@@ -3522,7 +3524,7 @@ msgstr "Ярлыки отделений"
 #. parameter name
 #: boxes/generators/typetray.py
 msgid "text_size"
-msgstr "размер_текста"
+msgstr "размер текста"
 
 #. help for parameter text_size
 #: boxes/generators/typetray.py
@@ -3532,7 +3534,7 @@ msgstr "размер текста в мм для содержимого лотк
 #. parameter name
 #: boxes/generators/typetray.py
 msgid "text_alignment"
-msgstr "выравнивание_текста"
+msgstr "выравнивание текста"
 
 #. help for parameter text_alignment
 #: boxes/generators/typetray.py
@@ -3547,7 +3549,7 @@ msgstr "центр"
 #. parameter name
 #: boxes/generators/typetray.py
 msgid "text_distance_x"
-msgstr "расстояние_текста_x"
+msgstr "расстояние текста_x"
 
 #. help for parameter text_distance_x
 #: boxes/generators/typetray.py
@@ -3559,7 +3561,7 @@ msgstr ""
 #. parameter name
 #: boxes/generators/typetray.py
 msgid "text_distance_y"
-msgstr "расстояние_текста_y"
+msgstr "расстояние текста_y"
 
 #. help for parameter text_distance_y
 #: boxes/generators/typetray.py
@@ -3569,7 +3571,7 @@ msgstr "расстояние по Y от края лотка в мм."
 #. parameter name
 #: boxes/generators/typetray.py
 msgid "text_at_front"
-msgstr "текст_спереди"
+msgstr "текст спереди"
 
 #. help for parameter text_at_front
 #: boxes/generators/typetray.py
@@ -3579,7 +3581,7 @@ msgstr "начать ярлыки отделений спереди"
 #. parameter name
 #: boxes/generators/typetray.py
 msgid "label_file"
-msgstr "файл_ярлыков"
+msgstr "файл ярлыка"
 
 #. help for parameter label_file
 #: boxes/generators/typetray.py
@@ -3592,7 +3594,7 @@ msgstr "Настройки для края с отверстиями для па
 #. parameter name for FingerHoleEdge
 #: boxes/generators/typetray.py
 msgid "absolute_depth"
-msgstr "абсолютная_глубина"
+msgstr "абсолютная глубина"
 
 #. help for parameter absolute_depth
 #: boxes/generators/typetray.py
@@ -3602,7 +3604,7 @@ msgstr "глубина отверстия в мм (в дополнение к о
 #. parameter name for FingerHoleEdge
 #: boxes/generators/typetray.py
 msgid "absolute_width"
-msgstr "абсолютная_ширина"
+msgstr "абсолютная ширина"
 
 #. help for parameter absolute_width
 #: boxes/generators/typetray.py
@@ -3617,7 +3619,7 @@ msgstr "максимальный радиус (в мм)"
 #. parameter name for FingerHoleEdge
 #: boxes/generators/typetray.py
 msgid "relative_depth"
-msgstr "относительная_глубина"
+msgstr "относительная глубина"
 
 #. help for parameter relative_depth
 #: boxes/generators/typetray.py
@@ -3627,7 +3629,7 @@ msgstr "глубина отверстия как доля от стенки"
 #. parameter name for FingerHoleEdge
 #: boxes/generators/typetray.py
 msgid "relative_width"
-msgstr "относительная_ширина"
+msgstr "относительная ширина"
 
 #. help for parameter relative_width
 #: boxes/generators/typetray.py
@@ -3725,7 +3727,7 @@ msgstr "зазор для добавления с обеих сторон выд
 #. parameter name
 #: boxes/generators/compartmentbox.py
 msgid "split_lip"
-msgstr "разделенный_выступ"
+msgstr "разделенный выступ"
 
 #. help for parameter split_lip
 #: boxes/generators/compartmentbox.py
@@ -3778,7 +3780,7 @@ msgstr "угол между выпуклыми и вогнутыми частя�
 #. parameter name
 #: boxes/generators/concaveknob.py
 msgid "bolthole"
-msgstr "отверстие_для_болта"
+msgstr "отверстие для болта"
 
 #. help for parameter bolthole
 #: boxes/generators/concaveknob.py
@@ -3798,7 +3800,7 @@ msgstr "D-плоскость в доле от диаметра"
 #. parameter name
 #: boxes/generators/concaveknob.py
 msgid "hexhead"
-msgstr "шестигранная_головка"
+msgstr "шестигранная головка"
 
 #. help for parameter hexhead
 #: boxes/generators/concaveknob.py
@@ -3844,7 +3846,7 @@ msgstr "Настройки консоли"
 #. parameter name
 #: boxes/generators/console.py
 msgid "front_height"
-msgstr "высота_переда"
+msgstr "высота переда"
 
 #. help for parameter front_height
 #: boxes/generators/console.py
@@ -3971,7 +3973,7 @@ msgstr "Настройки консоли2"
 #. parameter name
 #: boxes/generators/console2.py
 msgid "removable_backwall"
-msgstr "съемная_задняя_стенка"
+msgstr "съемная задняя стенка"
 
 #. help for parameter removable_backwall
 #: boxes/generators/console2.py
@@ -3981,7 +3983,7 @@ msgstr "иметь защелки на задней стенке"
 #. parameter name
 #: boxes/generators/console2.py
 msgid "removable_panel"
-msgstr "съемная_панель"
+msgstr "съемная панель"
 
 #. help for parameter removable_panel
 #: boxes/generators/console2.py
@@ -3991,7 +3993,7 @@ msgstr "панель удерживается язычками и может б�
 #. parameter name
 #: boxes/generators/console2.py
 msgid "glued_panel"
-msgstr "приклеенная_панель"
+msgstr "приклеенная панель"
 
 #. help for parameter glued_panel
 #: boxes/generators/console2.py
@@ -4054,7 +4056,7 @@ msgstr "необязательный текст для гравировки (о�
 #. parameter name
 #: boxes/generators/desksign.py
 msgid "fontsize"
-msgstr "размер_шрифта"
+msgstr "размер шрифта"
 
 #. help for parameter fontsize
 #: boxes/generators/desksign.py
@@ -4087,7 +4089,7 @@ msgstr ""
 #. parameter name
 #: boxes/generators/desksign.py
 msgid "verticaltextoffset"
-msgstr "вертикальное_смещение_текста"
+msgstr "вертикальное смещение текста"
 
 #. help for parameter verticaltextoffset
 #: boxes/generators/desksign.py
@@ -4110,7 +4112,7 @@ msgstr "Настройки коробки для кубиков"
 #. parameter name
 #: boxes/generators/dicebox.py
 msgid "lidheight"
-msgstr "высота_крышки"
+msgstr "высота крышки"
 
 #. help for parameter lidheight
 #: boxes/generators/dicebox.py
@@ -4120,7 +4122,7 @@ msgstr "высота крышки в мм"
 #. parameter name
 #: boxes/generators/dicebox.py
 msgid "hex_hole_corner_radius"
-msgstr "радиус_угла_шестигранного_отверстия"
+msgstr "радиус угла шестигранного отверстия"
 
 #. help for parameter hex_hole_corner_radius
 #: boxes/generators/dicebox.py
@@ -4130,7 +4132,7 @@ msgstr "радиус угла шестигранных отверстий для
 #. parameter name
 #: boxes/generators/dicebox.py
 msgid "magnet_diameter"
-msgstr "диаметр_магнита"
+msgstr "диаметр магнита"
 
 #. help for parameter magnet_diameter
 #: boxes/generators/dicebox.py
@@ -4143,7 +4145,7 @@ msgstr "Настройки петель сундука"
 #. parameter name for ChestHinge
 #: boxes/generators/dicebox.py
 msgid "finger_joints_on_box"
-msgstr "пальцевые_соединения_на_коробке"
+msgstr "пальцевые соединения на коробке"
 
 #. help for parameter finger_joints_on_box
 #: boxes/generators/dicebox.py
@@ -4153,7 +4155,7 @@ msgstr "включать ли пальцевые соединения на кр�
 #. parameter name for ChestHinge
 #: boxes/generators/dicebox.py
 msgid "finger_joints_on_lid"
-msgstr "пальцевые_соединения_на_крышке"
+msgstr "пальцевые соединения на крышке"
 
 #. help for parameter finger_joints_on_lid
 #: boxes/generators/dicebox.py
@@ -4163,12 +4165,12 @@ msgstr "включать ли пальцевые соединения на кр�
 #. parameter name for ChestHinge
 #: boxes/generators/dicebox.py
 msgid "hinge_strength"
-msgstr "прочность_петли"
+msgstr "прочность петли"
 
 #. parameter name for ChestHinge
 #: boxes/generators/dicebox.py
 msgid "pin_height"
-msgstr "высота_штифта"
+msgstr "высота штифта"
 
 #. help for parameter pin_height
 #: boxes/generators/dicebox.py
@@ -4253,7 +4255,7 @@ msgstr "Настройки коробки для DIN-рейки"
 #. parameter name
 #: boxes/generators/dinrailbox.py
 msgid "rail_width"
-msgstr "ширина_рейки"
+msgstr "ширина рейки"
 
 #. help for parameter rail_width
 #: boxes/generators/dinrailbox.py
@@ -4263,7 +4265,7 @@ msgstr "ширина рейки (обычно 35 или 15мм)"
 #. parameter name
 #: boxes/generators/dinrailbox.py
 msgid "rail_offset"
-msgstr "смещение_рейки"
+msgstr "смещение рейки"
 
 #. help for parameter rail_offset
 #: boxes/generators/dinrailbox.py
@@ -4286,7 +4288,7 @@ msgstr "Настройки стойки для дисков"
 #. parameter name
 #: boxes/generators/discrack.py
 msgid "disc_diameter"
-msgstr "диаметр_диска"
+msgstr "диаметр диска"
 
 #. help for parameter disc_diameter
 #: boxes/generators/discrack.py
@@ -4296,7 +4298,7 @@ msgstr "диаметр диска в мм"
 #. parameter name
 #: boxes/generators/discrack.py
 msgid "disc_thickness"
-msgstr "толщина_диска"
+msgstr "толщина диска"
 
 #. help for parameter disc_thickness
 #: boxes/generators/discrack.py
@@ -4306,7 +4308,7 @@ msgstr "толщина дисков в мм"
 #. parameter name
 #: boxes/generators/discrack.py
 msgid "lower_factor"
-msgstr "нижний_фактор"
+msgstr "нижний фактор"
 
 #. help for parameter lower_factor
 #: boxes/generators/discrack.py
@@ -4316,7 +4318,7 @@ msgstr "положение нижних решеток стойки вдоль �
 #. parameter name
 #: boxes/generators/discrack.py
 msgid "rear_factor"
-msgstr "задний_фактор"
+msgstr "задний фактор"
 
 #. help for parameter rear_factor
 #: boxes/generators/discrack.py
@@ -4326,7 +4328,7 @@ msgstr "положение задних решеток стойки вдоль �
 #. parameter name
 #: boxes/generators/discrack.py
 msgid "disc_outset"
-msgstr "выступ_диска"
+msgstr "выступ диска"
 
 #. help for parameter disc_outset
 #: boxes/generators/discrack.py
@@ -4363,7 +4365,7 @@ msgstr "Настройки диспенсера"
 #. parameter name
 #: boxes/generators/dispenser.py
 msgid "slotheight"
-msgstr "высота_щели"
+msgstr "высота щели"
 
 #. help for parameter slotheight
 #: boxes/generators/dispenser.py
@@ -4373,7 +4375,7 @@ msgstr "высота щели диспенсера / предметов (в мм
 #. parameter name
 #: boxes/generators/dispenser.py
 msgid "viewingwidth"
-msgstr "ширина_просмотра"
+msgstr "ширина смотрового окна"
 
 #. help for parameter viewingwidth
 #: boxes/generators/dispenser.py
@@ -4383,7 +4385,7 @@ msgstr "ширина смотрового окна как часть общей 
 #. parameter name
 #: boxes/generators/dispenser.py
 msgid "bottomheight"
-msgstr "высота_основания"
+msgstr "высота основания"
 
 #. help for parameter bottomheight
 #: boxes/generators/dispenser.py
@@ -4393,7 +4395,7 @@ msgstr "высота под диспенсером (в мм)"
 #. parameter name
 #: boxes/generators/dispenser.py
 msgid "sideedges"
-msgstr "боковые_края"
+msgstr "боковые края"
 
 #. help for parameter sideedges
 #: boxes/generators/dispenser.py
@@ -4471,7 +4473,7 @@ msgstr "количество полок"
 #. parameter name
 #: boxes/generators/displayshelf.py
 msgid "front_wall_height"
-msgstr "высота_передней_стенки"
+msgstr "высота передней стенки"
 
 #. help for parameter front_wall_height
 #: boxes/generators/displayshelf.py
@@ -4486,7 +4488,7 @@ msgstr "угол полов (отрицательные значения для 
 #. parameter name
 #: boxes/generators/displayshelf.py
 msgid "include_back"
-msgstr "включить_заднюю_часть"
+msgstr "включить заднюю часть"
 
 #. help for parameter include_back
 #: boxes/generators/displayshelf.py
@@ -4496,7 +4498,7 @@ msgstr "включить панель на задней части полки"
 #. parameter name
 #: boxes/generators/displayshelf.py
 msgid "include_front"
-msgstr "включить_переднюю_часть"
+msgstr "включить переднюю часть"
 
 #. help for parameter include_front
 #: boxes/generators/displayshelf.py
@@ -4506,7 +4508,7 @@ msgstr "включить панель на передней части полк�
 #. parameter name
 #: boxes/generators/displayshelf.py
 msgid "include_bottom"
-msgstr "включить_основание"
+msgstr "включить основание"
 
 #. help for parameter include_bottom
 #: boxes/generators/displayshelf.py
@@ -4516,7 +4518,7 @@ msgstr "включить горизонтальную панель на дне �
 #. parameter name
 #: boxes/generators/displayshelf.py
 msgid "slope_top"
-msgstr "наклон_верха"
+msgstr "наклон верха"
 
 #. help for parameter slope_top
 #: boxes/generators/displayshelf.py
@@ -4526,7 +4528,7 @@ msgstr "наклонить бока и верх на высоту передне
 #. parameter name
 #: boxes/generators/displayshelf.py
 msgid "divider_wall_height"
-msgstr "высота_разделительной_стенки"
+msgstr "высота разделительной стенки"
 
 #. help for parameter divider_wall_height
 #: boxes/generators/displayshelf.py
@@ -4536,7 +4538,7 @@ msgstr "высота разделительных стенок"
 #. parameter name
 #: boxes/generators/displayshelf.py
 msgid "bottom_distance"
-msgstr "расстояние_от_дна"
+msgstr "расстояние от дна"
 
 #. help for parameter bottom_distance
 #: boxes/generators/displayshelf.py
@@ -4546,7 +4548,7 @@ msgstr "высота под нижней полкой"
 #. parameter name
 #: boxes/generators/displayshelf.py
 msgid "top_distance"
-msgstr "расстояние_от_верха"
+msgstr "расстояние от верха"
 
 #. help for parameter top_distance
 #: boxes/generators/displayshelf.py
@@ -4600,7 +4602,7 @@ msgstr "Настройки разделительного лотка"
 #. parameter name
 #: boxes/generators/dividertray.py
 msgid "notches_in_wall"
-msgstr "пазы_в_стенке"
+msgstr "пазы в стенке"
 
 #. help for parameter notches_in_wall
 #: boxes/generators/dividertray.py
@@ -4610,7 +4612,7 @@ msgstr "генерировать те же пазы на стенках что �
 #. parameter name
 #: boxes/generators/dividertray.py
 msgid "left_wall"
-msgstr "левая_стенка"
+msgstr "левая стенка"
 
 #. help for parameter left_wall
 #: boxes/generators/dividertray.py
@@ -4620,7 +4622,7 @@ msgstr "генерировать стенку слева"
 #. parameter name
 #: boxes/generators/dividertray.py
 msgid "right_wall"
-msgstr "правая_стенка"
+msgstr "правая стенка"
 
 #. help for parameter right_wall
 #: boxes/generators/dividertray.py
@@ -4653,7 +4655,7 @@ msgstr "глубина слота в мм"
 #. parameter name for Slot
 #: boxes/generators/dividertray.py
 msgid "extra_slack"
-msgstr "дополнительный_зазор"
+msgstr "дополнительный зазор"
 
 #. help for parameter extra_slack
 #: boxes/generators/dividertray.py
@@ -4673,12 +4675,12 @@ msgstr "Настройки для пазов на разделителях"
 #. parameter name for Notch
 #: boxes/generators/dividertray.py
 msgid "lower_radius"
-msgstr "нижний_радиус"
+msgstr "нижний радиус"
 
 #. parameter name for Notch
 #: boxes/generators/dividertray.py
 msgid "upper_radius"
-msgstr "верхний_радиус"
+msgstr "верхний радиус"
 
 msgid "Settings for Dividers"
 msgstr "Настройки для разделителей"
@@ -4686,7 +4688,7 @@ msgstr "Настройки для разделителей"
 #. parameter name for Divider
 #: boxes/generators/dividertray.py
 msgid "bottom_margin"
-msgstr "нижний_отступ"
+msgstr "нижний отступ"
 
 #. help for parameter bottom_margin
 #: boxes/generators/dividertray.py
@@ -4719,7 +4721,7 @@ msgstr "Радиус защелки в мм"
 #. parameter name
 #: boxes/generators/doubleflexdoorbox.py
 msgid "latchsize"
-msgstr "размер_защелки"
+msgstr "размер защелки"
 
 #. help for parameter latchsize
 #: boxes/generators/doubleflexdoorbox.py
@@ -4752,7 +4754,7 @@ msgstr "Количество отверстий для каждого разме
 #. parameter name
 #: boxes/generators/drillbox.py
 msgid "firsthole"
-msgstr "первое_отверстие"
+msgstr "первое отверстие"
 
 #. help for parameter firsthole
 #: boxes/generators/drillbox.py
@@ -4762,12 +4764,12 @@ msgstr "Наименьшее отверстие"
 #. parameter name
 #: boxes/generators/drillbox.py
 msgid "holeincrement"
-msgstr "приращение_отверстий"
+msgstr "шаг отверстий"
 
 #. help for parameter holeincrement
 #: boxes/generators/drillbox.py
 msgid "increment between holes"
-msgstr "приращение между отверстиями"
+msgstr "шаг между отверстиями"
 
 #. name of box generator
 #: boxes/generators/drillstand.py
@@ -4835,7 +4837,7 @@ msgstr "Настройки стойки для сверл"
 #. parameter name
 #: boxes/generators/drillstand.py
 msgid "extra_height"
-msgstr "дополнительная_высота"
+msgstr "дополнительная высота"
 
 #. help for parameter extra_height
 #: boxes/generators/drillstand.py
@@ -4863,7 +4865,7 @@ msgstr "Стороны треугольников удерживающих кр�
 #. parameter name
 #: boxes/generators/electronicsbox.py
 msgid "d1"
-msgstr "д1"
+msgstr "d1"
 
 #. help for parameter d1
 #: boxes/generators/electronicsbox.py
@@ -4873,7 +4875,7 @@ msgstr "Диаметр внутренних винтовых отверстий 
 #. parameter name
 #: boxes/generators/electronicsbox.py
 msgid "d2"
-msgstr "д2"
+msgstr "d2"
 
 #. help for parameter d2
 #: boxes/generators/electronicsbox.py
@@ -4883,7 +4885,7 @@ msgstr "Диаметр винтовых отверстий крышки в мм"
 #. parameter name
 #: boxes/generators/electronicsbox.py
 msgid "d3"
-msgstr "д3"
+msgstr "d3"
 
 #. help for parameter d3
 #: boxes/generators/electronicsbox.py
@@ -4893,7 +4895,7 @@ msgstr "Диаметр монтажных винтовых отверстий в
 #. parameter name
 #: boxes/generators/electronicsbox.py
 msgid "outsidemounts"
-msgstr "внешние_крепления"
+msgstr "внешние крепления"
 
 #. help for parameter outsidemounts
 #: boxes/generators/electronicsbox.py
@@ -4903,7 +4905,7 @@ msgstr "Добавить внешние точки крепления"
 #. parameter name
 #: boxes/generators/electronicsbox.py
 msgid "holedist"
-msgstr "расстояние_отверстий"
+msgstr "расстояние винтовых отверстий"
 
 #. help for parameter holedist
 #: boxes/generators/electronicsbox.py
@@ -4926,7 +4928,7 @@ msgstr "Настройки корпуса EuroRack"
 #. parameter name
 #: boxes/generators/eurorackskiff.py
 msgid "hp"
-msgstr "л.с."
+msgstr "hp"
 
 #. help for parameter hp
 #: boxes/generators/eurorackskiff.py
@@ -4954,7 +4956,7 @@ msgstr "диаметр отверстия для вентилятора"
 #. parameter name
 #: boxes/generators/fanhole.py
 msgid "mounting_holes"
-msgstr "монтажные_отверстия"
+msgstr "монтажные отверстия"
 
 #. help for parameter mounting_holes
 #: boxes/generators/fanhole.py
@@ -4964,7 +4966,7 @@ msgstr "диаметр монтажных отверстий вентилято�
 #. parameter name
 #: boxes/generators/fanhole.py
 msgid "mounting_holes_inset"
-msgstr "вставка_монтажных_отверстий"
+msgstr "вставка монтажных отверстий"
 
 #. help for parameter mounting_holes_inset
 #: boxes/generators/fanhole.py
@@ -4984,7 +4986,7 @@ msgstr "количество лопастей"
 #. parameter name
 #: boxes/generators/fanhole.py
 msgid "inner_disc"
-msgstr "внутренний_диск"
+msgstr "внутренний диск"
 
 #. help for parameter inner_disc
 #: boxes/generators/fanhole.py
@@ -5192,17 +5194,17 @@ msgstr "Количество сторон плана этажа."
 #. parameter name
 #: boxes/generators/fatballdispenser.py
 msgid "pole_diameter"
-msgstr "диаметр_жерди"
+msgstr "диаметр столба "
 
 #. help for parameter pole_diameter
 #: boxes/generators/fatballdispenser.py
 msgid "The diameter of the poles."
-msgstr "Диаметр жердей."
+msgstr "Диаметр столбов."
 
 #. parameter name
 #: boxes/generators/fatballdispenser.py
 msgid "ball_diameter"
-msgstr "диаметр_шарика"
+msgstr "диаметр шарика"
 
 #. help for parameter ball_diameter
 #: boxes/generators/fatballdispenser.py
@@ -5214,17 +5216,17 @@ msgstr ""
 #. parameter name
 #: boxes/generators/fatballdispenser.py
 msgid "balcony_width"
-msgstr "ширина_балкона"
+msgstr "ширина балкона"
 
 #. help for parameter balcony_width
 #: boxes/generators/fatballdispenser.py
 msgid "The width of the area outside of the poles."
-msgstr "Ширина области снаружи жердей."
+msgstr "Ширина области снаружи столбов."
 
 #. parameter name
 #: boxes/generators/fatballdispenser.py
 msgid "balcony_height"
-msgstr "высота_балкона"
+msgstr "высота балкона"
 
 #. help for parameter balcony_height
 #: boxes/generators/fatballdispenser.py
@@ -5234,7 +5236,7 @@ msgstr "Высота балкона в мм. Установите в 0 если 
 #. parameter name
 #: boxes/generators/fatballdispenser.py
 msgid "drain_hole_diameter"
-msgstr "диаметр_дренажного_отверстия"
+msgstr "диаметр дренажного отверстия"
 
 #. help for parameter drain_hole_diameter
 #: boxes/generators/fatballdispenser.py
@@ -5248,7 +5250,7 @@ msgstr ""
 #. parameter name
 #: boxes/generators/fatballdispenser.py
 msgid "pole_clearance"
-msgstr "зазор_жерди"
+msgstr "зазор столба "
 
 #. help for parameter pole_clearance
 #: boxes/generators/fatballdispenser.py
@@ -5262,7 +5264,7 @@ msgstr ""
 #. parameter name
 #: boxes/generators/fatballdispenser.py
 msgid "slide_clearance"
-msgstr "зазор_скольжения"
+msgstr "зазор скольжения"
 
 #. help for parameter slide_clearance
 #: boxes/generators/fatballdispenser.py
@@ -5276,7 +5278,7 @@ msgstr ""
 #. parameter name
 #: boxes/generators/fatballdispenser.py
 msgid "spacer_width"
-msgstr "ширина_прокладки"
+msgstr "ширина прокладки"
 
 #. help for parameter spacer_width
 #: boxes/generators/fatballdispenser.py
@@ -5286,7 +5288,7 @@ msgstr "Ширина прокладки (часть механизма блок�
 #. parameter name
 #: boxes/generators/fatballdispenser.py
 msgid "pole_clearance_factor"
-msgstr "фактор_зазора_жерди"
+msgstr "доля зазора столба "
 
 #. help for parameter pole_clearance_factor
 #: boxes/generators/fatballdispenser.py
@@ -5305,7 +5307,7 @@ msgstr "Определяет насколько шире нижнего этаж
 #. parameter name
 #: boxes/generators/fatballdispenser.py
 msgid "roof_height"
-msgstr "высота_крыши"
+msgstr "высота крыши"
 
 #. help for parameter roof_height
 #: boxes/generators/fatballdispenser.py
@@ -5315,7 +5317,7 @@ msgstr "Высота крыши в мм."
 #. parameter name
 #: boxes/generators/fatballdispenser.py
 msgid "roof_hole_diameter"
-msgstr "диаметр_отверстия_крыши"
+msgstr "диаметр отверстия крыши"
 
 #. help for parameter roof_hole_diameter
 #: boxes/generators/fatballdispenser.py
@@ -5329,7 +5331,7 @@ msgstr ""
 #. parameter name
 #: boxes/generators/fatballdispenser.py
 msgid "roof_maintenance_clearance"
-msgstr "зазор_обслуживания_крыши"
+msgstr "зазор для обслуживания на крыше"
 
 #. help for parameter roof_maintenance_clearance
 #: boxes/generators/fatballdispenser.py
@@ -5341,7 +5343,7 @@ msgstr ""
 #. parameter name
 #: boxes/generators/fatballdispenser.py
 msgid "roof_support_fraction"
-msgstr "доля_поддержки_крыши"
+msgstr "радиус части поддержки крыши"
 
 #. help for parameter roof_support_fraction
 #: boxes/generators/fatballdispenser.py
@@ -5379,7 +5381,7 @@ msgstr "Настройки катушки для филамента"
 #. parameter name
 #: boxes/generators/filamentspool.py
 msgid "outer_diameter"
-msgstr "внешний_диаметр"
+msgstr "внешний диаметр"
 
 #. help for parameter outer_diameter
 #: boxes/generators/filamentspool.py
@@ -5389,7 +5391,7 @@ msgstr "диаметр фланцев"
 #. parameter name
 #: boxes/generators/filamentspool.py
 msgid "inner_diameter"
-msgstr "внутренний_диаметр"
+msgstr "внутренний диаметр"
 
 #. help for parameter inner_diameter
 #: boxes/generators/filamentspool.py
@@ -5399,7 +5401,7 @@ msgstr "диаметр центральной части"
 #. parameter name
 #: boxes/generators/filamentspool.py
 msgid "axle_diameter"
-msgstr "диаметр_оси"
+msgstr "диаметр оси"
 
 #. help for parameter axle_diameter
 #: boxes/generators/filamentspool.py
@@ -5454,7 +5456,7 @@ msgstr "Настройки гибкой книги"
 #. parameter name
 #: boxes/generators/flexbook.py
 msgid "recess_wall"
-msgstr "углубленная_стенка"
+msgstr "углубленная стенка"
 
 #. help for parameter recess_wall
 #: boxes/generators/flexbook.py
@@ -5503,7 +5505,7 @@ msgstr "Настройки гибкой коробки 3"
 #. parameter name
 #: boxes/generators/flexbox3.py
 msgid "z"
-msgstr "в"
+msgstr "z"
 
 #. help for parameter z
 #: boxes/generators/flexbox3.py
@@ -5549,7 +5551,7 @@ msgstr "Настройки гибкой коробки 5"
 #. parameter name
 #: boxes/generators/flexbox5.py
 msgid "top_diameter"
-msgstr "верхний_диаметр"
+msgstr "верхний диаметр"
 
 #. help for parameter top_diameter
 #: boxes/generators/flexbox5.py
@@ -5559,7 +5561,7 @@ msgstr "диаметр сверху"
 #. parameter name
 #: boxes/generators/flexbox5.py
 msgid "bottom_diameter"
-msgstr "нижний_диаметр"
+msgstr "нижний диаметр"
 
 #. help for parameter bottom_diameter
 #: boxes/generators/flexbox5.py
@@ -5595,7 +5597,7 @@ msgstr "Настройки теста гибкости 2"
 #. parameter name
 #: boxes/generators/flextest2.py
 msgid "fw"
-msgstr "гш"
+msgstr "fw"
 
 #. help for parameter fw
 #: boxes/generators/flextest2.py
@@ -5618,7 +5620,7 @@ msgstr "Настройки папки"
 #. parameter name
 #: boxes/generators/folder.py
 msgid "r"
-msgstr "р"
+msgstr "r"
 
 #. name of box generator
 #: boxes/generators/frontpanel.py
@@ -5816,7 +5818,7 @@ msgstr "Настройки шестерен"
 #. parameter name
 #: boxes/generators/gear.py
 msgid "teeth1"
-msgstr "число зубьев 1"
+msgstr "зубъя1"
 
 #. help for parameter teeth1
 #: boxes/generators/gear.py
@@ -5846,7 +5848,7 @@ msgstr "процент D-секции вала 1 (100 для круглого в
 #. parameter name
 #: boxes/generators/gear.py
 msgid "teeth2"
-msgstr "число зубьев 2"
+msgstr "зубъя2"
 
 #. help for parameter teeth2
 #: boxes/generators/gear.py
@@ -5944,12 +5946,12 @@ msgstr "диаметр вала"
 #. parameter name
 #: boxes/generators/gearbox.py
 msgid "stages"
-msgstr "этапы"
+msgstr "ступени"
 
 #. help for parameter stages
 #: boxes/generators/gearbox.py
 msgid "number of stages in the gear reduction"
-msgstr "количество этапов в редукторе"
+msgstr "Количество ступеней в редукторе"
 
 #. name of box generator
 #: boxes/generators/gridfinitybase.py
@@ -6015,7 +6017,7 @@ msgstr "высота боковых стенок лотка (мм)"
 #. parameter name
 #: boxes/generators/gridfinitybase.py
 msgid "m"
-msgstr "м"
+msgstr "m"
 
 #. help for parameter m
 #: boxes/generators/gridfinitybase.py
@@ -6029,7 +6031,7 @@ msgstr ""
 #. parameter name
 #: boxes/generators/gridfinitybase.py
 msgid "panel_edge"
-msgstr "край_панели"
+msgstr "край панели"
 
 #. help for parameter panel_edge
 #: boxes/generators/gridfinitybase.py
@@ -6039,7 +6041,7 @@ msgstr "тип края для подпанелей"
 #. possible choice for panel_edge
 #: boxes/generators/gridfinitybase.py
 msgid "D"
-msgstr "Г"
+msgstr "D"
 
 #. parameter name
 #: boxes/generators/gridfinitybase.py
@@ -6069,7 +6071,7 @@ msgstr "Радиус угла для каждого отверстия сетк�
 #. parameter name
 #: boxes/generators/gridfinitybase.py
 msgid "cut_pads"
-msgstr "вырезать_накладки"
+msgstr "вырезать накладки"
 
 #. help for parameter cut_pads
 #: boxes/generators/gridfinitybase.py
@@ -6079,7 +6081,7 @@ msgstr "вырезать накладки для использования в �
 #. parameter name
 #: boxes/generators/gridfinitybase.py
 msgid "cut_pads_mag_diameter"
-msgstr "диаметр_магнита_накладок"
+msgstr "диаметр магнита накладок"
 
 #. help for parameter cut_pads_mag_diameter
 #: boxes/generators/gridfinitybase.py
@@ -6089,7 +6091,7 @@ msgstr "если накладки вырезаны, добавить отвер�
 #. parameter name
 #: boxes/generators/gridfinitybase.py
 msgid "cut_pads_mag_offset"
-msgstr "смещение_магнита_накладок"
+msgstr "смещение магнита накладок"
 
 #. help for parameter cut_pads_mag_offset
 #: boxes/generators/gridfinitybase.py
@@ -6099,7 +6101,7 @@ msgstr "смещение отверстия магнита от углов ша�
 #. parameter name
 #: boxes/generators/gridfinitybase.py
 msgid "pad_radius"
-msgstr "радиус_накладки"
+msgstr "радиус накладки"
 
 #. help for parameter pad_radius
 #: boxes/generators/gridfinitybase.py
@@ -6209,7 +6211,7 @@ msgstr "количество сеток gridfinity в направлении Y"
 #. parameter name
 #: boxes/generators/gridfinitytraylayout.py
 msgid "countx"
-msgstr "счетчик_x"
+msgstr "количество_x"
 
 #. help for parameter countx
 #: boxes/generators/gridfinitytraylayout.py
@@ -6219,7 +6221,7 @@ msgstr "разделить x на столько секций сетки. 0 оз
 #. parameter name
 #: boxes/generators/gridfinitytraylayout.py
 msgid "county"
-msgstr "счетчик_y"
+msgstr "количество_y"
 
 #. help for parameter county
 #: boxes/generators/gridfinitytraylayout.py
@@ -6244,7 +6246,7 @@ msgstr "поддержка складирования совместимого �
 #. parameter name
 #: boxes/generators/gridfinitytraylayout.py
 msgid "gen_pads"
-msgstr "генерировать_накладки"
+msgstr "генерировать накладки"
 
 #. help for parameter gen_pads
 #: boxes/generators/gridfinitytraylayout.py
@@ -6358,7 +6360,7 @@ msgstr "Настройки полукоробки"
 #. parameter name
 #: boxes/generators/halfbox.py
 msgid "Clamping"
-msgstr "Зажим"
+msgstr "отверстия для зажима"
 
 #. help for parameter Clamping
 #: boxes/generators/halfbox.py
@@ -6368,7 +6370,7 @@ msgstr "добавить отверстия для зажима"
 #. parameter name
 #: boxes/generators/halfbox.py
 msgid "ClampingSize"
-msgstr "РазмерЗажима"
+msgstr "Размер отверстий для зажима"
 
 #. help for parameter ClampingSize
 #: boxes/generators/halfbox.py
@@ -6455,7 +6457,7 @@ msgstr "Настройки коробки с петлями"
 #. parameter name
 #: boxes/generators/hingebox.py
 msgid "splitlid"
-msgstr "разделить_крышку"
+msgstr "разделить крышку"
 
 #. help for parameter splitlid
 #: boxes/generators/hingebox.py
@@ -6514,7 +6516,7 @@ msgstr "Настройки кейса для хобби"
 #. parameter name
 #: boxes/generators/hobbycase.py
 msgid "unit_d"
-msgstr "единица_г"
+msgstr "единица г"
 
 #. help for parameter unit_d
 #: boxes/generators/hobbycase.py
@@ -6524,7 +6526,7 @@ msgstr "Глубина одной единицы"
 #. parameter name
 #: boxes/generators/hobbycase.py
 msgid "unit_h"
-msgstr "единица_в"
+msgstr "единица в"
 
 #. help for parameter unit_h
 #: boxes/generators/hobbycase.py
@@ -6534,7 +6536,7 @@ msgstr "Высота одной единицы"
 #. parameter name
 #: boxes/generators/hobbycase.py
 msgid "unit_w"
-msgstr "единица_ш"
+msgstr "единица ш"
 
 #. help for parameter unit_w
 #: boxes/generators/hobbycase.py
@@ -6549,7 +6551,7 @@ msgstr "Количество строк в каждом из столбцов"
 #. parameter name
 #: boxes/generators/hobbycase.py
 msgid "shelves_n"
-msgstr "полки_к"
+msgstr "полки к"
 
 #. help for parameter shelves_n
 #: boxes/generators/hobbycase.py
@@ -6559,7 +6561,7 @@ msgstr "Сколько полок должно быть в каждом стол
 #. parameter name
 #: boxes/generators/hobbycase.py
 msgid "add_rails"
-msgstr "добавить_направляющие"
+msgstr "добавить направляющие"
 
 #. help for parameter add_rails
 #: boxes/generators/hobbycase.py
@@ -6569,7 +6571,7 @@ msgstr "Должны ли направляющие генерироваться 
 #. parameter name
 #: boxes/generators/hobbycase.py
 msgid "add_cover"
-msgstr "добавить_крышку"
+msgstr "добавить крышку"
 
 #. help for parameter add_cover
 #: boxes/generators/hobbycase.py
@@ -6579,7 +6581,7 @@ msgstr "Должна ли генерироваться крышка для ке�
 #. parameter name
 #: boxes/generators/hobbycase.py
 msgid "inset_shelves"
-msgstr "встроенные_полки"
+msgstr "встроенные полки"
 
 #. help for parameter inset_shelves
 #: boxes/generators/hobbycase.py
@@ -9107,7 +9109,7 @@ msgstr "Ширина паспарту сверху/снизу фото"
 #. parameter name
 #: boxes/generators/photoframe.py
 msgid "matting_overlap"
-msgstr "матирование_перекрытие"
+msgstr "матирование перекрытие"
 
 #. help for parameter matting_overlap
 #: boxes/generators/photoframe.py
@@ -9147,7 +9149,7 @@ msgstr "Ширина рамки вокруг паспарту"
 #. parameter name
 #: boxes/generators/photoframe.py
 msgid "guide_fudge"
-msgstr "руководство_помадка"
+msgstr "руководство помадка"
 
 #. help for parameter guide_fudge
 #: boxes/generators/photoframe.py
@@ -9157,7 +9159,7 @@ msgstr "Запас в пазу для облегчения вставки пас
 #. parameter name
 #: boxes/generators/photoframe.py
 msgid "frame_overlap"
-msgstr "рамбка_перекрытие"
+msgstr "рамбка перекрытие"
 
 #. help for parameter frame_overlap
 #: boxes/generators/photoframe.py
@@ -9734,12 +9736,12 @@ msgstr "I"
 #. possible choice for bottom_edge
 #: boxes/generators/rectangularWall.py
 msgid "j"
-msgstr "й"
+msgstr "j"
 
 #. possible choice for bottom_edge
 #: boxes/generators/rectangularWall.py
 msgid "J"
-msgstr "Й"
+msgstr "J"
 
 #. possible choice for bottom_edge
 #: boxes/generators/rectangularWall.py
@@ -9749,67 +9751,67 @@ msgstr "K"
 #. possible choice for bottom_edge
 #: boxes/generators/rectangularWall.py
 msgid "l"
-msgstr "л"
+msgstr "l"
 
 #. possible choice for bottom_edge
 #: boxes/generators/rectangularWall.py
 msgid "M"
-msgstr "М"
+msgstr "M"
 
 #. possible choice for bottom_edge
 #: boxes/generators/rectangularWall.py
 msgid "N"
-msgstr "Н"
+msgstr "N"
 
 #. possible choice for bottom_edge
 #: boxes/generators/rectangularWall.py
 msgid "o"
-msgstr "о"
+msgstr "o"
 
 #. possible choice for bottom_edge
 #: boxes/generators/rectangularWall.py
 msgid "O"
-msgstr "О"
+msgstr "O"
 
 #. possible choice for bottom_edge
 #: boxes/generators/rectangularWall.py
 msgid "p"
-msgstr "п"
+msgstr "p"
 
 #. possible choice for bottom_edge
 #: boxes/generators/rectangularWall.py
 msgid "P"
-msgstr "П"
+msgstr "P"
 
 #. possible choice for bottom_edge
 #: boxes/generators/rectangularWall.py
 msgid "q"
-msgstr "к"
+msgstr "q"
 
 #. possible choice for bottom_edge
 #: boxes/generators/rectangularWall.py
 msgid "Q"
-msgstr "К"
+msgstr "Q"
 
 #. possible choice for bottom_edge
 #: boxes/generators/rectangularWall.py
 msgid "R"
-msgstr "Р"
+msgstr "R"
 
 #. possible choice for bottom_edge
 #: boxes/generators/rectangularWall.py
 msgid "u"
-msgstr "у"
+msgstr "u"
 
 #. possible choice for bottom_edge
 #: boxes/generators/rectangularWall.py
 msgid "U"
-msgstr "У"
+msgstr "U"
 
 #. possible choice for bottom_edge
 #: boxes/generators/rectangularWall.py
 msgid "V"
-msgstr "В"
+msgstr "V"
 
 #. parameter name
 #: boxes/generators/rectangularWall.py
@@ -12740,33 +12742,37 @@ msgstr "фланцевый U-образный профиль"
 msgid "Add a fourth piece to make a U-Beam with a flange"
 msgstr "Добавить четвертую деталь для создания U-образной балки с фланцем"
 
-#: scripts/boxesserver:238
+#: scripts/boxesserver:239
 #, python-format
 msgid "%s - Boxes"
 msgstr "%s - Коробки"
 
-#: scripts/boxesserver:248 scripts/boxesserver:339 scripts/boxesserver:450
-#: scripts/boxesserver:585
+#: scripts/boxesserver:249 scripts/boxesserver:342 scripts/boxesserver:459
+#: scripts/boxesserver:609
 msgid "Boxes.py"
 msgstr "Boxes.py"
 
-#: scripts/boxesserver:287
+#: scripts/boxesserver:289
 msgid "Generate"
 msgstr "Сгенерировать"
 
-#: scripts/boxesserver:288
+#: scripts/boxesserver:290
 msgid "Download"
 msgstr "Скачать"
 
-#: scripts/boxesserver:289
+#: scripts/boxesserver:291
+msgid "Order product"
+msgstr " Заказать"
+
+#: scripts/boxesserver:292
 msgid "Save to URL"
 msgstr "Сохранить по ссылке"
 
-#: scripts/boxesserver:290
+#: scripts/boxesserver:293
 msgid "QR Code"
 msgstr "QR-код"
 
-#: scripts/boxesserver:299
+#: scripts/boxesserver:302
 msgid ""
 "There is no image yet. Please donate an image of your project on <a "
 "href=&quot;https://github.com/florianfesti/boxes/issues/628&quot; "
@@ -12776,27 +12782,27 @@ msgstr ""
 "href=&quot;https://github.com/florianfesti/boxes/issues/628&quot; "
 "target=&quot;_blank&quot; rel=&quot;noopener&quot;>GitHub</a>!"
 
-#: scripts/boxesserver:313
+#: scripts/boxesserver:316
 msgid "Zoom: "
 msgstr "Масштаб:"
 
-#: scripts/boxesserver:316
+#: scripts/boxesserver:319
 msgid "Reset"
 msgstr "Сбросить"
 
-#: scripts/boxesserver:350 scripts/boxesserver:585 scripts/boxesserver:596
+#: scripts/boxesserver:353 scripts/boxesserver:600 scripts/boxesserver:620
 msgid "Gallery"
 msgstr "Галерея"
 
-#: scripts/boxesserver:351 scripts/boxesserver:597
+#: scripts/boxesserver:354 scripts/boxesserver:621
 msgid "Menu"
 msgstr "Меню"
 
-#: scripts/boxesserver:451
+#: scripts/boxesserver:460
 msgid "Create boxes and more with a laser cutter!"
 msgstr "Создавайте коробки и многое другое для лазерной резки!"
 
-#: scripts/boxesserver:453
+#: scripts/boxesserver:463
 msgid ""
 "\n"
 "        <a href=\"https://hackaday.io/project/10649-boxespy\">Boxes.py</a> "
@@ -12814,39 +12820,39 @@ msgstr ""
 "для создания своих собственных. Поддерживаются шиповые и (плоские) ласточкин хвост соединения, гибкие "
 "прорези, отверстия и пазы для винтов, петель, шестерен, шкивов и многое другое."
 
-#: scripts/boxesserver:477
+#: scripts/boxesserver:487
 msgid "Help"
 msgstr "Помощь"
 
-#: scripts/boxesserver:478
+#: scripts/boxesserver:486
 msgid "Home Page"
 msgstr "Главная страница"
 
-#: scripts/boxesserver:479
+#: scripts/boxesserver:488
 msgid "Documentation"
 msgstr "Документация"
 
-#: scripts/boxesserver:480
+#: scripts/boxesserver:489
 msgid "Sources"
 msgstr "Исходники"
 
-#: scripts/boxesserver:482
+#: scripts/boxesserver:491
 msgid "Legal"
 msgstr "Правовая информация"
 
-#: scripts/boxesserver:483
+#: scripts/boxesserver:492
 msgid "Give Back"
 msgstr "Поддержать проект"
 
-#: scripts/boxesserver:488
+#: scripts/boxesserver:501
 msgid "Preview"
 msgstr "Предпросмотр"
 
-#: scripts/boxesserver:499
+#: scripts/boxesserver:523
 #, python-format
 msgid "Error generating %s"
 msgstr "Ошибка при генерации %s"
 
-#: scripts/boxesserver:504 scripts/boxesserver:518
+#: scripts/boxesserver:504 scripts/boxesserver:528
 msgid "An error occurred!"
 msgstr "Произошла ошибка!"

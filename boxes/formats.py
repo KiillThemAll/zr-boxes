@@ -81,7 +81,6 @@ class Formats:
 
     def convert(self, data, fmt):
 
-        # not convertin in pdf 
         if fmt not in self._BASE_FORMATS:
             fd, tmpfile = tempfile.mkstemp()
             os.write(fd, data.getvalue())
@@ -99,23 +98,8 @@ class Formats:
             if result.returncode:
                 # XXX show stderr output
                 raise ValueError("Conversion failed. pstoedit returned %i\n\n %s" % (result.returncode, result.stderr))
-            
-            # Close the file descriptor before opening the file
-            os.close(fd2)
-            
-            # Open the file and return it
             data = open(outfile, 'rb')
-            
-            # Schedule the file for deletion when it's closed
-            def cleanup():
-                try:
-                    os.unlink(outfile)
-                except PermissionError:
-                    pass
-            
-            # Add cleanup to the file object
-            data.cleanup = cleanup
-            
-            return data
+            os.unlink(outfile)
+            os.close(fd2)
 
         return data
