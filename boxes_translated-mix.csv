@@ -140,7 +140,7 @@ G,G
 Y,Y
 outside,внешние габариты
 treat sizes as outside measurements [🛈](https://florianfesti.github.io/boxes/html/usermanual.html#outside),обрабатывать размеры как внешние измерения [🛈](https://florianfesti.github.io/boxes/html/usermanual.html#outside)
-nema_mount,крепление_nema
+nema_mount,крепление nema
 NEMA size of motor,размер двигателя NEMA
 Default Settings,Настройки по умолчанию
 thickness,толщина
@@ -603,14 +603,14 @@ spacing,интервал
 minimum space around the hinge (multiples of thickness),минимальное пространство вокруг петли (кратные толщинам)
 Settings for RoundedTriangleEdge,Настройки края с округленными треугольниками
 height above the wall,высота над стенкой
-r_hole,r_отверстие
+r_hole,r отверстие
 radius of hole,радиус отверстия
 radius of top corner,радиус верхнего угла
 extend the triangle along the length of the edge (multiples of thickness),расширить треугольник вдоль длины края (кратно толщине)
 Settings for Mounting Edge,Настройки для монтажного края
-d_head,d_головка
+d_head,d головка
 head diameter of mounting screw (in mm),диаметр головки монтажного винта (в мм)
-d_shaft,d_стержень
+d_shaft,d стержень
 shaft diameter of mounting screw (in mm),диаметр стержня монтажного винта (в мм)
 minimum space left and right without holes (fraction of the edge length),минимальное пространство слева и справа без отверстий (доля от длины края)
 num,номер
@@ -627,9 +627,9 @@ Textsize in mm for the traycontent,размер текста в мм для со
 text_alignment,выравнивание текста
 Text Alignment,выравнивание текста
 center,центр
-text_distance_x,расстояние текста_x
+text_distance_x,расстояние текста x
 Distance in X from edge of tray in mm. Has no effect when text is centered.,расстояние по X от края лотка в мм. Не действует при центрированном тексте.
-text_distance_y,расстояние текста_y
+text_distance_y,расстояние текста y
 Distance in Y from edge of tray in mm.,расстояние по Y от края лотка в мм.
 text_at_front,текст спереди
 Start compartement labels on the front,начать ярлыки отделений спереди
@@ -655,9 +655,9 @@ hole,отверстие
 radius of the grip hole in mm,радиус отверстия для захвата в мм
 holes,отверстия
 width of hole(s) in percentage of maximum hole width,ширина отверстия(й) в процентах от максимальной ширины отверстия
-margin_t,зазор_t
+margin_t,зазор t
 vertical margin for sliding lid (multiples of thickness),вертикальный зазор для выдвижной крышки (кратно толщине)
-margin_s,зазор_s
+margin_s,зазор s
 margin to add at both sides of sliding lid (multiples of thickness),зазор для добавления с обеих сторон выдвижной крышки (кратно толщине)
 split_lip,разделенный выступ
 create two strips to reduce waste material,создать две полосы для уменьшения отходов материала
@@ -672,7 +672,7 @@ Amount of circumference used for non convex parts,"количество окру
 Angle between convex and concave parts,угол между выпуклыми и вогнутыми частями
 bolthole,отверстие для болта
 Diameter of the bolt hole (mm),диаметр отверстия для болта (мм)
-dhole,d_отверстие
+dhole,d отверстие
 D-Flat in fraction of the diameter,D-плоскость в доле от диаметра
 hexhead,шестигранная головка
 Width of the hex bolt head (mm),ширина шестигранной головки болта (мм)
@@ -1010,9 +1010,9 @@ GridfinityBase,Основание Gridfinity
 A parameterized Gridfinity base,Параметризованное основание Gridfinity
 "This is a configurable gridfinity base.  This\n    design is based on\n    <a href=\""https://www.youtube.com/watch?app=desktop&v=ra_9zU-mnl8\"">Zach Freedman's Gridfinity system</a>","Это настраиваемое основание gridfinity. Этот\n    дизайн основан на\n    <a href=\""https://www.youtube.com/watch?app=desktop&v=ra_9zU-mnl8\"">системе Gridfinity от Зака Фридмана</a>"
 GridfinityBase Settings,Настройки основания Gridfinity
-size_x,размер_x
+size_x,размер x
 size of base in X direction (0=auto),размер основания в направлении X (0=авто)
-size_y,размер_y
+size_y,размер y
 size of base in Y direction (0=auto),размер основания в направлении Y (0=авто)
 number of grids in X direction (0=auto),количество сеток в направлении X (0=авто)
 number of grids in Y direction (0=auto),количество сеток в направлении Y (0=авто)
@@ -1035,9 +1035,9 @@ cut_pads_mag_offset,смещение магнита накладок
 if magnet hole offset from pitch corners.  Typical is 7.75.,смещение отверстия магнита от углов шага. Обычно 7.75.
 pad_radius,радиус накладки
 "The corner radius for each grid opening.  Typical is 0.8,","Радиус угла для каждого отверстия сетки. Обычно 0.8,"
-panel_x,панель_x
+panel_x,панель x
 the maximum sized panel that can be cut in x direction,"максимальный размер панели, которую можно вырезать в направлении x"
-panel_y,панель_y
+panel_y,панель y
 the maximum sized panel that can be cut in y direction,"максимальный размер панели, которую можно вырезать в направлении y"
 GridfinityTrayLayout,Макет лотка Gridfinity
 A Gridfinity Tray Generator based on TrayLayout,Генератор лотка Gridfinity на основе TrayLayout
@@ -1049,9 +1049,9 @@ nx,nx
 number of gridfinity grids in X direction,количество сеток gridfinity в направлении X
 ny,ny
 number of gridfinity grids in Y direction,количество сеток gridfinity в направлении Y
-countx,количество_x
+countx,количество x
 split x into this many grid sections.  0 means same as --nx,разделить x на столько секций сетки. 0 означает то же что --nx
-county,количество_y
+county,количество y
 split y into this many grid sections.  0 means same as --ny,разделить y на столько секций сетки. 0 означает то же что --ny
 "Leave this much total margin on the outside, in mm","Оставить столько общего зазора снаружи, в мм"
 stacking,складирование
@@ -1093,14 +1093,14 @@ HobbyCase,Кейс для хобби
 A case that can be used in any hobby involving small pieces in need of organizing.,"Кейс, который можно использовать в любом хобби, связанном с мелкими деталями, требующими организации."
 "\nThe hobby case is defined by units, \""cells\"" of the case.\nYou define depth, height and widths of the cells.\nBy combining dimensions with number of columns and rows slots for shelves are generated.\nSlots can be populated by:\n\n* shelves (horizontal piece of plywood that covers full width and depth of the column. You can put anything on them, but they also provide some structural integrity. It is recommended to have a least one shelve every 2-4 slots (depending on the unit height)\n* rails (3 horizontal pieces that stick out of the side and back walls of the column. They can be used to allow taller things placed on shelves below, but also some sliding drawers can be put in them.\n","\nКейс для хобби определяется единицами, \""ячейками\"" кейса.\nВы определяете глубину, высоту и ширину ячеек.\nКомбинированием размеров с количеством столбцов и строк генерируются слоты для полок.\nСлоты могут быть заполнены:\n\n* полками (горизонтальный кусок фанеры, который покрывает полную ширину и глубину столбца. Вы можете поставить на них что угодно, но они также обеспечивают некоторую структурную целостность. Рекомендуется иметь как минимум одну полку каждые 2-4 слота (в зависимости от высоты единицы)\n* направляющими (3 горизонтальных элемента, которые выступают из боковых и задних стен столбца. Они могут использоваться для размещения более высоких предметов на полках ниже, а также для установки выдвижных ящиков.\n"
 HobbyCase Settings,Настройки кейса для хобби
-unit_d,единица г
+unit_d,единица d
 Depth of single unit,Глубина одной единицы
-unit_h,единица в
+unit_h,единица h
 Height of single unit,Высота одной единицы
-unit_w,единица ш
+unit_w,единица w
 "Widths of unit columns, eg. 215*3 or 150:215:150","Ширина столбцов единиц, например, 215*3 или 150:215:150"
 Number of rows in each of the columns,Количество строк в каждом из столбцов
-shelves_n,полки к
+shelves_n,полки n
 How many shelves should each column have eg. 2:3:2. Use integers only!,"Сколько полок должно быть в каждом столбце, например, 2:3:2. Используйте только целые числа!"
 add_rails,добавить направляющие
 Should rails be generated for slots unpopulated by shelves?,"Должны ли направляющие генерироваться для слотов, не заполненных полками?"
@@ -1508,23 +1508,23 @@ PhotoFrame Settings,Настройки фоторамки
 "Height of the photo, not including any border","Высота фотографии, не включая рамку"
 golden_mat,золотой коврик
 Use golden ratio to calculate matting width,Использовать золотое сечение для расчёта ширины паспарту
-matting_w,матирование_w
+matting_w,матирование w
 Width of the matting border around the sides of the photo,Ширина паспарту по бокам фото
-matting_h,матирование_h
+matting_h,матирование h
 Width of the matting border around top/bottom of the photo,Ширина паспарту сверху/снизу фото
-matting_overlap,матирование перекрытие
+matting_overlap,перекрытие матирования
 "Matting overlap of the photo, e.g. 2mm if photo has border, 5mm if not","Перекрытие паспарту на фото, например 2 мм если есть рамка, 5 мм если нет"
-glass_w,стекло_w
+glass_w,стекло w
 Width of the pre-cut glass or acrylic,Ширина стекла или акрила
-glass_h,стекло_h
+glass_h,стекло h
 Height of the pre-cut glass or acrylic,Высота стекла или акрила
-frame_w,рамка_w
+frame_w,рамка w
 Width of the frame border around the matting,Ширина рамки вокруг паспарту
-guide_fudge,руководство помадка
+guide_fudge,зазор направляющей
 Clearance in the guide pocket to help slide the matting/glass in,Запас в пазу для облегчения вставки паспарту/стекла
-frame_overlap,рамбка перекрытие
+frame_overlap,перекрытие рамки
 Frame overlap to hold the matting/glass in place,Перекрытие рамки для удержания паспарту/стекла
-split_front,Разделить переднюю часть на тонкие прямоугольники для экономии материала
+split_front,разделить переднюю часть
 Split front into thin rectangles to save material,Разделить переднюю часть на тонкие прямоугольники для экономии материала
 PirateChest,Пиратский сундук
 Box with polygon lid with chest hinges.,Сундук с многоугольной крышкой на петлях

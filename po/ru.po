@@ -707,7 +707,7 @@ msgstr ""
 
 #. parameter name
 msgid "nema_mount"
-msgstr "крепление_nema"
+msgstr "крепление nema"
 
 #. help for parameter nema_mount
 msgid "NEMA size of motor"
@@ -3429,7 +3429,7 @@ msgstr "высота над стенкой"
 #. parameter name for RoundedTriangleEdge
 #: boxes/generators/typetray.py
 msgid "r_hole"
-msgstr "r_отверстие"
+msgstr "r отверстие"
 
 #. help for parameter r_hole
 #: boxes/generators/typetray.py
@@ -3454,7 +3454,7 @@ msgstr "Настройки для монтажного края"
 #. parameter name for Mounting
 #: boxes/generators/typetray.py
 msgid "d_head"
-msgstr "d_головка"
+msgstr "d головка"
 
 #. help for parameter d_head
 #: boxes/generators/typetray.py
@@ -3464,7 +3464,7 @@ msgstr "диаметр головки монтажного винта (в мм)"
 #. parameter name for Mounting
 #: boxes/generators/typetray.py
 msgid "d_shaft"
-msgstr "d_стержень"
+msgstr "d стержень"
 
 #. help for parameter d_shaft
 #: boxes/generators/typetray.py
@@ -3549,7 +3549,7 @@ msgstr "центр"
 #. parameter name
 #: boxes/generators/typetray.py
 msgid "text_distance_x"
-msgstr "расстояние текста_x"
+msgstr "расстояние текста x"
 
 #. help for parameter text_distance_x
 #: boxes/generators/typetray.py
@@ -3561,7 +3561,7 @@ msgstr ""
 #. parameter name
 #: boxes/generators/typetray.py
 msgid "text_distance_y"
-msgstr "расстояние текста_y"
+msgstr "расстояние текста y"
 
 #. help for parameter text_distance_y
 #: boxes/generators/typetray.py
@@ -3707,7 +3707,7 @@ msgstr "ширина отверстия(й) в процентах от макс�
 #. parameter name
 #: boxes/generators/compartmentbox.py
 msgid "margin_t"
-msgstr "зазор_t"
+msgstr "зазор t"
 
 #. help for parameter margin_t
 #: boxes/generators/compartmentbox.py
@@ -3717,7 +3717,7 @@ msgstr "вертикальный зазор для выдвижной крышк
 #. parameter name
 #: boxes/generators/compartmentbox.py
 msgid "margin_s"
-msgstr "зазор_s"
+msgstr "зазор s"
 
 #. help for parameter margin_s
 #: boxes/generators/compartmentbox.py
@@ -3790,7 +3790,7 @@ msgstr "диаметр отверстия для болта (мм)"
 #. parameter name
 #: boxes/generators/concaveknob.py
 msgid "dhole"
-msgstr "d_отверстие"
+msgstr "d отверстие"
 
 #. help for parameter dhole
 #: boxes/generators/concaveknob.py
@@ -5982,7 +5982,7 @@ msgstr "Настройки основания Gridfinity"
 #. parameter name
 #: boxes/generators/gridfinitybase.py
 msgid "size_x"
-msgstr "размер_x"
+msgstr "размер x"
 
 #. help for parameter size_x
 #: boxes/generators/gridfinitybase.py
@@ -5992,7 +5992,7 @@ msgstr "размер основания в направлении X (0=авто)
 #. parameter name
 #: boxes/generators/gridfinitybase.py
 msgid "size_y"
-msgstr "размер_y"
+msgstr "размер y"
 
 #. help for parameter size_y
 #: boxes/generators/gridfinitybase.py
@@ -6111,7 +6111,7 @@ msgstr "Радиус угла для каждого отверстия сетк�
 #. parameter name
 #: boxes/generators/gridfinitybase.py
 msgid "panel_x"
-msgstr "панель_x"
+msgstr "панель x"
 
 #. help for parameter panel_x
 #: boxes/generators/gridfinitybase.py
@@ -6121,7 +6121,7 @@ msgstr "максимальный размер панели, которую мо�
 #. parameter name
 #: boxes/generators/gridfinitybase.py
 msgid "panel_y"
-msgstr "панель_y"
+msgstr "панель y"
 
 #. help for parameter panel_y
 #: boxes/generators/gridfinitybase.py
@@ -6211,7 +6211,7 @@ msgstr "количество сеток gridfinity в направлении Y"
 #. parameter name
 #: boxes/generators/gridfinitytraylayout.py
 msgid "countx"
-msgstr "количество_x"
+msgstr "количество x"
 
 #. help for parameter countx
 #: boxes/generators/gridfinitytraylayout.py
@@ -6221,7 +6221,7 @@ msgstr "разделить x на столько секций сетки. 0 оз
 #. parameter name
 #: boxes/generators/gridfinitytraylayout.py
 msgid "county"
-msgstr "количество_y"
+msgstr "количество y"
 
 #. help for parameter county
 #: boxes/generators/gridfinitytraylayout.py
@@ -6516,7 +6516,7 @@ msgstr "Настройки кейса для хобби"
 #. parameter name
 #: boxes/generators/hobbycase.py
 msgid "unit_d"
-msgstr "единица г"
+msgstr "единица d"
 
 #. help for parameter unit_d
 #: boxes/generators/hobbycase.py
@@ -6526,7 +6526,7 @@ msgstr "Глубина одной единицы"
 #. parameter name
 #: boxes/generators/hobbycase.py
 msgid "unit_h"
-msgstr "единица в"
+msgstr "единица h"
 
 #. help for parameter unit_h
 #: boxes/generators/hobbycase.py
@@ -6536,7 +6536,7 @@ msgstr "Высота одной единицы"
 #. parameter name
 #: boxes/generators/hobbycase.py
 msgid "unit_w"
-msgstr "единица ш"
+msgstr "единица w"
 
 #. help for parameter unit_w
 #: boxes/generators/hobbycase.py
@@ -6551,7 +6551,7 @@ msgstr "Количество строк в каждом из столбцов"
 #. parameter name
 #: boxes/generators/hobbycase.py
 msgid "shelves_n"
-msgstr "полки к"
+msgstr "полки n"
 
 #. help for parameter shelves_n
 #: boxes/generators/hobbycase.py
@@ -9089,7 +9089,7 @@ msgstr "Использовать золотое сечение для расчё
 #. parameter name
 #: boxes/generators/photoframe.py
 msgid "matting_w"
-msgstr "матирование_w"
+msgstr "матирование w"
 
 #. help for parameter matting_w
 #: boxes/generators/photoframe.py
@@ -9099,7 +9099,7 @@ msgstr "Ширина паспарту по бокам фото"
 #. parameter name
 #: boxes/generators/photoframe.py
 msgid "matting_h"
-msgstr "матирование_h"
+msgstr "матирование h"
 
 #. help for parameter matting_h
 #: boxes/generators/photoframe.py
@@ -9109,7 +9109,7 @@ msgstr "Ширина паспарту сверху/снизу фото"
 #. parameter name
 #: boxes/generators/photoframe.py
 msgid "matting_overlap"
-msgstr "матирование перекрытие"
+msgstr "перекрытие матирования"
 
 #. help for parameter matting_overlap
 #: boxes/generators/photoframe.py
@@ -9119,7 +9119,7 @@ msgstr "Перекрытие паспарту на фото, например 2 
 #. parameter name
 #: boxes/generators/photoframe.py
 msgid "glass_w"
-msgstr "стекло_w"
+msgstr "стекло w"
 
 #. help for parameter glass_w
 #: boxes/generators/photoframe.py
@@ -9129,7 +9129,7 @@ msgstr "Ширина стекла или акрила"
 #. parameter name
 #: boxes/generators/photoframe.py
 msgid "glass_h"
-msgstr "стекло_h"
+msgstr "стекло h"
 
 #. help for parameter glass_h
 #: boxes/generators/photoframe.py
@@ -9139,7 +9139,7 @@ msgstr "Высота стекла или акрила"
 #. parameter name
 #: boxes/generators/photoframe.py
 msgid "frame_w"
-msgstr "рамка_w"
+msgstr "рамка w"
 
 #. help for parameter frame_w
 #: boxes/generators/photoframe.py
@@ -9149,7 +9149,7 @@ msgstr "Ширина рамки вокруг паспарту"
 #. parameter name
 #: boxes/generators/photoframe.py
 msgid "guide_fudge"
-msgstr "руководство помадка"
+msgstr "зазор направляющей"
 
 #. help for parameter guide_fudge
 #: boxes/generators/photoframe.py
@@ -9159,7 +9159,7 @@ msgstr "Запас в пазу для облегчения вставки пас
 #. parameter name
 #: boxes/generators/photoframe.py
 msgid "frame_overlap"
-msgstr "рамбка перекрытие"
+msgstr "перекрытие рамки"
 
 #. help for parameter frame_overlap
 #: boxes/generators/photoframe.py
@@ -9169,7 +9169,7 @@ msgstr "Перекрытие рамки для удержания паспарт
 #. parameter name
 #: boxes/generators/photoframe.py
 msgid "split_front"
-msgstr "Разделить переднюю часть на тонкие прямоугольники для экономии материала"
+msgstr "разделить переднюю часть"
 
 #. help for parameter split_front
 #: boxes/generators/photoframe.py

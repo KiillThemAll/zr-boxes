@@ -458,7 +458,13 @@ class BServer:
             langparam = "?language=" + lang_name
 
         return f"""
-<h1><a href="./{langparam}">{_("Boxes.py")}</a></h1>
+<h1 style="display: flex; justify-content: space-between;">
+<a href="./{langparam}">{_("Boxes.py")}</a>
+<div style="display: flex ; flex-direction: column; align-items: center;">
+<a href="/" class="logo header__logo"><img src="static/img/nav-logo.svg" alt="logo"><span class="logo__text">Trideca <span id="nav-minor-text" style="color:#fff">gram</span></span></a>
+<span class="logo__text" style="font-size: 20px;">Доработано и переведено на русский язык!</span>
+</div>
+</h1>
 <p>{_("Create boxes and more with a laser cutter!")}</p>
 <p>
 {_('''

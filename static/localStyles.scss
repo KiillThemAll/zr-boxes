@@ -46,6 +46,46 @@
   }
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  flex-shrink: 0;
+  text-decoration: none;
+
+  @media (max-width: 750px) {
+    width: 40px;
+  }
+
+  &__text {
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--main-color);
+    font-family: 'Webnar', Arial, Helvetica, sans-serif;
+    display: flex;
+
+    @media (max-width: 750px) {
+      font-size: 25px;
+    }
+  }
+
+  img {
+    width: 67px;
+    aspect-ratio: 1/1;
+  }
+}
+
+.header {
+  &__logo {
+    top: -4px;
+    position: relative;
+
+    @media (max-width: 750px) {
+      top: -2px;
+    }
+  }
+}
+
 .lk-button--bold,
 .button--bold,
 .link-button--bold {
