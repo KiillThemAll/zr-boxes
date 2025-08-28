@@ -107,7 +107,7 @@ function initArgsPage(num_hide = null) {
 
 const DEBUG = true;
 
-const receiverUrl = DEBUG ? '127.0.0.1:80' : 'https://factory.tridecagram.ru/?to=new_order&action=лазерная_резка';
+const receiverUrl = DEBUG ? '127.0.0.1:80' : 'https://factory.tridecagram.ru';
 const apiUrl = DEBUG ? 'http://127.0.0.1:10330/v1/files' : 'https://api.tridecagram.ru:10330/v1/files';
 
 const fileNameBase = 'boxespy';
@@ -124,7 +124,7 @@ function initOrderProductButton() {
         let length = 0;
         let thickness = 0; 
         let orderQuantity = document.getElementById('order_quantity').value ?? 1;
-        orderQuantity = orderQuantity ? Math.floor(orderQuantity) : 1;
+        orderQuantity = orderQuantity >= 1 ? Math.floor(orderQuantity) : 1;
         for (let pair of formData.entries()) {
             if(pair[0] === 'format') pair[1] = 'svg';
             if(pair[0] === 'reference') pair[1] = '0.0';
@@ -167,6 +167,8 @@ function initOrderProductButton() {
                         if (putRes.ok) {
                             // Add fileName as query param to receiverUrl
                             const url = new URL(receiverUrl);
+                            url.searchParams.set('to', 'new_order');
+                            url.searchParams.set('action', 'лазерная_резка');
                             url.searchParams.set('file_name', fileName);
                             url.searchParams.set('meters', length);
                             url.searchParams.set('thickness_01mm', thickness*10)
