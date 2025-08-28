@@ -105,8 +105,8 @@ function initArgsPage(num_hide = null) {
     initOrderProductButton();
 }
 
-const API_DEBUG = true;
-const FACTORY_DEBUG = true;
+const API_DEBUG = false;
+const FACTORY_DEBUG = false;
 
 const receiverUrl = FACTORY_DEBUG ? 'http://127.0.0.1:8080' : 'https://factory.tridecagram.ru';
 const apiUrl = API_DEBUG ? 'http://127.0.0.1:10330/v1/files' : 'https://api.tridecagram.ru/v1/files';
