@@ -29,7 +29,7 @@ import time
 import traceback
 from typing import Any, NoReturn
 from urllib.parse import quote, unquote_plus
-from wsgiref.simple_server import make_server
+from wsgiref.simple_server import make_server, WSGIRequestHandler
 import math
 
 import markdown  # type: ignore
@@ -41,7 +41,6 @@ except ImportError:
     sys.path.append(os.path.join(os.path.dirname(os.path.realpath(__file__)), "../.."))
     import boxes.generators
 import boxes
-
 
 class FileChecker(threading.Thread):
     def __init__(self, files=[], checkmodules: bool = True) -> None:
@@ -871,7 +870,11 @@ def main() -> None:
     fc = FileChecker()
     fc.start()
 
-    httpd = make_server(args.host, args.port, boxserver.serve)
+    class QuietRequestHandler(WSGIRequestHandler):
+        def log_message(self, format, *args):
+            return
+
+    httpd = make_server(args.host, args.port, boxserver.serve, handler_class=QuietRequestHandler)
     print(f"BoxesServer serving on {args.host}:{args.port}...")
     try:
         httpd.serve_forever()
