@@ -145,7 +145,7 @@ function initOrderProductButton() {
         })
         .then(function(blob) {
             // Step 1: GET uploadUrl from API with body
-            const fileName = fileNameBase + '-' + Date.now().toString() + '-' + Math.floor(Math.random() * 9999).toString();
+            const fileName = fileNameBase + '-' + Date.now().toString() + '-' + Math.floor(Math.random() * 9999).toString() + '.svg';
             fetch(apiUrl, {
                 method: 'POST',
                 headers: {
