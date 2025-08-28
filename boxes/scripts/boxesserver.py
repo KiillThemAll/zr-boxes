@@ -147,32 +147,10 @@ class BServer:
             return self._languages
         self._languages = []
         domain = "boxes.py"
-        try:
-            cwd = os.path.abspath(os.getcwd())
-            module_dir = os.path.abspath(os.path.dirname(__file__))
-            module_locale = os.path.abspath(os.path.join(module_dir, '..', '..', 'locale'))
-            print(f"[i18n][getLanguages] CWD: {cwd}")
-            print(f"[i18n][getLanguages] Module dir: {module_dir}")
-            print(f"[i18n][getLanguages] Module locale dir: {module_locale}")
-        except Exception as e:
-            print(f"[i18n][getLanguages] Error determining base paths: {e}")
-            module_locale = 'locale'
-        for localedir in [module_locale, gettext._default_localedir]:
-            try:
-                abs_localedir = os.path.abspath(localedir)
-                pattern = os.path.join(abs_localedir, '*', 'LC_MESSAGES', f'{domain}.mo')
-                print(f"[i18n][getLanguages] Scanning base: {localedir} (abs: {abs_localedir})")
-                print(f"[i18n][getLanguages] Scanning pattern: {pattern}")
-                files = glob.glob(pattern)
-                if not files:
-                    print(f"[i18n][getLanguages] No files found under: {abs_localedir}")
-                else:
-                    print(f"[i18n][getLanguages] Found files: {files}")
-                self._languages.extend([file.split(os.path.sep)[-3] for file in files])
-            except Exception as e:
-                print(f"[i18n][getLanguages] Error scanning '{localedir}': {e}")
+        for localedir in [os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'locale')), gettext._default_localedir]:
+            files = glob.glob(os.path.join(localedir, '*', 'LC_MESSAGES', '%s.mo' % domain))
+            self._languages.extend([file.split(os.path.sep)[-3] for file in files])
         self._languages.sort()
-        print(f"[i18n][getLanguages] Languages detected: {self._languages}")
         return self._languages
 
     def getLanguage(self, args, accept_language):
@@ -181,27 +159,18 @@ class BServer:
 
         for i, arg in enumerate(args):
             if arg.startswith("language="):
-                lang = arg[len("language=") :]
+                lang = arg[len("language="):]
                 del args[i]
                 break
-        # Determine module-relative locale dir
-        try:
-            module_dir = os.path.abspath(os.path.dirname(__file__))
-            module_locale = os.path.abspath(os.path.join(module_dir, '..', '..', 'locale'))
-        except Exception:
-            module_locale = os.path.abspath('locale')
         if lang:
             try:
-                print(f"[i18n][getLanguage] Trying explicit language '{lang}' with localedir='{module_locale}'")
-                return gettext.translation('boxes.py', localedir=module_locale, languages=[lang])
-            except OSError as e:
-                print(f"[i18n][getLanguage] Not found in '{module_locale}' for '{lang}': {e}")
+                return gettext.translation('boxes.py', localedir='locale', languages=[lang])
+            except OSError:
+                pass
             try:
-                default_dir = getattr(gettext, '_default_localedir', None)
-                print(f"[i18n][getLanguage] Trying explicit language '{lang}' with system default localedir: {default_dir} (abs: {os.path.abspath(default_dir) if default_dir else 'n/a'})")
                 return gettext.translation('boxes.py', languages=[lang])
-            except OSError as e:
-                print(f"[i18n][getLanguage] Not found in system default for '{lang}': {e}")
+            except OSError:
+                pass
 
         # selected language not found try browser default
         languages = accept_language.split(",")
@@ -212,15 +181,10 @@ class BServer:
 
         langs.sort(reverse=True)
         langs = [l[1].replace("-", "_") for l in langs]
-        print(f"[i18n][getLanguage] Browser-preferred languages (sorted): {langs}")
 
         try:
-            print(f"[i18n][getLanguage] Trying browser languages with localedir='{module_locale}'")
-            return gettext.translation('boxes.py', localedir=module_locale, languages=langs)
-        except OSError as e:
-            default_dir = getattr(gettext, '_default_localedir', None)
-            print(f"[i18n][getLanguage] Not found in '{module_locale}' for {langs}: {e}")
-            print(f"[i18n][getLanguage] Falling back to system default localedir ({default_dir}, abs: {os.path.abspath(default_dir) if default_dir else 'n/a'}) with fallback=True")
+            return gettext.translation('boxes.py', localedir='locale', languages=langs)
+        except OSError:
             return gettext.translation('boxes.py', languages=langs, fallback=True)
 
     def arg2html(self, a, prefix, defaults={}, _=lambda s: s):
