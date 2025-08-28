@@ -105,10 +105,11 @@ function initArgsPage(num_hide = null) {
     initOrderProductButton();
 }
 
-const DEBUG = true;
+const API_DEBUG = false;
+const FACTORY_DEBUG = true;
 
-const receiverUrl = DEBUG ? '127.0.0.1:80' : 'https://factory.tridecagram.ru';
-const apiUrl = DEBUG ? 'http://127.0.0.1:10330/v1/files' : 'https://api.tridecagram.ru:10330/v1/files';
+const receiverUrl = FACTORY_DEBUG ? '127.0.0.1:80' : 'https://factory.tridecagram.ru';
+const apiUrl = API_DEBUG ? 'http://127.0.0.1:10330/v1/files' : 'https://api.tridecagram.ru/v1/files';
 
 const fileNameBase = 'boxespy';
 
@@ -155,13 +156,9 @@ function initOrderProductButton() {
             .then(res => res.json())
             .then(data => {
                 if (data.response) {
-                    console.log(data.response)
                     // Step 2: PUT the DXF file to uploadUrl
                     fetch(data.response, {
                         method: 'PUT',
-                        // headers: {
-                        //     'Content-Type': 'image/svg+xml; charset=utf-8',
-                        // },
                         body: blob
                     })
                     .then(putRes => {
@@ -183,7 +180,7 @@ function initOrderProductButton() {
                         alert('Failed to upload SVG: ' + err);
                     });
                 } else {
-                    alert('Failed to get uploadUrl: ' + (data.errorText || 'Unknown error'));
+                    alert('Failed to get uploadUrl: ' + (data.error || 'Unknown error'));
                 }
             })
             .catch(err => {
