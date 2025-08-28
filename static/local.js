@@ -10,6 +10,7 @@ addEventListener("DOMContentLoaded", () => {
   const switcherTextElements = document.querySelectorAll('.theme-switcher__text');
   const moonIconElements = document.querySelectorAll('.moon-icon');
   const sunIconElements = document.querySelectorAll('.sun-icon');
+  const navLogoTextPart = document.getElementById('nav-minor-text');
 
   const cookies = document.cookie.split(';').map((el)=>el.trim());
   let darkTheme = true;
@@ -45,6 +46,7 @@ addEventListener("DOMContentLoaded", () => {
       });    
       html.classList.remove('html-scrollbar-dark')
       html.classList.add('html-scrollbar-light')
+      navLogoTextPart.style.color = 'var(--main-color)';
     } else {
       document.cookie = dTC;
 
@@ -57,6 +59,7 @@ addEventListener("DOMContentLoaded", () => {
       });    
       html.classList.add('html-scrollbar-dark')
       html.classList.remove('html-scrollbar-light')
+      navLogoTextPart.style.color = '#fff';
     }
   }
 

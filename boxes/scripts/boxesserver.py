@@ -245,12 +245,14 @@ class BServer:
 <body class="dark-theme" onload="initArgsPage({len(box.argparser._action_groups) - 3})">
 
 <div class="argumentcontainer">
-<div style="float: left;">
-<!--<a href="https://tridecagram.ru/factory/laser-cutting/boxes/{langparam}"><h1>{_("Boxes.py")}</h1></a>-->
-<h1><a href="./{langparam}">{_("Boxes.py")}</a></h1>
-</div>
-<div style="width: 120px; float: right;">
+<div style="display: flex; justify-content: space-between; align-items: flex-start;">
+<h1> <a href="./{langparam}">{_("Boxes.py")}</a> </h1>
+<a href="https://tridecagram.ru/factory/" class="logo header__logo">
+<img src="static/img/nav-logo.svg" alt="logo"><span class="logo__text">Trideca <span id="nav-minor-text" style="color:#fff">gram</span></span>
+</a>
+<div style="width: 120px;">
 <img alt="self-Logo" src="{self.static_url}/boxes-logo.svg" width="120">
+</div>
 </div>
 <div>
 <div class="clear"></div>
@@ -286,19 +288,20 @@ class BServer:
 <input type="hidden" name="language" id="language" value="{lang_name}">
 
 <div>
-    <button class="link-button" name="render" value="1" formtarget="_blank">{_("Generate")}</button>
     <button class="link-button" name="render" value="2" formtarget="_self">{_("Download")}</button>
     <!--<button name="render" value="0" formtarget="_self">{_("Save to URL")}</button>
+    <button class="link-button" name="render" value="1" formtarget="_blank">{_("Generate")}</button>
     <button class="link-button" name="render" value="3" formtarget="_blank">{_("QR Code")}</button>-->
-    <button class="link-button" id="order-product-btn" type="button">{_("Order product")}</button>
-    <input type="number" id="order_quantity" class="input-base" style="max-width: fit-content;" min="1" value="1">
-    <span class="span-base">{_("Quantity of boxes")}</span>
 </div>
+<hr>
+<button class="link-button" id="order-product-btn" type="button">{_("Order product")}</button>
+<input type="number" id="order_quantity" class="input-base" style="max-width: fit-content;" min="1" value="1">
+<span class="span-base">{_("Quantity of products")}</span>
+<hr>
 </form>
 </div>
 
 <div class="clear"></div>
-<hr>
 <div class="description">
 """)
         no_img_msg = _('There is no image yet. Please donate an image of your project on <a href=&quot;https://github.com/florianfesti/boxes/issues/628&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;>GitHub</a>!')
@@ -458,7 +461,14 @@ class BServer:
             langparam = "?language=" + lang_name
 
         return f"""
-<h1><a href="./{langparam}">{_("Boxes.py")}</a></h1>
+<h1 style="display: flex; justify-content: space-between;">
+<a href="./{langparam}">{_("Boxes.py")}</a>
+<div style="display: flex ; flex-direction: column; align-items: center;">
+<a href="https://tridecagram.ru/factory/" class="logo header__logo">
+<img src="static/img/nav-logo.svg" alt="logo"><span class="logo__text">Trideca <span id="nav-minor-text" style="color:#fff">gram</span></span>
+</a>
+</div>
+</h1>
 <p>{_("Create boxes and more with a laser cutter!")}</p>
 <p>
 {_('''
@@ -814,13 +824,14 @@ class BServer:
         if render == "5":
             # Calculate SVG path length if it's an SVG
             svg_data = data.read()
-            total_length= self.pathSVGCalc(svg_data.decode('utf-8'))
+            total_lengthMM = self.pathSVGCalc(svg_data.decode('utf-8'))
+            total_length = math.ceil(total_lengthMM / 100);
             data = io.BytesIO(svg_data)
             # --- to order we save only in svg
             http_headers = [("Content-type", "application/dxf"),
                             ("Content-Disposition", f'attachment; filename="{box.__class__.__name__}.svg"'),
                             ("Access-Control-Allow-Origin", "*"),
-                            ("X-Order-Parameters", f"{math.ceil(total_length)}; {thickness}")]
+                            ("X-Order-Parameters", f"{total_length}; {thickness}")]
 
             start_response(status, http_headers)
             return environ['wsgi.file_wrapper'](data, 512 * 1024)
