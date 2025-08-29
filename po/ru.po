@@ -6516,32 +6516,32 @@ msgstr "Настройки кейса для хобби"
 #. parameter name
 #: boxes/generators/hobbycase.py
 msgid "unit_d"
-msgstr "единица d"
+msgstr "глубина отделения"
 
 #. help for parameter unit_d
 #: boxes/generators/hobbycase.py
 msgid "Depth of single unit"
-msgstr "Глубина одной единицы"
+msgstr "Глубина одного отделения"
 
 #. parameter name
 #: boxes/generators/hobbycase.py
 msgid "unit_h"
-msgstr "единица h"
+msgstr "высота отделения"
 
 #. help for parameter unit_h
 #: boxes/generators/hobbycase.py
 msgid "Height of single unit"
-msgstr "Высота одной единицы"
+msgstr "Высота одного отделения"
 
 #. parameter name
 #: boxes/generators/hobbycase.py
 msgid "unit_w"
-msgstr "единица w"
+msgstr "ширина столбцов отделения"
 
 #. help for parameter unit_w
 #: boxes/generators/hobbycase.py
 msgid "Widths of unit columns, eg. 215*3 or 150:215:150"
-msgstr "Ширина столбцов единиц, например, 215*3 или 150:215:150"
+msgstr "Ширина столбцов отделения, например, 215*3 или 150:215:150"
 
 #. help for parameter rows
 #: boxes/generators/hobbycase.py
@@ -9089,7 +9089,7 @@ msgstr "Использовать золотое сечение для расчё
 #. parameter name
 #: boxes/generators/photoframe.py
 msgid "matting_w"
-msgstr "матирование w"
+msgstr "ширина паспарту"
 
 #. help for parameter matting_w
 #: boxes/generators/photoframe.py
@@ -9099,7 +9099,7 @@ msgstr "Ширина паспарту по бокам фото"
 #. parameter name
 #: boxes/generators/photoframe.py
 msgid "matting_h"
-msgstr "матирование h"
+msgstr "высота паспарту"
 
 #. help for parameter matting_h
 #: boxes/generators/photoframe.py
@@ -9109,7 +9109,7 @@ msgstr "Ширина паспарту сверху/снизу фото"
 #. parameter name
 #: boxes/generators/photoframe.py
 msgid "matting_overlap"
-msgstr "перекрытие матирования"
+msgstr "перекрытие паспарту"
 
 #. help for parameter matting_overlap
 #: boxes/generators/photoframe.py
@@ -12747,32 +12747,36 @@ msgstr "Добавить четвертую деталь для создания
 msgid "%s - Boxes"
 msgstr "%s - Коробки"
 
-#: scripts/boxesserver:249 scripts/boxesserver:342 scripts/boxesserver:459
-#: scripts/boxesserver:609
+#: scripts/boxesserver:249 scripts/boxesserver:347 scripts/boxesserver:465
+#: scripts/boxesserver:621
 msgid "Boxes.py"
 msgstr "Boxes.py"
 
-#: scripts/boxesserver:289
-msgid "Generate"
-msgstr "Сгенерировать"
-
-#: scripts/boxesserver:290
+#: scripts/boxesserver:291
 msgid "Download"
 msgstr "Скачать"
-
-#: scripts/boxesserver:291
-msgid "Order product"
-msgstr " Заказать"
 
 #: scripts/boxesserver:292
 msgid "Save to URL"
 msgstr "Сохранить по ссылке"
 
 #: scripts/boxesserver:293
+msgid "Generate"
+msgstr "Сгенерировать"
+
+#: scripts/boxesserver:294
 msgid "QR Code"
 msgstr "QR-код"
 
-#: scripts/boxesserver:302
+#: scripts/boxesserver:297
+msgid "Order product"
+msgstr "Заказать"
+
+#: scripts/boxesserver:299
+msgid "Quantity of products"
+msgstr "Количество изделий"
+
+#: scripts/boxesserver:307
 msgid ""
 "There is no image yet. Please donate an image of your project on <a "
 "href=&quot;https://github.com/florianfesti/boxes/issues/628&quot; "
@@ -12782,27 +12786,27 @@ msgstr ""
 "href=&quot;https://github.com/florianfesti/boxes/issues/628&quot; "
 "target=&quot;_blank&quot; rel=&quot;noopener&quot;>GitHub</a>!"
 
-#: scripts/boxesserver:316
+#: scripts/boxesserver:321
 msgid "Zoom: "
 msgstr "Масштаб:"
 
-#: scripts/boxesserver:319
+#: scripts/boxesserver:324
 msgid "Reset"
 msgstr "Сбросить"
 
-#: scripts/boxesserver:353 scripts/boxesserver:600 scripts/boxesserver:620
+#: scripts/boxesserver:358 scripts/boxesserver:621 scripts/boxesserver:632
 msgid "Gallery"
 msgstr "Галерея"
 
-#: scripts/boxesserver:354 scripts/boxesserver:621
+#: scripts/boxesserver:359 scripts/boxesserver:633
 msgid "Menu"
 msgstr "Меню"
 
-#: scripts/boxesserver:460
+#: scripts/boxesserver:472
 msgid "Create boxes and more with a laser cutter!"
-msgstr "Создавайте коробки и многое другое для лазерной резки!"
+msgstr "Создавайте коробки и многое другое для лазерной резки! Доработано и переведено на русский язык!"
 
-#: scripts/boxesserver:463
+#: scripts/boxesserver:475
 msgid ""
 "\n"
 "        <a href=\"https://hackaday.io/project/10649-boxespy\">Boxes.py</a> "
@@ -12820,39 +12824,39 @@ msgstr ""
 "для создания своих собственных. Поддерживаются шиповые и (плоские) ласточкин хвост соединения, гибкие "
 "прорези, отверстия и пазы для винтов, петель, шестерен, шкивов и многое другое."
 
-#: scripts/boxesserver:487
+#: scripts/boxesserver:499
 msgid "Help"
 msgstr "Помощь"
 
-#: scripts/boxesserver:486
+#: scripts/boxesserver:498
 msgid "Home Page"
 msgstr "Главная страница"
 
-#: scripts/boxesserver:488
+#: scripts/boxesserver:500
 msgid "Documentation"
 msgstr "Документация"
 
-#: scripts/boxesserver:489
+#: scripts/boxesserver:501
 msgid "Sources"
 msgstr "Исходники"
 
-#: scripts/boxesserver:491
+#: scripts/boxesserver:503
 msgid "Legal"
 msgstr "Правовая информация"
 
-#: scripts/boxesserver:492
+#: scripts/boxesserver:504
 msgid "Give Back"
 msgstr "Поддержать проект"
 
-#: scripts/boxesserver:501
+#: scripts/boxesserver:513
 msgid "Preview"
 msgstr "Предпросмотр"
 
-#: scripts/boxesserver:523
+#: scripts/boxesserver:535
 #, python-format
 msgid "Error generating %s"
 msgstr "Ошибка при генерации %s"
 
-#: scripts/boxesserver:504 scripts/boxesserver:528
+#: scripts/boxesserver:540 scripts/boxesserver:554
 msgid "An error occurred!"
 msgstr "Произошла ошибка!"

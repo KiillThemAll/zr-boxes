@@ -1093,12 +1093,12 @@ HobbyCase,Кейс для хобби
 A case that can be used in any hobby involving small pieces in need of organizing.,"Кейс, который можно использовать в любом хобби, связанном с мелкими деталями, требующими организации."
 "\nThe hobby case is defined by units, \""cells\"" of the case.\nYou define depth, height and widths of the cells.\nBy combining dimensions with number of columns and rows slots for shelves are generated.\nSlots can be populated by:\n\n* shelves (horizontal piece of plywood that covers full width and depth of the column. You can put anything on them, but they also provide some structural integrity. It is recommended to have a least one shelve every 2-4 slots (depending on the unit height)\n* rails (3 horizontal pieces that stick out of the side and back walls of the column. They can be used to allow taller things placed on shelves below, but also some sliding drawers can be put in them.\n","\nКейс для хобби определяется единицами, \""ячейками\"" кейса.\nВы определяете глубину, высоту и ширину ячеек.\nКомбинированием размеров с количеством столбцов и строк генерируются слоты для полок.\nСлоты могут быть заполнены:\n\n* полками (горизонтальный кусок фанеры, который покрывает полную ширину и глубину столбца. Вы можете поставить на них что угодно, но они также обеспечивают некоторую структурную целостность. Рекомендуется иметь как минимум одну полку каждые 2-4 слота (в зависимости от высоты единицы)\n* направляющими (3 горизонтальных элемента, которые выступают из боковых и задних стен столбца. Они могут использоваться для размещения более высоких предметов на полках ниже, а также для установки выдвижных ящиков.\n"
 HobbyCase Settings,Настройки кейса для хобби
-unit_d,единица d
-Depth of single unit,Глубина одной единицы
-unit_h,единица h
-Height of single unit,Высота одной единицы
-unit_w,единица w
-"Widths of unit columns, eg. 215*3 or 150:215:150","Ширина столбцов единиц, например, 215*3 или 150:215:150"
+unit_d,глубина отделения
+Depth of single unit,Глубина одного отделения
+unit_h,высота отделения
+Height of single unit,Высота одного отделения
+unit_w,ширина столбцов отделения
+"Widths of unit columns, eg. 215*3 or 150:215:150","Ширина столбцов отделения, например, 215*3 или 150:215:150"
 Number of rows in each of the columns,Количество строк в каждом из столбцов
 shelves_n,полки n
 How many shelves should each column have eg. 2:3:2. Use integers only!,"Сколько полок должно быть в каждом столбце, например, 2:3:2. Используйте только целые числа!"
@@ -1508,11 +1508,11 @@ PhotoFrame Settings,Настройки фоторамки
 "Height of the photo, not including any border","Высота фотографии, не включая рамку"
 golden_mat,золотой коврик
 Use golden ratio to calculate matting width,Использовать золотое сечение для расчёта ширины паспарту
-matting_w,матирование w
+matting_w,ширина паспарту
 Width of the matting border around the sides of the photo,Ширина паспарту по бокам фото
-matting_h,матирование h
+matting_h,высота паспарту
 Width of the matting border around top/bottom of the photo,Ширина паспарту сверху/снизу фото
-matting_overlap,перекрытие матирования
+matting_overlap,перекрытие паспарту
 "Matting overlap of the photo, e.g. 2mm if photo has border, 5mm if not","Перекрытие паспарту на фото, например 2 мм если есть рамка, 5 мм если нет"
 glass_w,стекло w
 Width of the pre-cut glass or acrylic,Ширина стекла или акрила
@@ -2175,17 +2175,18 @@ flanged_ubeam,фланцевый U-образный профиль
 Add a fourth piece to make a U-Beam with a flange,Добавить четвертую деталь для создания U-образной балки с фланцем
 %s - Boxes,%s - Коробки
 Boxes.py,Boxes.py
-Generate,Сгенерировать
 Download,Скачать
-Order product, Заказать
 Save to URL,Сохранить по ссылке
+Generate,Сгенерировать
 QR Code,QR-код
+Order product,Заказать
+Quantity of products,Количество изделий
 There is no image yet. Please donate an image of your project on <a href=&quot;https://github.com/florianfesti/boxes/issues/628&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;>GitHub</a>!,"Пока нет изображения. Пожалуйста, добавьте фото вашего проекта на <a href=&quot;https://github.com/florianfesti/boxes/issues/628&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;>GitHub</a>!"
 Zoom: ,Масштаб:
 Reset,Сбросить
 Gallery,Галерея
 Menu,Меню
-Create boxes and more with a laser cutter!,Создавайте коробки и многое другое для лазерной резки!
+Create boxes and more with a laser cutter!,Создавайте коробки и многое другое для лазерной резки! Доработано и переведено на русский язык!
 "\n        <a href=\""https://hackaday.io/project/10649-boxespy\"">Boxes.py</a> is an <a href=\""https://www.gnu.org/licenses/gpl-3.0.en.html\"">Open Source</a> box generator written in <a href=\""https://www.python.org/\"">Python</a>. It features both finished parametrized generators as well as a Python API for writing your own. It features finger and (flat) dovetail joints, flex cuts, holes and slots for screws, hinges, gears, pulleys and much more.","\"\n        <a href=\"https://hackaday.io/project/10649-boxespy\">Boxes.py</a> — это <a href=\"https://www.gnu.org/licenses/gpl-3.0.en.html\">Open Source</a> генератор коробок, написанный на <a href=\"https://www.python.org/\">Python</a>. Он включает как готовые параметрические генераторы, так и Python API для написания своих собственных. Поддерживаются шиповые и (плоские) ласточкин хвост соединения, гибкие надрезы, отверстия и пазы для винтов, петель, шестерен, шкивов и многое другое."
 Help,Помощь
 Home Page,Главная страница
