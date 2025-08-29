@@ -29,7 +29,7 @@ import time
 import traceback
 from typing import Any, NoReturn
 from urllib.parse import quote, unquote_plus
-from wsgiref.simple_server import make_server
+from wsgiref.simple_server import make_server, WSGIRequestHandler
 import math
 
 import markdown  # type: ignore
@@ -41,7 +41,6 @@ except ImportError:
     sys.path.append(os.path.join(os.path.dirname(os.path.realpath(__file__)), "../.."))
     import boxes.generators
 import boxes
-
 
 class FileChecker(threading.Thread):
     def __init__(self, files=[], checkmodules: bool = True) -> None:
@@ -147,7 +146,7 @@ class BServer:
             return self._languages
         self._languages = []
         domain = "boxes.py"
-        for localedir in ["locale", gettext._default_localedir]:
+        for localedir in [os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'locale')), gettext._default_localedir]:
             files = glob.glob(os.path.join(localedir, '*', 'LC_MESSAGES', '%s.mo' % domain))
             self._languages.extend([file.split(os.path.sep)[-3] for file in files])
         self._languages.sort()
@@ -876,7 +875,11 @@ def main() -> None:
     fc = FileChecker()
     fc.start()
 
-    httpd = make_server(args.host, args.port, boxserver.serve)
+    class QuietRequestHandler(WSGIRequestHandler):
+        def log_message(self, format, *args):
+            return
+
+    httpd = make_server(args.host, args.port, boxserver.serve, handler_class=QuietRequestHandler)
     print(f"BoxesServer serving on {args.host}:{args.port}...")
     try:
         httpd.serve_forever()

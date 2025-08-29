@@ -105,10 +105,11 @@ function initArgsPage(num_hide = null) {
     initOrderProductButton();
 }
 
-const DEBUG = true;
+const API_DEBUG = false;
+const FACTORY_DEBUG = false;
 
-const receiverUrl = DEBUG ? '127.0.0.1:80' : 'https://factory.tridecagram.ru';
-const apiUrl = DEBUG ? 'http://127.0.0.1:10330/v1/files' : 'https://api.tridecagram.ru:10330/v1/files';
+const receiverUrl = FACTORY_DEBUG ? 'http://127.0.0.1:8080' : 'https://factory.tridecagram.ru';
+const apiUrl = API_DEBUG ? 'http://127.0.0.1:10330/v1/files' : 'https://api.tridecagram.ru/v1/files';
 
 const fileNameBase = 'boxespy';
 
@@ -144,7 +145,7 @@ function initOrderProductButton() {
         })
         .then(function(blob) {
             // Step 1: GET uploadUrl from API with body
-            const fileName = fileNameBase + '-' + Date.now().toString() + '-' + Math.floor(Math.random() * 9999).toString();
+            const fileName = fileNameBase + '-' + Date.now().toString() + '-' + Math.floor(Math.random() * 9999).toString() + '.svg';
             fetch(apiUrl, {
                 method: 'POST',
                 headers: {
@@ -154,13 +155,10 @@ function initOrderProductButton() {
             })
             .then(res => res.json())
             .then(data => {
-                if (data.response === 'ok' && data.uploadUrl) {
-                    // Step 2: PUT the SVG file to uploadUrl
-                    fetch(data.uploadUrl, {
+                if (data.response) {
+                    // Step 2: PUT the DXF file to uploadUrl
+                    fetch(data.response, {
                         method: 'PUT',
-                        headers: {
-                            'Content-Type': 'image/svg+xml; charset=utf-8',
-                        },
                         body: blob
                     })
                     .then(putRes => {
@@ -182,7 +180,7 @@ function initOrderProductButton() {
                         alert('Failed to upload SVG: ' + err);
                     });
                 } else {
-                    alert('Failed to get uploadUrl: ' + (data.errorText || 'Unknown error'));
+                    alert('Failed to get uploadUrl: ' + (data.error || 'Unknown error'));
                 }
             })
             .catch(err => {
