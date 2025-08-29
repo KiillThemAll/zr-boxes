@@ -12742,41 +12742,41 @@ msgstr "фланцевый U-образный профиль"
 msgid "Add a fourth piece to make a U-Beam with a flange"
 msgstr "Добавить четвертую деталь для создания U-образной балки с фланцем"
 
-#: scripts/boxesserver:239
+#: scripts/boxesserver:238
 #, python-format
 msgid "%s - Boxes"
 msgstr "%s - Коробки"
 
-#: scripts/boxesserver:249 scripts/boxesserver:347 scripts/boxesserver:465
-#: scripts/boxesserver:621
+#: scripts/boxesserver:248 scripts/boxesserver:346 scripts/boxesserver:464
+#: scripts/boxesserver:620
 msgid "Boxes.py"
 msgstr "Boxes.py"
 
-#: scripts/boxesserver:291
+#: scripts/boxesserver:290
 msgid "Download"
 msgstr "Скачать"
 
-#: scripts/boxesserver:292
+#: scripts/boxesserver:291
 msgid "Save to URL"
 msgstr "Сохранить по ссылке"
 
-#: scripts/boxesserver:293
+#: scripts/boxesserver:292
 msgid "Generate"
 msgstr "Сгенерировать"
 
-#: scripts/boxesserver:294
+#: scripts/boxesserver:293
 msgid "QR Code"
 msgstr "QR-код"
 
-#: scripts/boxesserver:297
+#: scripts/boxesserver:296
 msgid "Order product"
 msgstr "Заказать"
 
-#: scripts/boxesserver:299
+#: scripts/boxesserver:298
 msgid "Quantity of products"
 msgstr "Количество изделий"
 
-#: scripts/boxesserver:307
+#: scripts/boxesserver:306
 msgid ""
 "There is no image yet. Please donate an image of your project on <a "
 "href=&quot;https://github.com/florianfesti/boxes/issues/628&quot; "
@@ -12786,27 +12786,27 @@ msgstr ""
 "href=&quot;https://github.com/florianfesti/boxes/issues/628&quot; "
 "target=&quot;_blank&quot; rel=&quot;noopener&quot;>GitHub</a>!"
 
-#: scripts/boxesserver:321
+#: scripts/boxesserver:320
 msgid "Zoom: "
 msgstr "Масштаб:"
 
-#: scripts/boxesserver:324
+#: scripts/boxesserver:323
 msgid "Reset"
 msgstr "Сбросить"
 
-#: scripts/boxesserver:358 scripts/boxesserver:621 scripts/boxesserver:632
+#: scripts/boxesserver:357 scripts/boxesserver:620 scripts/boxesserver:631
 msgid "Gallery"
 msgstr "Галерея"
 
-#: scripts/boxesserver:359 scripts/boxesserver:633
+#: scripts/boxesserver:359 scripts/boxesserver:632
 msgid "Menu"
 msgstr "Меню"
 
-#: scripts/boxesserver:472
+#: scripts/boxesserver:471
 msgid "Create boxes and more with a laser cutter!"
 msgstr "Создавайте коробки и многое другое для лазерной резки! Доработано и переведено на русский язык!"
 
-#: scripts/boxesserver:475
+#: scripts/boxesserver:474
 msgid ""
 "\n"
 "        <a href=\"https://hackaday.io/project/10649-boxespy\">Boxes.py</a> "
@@ -12824,39 +12824,39 @@ msgstr ""
 "для создания своих собственных. Поддерживаются шиповые и (плоские) ласточкин хвост соединения, гибкие "
 "прорези, отверстия и пазы для винтов, петель, шестерен, шкивов и многое другое."
 
-#: scripts/boxesserver:499
+#: scripts/boxesserver:498
 msgid "Help"
 msgstr "Помощь"
 
-#: scripts/boxesserver:498
+#: scripts/boxesserver:497
 msgid "Home Page"
 msgstr "Главная страница"
 
-#: scripts/boxesserver:500
+#: scripts/boxesserver:499
 msgid "Documentation"
 msgstr "Документация"
 
-#: scripts/boxesserver:501
+#: scripts/boxesserver:500
 msgid "Sources"
 msgstr "Исходники"
 
-#: scripts/boxesserver:503
+#: scripts/boxesserver:502
 msgid "Legal"
 msgstr "Правовая информация"
 
-#: scripts/boxesserver:504
+#: scripts/boxesserver:503
 msgid "Give Back"
 msgstr "Поддержать проект"
 
-#: scripts/boxesserver:513
+#: scripts/boxesserver:512
 msgid "Preview"
 msgstr "Предпросмотр"
 
-#: scripts/boxesserver:535
+#: scripts/boxesserver:534
 #, python-format
 msgid "Error generating %s"
 msgstr "Ошибка при генерации %s"
 
-#: scripts/boxesserver:540 scripts/boxesserver:554
+#: scripts/boxesserver:539 scripts/boxesserver:553
 msgid "An error occurred!"
 msgstr "Произошла ошибка!"
