@@ -12750,7 +12750,7 @@ msgstr "%s - Коробки"
 #: scripts/boxesserver:248 scripts/boxesserver:346 scripts/boxesserver:464
 #: scripts/boxesserver:620
 msgid "Boxes.py"
-msgstr "Boxes.py(lol)"
+msgstr "Boxes.py"
 
 #: scripts/boxesserver:290
 msgid "Download"
