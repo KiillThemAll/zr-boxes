@@ -146,7 +146,9 @@ class BServer:
             return self._languages
         self._languages = []
         domain = "boxes.py"
-        for localedir in [os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'locale')), gettext._default_localedir]:
+        for localedir in [os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'locale')), 
+                          os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'zr-boxes-translation', 'locale')), 
+                          gettext._default_localedir]:
             files = glob.glob(os.path.join(localedir, '*', 'LC_MESSAGES', '%s.mo' % domain))
             self._languages.extend([file.split(os.path.sep)[-3] for file in files])
         self._languages.sort()
@@ -824,7 +826,7 @@ class BServer:
             # Calculate SVG path length if it's an SVG
             svg_data = data.read()
             total_lengthMM = self.pathSVGCalc(svg_data.decode('utf-8'))
-            total_length = math.ceil(total_lengthMM / 100);
+            total_length = math.ceil(total_lengthMM / 1000);
             data = io.BytesIO(svg_data)
             # --- to order we save only in svg
             http_headers = [("Content-type", "application/dxf"),
