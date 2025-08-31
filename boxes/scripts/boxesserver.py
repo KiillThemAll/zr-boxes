@@ -119,6 +119,23 @@ boxes.ArgumentParser = ThrowingArgumentParser  # type: ignore
 class BServer:
     lang_re = re.compile(r"([a-z]{2,3}(-[-a-zA-Z0-9]*)?)\s*(;\s*q=(\d\.?\d*))?")
 
+    METRIKA_ENABLED = False
+
+    METRIKA_CODE = f'''
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){{
+        m[i]=m[i]||function(){{(m[i].a=m[i].a||[]).push(arguments)}};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {{if (document.scripts[j].src === r) {{ return; }}}}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    }})(window, document,'script','https://mc.yandex.ru/metrika/tag.js', 'ym');
+
+    ym(98631008, 'init', {{webvisor:true, clickmap:true, accurateTrackBounce:true, trackLinks:true}});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/98631008" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->'''
+
     def __init__(self, url_prefix="", static_url="static", static_path="../static/", legal_url="") -> None:
         self.boxes = {b.__name__: b for b in boxes.generators.getAllBoxGenerators().values() if b.webinterface}
         self.groups = boxes.generators.ui_groups
@@ -285,7 +302,10 @@ class BServer:
 
         result = [f"""{self.genHTMLStart(lang)}
 <head>
-    <title>{_("%s - Boxes") % _(name)}</title>
+    <title>{_("%s - Boxes.py на русском") % _(name)}</title>
+    <meta name="description" content="{_("%s - генератор на Boxes.py") % _(name)}">
+    <link rel="canonical" href="https://tridecagram.ru/factory/laser-cutting/boxes/{name}">
+    <meta name="robots" content="noindex, nofollow">
     {self.genHTMLMeta()}
 {self.genHTMLMetaLanguageLink()}
     {self.genHTMLCSS()}
@@ -295,8 +315,8 @@ class BServer:
 
 <div class="argumentcontainer">
 <div style="display: flex; justify-content: space-between; align-items: flex-start;">
-<h1> <a href="./{langparam}">{_("Boxes.py")}</a> </h1>
-<a href="https://tridecagram.ru/factory/" class="logo header__logo">
+<h1> <a href="./">{_("Boxes.py")}</a> </h1>
+<a href="https://tridecagram.ru/" class="logo header__logo">
 <img src="static/img/nav-logo.svg" alt="logo"><span class="logo__text">Trideca <span id="nav-minor-text" style="color:#fff">gram</span></span>
 </a>
 <div style="width: 120px;">
@@ -391,9 +411,17 @@ class BServer:
         if lang_name:
             langparam = "?language=" + lang_name
 
+        metrika = ""
+        if self.METRIKA_ENABLED and lang_name == "ru":
+            metrika = self.METRIKA_CODE
+
         result = [f"""{self.genHTMLStart(lang)}
 <head>
-    <title>{_("Boxes.py")}</title>
+    <title>Boxes.py на русском - список генераторов</title>
+    <meta name="description" content="Boxes.py на русском языке - список генераторов макетов для лазерной резки коробок и других изделий">
+    <link rel="canonical" href="https://tridecagram.ru/factory/laser-cutting/boxes/Menu">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    {metrika}
     {self.genHTMLMeta()}
 {self.genHTMLMetaLanguageLink()}
     {self.genHTMLCSS()}
@@ -404,7 +432,7 @@ class BServer:
 <div style="width: 75%; float: left;">
 {self.genPagePartHeader(lang)}
 <div class="modenav">
-<button class="link-button" onclick="window.location = 'Gallery'">{_("Gallery")}</button>
+<button class="link-button" onclick="window.location = '/'">{_("Gallery")}</button>
 <button class="link-button--bold">{_("Menu")}</button>
 </div>
 <br>
@@ -429,7 +457,7 @@ class BServer:
                 docs = ""
                 if box.__doc__:
                     docs = " - " + _(box.__doc__)
-                result.append(f"""     <li class="thumbnail" data-thumbnail="{self.static_url}/samples/{name}-thumb.jpg" id="search_id_{name}"><a href="{name}{langparam}">{_(name)}</a>{docs}</li>\n""")
+                result.append(f"""     <li class="thumbnail" data-thumbnail="{self.static_url}/samples/{name}-thumb.jpg" id="search_id_{name}"><a rel="nofollow" href="{name}">{_(name)}</a>{docs}</li>\n""")
             result.append("   </ul>\n  </div>\n")
         result.append(f"""
 </div>
@@ -456,8 +484,14 @@ class BServer:
         return f'''
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/svg+xml" href="{self.static_url}/boxes-logo.svg" sizes="any">
-    <link rel="icon" type="image/x-icon" href="{self.static_url}/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="Tridecagram">
+    <link rel="manifest" href="/site.webmanifest">
 '''
 
     def genHTMLMetaLanguageLink(self) -> str:
@@ -465,8 +499,8 @@ class BServer:
         languages = self.getLanguages()
 
         s = ""
-        for language in languages:
-            s += f'    <link rel="alternate" hreflang="{language.replace("_", "-")}" href="https://boxes.hackerspace-bamberg.de/?language={language}">\n'
+        #for language in languages:
+        #    s += f'    <link rel="alternate" hreflang="{language.replace("_", "-")}" href="https://boxes.hackerspace-bamberg.de/?language={language}">\n'
         return s
 
     def genHTMLCSS(self) -> str:
@@ -511,9 +545,9 @@ class BServer:
 
         return f"""
 <h1 style="display: flex; justify-content: space-between;">
-<a href="./{langparam}">{_("Boxes.py")}</a>
+<a href="./">{_("Boxes.py")}</a>
 <div style="display: flex ; flex-direction: column; align-items: center;">
-<a href="https://tridecagram.ru/factory/" class="logo header__logo">
+<a href="https://tridecagram.ru/" class="logo header__logo">
 <img src="static/img/nav-logo.svg" alt="logo"><span class="logo__text">Trideca <span id="nav-minor-text" style="color:#fff">gram</span></span>
 </a>
 </div>
@@ -536,7 +570,7 @@ class BServer:
 <div class="linkbar">
 <ul>
 {self.genLinks(lang)}
-  <li class="right"><input class="input-base" autocomplete="off" type="search" oninput="filterSearchItems();" name="search" id="search" placeholder="\U0001f50dSearch"></li>
+  <li class="right"><input class="input-base" autocomplete="off" type="search" oninput="filterSearchItems();" name="search" id="search" placeholder="\U0001f50dПоиск"></li>
 </ul>
 </div>
 <hr/>
@@ -544,7 +578,7 @@ class BServer:
 
     def genLinks(self, lang, preview=False):
         _ = lang.gettext
-        links = [("https://tridecagram.ru/factory/", _("Home Page")),
+        links = [("https://tridecagram.ru/", _("Home Page")),
                  ("https://tridecagram.ru/factory/laser-cutting/boxes-manual/", _("Help"))]
                  #("https://florianfesti.github.io/boxes/html/index.html", _("Documentation")),
                  #("https://github.com/florianfesti/boxes", _("Sources"))]
@@ -552,7 +586,7 @@ class BServer:
         #    links.append((self.legal_url, _("Legal")))
         #links.append(("https://florianfesti.github.io/boxes/html/give_back.html", _("Give Back")))
 
-        result = [f'  <li {f"class=""last-visible"""if idx ==len(links) else f""} ><a href="{url}" target="_blank" rel="noopener">{txt}</a></li>\n' for idx, [url, txt] in enumerate(links, 1)]
+        result = [f'  <li {f"class=""last-visible"""if idx ==len(links) else f""} ><a href="{url}" target="_blank" rel="noopener noreferrer">{txt}</a></li>\n' for idx, [url, txt] in enumerate(links, 1)]
 
         result.append(self.getThemeSwitcher());
 
@@ -664,10 +698,18 @@ class BServer:
         if lang_name:
             langparam = "?language=" + lang_name
 
+        metrika = ""
+        if self.METRIKA_ENABLED and lang_name == "ru":
+            metrika = self.METRIKA_CODE
+
         result = [f"""
 {self.genHTMLStart(lang)}
 <head>
-    <title>{_("Gallery")} - {_("Boxes.py")}</title>
+    <title>Boxes.py на русском - галерея генераторов</title>
+    <meta name="description" content="Boxes.py на русском языке - генераторы макетов для лазерной резки коробок и других изделий">
+    <link rel="canonical" href="https://tridecagram.ru/factory/laser-cutting/boxes/">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    {metrika}
     {self.genHTMLMeta()}
 {self.genHTMLMetaLanguageLink()}
     {self.genHTMLCSS()}
@@ -690,11 +732,11 @@ class BServer:
                 thumbnail = f"{self.static_url}/{fn}"
                 static_filename = os.path.join(self.staticdir, fn)
                 alt = f"{_(name)}"
-                href = f"{name}{langparam}"
+                href = f"{name}"
                 if not os.path.exists(static_filename):
-                    result.append(f"""  <span class="gallery_missing" id="search_id_{name}"><a href="{href}">{_(box.__doc__)}<br><br>{_(name)}</a></span>\n""")
+                    result.append(f"""  <span class="gallery_missing" id="search_id_{name}"><a rel="nofollow" href="{href}">{_(box.__doc__)}<br><br>{_(name)}</a></span>\n""")
                 else:
-                    result.append(f"""  <span class="gallery" id="search_id_{name}"><a title="{_(name)} - {html.escape(_(box.__doc__))}" href="{href}"><img alt="{alt}" src="{thumbnail}"><br>{_(name)}</a></span>\n""")
+                    result.append(f"""  <span class="gallery" id="search_id_{name}"><a rel="nofollow" title="{_(name)} - {html.escape(_(box.__doc__))}" href="{href}"><img alt="{alt}" src="{thumbnail}"><br>{_(name)}</a></span>\n""")
 
         result.append(f"""
 </div><div style="width: 5%; float: left;"></div>
