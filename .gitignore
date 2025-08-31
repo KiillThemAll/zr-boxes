@@ -24,3 +24,4 @@ virtual_environment
 boxes/__pycache__
 static/node_modules
 Session.vim
+zr-boxes-translation

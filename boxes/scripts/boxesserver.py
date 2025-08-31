@@ -144,13 +144,21 @@ class BServer:
     def getLanguages(self, domain=None, localedir=None):
         if self._languages is not None:
             return self._languages
+            
         self._languages = []
         domain = "boxes.py"
-        for localedir in [os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'locale')), 
-                          os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'zr-boxes-translation', 'locale')), 
-                          gettext._default_localedir]:
-            files = glob.glob(os.path.join(localedir, '*', 'LC_MESSAGES', '%s.mo' % domain))
+        
+        # Define the locale directories to search
+        locale_dirs = [
+            os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'locale')),
+            os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'zr-boxes-translation', 'locale')),
+            gettext._default_localedir
+        ]
+        
+        for localedir in locale_dirs:
+            files = glob.glob(os.path.join(localedir, '*', 'LC_MESSAGES', f'{domain}.mo'))
             self._languages.extend([file.split(os.path.sep)[-3] for file in files])
+        
         self._languages.sort()
         return self._languages
 
@@ -163,13 +171,25 @@ class BServer:
                 lang = arg[len("language="):]
                 del args[i]
                 break
+                
         if lang:
+            # Try multiple locale directories
+            locale_dirs_to_try = [
+                os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'zr-boxes-translation', 'locale')),  # Try Russian first
+                'locale',  # Then main locale
+            ]
+            
+            for localedir in locale_dirs_to_try:
+                try:
+                    translation = gettext.translation('boxes.py', localedir=localedir, languages=[lang])
+                    return translation
+                except OSError:
+                    continue
+            
+            # Final fallback: try without localedir
             try:
-                return gettext.translation('boxes.py', localedir='locale', languages=[lang])
-            except OSError:
-                pass
-            try:
-                return gettext.translation('boxes.py', languages=[lang])
+                translation = gettext.translation('boxes.py', languages=[lang])
+                return translation
             except OSError:
                 pass
 
@@ -182,11 +202,39 @@ class BServer:
 
         langs.sort(reverse=True)
         langs = [l[1].replace("-", "_") for l in langs]
+        
+        # Always prioritize Russian as default
+        if not langs:
+            langs = ['ru']
+        elif 'ru' not in langs:
+            langs = ['ru'] + langs
+        else:
+            # Move Russian to front if it exists
+            langs.remove('ru')
+            langs = ['ru'] + langs
 
+        # Try multiple locale directories for browser languages
+        locale_dirs_to_try = [
+            os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'zr-boxes-translation', 'locale')),  # Try Russian first
+            'locale',  # Then main locale
+        ]
+        
+        for localedir in locale_dirs_to_try:
+            try:
+                translation = gettext.translation('boxes.py', localedir=localedir, languages=langs)
+                return translation
+            except OSError:
+                continue
+        
+        # Final fallback: try without localedir but with Russian first
         try:
-            return gettext.translation('boxes.py', localedir='locale', languages=langs)
+            translation = gettext.translation('boxes.py', languages=langs, fallback=True)
+            return translation
         except OSError:
-            return gettext.translation('boxes.py', languages=langs, fallback=True)
+            pass
+        
+        # If we get here, all attempts failed
+        raise OSError("Could not load any translation")
 
     def arg2html(self, a, prefix, defaults={}, _=lambda s: s):
         name = a.option_strings[0].replace("-", "")
