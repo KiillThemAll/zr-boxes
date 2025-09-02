@@ -415,12 +415,18 @@ class BServer:
         if self.METRIKA_ENABLED and lang_name == "ru":
             metrika = self.METRIKA_CODE
 
+        metaRobots = ""
+        if lang_name == "ru":
+            metaRobots = "<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\">"
+        else:
+            metaRobots = "<meta name=\"robots\" content=\"noindex, follow\">"
+
         result = [f"""{self.genHTMLStart(lang)}
 <head>
     <title>Boxes.py на русском - список генераторов</title>
     <meta name="description" content="Boxes.py на русском языке - список генераторов макетов для лазерной резки коробок и других изделий">
     <link rel="canonical" href="https://tridecagram.ru/factory/laser-cutting/boxes/Menu">
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    {metaRobots}
     {metrika}
     {self.genHTMLMeta()}
 {self.genHTMLMetaLanguageLink()}
@@ -617,7 +623,7 @@ class BServer:
 <head>
   <title>{_("Error generating %s") % _(name)}</title>
   {self.genHTMLMeta()}
-  <meta name="robots" content="noindex">
+  <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="dark-theme">
 <h1>{_("An error occurred!")}</h1>
@@ -702,13 +708,19 @@ class BServer:
         if self.METRIKA_ENABLED and lang_name == "ru":
             metrika = self.METRIKA_CODE
 
+        metaRobots = ""
+        if lang_name == "ru":
+            metaRobots = "<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\">"
+        else:
+            metaRobots = "<meta name=\"robots\" content=\"noindex, follow\">"
+
         result = [f"""
 {self.genHTMLStart(lang)}
 <head>
     <title>Boxes.py на русском - галерея генераторов</title>
     <meta name="description" content="Boxes.py на русском языке - генераторы макетов для лазерной резки коробок и других изделий">
     <link rel="canonical" href="https://tridecagram.ru/factory/laser-cutting/boxes/">
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    {metaRobots}
     {metrika}
     {self.genHTMLMeta()}
 {self.genHTMLMetaLanguageLink()}
