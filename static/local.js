@@ -31,7 +31,7 @@ addEventListener("DOMContentLoaded", () => {
     document.body.classList.toggle('dark-theme');
 
     switcherTextElements.forEach(switcherText => {
-      switcherText.textContent = darkTheme ? 'Светлая тема' : 'Тёмная тема';
+      switcherText.textContent = darkTheme ? 'Light theme' : 'Dark Theme';
     });
 
     if (!darkTheme) {

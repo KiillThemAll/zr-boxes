@@ -302,7 +302,7 @@ class BServer:
 
         result = [f"""{self.genHTMLStart(lang)}
 <head>
-    <title>{_("%s - Boxes.py на русском") % _(name)}</title>
+    <title>{_("%s - Boxes.py") % _(name)}</title>
     <meta name="description" content="{_("%s - генератор на Boxes.py") % _(name)}">
     <link rel="canonical" href="https://tridecagram.ru/factory/laser-cutting/boxes/{name}">
     <meta name="robots" content="noindex, nofollow">
@@ -363,9 +363,10 @@ class BServer:
     <button class="link-button" name="render" value="3" formtarget="_blank">{_("QR Code")}</button>-->
 </div>
 <hr>
-<button class="link-button" id="order-product-btn" type="button">{_("Order product")}</button>
+<h3 class="no-pseudo">{_("Create order")}</h3>
+<span class="span-base" style="margin-right: 5px;">{_("Quantity of products")}</span>
 <input type="number" id="order_quantity" class="input-base" style="max-width: fit-content;" min="1" value="1">
-<span class="span-base">{_("Quantity of products")}</span>
+<button class="link-button" style="margin-left: 5px;" id="order-product-btn" type="button">{_("Order product")}</button>
 <hr>
 </form>
 </div>
@@ -373,7 +374,7 @@ class BServer:
 <div class="clear"></div>
 <div class="description">
 """)
-        no_img_msg = _('There is no image yet. Please donate an image of your project on <a href=&quot;https://github.com/florianfesti/boxes/issues/628&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;>GitHub</a>!')
+        no_img_msg = _('There is no image yet. If you make one - we will be happy to receive your photos at our email info@tridecagram.ru')
 
         if box.description:
             result.append(
@@ -550,18 +551,18 @@ class BServer:
             langparam = "?language=" + lang_name
 
         return f"""
-<h1 style="display: flex; justify-content: space-between;">
-<a href="./">{_("Boxes.py")}</a>
-<div style="display: flex ; flex-direction: column; align-items: center;">
+<div style="display: flex; justify-content: space-between;">
+<h1 style="margin-right: auto;"> <a href="./">{_("Boxes.py")}</a> </h1>
+<div style="display: flex ; flex-direction: column; align-items: center; margin-right: auto;">
 <a href="https://tridecagram.ru/" class="logo header__logo">
 <img src="static/img/nav-logo.svg" alt="logo"><span class="logo__text">Trideca <span id="nav-minor-text" style="color:#fff">gram</span></span>
 </a>
 </div>
-</h1>
+</div>
 <p>{_("Create boxes and more with a laser cutter!")}</p>
 <p>
 {_('''
-        <a href="https://hackaday.io/project/10649-boxespy">Boxes.py</a> is an <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">Open Source</a> box generator written in <a href="https://www.python.org/">Python</a>. It features both finished parametrized generators as well as a Python API for writing your own. It features finger and (flat) dovetail joints, flex cuts, holes and slots for screws, hinges, gears, pulleys and much more.''')}
+        <a target="_blank" rel="nofollow noreferrer noopener" href="https://hackaday.io/project/10649-boxespy">Boxes.py</a> is an <a target="_blank" rel="nofollow noreferrer noopener" href="https://www.gnu.org/licenses/gpl-3.0.en.html">Open Source</a> box generator written in <a target="_blank" rel="nofollow noreferrer noopener" href="https://www.python.org/">Python</a>. It features both finished parametrized generators as well as a Python API for writing your own. It features finger and (flat) dovetail joints, flex cuts, holes and slots for screws, hinges, gears, pulleys and much more.''')}
 </p>
 </div>
 
@@ -576,7 +577,7 @@ class BServer:
 <div class="linkbar">
 <ul>
 {self.genLinks(lang)}
-  <li class="right"><input class="input-base" autocomplete="off" type="search" oninput="filterSearchItems();" name="search" id="search" placeholder="\U0001f50dПоиск"></li>
+  <li class="right"><input class="input-base" autocomplete="off" type="search" oninput="filterSearchItems();" name="search" id="search" placeholder="\U0001f50d{_("Search")}"></li>
 </ul>
 </div>
 <hr/>
@@ -594,26 +595,27 @@ class BServer:
 
         result = [f'  <li {f"class=""last-visible"""if idx ==len(links) else f""} ><a href="{url}" target="_blank" rel="noopener noreferrer">{txt}</a></li>\n' for idx, [url, txt] in enumerate(links, 1)]
 
-        result.append(self.getThemeSwitcher());
+        result.append(self.getThemeSwitcher(lang));
 
         result.append(f'  <li class="right">{self.genHTMLLanguageSelection(lang)}  </li>\n')
 
         if preview:
-            result.append(f'    <li class="right"><div class="vertical-centred">Preview<input style="margin-left: 5px;" id="preview_chk" type="checkbox" checked="checked"></div></li>\n')
+            result.append(f'    <li class="right"><div class="vertical-centred">{_("Preview")}<input style="margin-left: 5px;" id="preview_chk" type="checkbox" checked="checked"></div></li>\n')
         return "".join(result)
 
-    def getHTMLThemeSwitcher(self) -> str:
+    def getHTMLThemeSwitcher(self, lang) -> str:
+        _ = lang.gettext
         return f"""
 <div class="theme-switcher">
   <div class="theme-switcher__img">
     <svg class="sun-icon theme-switcher__img"></svg>
     <svg class="moon-icon theme-switcher__img"  style="display: none"></svg>
   </div>
-  <div class="theme-switcher__text">Светлая тема</div>
+  <div class="theme-switcher__text">{_("Light theme")}</div>
 </div>
 """
-    def getThemeSwitcher(self):
-        return f'<li class="right push-right">{self.getHTMLThemeSwitcher()}</li>\n'
+    def getThemeSwitcher(self, lang):
+        return f'<li class="right push-right">{self.getHTMLThemeSwitcher(lang)}</li>\n'
 
     def genPageError(self, name, e, lang) -> list[bytes]:
         """Generates a error page."""
