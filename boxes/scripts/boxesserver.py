@@ -302,7 +302,7 @@ class BServer:
 
         result = [f"""{self.genHTMLStart(lang)}
 <head>
-    <title>{_("%s - Boxes.py") % _(name)}</title>
+    <title>{_("%s - Boxes.py на русском") % _(name)}</title>
     <meta name="description" content="{_("%s - генератор на Boxes.py") % _(name)}">
     <link rel="canonical" href="https://tridecagram.ru/factory/laser-cutting/boxes/{name}">
     <meta name="robots" content="noindex, nofollow">
@@ -611,7 +611,7 @@ class BServer:
     <svg class="sun-icon theme-switcher__img"></svg>
     <svg class="moon-icon theme-switcher__img"  style="display: none"></svg>
   </div>
-  <div class="theme-switcher__text">{_("Light theme")}</div>
+  <div class="theme-switcher__text">{_("Светлая тема")}</div>
 </div>
 """
     def getThemeSwitcher(self, lang):
