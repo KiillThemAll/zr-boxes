@@ -190,6 +190,9 @@ function initOrderProductButton() {
         .catch(function(err) {
             alert('Failed to order product: ' + err);
         });
+
+        // metrika goal event
+        ym(98631008,'reachGoal','boxes_order');
     });
 }
 
