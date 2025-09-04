@@ -377,10 +377,10 @@ class Boxes:
         #     "--qr_code", action="store", type=boolarg, default=False,
         #     help="Add a QR Code with link or command line to the generated output")
         self.qr_code = False
-        # defaultgroup.add_argument(
-        #     "--debug", action="store", type=boolarg, default=False,
-        #     help="print surrounding boxes for some structures [\U0001F6C8](https://florianfesti.github.io/boxes/html/usermanual.html#debug)")
-        self.debug = False
+        defaultgroup.add_argument(
+            "--debug", action="store", type=boolarg, default=False,
+            help="print surrounding boxes for some structures [\U0001F6C8](https://florianfesti.github.io/boxes/html/usermanual.html#debug)")
+        # self.debug = False
         defaultgroup.add_argument(
             "--labels", action="store", type=boolarg, default=True,
             help="label the parts (where available)")
