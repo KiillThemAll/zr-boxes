@@ -300,12 +300,17 @@ class BServer:
         if lang_name:
             langparam = "?language=" + lang_name
 
+        metrika = ""
+        if self.METRIKA_ENABLED and lang_name == "ru":
+            metrika = self.METRIKA_CODE
+
         result = [f"""{self.genHTMLStart(lang)}
 <head>
     <title>{_("%s - Boxes.py на русском") % _(name)}</title>
     <meta name="description" content="{_("%s - генератор на Boxes.py") % _(name)}">
     <link rel="canonical" href="https://tridecagram.ru/factory/laser-cutting/boxes/{name}">
-    <meta name="robots" content="noindex, nofollow">
+    <meta name="robots" content="noindex, nofollow, noimageindex">
+    {metrika}
     {self.genHTMLMeta()}
 {self.genHTMLMetaLanguageLink()}
     {self.genHTMLCSS()}
@@ -417,9 +422,9 @@ class BServer:
 
         metaRobots = ""
         if lang_name == "ru":
-            metaRobots = "<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\">"
+            metaRobots = "<meta name=\"robots\" content=\"index, follow, noimageindex\">"
         else:
-            metaRobots = "<meta name=\"robots\" content=\"noindex, follow\">"
+            metaRobots = "<meta name=\"robots\" content=\"noindex, follow, noimageindex\">"
 
         result = [f"""{self.genHTMLStart(lang)}
 <head>
@@ -623,7 +628,7 @@ class BServer:
 <head>
   <title>{_("Error generating %s") % _(name)}</title>
   {self.genHTMLMeta()}
-  <meta name="robots" content="noindex, nofollow">
+  <meta name="robots" content="noindex, nofollow, noimageindex">
 </head>
 <body class="dark-theme">
 <h1>{_("An error occurred!")}</h1>
@@ -710,9 +715,9 @@ class BServer:
 
         metaRobots = ""
         if lang_name == "ru":
-            metaRobots = "<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\">"
+            metaRobots = "<meta name=\"robots\" content=\"index, follow, noimageindex\">"
         else:
-            metaRobots = "<meta name=\"robots\" content=\"noindex, follow\">"
+            metaRobots = "<meta name=\"robots\" content=\"noindex, follow, noimageindex\">"
 
         result = [f"""
 {self.genHTMLStart(lang)}
@@ -996,6 +1001,6 @@ def main() -> None:
 if __name__ == "__main__":
     main()
 else:
-    static_url = os.environ.get('STATIC_URL', 'https://florianfesti.github.io/boxes/static')
+    static_url = os.environ.get('STATIC_URL', 'https://tridecagram.ru/factory/boxes/static')
     boxserver = BServer(static_url=static_url)
     application = boxserver.serve
