@@ -496,7 +496,7 @@ Values:
 * absolute_params
 
  * style : "hooks" : How to hook into the wall
- * board_thickness : 5.1 : Thickness of the Skandis board
+ * board_thickness : 5.1 : Thickness of the Skadis board
 """
 
     base_class = SkadisEdge

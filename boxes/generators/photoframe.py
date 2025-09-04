@@ -301,7 +301,8 @@ class Dimensions:
 
 class PhotoFrame(Boxes):
     """
-    3-layer photo frame with a slot at the top to slide matboard/acrylic/glass over the photo after glue-up.
+    3-layer photo frame with a slot at the top to slide matboard/acrylic/glass 
+    over the photo after glue-up.
     """
 
     ui_group = "Misc"
@@ -547,7 +548,7 @@ interesting in the last 2mm of a photo anyway.
         :param center_y:  (Default value = True) if True, y position is the center, else the start
         """
 
-        logger.debug(f"rectangular_etching: {x=} {y=} {dx=} {dy=} {r=} {center_x=} {center_y=}")
+        # logger.debug(f"rectangular_etching: {x=} {y=} {dx=} {dy=} {r=} {center_x=} {center_y=}")
 
         r = min(r, dx / 2.0, dy / 2.0)
         x_start = x if center_x else x + dx / 2.0
