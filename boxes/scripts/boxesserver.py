@@ -559,7 +559,7 @@ class BServer:
 
         return f"""
 <div style="display: flex; justify-content: space-between;">
-<h1 style="margin-right: auto;"> <a href="./">{_("Boxes.py")}</a> </h1>
+<h1 style="margin-right: auto;"> <a rel="nofollow" href="./">{_("Boxes.py")}</a> </h1>
 <div style="display: flex ; flex-direction: column; align-items: center; margin-right: auto;">
 <a href="https://tridecagram.ru/" class="logo header__logo">
 <img src="static/img/nav-logo.svg" alt="logo"><span class="logo__text">Trideca <span id="nav-minor-text" style="color:#fff">gram</span></span>
