@@ -159,9 +159,14 @@ class BServer:
         self.legal_url = legal_url
 
     def getLanguages(self, domain=None, localedir=None):
+        import logging
+        logger = logging.getLogger(__name__)
+        
         if self._languages is not None:
+            logger.debug(f"Returning cached languages: {self._languages}")
             return self._languages
             
+        logger.info("=== getLanguages called ===")
         self._languages = []
         domain = "boxes.py"
         
@@ -172,46 +177,89 @@ class BServer:
             gettext._default_localedir
         ]
         
+        logger.info(f"Searching for languages in directories: {locale_dirs}")
+        
         for localedir in locale_dirs:
-            files = glob.glob(os.path.join(localedir, '*', 'LC_MESSAGES', f'{domain}.mo'))
-            self._languages.extend([file.split(os.path.sep)[-3] for file in files])
+            logger.info(f"Searching in: {localedir}")
+            if os.path.exists(localedir):
+                logger.info(f"Directory exists: {localedir}")
+                files = glob.glob(os.path.join(localedir, '*', 'LC_MESSAGES', f'{domain}.mo'))
+                logger.info(f"Found .mo files: {files}")
+                languages_found = [file.split(os.path.sep)[-3] for file in files]
+                logger.info(f"Languages found in {localedir}: {languages_found}")
+                self._languages.extend(languages_found)
+            else:
+                logger.warning(f"Directory does not exist: {localedir}")
         
         self._languages.sort()
+        logger.info(f"Final available languages: {self._languages}")
         return self._languages
 
     def getLanguage(self, args, accept_language):
+        import logging
+        logging.basicConfig(level=logging.DEBUG)
+        logger = logging.getLogger(__name__)
+        
+        logger.info(f"=== getLanguage called ===")
+        logger.info(f"args: {args}")
+        logger.info(f"accept_language: {accept_language}")
+        
         lang = None
         langs = []
 
         for i, arg in enumerate(args):
             if arg.startswith("language="):
                 lang = arg[len("language="):]
+                logger.info(f"Found language parameter: '{lang}'")
                 del args[i]
                 break
                 
         if lang:
-            # Try multiple locale directories
+            logger.info(f"Processing explicit language request: '{lang}'")
+            # Try multiple locale directories - use absolute paths
             locale_dirs_to_try = [
-                'locale',  # Try main locale first
-                os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'zr-boxes-translation', 'locale')),  # Then Russian-specific locale
+                os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'locale')),  # Main locale directory
+                os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'zr-boxes-translation', 'locale')),  # Russian-specific locale
             ]
             
-            for localedir in locale_dirs_to_try:
+            logger.info(f"Locale directories to try: {locale_dirs_to_try}")
+            
+            for i, localedir in enumerate(locale_dirs_to_try):
+                logger.info(f"Trying locale directory {i+1}: {localedir}")
+                logger.info(f"Directory exists: {os.path.exists(localedir)}")
+                if os.path.exists(localedir):
+                    # Check if the specific language directory exists
+                    lang_dir = os.path.join(localedir, lang, 'LC_MESSAGES')
+                    logger.info(f"Language directory {lang_dir} exists: {os.path.exists(lang_dir)}")
+                    if os.path.exists(lang_dir):
+                        mo_file = os.path.join(lang_dir, 'boxes.py.mo')
+                        logger.info(f"MO file {mo_file} exists: {os.path.exists(mo_file)}")
+                
                 try:
                     translation = gettext.translation('boxes.py', localedir=localedir, languages=[lang])
+                    logger.info(f"✓ Successfully loaded translation from {localedir}")
+                    logger.info(f"Translation info: {translation.info()}")
                     return translation
-                except OSError:
+                except OSError as e:
+                    logger.warning(f"✗ Failed to load from {localedir}: {e}")
                     continue
             
             # Final fallback: try without localedir
+            logger.info("Trying fallback without localedir")
             try:
                 translation = gettext.translation('boxes.py', languages=[lang])
+                logger.info(f"✓ Successfully loaded translation without localedir")
+                logger.info(f"Translation info: {translation.info()}")
                 return translation
-            except OSError:
+            except OSError as e:
+                logger.error(f"✗ Fallback failed: {e}")
                 pass
 
         # selected language not found try browser default
+        logger.info("No explicit language parameter, using browser default")
         languages = accept_language.split(",")
+        logger.info(f"Browser languages: {languages}")
+        
         for l in languages:
             m = self.lang_re.match(l.strip())
             if m:
@@ -219,39 +267,71 @@ class BServer:
 
         langs.sort(reverse=True)
         langs = [l[1].replace("-", "_") for l in langs]
+        logger.info(f"Parsed browser languages: {langs}")
         
         # Always prioritize Russian as default
         if not langs:
             langs = ['ru']
+            logger.info("No browser languages, defaulting to Russian")
         elif 'ru' not in langs:
             langs = ['ru'] + langs
+            logger.info("Added Russian to front of language list")
         else:
             # Move Russian to front if it exists
             langs.remove('ru')
             langs = ['ru'] + langs
+            logger.info("Moved Russian to front of language list")
+
+        logger.info(f"Final language priority: {langs}")
 
         # Try multiple locale directories for browser languages
         # For default behavior, prioritize Russian directory, but also try main locale
         locale_dirs_to_try = [
             os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'zr-boxes-translation', 'locale')),  # Try Russian first
-            'locale',  # Then main locale
+            os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'locale')),  # Then main locale
         ]
         
-        for localedir in locale_dirs_to_try:
+        logger.info(f"Browser locale directories to try: {locale_dirs_to_try}")
+        
+        for i, localedir in enumerate(locale_dirs_to_try):
+            logger.info(f"Trying browser locale directory {i+1}: {localedir}")
+            logger.info(f"Directory exists: {os.path.exists(localedir)}")
+            if os.path.exists(localedir):
+                # List what's actually in the directory
+                try:
+                    contents = os.listdir(localedir)
+                    logger.info(f"Directory contents: {contents}")
+                    for lang in langs[:3]:  # Check first 3 languages
+                        lang_dir = os.path.join(localedir, lang, 'LC_MESSAGES')
+                        logger.info(f"Language {lang} directory {lang_dir} exists: {os.path.exists(lang_dir)}")
+                        if os.path.exists(lang_dir):
+                            mo_file = os.path.join(lang_dir, 'boxes.py.mo')
+                            logger.info(f"MO file {mo_file} exists: {os.path.exists(mo_file)}")
+                except Exception as e:
+                    logger.warning(f"Could not list directory contents: {e}")
+            
             try:
                 translation = gettext.translation('boxes.py', localedir=localedir, languages=langs)
+                logger.info(f"✓ Successfully loaded browser translation from {localedir}")
+                logger.info(f"Translation info: {translation.info()}")
                 return translation
-            except OSError:
+            except OSError as e:
+                logger.warning(f"✗ Failed to load browser translation from {localedir}: {e}")
                 continue
         
         # Final fallback: try without localedir but with Russian first
+        logger.info("Trying browser fallback without localedir")
         try:
             translation = gettext.translation('boxes.py', languages=langs, fallback=True)
+            logger.info(f"✓ Successfully loaded browser fallback translation")
+            logger.info(f"Translation info: {translation.info()}")
             return translation
-        except OSError:
+        except OSError as e:
+            logger.error(f"✗ Browser fallback failed: {e}")
             pass
         
         # If we get here, all attempts failed
+        logger.error("All translation attempts failed!")
         raise OSError("Could not load any translation")
 
     def arg2html(self, a, prefix, defaults={}, _=lambda s: s):
@@ -864,6 +944,14 @@ class BServer:
                 environ.get('SERVER_NAME', '') == "boxes.hackerspace-bamberg.de"):
                 self.legal_url = "https://www.hackerspace-bamberg.de/Datenschutz"
 
+        import logging
+        logger = logging.getLogger(__name__)
+        logger.info(f"=== serve method ===")
+        logger.info(f"PATH_INFO: {environ.get('PATH_INFO', '')}")
+        logger.info(f"QUERY_STRING: {environ.get('QUERY_STRING', '')}")
+        logger.info(f"HTTP_ACCEPT_LANGUAGE: {environ.get('HTTP_ACCEPT_LANGUAGE', '')}")
+        logger.info(f"Parsed args: {args}")
+        
         lang = self.getLanguage(args, environ.get("HTTP_ACCEPT_LANGUAGE", ""))
         _ = lang.gettext
 
