@@ -192,8 +192,8 @@ class BServer:
         if lang:
             # Try multiple locale directories
             locale_dirs_to_try = [
-                os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'zr-boxes-translation', 'locale')),  # Try Russian first
-                'locale',  # Then main locale
+                'locale',  # Try main locale first
+                os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'zr-boxes-translation', 'locale')),  # Then Russian-specific locale
             ]
             
             for localedir in locale_dirs_to_try:
@@ -231,6 +231,7 @@ class BServer:
             langs = ['ru'] + langs
 
         # Try multiple locale directories for browser languages
+        # For default behavior, prioritize Russian directory, but also try main locale
         locale_dirs_to_try = [
             os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'zr-boxes-translation', 'locale')),  # Try Russian first
             'locale',  # Then main locale
