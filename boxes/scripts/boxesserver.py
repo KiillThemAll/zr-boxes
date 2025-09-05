@@ -992,7 +992,8 @@ def main() -> None:
         def log_message(self, format, *args):
             return
 
-    httpd = make_server(args.host, args.port, boxserver.serve, handler_class=QuietRequestHandler)
+    #httpd = make_server(args.host, args.port, boxserver.serve, handler_class=QuietRequestHandler)
+    httpd = make_server(args.host, args.port, boxserver.serve)
     print(f"BoxesServer serving on {args.host}:{args.port}...")
     try:
         httpd.serve_forever()
