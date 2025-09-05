@@ -20,9 +20,7 @@ from boxes import Boxes, edges
 
 
 class PhoneHolder(Boxes):
-    """
-    Smartphone desk holder
-    """
+    """Smartphone desk holder"""
 
     ui_group = "Misc"
 

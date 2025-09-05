@@ -300,10 +300,7 @@ class Dimensions:
 
 
 class PhotoFrame(Boxes):
-    """
-    3-layer photo frame with a slot at the top to slide matboard/acrylic/glass 
-    over the photo after glue-up.
-    """
+    """3-layer photo frame with a slot at the top to slide matboard/acrylic/glass over the photo after glue-up."""
 
     ui_group = "Misc"
 
