@@ -322,7 +322,7 @@ class BServer:
 
 <div class="argumentcontainer">
 <div style="display: flex; justify-content: space-between; align-items: flex-start;">
-<h1> <a href="./">{_("Boxes.py")}</a> </h1>
+<h1> <a rel="nofollow" href="./">{_("Boxes.py")}</a> </h1>
 <a href="https://tridecagram.ru/" class="logo header__logo">
 <img src="static/img/nav-logo.svg" alt="logo"><span class="logo__text">Trideca <span id="nav-minor-text" style="color:#fff">gram</span></span>
 </a>
@@ -446,7 +446,7 @@ class BServer:
 <div style="width: 75%; float: left;">
 {self.genPagePartHeader(lang)}
 <div class="modenav">
-<button class="link-button" onclick="window.location = '/'">{_("Gallery")}</button>
+<button class="link-button" onclick="window.location = './'">{_("Gallery")}</button>
 <button class="link-button--bold">{_("Menu")}</button>
 </div>
 <br>
