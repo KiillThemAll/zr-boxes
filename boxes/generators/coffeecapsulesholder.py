@@ -19,9 +19,7 @@ from boxes import Boxes, boolarg
 
 
 class CoffeeCapsuleHolder(Boxes):
-    """
-    Coffee capsule holder
-    """
+    """Coffee capsule holder"""
 
     ui_group = "Misc"
 

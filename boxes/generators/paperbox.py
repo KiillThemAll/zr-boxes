@@ -19,9 +19,7 @@ from boxes import Boxes
 
 
 class PaperBox(Boxes):
-    """
-    Box made of paper, with lid.
-    """
+    """Box made of paper, with lid."""
 
     ui_group = "Misc"
 

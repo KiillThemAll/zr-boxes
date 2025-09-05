@@ -22,9 +22,7 @@ from .dividertray import DividerSlotsEdge, SlotDescriptionsGenerator
 
 
 class AgricolaInsert(Boxes):
-    """
-    Agricola Revised Edition game box insert, including some expansions.
-    """
+    """Agricola Revised Edition game box insert, including some expansions."""
 
     ui_group = "Misc"
 

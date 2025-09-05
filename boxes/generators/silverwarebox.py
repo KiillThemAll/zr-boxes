@@ -17,10 +17,7 @@ from boxes import Boxes, restore
 
 
 class Silverware(Boxes):
-    """
-    Cuttlery stand with carrying grip
-    using flex for rounded corners
-    """
+    """Cuttlery stand with carrying grip using flex for rounded corners"""
 
     ui_group = "Unstable"
 
