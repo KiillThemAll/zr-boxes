@@ -592,7 +592,7 @@ class BServer:
 
     def genLinks(self, lang, preview=False):
         _ = lang.gettext
-        links = [("https://tridecagram.ru/", _("Home Page")),
+        links = [("https://tridecagram.ru/factory/laser-cutting/boxes/", _("Home Page")),
                  ("https://tridecagram.ru/factory/laser-cutting/boxes-manual/", _("Help"))]
                  #("https://florianfesti.github.io/boxes/html/index.html", _("Documentation")),
                  #("https://github.com/florianfesti/boxes", _("Sources"))]
@@ -600,7 +600,7 @@ class BServer:
         #    links.append((self.legal_url, _("Legal")))
         #links.append(("https://florianfesti.github.io/boxes/html/give_back.html", _("Give Back")))
 
-        result = [f'  <li {f"class=""last-visible"""if idx ==len(links) else f""} ><a href="{url}" target="_blank" rel="noopener noreferrer">{txt}</a></li>\n' for idx, [url, txt] in enumerate(links, 1)]
+        result = [f'  <li {f"class=""last-visible"""if idx ==len(links) else f""} ><a href="{url}">{txt}</a></li>\n' for idx, [url, txt] in enumerate(links, 1)]
 
         result.append(self.getThemeSwitcher(lang));
 
