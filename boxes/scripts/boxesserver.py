@@ -119,7 +119,7 @@ boxes.ArgumentParser = ThrowingArgumentParser  # type: ignore
 class BServer:
     lang_re = re.compile(r"([a-z]{2,3}(-[-a-zA-Z0-9]*)?)\s*(;\s*q=(\d\.?\d*))?")
 
-    METRIKA_ENABLED = False
+    METRIKA_ENABLED = True
 
     METRIKA_CODE = f'''
 <!-- Yandex.Metrika counter -->
