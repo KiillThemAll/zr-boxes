@@ -671,9 +671,9 @@ class BServer:
         # Images do not have charset. Just bytes. Except text based svg.
         # Todo: fallback if type_ is None?
         if type_ is not None and "image" in type_ and type_ != "image/svg+xml":
-            start_response("200 OK", [('Content-type', "%s" % type_)])
+            start_response("200 OK", [('Content-type', "%s" % type_), ('Cache-Control', 'max-age=3600, must-revalidate')])
         else:
-            start_response("200 OK", [('Content-type', f"{type_}; charset={encoding}")])
+            start_response("200 OK", [('Content-type', f"{type_}; charset={encoding}"), ('Cache-Control', 'max-age=3600, must-revalidate')])
 
         f = open(path, 'rb')
         return environ['wsgi.file_wrapper'](f, 512 * 1024)
@@ -842,8 +842,8 @@ class BServer:
 
     def serve(self, environ, start_response):
         # serve favicon from static for generated SVGs
-        if environ["PATH_INFO"] == "favicon.ico":
-            environ["PATH_INFO"] = "/static/favicon.ico"
+        #if environ["PATH_INFO"] == "favicon.ico":
+        #    environ["PATH_INFO"] = "/static/favicon.ico"
         if environ["PATH_INFO"].startswith("/static/"):
             return self.serveStatic(environ, start_response)
 
@@ -860,10 +860,10 @@ class BServer:
             if arg.startswith("thickness="):
                 thickness = float(arg[len("thickness="):])
 
-        if not self.legal_url:
-            if (environ.get('HTTP_HOST', '') == "boxes.hackerspace-bamberg.de" or
-                environ.get('SERVER_NAME', '') == "boxes.hackerspace-bamberg.de"):
-                self.legal_url = "https://www.hackerspace-bamberg.de/Datenschutz"
+        #if not self.legal_url:
+        #    if (environ.get('HTTP_HOST', '') == "boxes.hackerspace-bamberg.de" or
+        #        environ.get('SERVER_NAME', '') == "boxes.hackerspace-bamberg.de"):
+        #        self.legal_url = "https://www.hackerspace-bamberg.de/Datenschutz"
 
         lang = self.getLanguage(args, environ.get("HTTP_ACCEPT_LANGUAGE", ""))
         _ = lang.gettext
@@ -992,8 +992,8 @@ def main() -> None:
         def log_message(self, format, *args):
             return
 
-    #httpd = make_server(args.host, args.port, boxserver.serve, handler_class=QuietRequestHandler)
-    httpd = make_server(args.host, args.port, boxserver.serve)
+    httpd = make_server(args.host, args.port, boxserver.serve, handler_class=QuietRequestHandler)
+    #httpd = make_server(args.host, args.port, boxserver.serve)
     print(f"BoxesServer serving on {args.host}:{args.port}...")
     try:
         httpd.serve_forever()
